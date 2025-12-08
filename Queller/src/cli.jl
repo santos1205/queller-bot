@@ -32,6 +32,19 @@ Dice() = Dice(nothing)
 Base.string(c::Command) = split(lowercase(string(typeof(c))), '.')[end]
 Base.string(o::Option) = string(o.opt)
 
+# Tradução dos comandos para português
+function pt_command(c::Command)
+	cmd = string(c)
+	cmd == "help" && return "ajuda"
+	cmd == "exit" && return "sair"
+	cmd == "undo" && return "desfazer"
+	cmd == "repeat" && return "repetir"
+	cmd == "resetphase" && return "reiniciar"
+	cmd == "true" && return "verdadeiro"
+	cmd == "false" && return "falso"
+	return cmd
+end
+
 function Base.:(==)(a::Dice,b::Dice)
 	isnothing(a.dice) && return true
 	isnothing(b.dice) && return true
@@ -47,9 +60,12 @@ minmatch(::Option) = 0
 
 function parse(cmd::Command, s::AbstractString)
 	str = string(cmd)
-	length(s) > length(str) && return nothing
+	str_pt = pt_command(cmd)
+	length(s) > length(str) && length(s) > length(str_pt) && return nothing
 	matchlen = minmatch(cmd) == 0 ? length(str) : max(length(s), minmatch(cmd))
-	s == str[1:matchlen] ? cmd : nothing
+	matchlen_pt = minmatch(cmd) == 0 ? length(str_pt) : max(length(s), minmatch(cmd))
+	# Aceita tanto inglês quanto português
+	(s == str[1:min(matchlen, length(str))] || s == str_pt[1:min(matchlen_pt, length(str_pt))]) ? cmd : nothing
 end
 
 parse(cmd::Dice, s::AbstractString) = (d = Die.parse(s); isnothing(d) ? nothing : Dice(d))
@@ -58,7 +74,8 @@ parse(cmd::Blank, s::AbstractString) = (isempty(strip(s)) ? Blank() : nothing)
 function parse(cmd::Phase, s::AbstractString)
 	s_parts = split(s)
 	length(s_parts) != 2 && return nothing
-	s_parts[1] != "phase" && return nothing
+	# Aceita tanto "phase" quanto "fase"
+	!(s_parts[1] in ["phase", "fase"]) && return nothing
 
 	nbr = tryparse(Int, s_parts[2])
 	isnothing(nbr) && return nothing
@@ -97,7 +114,7 @@ Base.print(iop::IOParser,a...) = print(iop.out, a...)
 Base.println(iop::IOParser,a...) = println(iop.out, a...)
 function Base.readline(iop::IOParser)
 	str = readline(iop.in)
-	!isopen(iop.in) && error("Input stream closed")
+	!isopen(iop.in) && error("Fluxo de entrada fechado")
 	return strip(str)
 end
 
@@ -109,7 +126,7 @@ function read_input(iop::IOParser, options, prompt::String)
 	cmd = CMD.parse([iop.cmds; options], str)
 	!isnothing(cmd) && return cmd
 
-	!isempty(str) && println(iop,"Invalid input.")
+	!isempty(str) && println(iop,"Entrada inválida.")
 	return read_input(iop, options, prompt)
 end
 
@@ -126,7 +143,7 @@ function read_input(iop::IOParser, options::Vector{CMD.Dice}, silent_options::Ve
 end
 
 function read_input(iop::IOParser, options::Vector{CMD.Blank}, silent_options::Vector{<:CMD.Command})
-	return read_input(iop, [options; silent_options], "[Press enter to continue] > ")
+	return read_input(iop, [options; silent_options], "[Pressione enter para continuar] > ")
 end
 
 function display_message(iop::IOParser,msg,header="-"^10)

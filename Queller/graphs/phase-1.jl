@@ -2,50 +2,50 @@
 	@node phase_1 = Start() -> p1_strat
 	@node p1_strat = CheckStrategy("military") -> [n_true=p1_mili_1, n_false=p1_corr_1]
 
-	# Military
-	@node p1_mili_1 = PerformAction("Recover action dice.") -> p1_mili_2
-	@node p1_mili_2 = PerformAction("Draw event cards.") -> p1_mili_3
-	@node p1_mili_3 = BinaryCondition("Holding more than 6 cards.") -> [n_true = p1_mili_discard, n_false = p1_mili_end]
+	# Militar
+	@node p1_mili_1 = PerformAction("Recuperar dados de ação.") -> p1_mili_2
+	@node p1_mili_2 = PerformAction("Comprar cartas de evento.") -> p1_mili_3
+	@node p1_mili_3 = BinaryCondition("Segurando mais de 6 cartas.") -> [n_true = p1_mili_discard, n_false = p1_mili_end]
 	@node p1_mili_discard = PerformAction("""
-										  Discard event cards down to 6.
+										  Descartar cartas de evento até 6.
 
-										  Priority:
-										  1. Doesn't use the term "Fellowship revealed"
-										  2. Character card
-										  3. Strategy card
-										  4. Descending order of initiative
-										  5. Doesn't place a tile
-										  6. Random
+										  Prioridade:
+										  1. Não usa o termo "Sociedade revelada"
+										  2. Carta de personagem
+										  3. Carta de estratégia
+										  4. Ordem decrescente de iniciativa
+										  5. Não coloca uma peça
+										  6. Aleatório
 										  """) -> p1_mili_end
-	@node p1_mili_end = End("End of Phase") -> []
+	@node p1_mili_end = End("Fim da Fase") -> []
 
-	# Corruption
-	@node p1_corr_1 = PerformAction("Recover action dice.") -> p1_corr_2
-	@node p1_corr_2 = PerformAction("Draw event cards.") -> p1_corr_3
-	@node p1_corr_3 = BinaryCondition("Holding more than 6 cards.") -> [n_true = p1_corr_discard, n_false = p1_corr_end_1]
-	@node p1_corr_discard = BinaryCondition("Holding more than 1 strategy cards.") -> [n_true = p1_corr_discard_1, n_false = p1_corr_discard_2]
+	# Corrupção
+	@node p1_corr_1 = PerformAction("Recuperar dados de ação.") -> p1_corr_2
+	@node p1_corr_2 = PerformAction("Comprar cartas de evento.") -> p1_corr_3
+	@node p1_corr_3 = BinaryCondition("Segurando mais de 6 cartas.") -> [n_true = p1_corr_discard, n_false = p1_corr_end_1]
+	@node p1_corr_discard = BinaryCondition("Segurando mais de 1 carta de estratégia.") -> [n_true = p1_corr_discard_1, n_false = p1_corr_discard_2]
 	@node p1_corr_discard_1 = PerformAction("""
-											Discard event cards down to 6.
+										Descartar cartas de evento até 6.
 
-											Priority:
-											1. Doesn't use the term "Fellowship revealed"
-											2. Doesn't place a tile
-											3. Strategy card
-											4. Character card
-											5. Descending order of initiative
-											6. Random
-											""") -> p1_corr_end_2
+										Prioridade:
+										1. Não usa o termo "Sociedade revelada"
+										2. Não coloca uma peça
+										3. Carta de estratégia
+										4. Carta de personagem
+										5. Ordem decrescente de iniciativa
+										6. Aleatório
+										""") -> p1_corr_end_2
 	@node p1_corr_discard_2 = PerformAction("""
-											Discard event cards down to 6.
+										Descartar cartas de evento até 6.
 
-											Priority:
-											1. Doesn't use the term "Fellowship revealed"
-											2. Doesn't place a tile
-											3. Character card
-											4. Strategy card
-											5. Descending order of initiative
-											6. Random
-											""") -> p1_corr_end_2
-	@node p1_corr_end_1 = End("End of Phase") -> []
-	@node p1_corr_end_2 = End("End of Phase") -> []
+										Prioridade:
+										1. Não usa o termo "Sociedade revelada"
+										2. Não coloca uma peça
+										3. Carta de personagem
+										4. Carta de estratégia
+										5. Ordem decrescente de iniciativa
+										6. Aleatório
+										""") -> p1_corr_end_2
+	@node p1_corr_end_1 = End("Fim da Fase") -> []
+	@node p1_corr_end_2 = End("Fim da Fase") -> []
 end

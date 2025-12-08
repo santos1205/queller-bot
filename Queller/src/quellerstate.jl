@@ -17,9 +17,9 @@ article(d::ActiveDie) = Die.article(d.die)
 function Base.string(d::ActiveDie)
 	d.die == d.use_as && return string(d.die)
 
-	text = "$(string(d.die)) as $(string(d.use_as))"
-	d.use_modt && return text*" by using the Messenger of the Dark Tower ability"
-	d.use_ring && return text*" by using an Elven Ring"
+	text = "$(string(d.die)) como $(string(d.use_as))"
+	d.use_modt && return text*" usando a habilidade Mensageiro da Torre Negra"
+	d.use_ring && return text*" usando um Anel Élfico"
 	return text
 end
 
@@ -74,7 +74,7 @@ end
 getnext!(n::CheckStrategy, state) = (state.strategy == n.strategy ? n.n_true : n.n_false)
 setnext!(n::CheckStrategy, name::Symbol, next::Node) = setfield!(n,name,next)
 
-getmsg(n::CheckStrategy) = "The $(string(n.strategy)) strategy is used."
+getmsg(n::CheckStrategy) = "A estratégia $(string(n.strategy)) é usada."
 getmsg(n::CheckStrategy, state) = "$(getmsg(n)): $(state.strategy == n.strategy)"
 
 
@@ -90,7 +90,7 @@ end
 setnext!(n::SetStrategy, next::Node) = (n.next = next)
 getnext!(n::SetStrategy, state) = (state.strategy = n.strategy; n.next)
 
-getmsg(n::SetStrategy) = "Set Queller strategy to $(string(n.strategy))."
+getmsg(n::SetStrategy) = "Definir estratégia do Queller para $(string(n.strategy))."
 
 
 ################################################################################
@@ -105,7 +105,7 @@ mutable struct CheckActiveDie <: StateInteractionNode
 end
 setnext!(n::CheckActiveDie, name::Symbol, next::Node) = setfield!(n,name,next)
 getnext!(n::CheckActiveDie, state) = (state.active_die.use_as == n.die ? n.n_true : n.n_false)
-getmsg(n::CheckActiveDie) = "The active die is $(Die.article(n.die)) $(string(n.die))"
+getmsg(n::CheckActiveDie) = "O dado ativo é $(Die.article(n.die)) $(string(n.die))"
 getmsg(n::CheckActiveDie, state) = "$(getmsg(n)): $(state.active_die.use_as == n.die)"
 
 
@@ -132,7 +132,7 @@ function getnext!(n::SetActiveDie,state)
 	return isnothing(state.active_die) ? n.no_die : n.next
 end
 
-getmsg(n::SetActiveDie, state) = "The active die is set to: $(string(get_active_die(n,state)))"
+getmsg(n::SetActiveDie, state) = "O dado ativo está definido como: $(string(get_active_die(n,state)))"
 
 function getmsg(n::SetActiveDie)
 	prio_list = [string(n.die)]
@@ -143,10 +143,10 @@ function getmsg(n::SetActiveDie)
 		push!(prio_list, "$(string(Die.ArmyMuster)) as a $(string(Die.Muster))")
 	end
 
-	n.may_use_ring && push!(prio_list, "A random non-*preferred* die and an Elven Ring as $(string(n.die))")
+	n.may_use_ring && push!(prio_list, "Um dado aleatório não-*preferencial* e um Anel Élfico como $(string(n.die))")
 
 	text = """
-	Set the first matching die as the Active Die:
+	Defina o primeiro dado correspondente como o Dado Ativo:
 
 	"""
 	for (i, d) in enumerate(prio_list)
@@ -166,7 +166,7 @@ mutable struct UseActiveDie <: StateInteractionNode
 end
 setnext!(n::UseActiveDie, next::Node) = (n.next = next)
 function getnext!(n::UseActiveDie, state)
-	isnothing(state.active_die) && error("No active die have been set before it is used.")
+	isnothing(state.active_die) && error("Nenhum dado ativo foi definido antes de ser usado.")
 
 	if !state.active_die.used
 		state.active_die = use_active_die(state.active_die)
@@ -176,10 +176,10 @@ function getnext!(n::UseActiveDie, state)
 	return n.next
 end
 
-getmsg(n::UseActiveDie) = "Use the Active Die to:"
+getmsg(n::UseActiveDie) = "Usar o Dado Ativo para:"
 function getmsg(n::UseActiveDie, state)
 	die = state.active_die
-	return "Use $(article(die)) $(string(die)) to:"
+	return "Usar $(article(die)) $(string(die)) para:"
 end
 
 
@@ -194,7 +194,7 @@ mutable struct SetRingAvailable <: StateInteractionNode
 end
 setnext!(n::SetRingAvailable, next::Node) = (n.next = next)
 getnext!(n::SetRingAvailable, state) = (state.ring_available = n.ring_available; n.next)
-getmsg(n::SetRingAvailable) = n.ring_available ? "Set an Elven ring as available." : "Set an Elven ring as not available."
+getmsg(n::SetRingAvailable) = n.ring_available ? "Definir um Anel Élfico como disponível." : "Definir um Anel Élfico como não disponível."
 
 
 ################################################################################
@@ -208,7 +208,7 @@ mutable struct SetMoDTAvailable <: StateInteractionNode
 end
 setnext!(n::SetMoDTAvailable, next::Node) = (n.next = next)
 getnext!(n::SetMoDTAvailable, state) = (state.modt_available = n.modt_available; n.next)
-getmsg(n::SetMoDTAvailable) = n.modt_available ? "Set 'Messenger of the Dark Tower' as available." : "Set 'Messenger of the Dark Tower' as not available."
+getmsg(n::SetMoDTAvailable) = n.modt_available ? "Definir 'Mensageiro da Torre Negra' como disponível." : "Definir 'Mensageiro da Torre Negra' como não disponível."
 
 
 ################################################################################
@@ -219,7 +219,7 @@ mutable struct GetAvailableDice <: InteractiveNode
 	action::String
 
 	GetAvailableDice(action = """
-					 Input the available action dice (not counting dice set aside for later use).
+					 Insira os dados de ação disponíveis (sem contar dados reservados para uso posterior).
 					 """) = (obj = new(); obj.action = strip(action); obj)
 end
 setnext!(n::GetAvailableDice, next::Node) = (n.next = next)

@@ -1,46 +1,46 @@
 @graphs begin
 	minion_prio = """
-	Select a minion that can be reqruited.
+	Selecionar um servo que pode ser recrutado.
 
-	Priority:
+	Prioridade:
 	1. Saruman
-	2. Witch King
-	3. Mouth of Sauron
+	2. Rei Bruxo
+	3. Boca de Sauron
 	"""
 
 	recruit_saruman = """
-	Recruit Saruman.
+	Recrutar Saruman.
 	"""
 
 	recruit_wk = """
-	Recruit the Witch King, place it in a valid region with an army.
+	Recrutar o Rei Bruxo, colocá-lo em uma região válida com um exército.
 
-	Priority:
-	1. Army is *mobile*
-	2. Army's *target* is in nation at war
-	3. Army becomes *mobile* if the Witch King is added
-	4. Free Peoples' army at *target* or on the route to *target* does not contain Gandalf the White
-	5. Free Peoples' army at *target* or on the route to *target* does not contain a hobbit
-	6. Army is adjacent to a *threat*
-	7. Army that is conduction a siege
-	8. Army is adjacent to its *target*
-	9. Highest *value* Shadow army
-	10. Random
+	Prioridade:
+	1. Exército é *móvel*
+	2. *Alvo* do exército está em nação em guerra
+	3. Exército se torna *móvel* se o Rei Bruxo for adicionado
+	4. Exército dos Povos Livres no *alvo* ou na rota para o *alvo* não contém Gandalf, o Branco
+	5. Exército dos Povos Livres no *alvo* ou na rota para o *alvo* não contém um hobbit
+	6. Exército está adjacente a uma *ameaça*
+	7. Exército que está conduzindo um cerco
+	8. Exército está adjacente ao seu *alvo*
+	9. Exército da Sombra de maior *valor*
+	10. Aleatório
 	"""
 
 	recruit_mos = """
-	Recruit Mouth of Sauron, place it in a valid region with an army or stronghold.
+	Recrutar Boca de Sauron, colocá-lo em uma região válida com um exército ou fortaleza.
 
-	Priority:
-	1. Army is conducting a siege.
-	2. Army is *mobile*
-	3. Army becomes *mobile* if Mouth of Sauron is added
-	4. Army contains Saruman
-	5. Army with the highest *value*
-	6. Stronghold closest to army whose *target* is in a nation at war
-	7. Stronghold closest to army whose *target* is in an active nation
-	8. Stronghold closest to army whose *target* is in a passive nation
-	9. Random
+	Prioridade:
+	1. Exército está conduzindo um cerco.
+	2. Exército é *móvel*
+	3. Exército se torna *móvel* se Boca de Sauron for adicionado
+	4. Exército contém Saruman
+	5. Exército com o maior *valor*
+	6. Fortaleza mais próxima de exército cujo *alvo* está em uma nação em guerra
+	7. Fortaleza mais próxima de exército cujo *alvo* está em uma nação ativa
+	8. Fortaleza mais próxima de exército cujo *alvo* está em uma nação passiva
+	9. Aleatório
 	"""
 
 
@@ -50,14 +50,14 @@
 											   A die has been reserved for recruiting a minion as a last action.
 											   """) -> [n_true = m_2_return, n_false = m_2]
 	@node m_2 = BinaryCondition("""
-								Minion can be recruited.
+								Servo pode ser recrutado.
 								""") -> [n_true = m_2_1, n_false = m_2_return]
 	@node m_2_return = ReturnFromGraph() -> []
 
 	@node m_2_1 = BinaryCondition("""
-								  The Free Peoples' have a Will of the West die.
-								  And, Gandalf the White has not been recruited.
-								  And, no minion have been recruited.
+								  Os Povos Livres têm um dado Vontade do Oeste.
+								  E, Gandalf, o Branco não foi recrutado.
+								  E, nenhum servo foi recrutado.
 								  """) -> [n_true = m_2_1_yes, n_false = m_2_minion_selection]
 	@node m_2_1_yes = UseActiveDie() -> m_2_1_reserve
 	@node m_2_1_reserve = PerformAction("""
@@ -97,17 +97,17 @@
 
 	################################################################################
 	@node muster_politics = Start() -> m_3
-	@node m_3 = BinaryCondition("A Shadow nation is not at war.") -> [n_true = m_3_yes, n_false = m_3_return]
+	@node m_3 = BinaryCondition("Uma nação da Sombra não está em guerra.") -> [n_true = m_3_yes, n_false = m_3_return]
 	@node m_3_return = ReturnFromGraph() -> []
 
 	@node m_3_yes = UseActiveDie() -> m_3_action
 	@node m_3_action = PerformAction("""
-									 Move a nation down one step on the political track.
+									 Mover uma nação um passo para baixo na trilha política.
 
-									 Priority:
+									 Prioridade:
 									 1. Isengard
 									 2. Sauron
-									 3. Southrons and Easterlings
+									 3. Sulistas e Orientais
 									 """) -> m_3_end
 	@node m_3_end = End() -> []
 
@@ -117,23 +117,23 @@
 
 	################################################################################
 	@node muster_muster = Start() -> m_4
-	@node m_4 = BinaryCondition("A card that musters is *playable*.") -> [n_true = m_4_die, n_false = m_5]
+	@node m_4 = BinaryCondition("Uma carta que mobiliza é *jogável*.") -> [n_true = m_4_die, n_false = m_5]
 	@node m_4_die = UseActiveDie() -> m_4_action
 	@node m_4_action = PerformAction("""
-									 Play a *playable* muster card.
+									 Jogar uma carta *jogável* de mobilização.
 
-									 Priority:
-									 1. Ascending order of initiative
-									 2. Random
+									 Prioridade:
+									 1. Ordem crescente de iniciativa
+									 2. Aleatório
 									 """) -> m_4_end
 	@node m_4_end = End() -> []
 
 	@node m_5 = BinaryCondition("""
-								Muster is possible.
+								Mobilização é possível.
 								""") -> [n_true = m_6, n_false = m_return]
 	@node m_return = ReturnFromGraph() -> []
 
-	@node m_6 = BinaryCondition("Muster can create an *exposed* region.") -> [n_true = m_6_die, n_false = m_7]
+	@node m_6 = BinaryCondition("Mobilização pode criar uma região *exposta*.") -> [n_true = m_6_die, n_false = m_7]
 	@node m_6_die = UseActiveDie() -> m_6_action
 	@node m_6_action = PerformAction("""
 									 *Focus* priority:

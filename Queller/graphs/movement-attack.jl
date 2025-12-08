@@ -1,100 +1,100 @@
 @graphs begin
 	generic_move = """
-	Move according to the latest statement. Select army at random if several can perform such a move.
+	Mover de acordo com a última declaração. Selecionar exército aleatoriamente se vários puderem realizar tal movimento.
 	"""
 
 	settlement_cond = """
-	An army can move into an emtpy settlement of a nation at war.
+	Um exército pode se mover para um assentamento vazio de uma nação em guerra.
 	"""
 	settlement_cond_2 = """
-	An army can move into an empty settlement of a nation at war, without increasing the distance to its *target* (the *target* may change).
+	Um exército pode se mover para um assentamento vazio de uma nação em guerra, sem aumentar a distância para seu *alvo* (o *alvo* pode mudar).
 	"""
 	settlement_move_unit = """
-	Move 1 unit into an empty settlement of nation at war.
+	Mover 1 unidade para um assentamento vazio de nação em guerra.
 
-	Army priority: Random
+	Prioridade de exército: Aleatório
 
-	Unit priority:
+	Prioridade de unidade:
 	1. Regular
 	2. Elite
-	3. Random
+	3. Aleatório
 	"""
 
 	merge_cond = """
-	Two armies, where at least one is not *mobile*, can merge.
-	And, merging the armies would increase the number of *mobile* armies.
-	Or, the merged army would have higher *value* then either of the two currently have.
+	Dois exércitos, onde pelo menos um não é *móvel*, podem se fundir.
+	E, fundir os exércitos aumentaria o número de exércitos *móveis*.
+	Ou, o exército fundido teria maior *valor* do que qualquer um dos dois atualmente tem.
 	"""
 
 	merge_move = """
-	Merge two armies.
+	Fundir dois exércitos.
 
-	Priority:
-	1. Merge decrease greatest distance to *target* (*target* may change)
-	2. Highest *value* of resulting army
-	3. Moves the army furthest from its *target*
-	4. Least number of units left behind after move
-	5. Region where armies merge contains a stronghold
-	6. Random
+	Prioridade:
+	1. Fusão diminui maior distância para *alvo* (*alvo* pode mudar)
+	2. Maior *valor* do exército resultante
+	3. Move o exército mais distante de seu *alvo*
+	4. Menor número de unidades deixadas para trás após movimento
+	5. Região onde exércitos se fundem contém uma fortaleza
+	6. Aleatório
 	"""
 
 	move_target_cond = """
-	A *mobile* army can move or attack towards its *target*.
+	Um exército *móvel* pode se mover ou atacar em direção ao seu *alvo*.
 	"""
 
 	move_target = """
-	Select a *mobile* army and move or attack towards *target*.
+	Selecionar um exército *móvel* e mover ou atacar em direção ao *alvo*.
 
-	Priority:
-	1. Army is adjacent to its *target*
-	2. Army's *target* is in a nation at war
-	3. Move/attack doesn't activate a nation
-	4. Move/attack doesn't change a nation to "at war"
-	5. Army whose *target* is highest in the priority list in the definition of *target*
-	6. Army with hightest *value*
-	7. Move/attack does not block another *mobile* army's shortest route to their *target*
-	8. Destination region contains the Fellowship
-	9. Random
+	Prioridade:
+	1. Exército está adjacente ao seu *alvo*
+	2. *Alvo* do exército está em uma nação em guerra
+	3. Movimento/ataque não ativa uma nação
+	4. Movimento/ataque não muda uma nação para "em guerra"
+	5. Exército cujo *alvo* está mais alto na lista de prioridades na definição de *alvo*
+	6. Exército com maior *valor*
+	7. Movimento/ataque não bloqueia a rota mais curta de outro exército *móvel* para seu *alvo*
+	8. Região de destino contém a Sociedade
+	9. Aleatório
 	"""
 
 	basic_move_cond = """
-	A Shadow army is on the board.
+	Um exército da Sombra está no tabuleiro.
 	"""
 
 	basic_move = """
-	Move an army.
+	Mover um exército.
 
-	Priority:
-	1. Move doesn't change a nation to "at war"
-	2. Merge two armies to create the highest army *value* possible
-	3. Army's *target* is adjacent to a passive Shadow army
-	4. Movement ends adjacent to another Shadow army
-	5. Decreases distance to *target* (*target* may change)
-	6. Army with hightest *value*
-	7. Random
+	Prioridade:
+	1. Movimento não muda uma nação para "em guerra"
+	2. Fundir dois exércitos para criar o maior *valor* de exército possível
+	3. *Alvo* do exército é adjacente a um exército da Sombra passivo
+	4. Movimento termina adjacente a outro exército da Sombra
+	5. Diminui distância para *alvo* (*alvo* pode mudar)
+	6. Exército com maior *valor*
+	7. Aleatório
 	"""
 
 	one_move_left_on_die = """
-	The Army Die have one move remaining.
+	O Dado de Exército tem um movimento restante.
 	"""
 
 	################################################################################
 	@node movement_attack_besiege = Start() -> mv_1
 
 	@node mv_1 = BinaryCondition("""
-								 A *mobile* army is adjacent to *target* not under siege.
+								 Um exército *móvel* está adjacente ao *alvo* não sob cerco.
 								 """) -> [n_true = mv_1_yes, n_false = mv_1_return]
 	@node mv_1_return = ReturnFromGraph() -> []
 	@node mv_1_yes = UseActiveDie() -> mv_1_action
 	@node mv_1_action = PerformAction("""
-									  Attack with army adjacent to *target* not under siege.
+									  Atacar com exército adjacente ao *alvo* não sob cerco.
 
-									  Priority:
-									  1. Army whose *target* is in a nation at war
-									  2. Army whose attack would not put a nation at war.
-									  3. Army whose *target* is in an active nation
-									  4. Highest *value* army
-									  5. Random
+									  Prioridade:
+									  1. Exército cujo *alvo* está em uma nação em guerra
+									  2. Exército cujo ataque não colocaria uma nação em guerra.
+									  3. Exército cujo *alvo* está em uma nação ativa
+									  4. Exército de maior *valor*
+									  5. Aleatório
 									  """) -> mv_1_end
 	@node mv_1_end = End() -> []
 
@@ -104,10 +104,10 @@
 	################################################################################
 	@node movement_attack_corr = Start() -> mv_2
 	@node mv_2 = BinaryCondition("""
-								 There are Eyes in the hunt pool.
-								 And, no army is in the Fellowship's region
-								 And, the Fellowship do not reach mordor with the current progress.
-								 And, an army can move into the Fellowship's region without increasing the distance to its *target* (the *target* may change).
+								 Há Olhos na reserva de caçada.
+								 E, nenhum exército está na região da Sociedade
+								 E, a Sociedade não alcança Mordor com o progresso atual.
+								 E, um exército pode se mover para a região da Sociedade sem aumentar a distância para seu *alvo* (o *alvo* pode mudar).
 								 """) -> [n_true = mv_2_yes, n_false = mv_3]
 	@node mv_2_yes = UseActiveDie() -> mv_2_action
 	@node mv_2_action = PerformAction(generic_move) -> mv_2_army_die_to_move
@@ -152,7 +152,7 @@
 	@node mv_6 = BinaryCondition(basic_move_cond) -> [n_true = mv_6_yes, n_false = mv_6_return_okay]
 
 	@node mv_6_return_okay = BinaryCondition("""
-											 An Army Die has been used with one move remaining.
+											 Um Dado de Exército foi usado com um movimento restante.
 											 """) -> [n_true = mv_6_return_end, n_false = mv_6_return]
 	@node mv_6_return_end = End() -> []
 	@node mv_6_return = ReturnFromGraph() -> []

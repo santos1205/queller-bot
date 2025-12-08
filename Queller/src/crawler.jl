@@ -115,7 +115,7 @@ add2msgbuf(buf,node::Node,queller) = buf
 
 function add2msgbuf(buf, node::Union{BinaryCondition,MultipleChoice}, queller)
 	die = queller.active_die
-	!isnothing(die) && (buf = buf*"\n"*"Using $(Die.article(die.use_as)) $(string(die.use_as)):\n")
+	!isnothing(die) && (buf = buf*"\n"*"Usando $(Die.article(die.use_as)) $(string(die.use_as)):\n")
 	return buf*"\n"*getmsg(node)
 end
 

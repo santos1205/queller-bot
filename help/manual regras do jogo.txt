@@ -1,0 +1,4267 @@
+UM JOGO DE  
+ROBERTO DI MEGLIO,  
+MARCO MAGGI &  
+FRANCESCO NEPITELLO 
+2 • Guerra do Anel — Segunda Edição Capítulo I: Introdução • 3 
+Mas em todo lugar que olhava, via  
+sinais de guerra. As Montanhas  
+Sombrias se agitavam como  
+formigueiros: orcs saíam de  
+mil tocas. Sob os galhos da  
+Floresta das Trevas havia  
+contendas mortais entre  
+elfos e homens e animais  
+cruéis. A terra dos beornings  
+estava em chamas; uma nuvem  
+cobria Moria; fumaça subia das  
+Fronteiras de Lórien. 
+Cavaleiros galopavam sobre a  
+relva de Rohan; de Isengard  
+jorravam lobos. Dos portos  
+de Harad, navios de guerra  
+saíam para o mar; e do Oeste  
+saíam homens sem parar:  
+espadachins, lanceiros, arqueiros,  
+carruagens levando líderes e  
+carroças carregadas. Todo o poder  
+do Senhor do Escuro estava em ação. 
+A Sociedade do Anel 
+De J.R.R. Tolkien 
+Livro II,  
+Capítulo 10 
+CAPÍTU LO  I: 
+INT RODU ÇÃO 
+B 
+em vindo ao jogo de estratégia  
+Guerra do Anel 
+.   
+Guerra do Anel 
+ é um jogo para dois a quatro jogadores  
+baseado  na  série  
+O  Senhor  dos  Aneis™ 
+  de  J.R.R.  
+Tolkien. 
+Os jogadores tomam parte na luta entre os exércitos dos  
+Povos Livres e os heroicos Companheiros da Sociedade do  
+Anel contra as hordas da Sombra e os poderosos Vassalos do  
+Senhor do Escuro. 
+Numa partida de dois jogadores, um dos oponentes lide- 
+rará os Povos Livres ou os exércitos da Sombra, enquanto  
+que nos casos de três ou quatro jogadores, eles se organizam  
+em duas equipes, cada uma das equipes controla uma das  
+fações. 
+Em  
+Guerra do Anel 
+, o jogador que controla a Sombra tenta  
+usar seu poderio militar superior para conquistar a Terra- 
+Média. 
+Sob seu comando se reunirão as legiões de orcs e trolls de  
+Sauron, as forças do mago Saruman e as hordas de Sulistas e  
+Orientais, com o objetivo de cobrir o Oeste de trevas. 
+Contra esse assalto furioso, o jogador dos Povos Livres guia  
+a aliança de Elfos, Anões, os cavaleiros de Rohan, homens  
+de Gondor e homens do Norte, uma união frágil que tenta  
+defender os últimos reinos livres da Terra-Média e ganhar  
+um tempo precioso para permitir a realização da demanda  
+dos Portadores do Anel. 
+Enquanto os exércitos se enfrentam, os nove Companheiros  
+da Sociedade do Anel viajam em direção ao centro dos domí- 
+nios do Senhor do Escuro, a Montanha da Perdição, para  
+destruir o Um Anel na Montanha de Fogo. 
+Controlada pelo jogador dos Povos Livres, a Sociedade do  
+Anel é a única chance de vitória, pois as forças militares da  
+Sombra serão subjugadas junto com seu mestre, se o Anel for  
+destruído. Mas a demanda é cheia de perigos ainda maiores,  
+pois a escuridão se espalha sobre a Terra-Média... 
+No fim, um dos lados sairá vitorioso. 
+Se a Sombra conquistar um número suficiente de Cidades e  
+Fortalezas inimigas, ou se os Portadores do Anel falharem e  
+forem corrompidos, a Escuridão triunfará. 
+Se a Sociedade for bem sucedida e conseguir destruir o Anel  
+antes de isso acontecer, ou os exército dos Povos Livres con- 
+seguirem virar a mesa e conquistar Fortalezas de seus inimi- 
+gos, veremos a queda do Senhor do Escuro 
+NÚMERO DE JOGADORES 
+Guerra do Anel 
+ é um jogo para 2 a 4 participantes.  
+As  forças  envolvidas  no  conflito  são  divididas  em  
+dois lados: os Povos Livres e a Sombra. Se a partida  
+tiver três participantes, um deles controlará os Povos  
+Livres e os outros dois dividirão a tarefa de controlar  
+a Sombra. Quando houver quatro participantes, eles  
+dividirão igualmente as forças dos dois lados. 
+Lembre-se que as regras que veremos a seguir se refe- 
+rem a partidas com dois jogadores. Para jogos com  
+mais participantes, veja o capítulo XI,  
+Regras Para  
+Mais de Dois Jogadores 
+ (pág. 45). 
+NOTAS SOBRE A 2ª EDIÇÃO 
+Esta  nova  edição  do  jogo  traz  algumas  mudanças  
+sutis, mas importantes. Por esta razão, recomenda- 
+mos uma leitura cuidadosa das regras, mesmo no caso  
+de jogadores experientes. As principais mudanças são  
+resumidas a seguir para o benefício dos jogadores que  
+já conhecem a edição anterior. 
+—  
+Habilidades de Personagem: 
+ Gandalf, o Cinzento,  
+Gollum,  Meriadoc  Brandebuque,  Prergrin  Tûk  e  
+o Rei dos Bruxos agora têm habilidades especiais  
+modificadas (v. suas Cartas de Personagem). É espe- 
+cialmente importante estar a par nas mudanças fei- 
+tas em Gandalf, o Cinzento (habilidade Guia) e no  
+Rei dos Bruxos (pré-requisitos para Alistamento e a  
+habilidade Feiticeiro). 
+—  
+Cartas de Evento: 
+ Muitas Cartas de Evento foram  
+revisadas com o objetivo de aumentar sua efetivi- 
+dade ou simplificar seu uso. As cartas Entes de Fan- 
+gorn, Trilhas do Woses, A Ùltima Batalha tiveram  
+seus efeitos modificados. 
+—  
+Preparação dos Exércitos: 
+ A preparação dos Anões  
+foi modificada (v. pág. 16). 
+—  
+Dados de Ação: 
+ O jogador da Sombra tem de alo- 
+car no mínimo um Dado de Ação para a Busca se o  
+jogador dos Povos Livres tiver colocado pelo menos  
+um Dado de Ação no Quadro de Busca no turno  
+anterior (v. págs. 18 e 19). 
+—  
+Uso das Cartas de Combate: 
+ Cartas de Combate  
+são  escolhidas  e  jogadas  usando  uma  sequência  
+modificada (v. pág. 29). 
+—  
+A Busca: 
+ Existe uma nova sequência para a resolu- 
+ção da Busca para melhorar a aplicação de Cartas de  
+Evento e Habilidades Especiais (v. págs. 41 e 42). 
+—  
+Entrar  em  Mordor: 
+  Para  entrar  em  Mordor  é  
+agora suficiente que os Portadores do Anel estejam  
+em Minas Morgul ou Morannon, sem a necessidade  
+de tornar pública a Sociedade. Como consequência  
+disso, a Sociedade pode entrar em Mordor mesmo  
+que ela não esteja Escondida (v. pág. 43). 
+4 • Guerra do Anel — Segunda Edição  Capítulo II: Componentes do Jogo • 5 
+CA P Í T U L O   II : 
+CO M P O N ENT ES  
+D O  J OG O 
+LISTA DE COMPONENTES 
+Dentro  da  caixa  de  
+Guerra  do  Anel 
+  você  encontrará  os  
+seguintes componentes. 
+—  Este livro de regras 
+—  2 Auxílios ao Jogador 
+—  1 Tabuleiro composto de duas partes dobráveis 
+—  6 Dados de Ação dos Povos Livres 
+—  10 Dados de Ação da Sombra 
+—  5 Dados de Combate de seis lados 
+—  10 Cartas de Companheiro (Personagens dos Povos  
+Livres) 
+—  1 Carta Gollum 
+—  3 Cartas de Vassalo (Personagens da Sombra) 
+—  96 Cartas de Evento (divididas em qautro maços de  
+24 cartas cada) 
+—  205 miniaturas de plástico que representam os exérci- 
+tos e Personagens da 
+ Guerra do Anel 
+: 
+—  90  miniaturas  vermelhas  que  representam  as  
+unidades de Exército da Sombra 
+—  75 miniaturas azuis que representam as unida- 
+des de Exército dos Povos Livres. 
+—  20  miniaturas  cinzas  que  presentam  Líderes  
+dos Povos Livres e 8 miniaturas que represen- 
+tam os Nazgûl 
+—  8 miniaturas prateadas que representam os Por- 
+tadores do Anel (Frodo e Sam) e seus Compa- 
+nheiros 
+—  3 miniaturas prateadas que representam os Vas- 
+salos da Sombra 
+—  1 miniatura prateada que representa Gollum 
+—  76 Marcadores de papelão: 
+—  24 Peças de Busca (16 Peças de Busca Normais  
+e 8 Peças de Busca Especiais) 
+—  6 Marcadores de Exército 
+—  3 Marcacdores de Aneis Élficos 
+—  1 Marcador de Corrupção 
+—  7 Marcadores de Companheiro 
+—  1 Marcador Aragorn, Herdeiro de Isildur 
+—  1 Marcador Gandalf, o Branco 
+—  1 Marcador de Progresso da Sociedade 
+—  8 Marcadores Políticos 
+—  20 Marcadores de Controle de Colônias 
+—  2 Marcadores de Pontos de Vitória 
+—  2  Insígnas  de  Jogador  Principal  (usadas  em  
+jogos com 3 ou 4 participantes) 
+V I S ÃO   G E R A L   D O S   C O M P O N E N T E S 
+Este livro 2 Auxílios ao Jogador 
+1 Tabuleiro composto de duas partes dobráveis 
+76 Marcadores de papelão 
+205 miniaturas de plástico que representam os exércitos e Personagens da 
+ Guerra do Anel 
+6 Dados de   
+Ação dos Povos Livres 
+10 Dados de   
+Ação da Sombra 
+5 Dados de Combate   
+de seis lados 
+10 Cartas de Compa- 
+nheiro (Personagens dos  
+Povos Livres) 
+1 Carta Gollum 3 Cartas de Vassalo  
+(Personagens da Sombra) 
+6 Cartas de Evento  
+(divididas em quatro  
+maços de 24 cartas cada) 
+6 • Guerra do Anel — Segunda Edição  Capítulo II: Componentes do Jogo • 7 
+V I S ÃO   G E R A L   D O S   M A R CA D O R E S 
+Peças de Busca (24) 
+Normal Especial (Sociedade) Especial (Sombra) Verso 
+Marcadores de Exército (6) 
+Povos Livres (Frente) Povos Livres (verso) Sombra (Frente) Sombra (verso) 
+ Marcadores de Aneis Élficos (3) Marcador de Corrupção (1) 
+Frente Verso Frente/Verso 
+Marcadores de Companheiro & Personagem (9) Marcador de Progresso da Sociedader (1) 
+Frente Verso Frente Verso 
+Marcadores Políticos (8) 
+Povos Livres (Frente) Povos Livres (Verso) Sombra (Frente) Sombra (Verso) 
+Marcadores de Controle de Colônia  
+(20) 
+Marcadores de Pontos de Vitória  
+(2) 
+Insígnia de Jogador Principal   
+ (2) 
+Povos Livres Sombra Povos Livres Sombra Povos Livres Sombra 
+M I N I AT U R A S   D E   P L Á S T I C O 
+Vassalos 
+Espectros do  
+Anel (8) 
+Saruman Rei dos Bruxos Boca de Sauron Nazgûl 
+Isengard (18) Sauron (42) Sulistas e Orientais (30) 
+Regular (12) Elite (6) Regular (36) Elite (6) Regular (24) Elite (6) 
+A Sociedade do Anel Companheiros 
+Portadores do Anel Gollum Boromir Gandalf Gimli Legolas 
+Companheiros Anões (14) 
+Meriadoc Peregrin Passolargo/ 
+Aragorn 
+Regular (5) Elite (5) Líder (4) 
+Elfos (19) Gondor (24) 
+Regular (5) Elite (10) Líder (4) Regular (15) Elite (5) Líder (4) 
+O Norte (19) Rohan (19) 
+Regular (10) Elite (5) Líder (4) Regular (10) Elite (5) Líder (4) 
+8 • Guerra do Anel — Segunda Edição  Capítulo II: Componentes do Jogo • 9 
+PEÇAS DO JOGO 
+FIGURAS 
+Os  Exércitos  que  lutam  pela  Terra-Média,  e  os  heróis  e    
+monstros que os lideram são representados no jogo por figu- 
+ras de plástico. 
+Exércitos 
+O grosso das forças armadas de uma Nação é representado  
+por  
+unidades de Exército 
+. 
+As unidades de Exército de uma Nação são divididas em  
+uni- 
+dades Regulares 
+ e  
+unidades de Elite 
+. A primeira categoria  
+representa uma força de combate de guerreiros medianos e a  
+segunda um conjunto de combatentes escolhidos ou mons- 
+tros poderosos. 
+Uma unidade de exército corresponde a um número variável  
+de guerreiros, desde algumas centenas de guerreiros expe- 
+rientes até milhares de Orcs. Em termos de jogo, todas as  
+unidades de um tipo (Regular ou de Elite) têm as mesmas  
+capacidades que qualquer outra do mesmo tipo, indepen- 
+dente da Nação a que elas pertencem. 
+Todas as unidades de Exército dentro de uma região e con- 
+troladas pelo mesmo jogador são consideradas um grupo e  
+são chamadas de  
+Exército 
+. 
+Um Exército pode ser composto de no máximo  
+dez unida- 
+des 
+, ou  
+cinco unidades 
+ se o Exército estiver dentro de uma  
+Fortaleza sitiada. 
+LÍDERES DOS POVOS LIVRES 
+Os capitães e chefes que lideram os Exércitos dos Povos livres  
+são representados por  
+figuras de Líder 
+. 
+Os Líderes são incapazes de se movimentar por si só e têm  
+sempre que ser parte de um Exército aliado. Se, a qualquer  
+momento, houver um Líder sobre o mapa sem um Exército,  
+ele deverá ser imediatamente removido. 
+A presença de um Líder em um Exército dá uma vantagem  
+em combate e aumenta a capacidade de movimentação. Não  
+existe limite para o número de Líderes que pode haver no  
+mesmo Exército. Líderes dos Povos Livres, independente  
+de sua nacionalidade, podem liderar Exércitos compostos de  
+unidades de qualquer Nação dos Povos Livres. 
+Um Líder não é considerado uma unidade de Exército e não  
+pode ser considerado uma baixa e sua presença não aumenta  
+a Força de Combate de um Exército (v. pág. 28). 
+Nazgûl 
+Os  
+Nazgûl 
+, também conhecidos como Espectros do Anel,  
+agem como Líderes para os Exércitos da Sombra e cada um  
+deles é representado por uma figura diferente montada numa  
+besta alada. 
+As regras dos Líderes dos Povos Livres também se aplicam  
+aos Nazgûl com as seguintes exceções: 
+—  Os Nazgûl não são obrigados a fazer parte de um  
+Exército  aliado  e  podem  se  movimentar  por  conta  
+própria, voando para qualquer região (mesmo aquelas  
+que contêm unidades dos Povos Livres) do tabuleiro  
+com um único movimento. 
+Exceção: 
+  um  Nazgûl  movendo-se  sem  um  Exército  não  
+pode ser colocado sozinho numa Fortaleza controlada pelo  
+inimigo. 
+—  Os  Nazgûl  não  são  afetados  pela  presença  de  um  
+Exército inimigo na mesma região. 
+PERSONAGENS 
+Os principais heróis da história e seus principais antagonistas  
+são representados pelas figuras de  
+Personagem 
+. 
+Personagens são personalidades com habilidades superiores  
+às dos Líderes. Os Personagens que pertencem aos Povos  
+Livres são chamados de  
+Companheiros 
+, enquanto que os  
+Personagens da Sombra são chamados de  
+Vassalos 
+. 
+Cada ´Personagem é representado por uma figura e uma  
+Carta de Personagem que descreve em detalhes suas habili- 
+dades especiais. Os jogadores deveriam ler cuidadosamente  
+todas as Cartas de Personagem antes de começar o jogo. 
+Em termos de jogo, os Personagens agem de maneira muito  
+parecida com a dos Líderes, mas não estão sujeitos às mes- 
+mas  restrições  e  podem  se  movimentar  sobre  o  tabuleiro  
+sozinhos, ignorando a presença de Exércitos inimigos. 
+Companheiros: 
+ Legolas, Gimli, Boromir, Aragorn (como  
+Passolargo)  Meriadoc,  Peregrin  e  Gandalf,  o  Cinzento,  
+começam o jogo como Companheiros de Frodo e Sam (os  
+Portadores do Anel 
+) e membros da Sociedade do Anel. À  
+medida que o jogo se desenvolve, eles podem abandonar a  
+Sociedade para ajudar a levantar as Nações dos Povos Livres  
+e agir como Líderes para os exércitos dos Povos Livres. 
+Sob certas condições (conforme está descrito em suas Cartas  
+de Personagem), Passolargo e Gandalf, o Cinzento, podem  
+ser substituídos por suas encarnações mais poderosas:  
+Ara- 
+gorn, Herdeiro de Isildur 
+ e  
+Gandalf, o Branco 
+. 
+Quando isto acontecer, coloque o marcador apropriado sob  
+a figura do Personagem para lembrar seu novo status. 
+Vassalos: 
+ Os servos mais proeminentes do Senhor do Escuro  
+— Saruman, o Rei dos Bruxos e a Boca de Sauron — não  
+estão em jogo no início da partida. Eles entram em jogo  
+mais tarde, de acordo com as condições especificadas em suas  
+Cartas de Personagem. 
+Gollum: 
+ Gollum é um personagem incomum. Gollum está  
+sempre seguindo a Sociedade do Anel e se torna o Guia da  
+Sociedade se os Portadores do Anel ficarem sós. Quando isto  
+acontece, você pode colocar a figura de Gollum junto com  
+a figura dos Portadores do Anel como um lembrete de sua  
+presença. Os efeitos das ações de Gollum são representados  
+no jogo pela sua Carta de Personagem e por algumas Cartas  
+de Evento. 
+O TABULEIRO DO JOGO 
+O tabuleiro do jogo é uma imagem da parte Oeste da Terra- 
+Média  no  início  da  Terceira  Era.  Além  da  área  de  jogo  
+propriamente dita, o tabuleiro também traz diversos espaços  
+e quadros que servem para ajudar os jogadores a manterem  
+um registro de vários elementos e componentes do jogo. 
+O diagrama do tabuleiro (v. págs. 12 e 13) identifica suas  
+várias partes e mostra os espaços onde muitos dos compo- 
+nentes necessários no início do jogo são colocados durante  
+a preparação. 
+Marcador de Aragorn,  
+herdeiro de Isildur 
+Marcador de   
+Gandalf, o Branco 
+NAÇ Õ E S 
+Anões 
+(marrom) 
+Elfos 
+(verde claro)  
+Gondor 
+(azul escuro)  
+O Norte  
+(azul claro)  
+Rohan  
+(verde escuro)  
+Isengard 
+(amarelo)  
+Sauron 
+(vermelho)  
+Sulistas e Orientais 
+(laranja) 
+10 • Guerra do Anel — Segunda Edição  Capítulo II: Componentes do Jogo • 11 
+REGIÕES 
+A parte principal do tabuleiro traz uma imagem da parte  
+Oeste da Terra-Média no início da Terceira Era. O mapa é  
+dividido em territórios chamados de regiões. Cada região é  
+identificada por um nome, que normalmente se refere a um  
+lugar digno de nota ou a toda uma área geográfica (como  
+Minas Tirith ou Cardolan). As regiões são usadas para regu- 
+lar o movimento, o combate e a colocação de todas as figu- 
+ras plásticas. 
+As regiões são normalmente separadas por linhas brancas  
+ou por um rio entre linhas brancas. 
+Uma Fronteira preta grossa indica um terreno intransponí- 
+vel que não pode ser atravessado, normalmente uma cadeia  
+montanhosa alta. Se a Fronteira entre duas regiões é com- 
+pletamente dividida por uma dessas linhas, as duas regiões  
+não são consideradas adjacentes. 
+Algumas áreas do tabuleiro são completamente azuis, cer- 
+cadas por uma linha preta ou por uma linha branca. Estas  
+áreas são mares ou lagos. Um mar ou lago não é uma região  
+e não pode ser cruzada nem é possível entrar nela. 
+Regiões Livres 
+As regras e as Cartas de Evento se referem muitas vezes a  
+uma  
+região livre 
+. Uma região está livre para um jogador  
+quando ela não contém um Exército inimigo e/ou uma  
+Colônia controlada pelo inimigo. Uma região que contém  
+uma Fortaleza controlada pelo inimigo está livre para um  
+jogador quando a Fortaleza está sendo sitiada por um Exér- 
+cito daquele jogador. 
+NAÇÕES 
+Diversas regiões são agrupadas e identificadas como Nações  
+por suas Fronteiras coloridas (v. o diagrama na pág. 9). Al- 
+gums nações são compostas de diversos grupos de regiões  
+independentes, divididos e distantes uns dos outros. 
+FORTIFICAÇÕES E COLÔNIAS 
+Uma região pode estar vazia ou conter uma Fortificação ou  
+um dos três tipos de  
+Colônia 
+ (Vila, Cidade ou Fortaleza). 
+Fortificaçãoes 
+Uma fortificação numa região oferece posições facilmente  
+defensáveis como, por exemplo, uma ruína, um forte ou  
+um vau cruzando um rio. Existem duas fortificações no  
+mapa: nas regiões de Osgiliath e os Vaus de Isen. 
+Colônias 
+Colônias representam lugares que são vitais para a economia  
+e defesa de uma Nação. Uma região que contém uma Colô- 
+nia traz diversas vantagens para o jogador que a controla. 
+Vilas 
+ representam áreas habitadas que permitem o recruta- 
+mento de tropas de uma Nação específica. A presença de  
+uma Vila é mostrada no tabuleiro através de um símbolo da  
+Nação apropriada. 
+Cidades 
+  representam  centros  urbanos  maiores  e  também  
+podem ser usados para recrutar tropas. Elas também ofere- 
+cem uma vantagem em combate para as tropas defensoras. 
+Fortalezas 
+ representam praças-fortes, lares élficos e as maio- 
+res capitais da Terra-Média. Tropas podem ser recrutadas em  
+Fortalezas e os defensores levam uma grande vantagem nas  
+batalhas. 
+Nota: 
+  Cada  Fortaleza  do  tabuleiro  tem  um  
+Quadro de Fortaleza com o mesmo desenho  
+(ou  com  um  desenho  genérico  no  caso  de  
+Fortalezas da Sombra). 
+As Cidades e Fortalezas da Terra-Média dão pontos de vitó- 
+ria a um jogador que as captura do inimigo (v. pág. 32). 
+Tanto nas Cidades quanto nas Fortalezas, a cor da moldura  
+indica qual jogador a controla inicialmente (vermelho para a  
+Sombra e azul para os Povos Livres). O ícone no canto supe- 
+rior indica a que Nação a Cidade ou Fortaleza pertence. 
+O símbolo  
+ é um lembrete de que o controle daquela região  
+vale 1 Ponto de Vitória para o oponente. O símbolo   numa  
+Fortaleza é um lembrete de que o controle daquela Forta- 
+leza vale 2 Pontos de Vitória para o oponente. 
+QUADROS E REGISTROS 
+Além das regiões da Terra-Média, o tabuleiro também con- 
+tém diversos quadros e registros usados durante o jogo para  
+guardar informações sobre diferentes atividades. Entre estas  
+áreas incluem-se: 
+—  
+Indicador de Avanço da Sociedade 
+ para manter um  
+registro do avanço da Sociedade e da Corrupção dos  
+Portadores do Anel. 
+—  
+Quadro de Busca Pelo Anel 
+ (também chamado de  
+Quadro de Busca), para mostrar os dados que o joga- 
+dor da Sombra alocou para buscar a Sociedade e para  
+manter um registro do número de vezes que a Socie- 
+dade se move durante um turno. 
+—  
+Indicador  Político 
+  para  guardar  a  informação  de  
+quais Nações da Terra-Média estão “Em Guerra”. 
+—  
+Quadro do Guia da Sociedade 
+ (também chamado de  
+Quadro da Sociedade) para manter as figuras e marca- 
+dores dos Companheiros que compõem a Sociedade. 
+—  
+Quadro dos Aneis Élficos 
+ para armazenar os marca- 
+dores dos Aneis Élficos. 
+—  
+Quadros dos Baralhos de Eventos 
+ para armazenar  
+os quatro baralhos de Cartas de Eventos 
+—  
+Quadros de Fortalezas 
+ para armazenar s unidades de  
+Exército envolvidas num cerco. 
+—  
+Depósitos de Exércitos 
+ para manter as figuras quando  
+não existe espaço suficiente na região. 
+—  
+Registro  de  Pontos  de  Vitória 
+  para  manter  uma  
+contagem das conquistas de cada jogador. 
+E X E M P L O S   D O   M A PA 
+A linha branca é a Fronteira  
+normal entre duas regiões. 
+Um rio entre duas linhas  
+brancas é também um estilo  
+comum de Fronteira entre  
+duas regiões, que funciona  
+como uma Fronteira  
+normal. 
+Uma linha preta grossa  
+representa uma Fronteira  
+montanhosa que não pode  
+ser transposta. 
+Uma linha colorida ao  
+longo de uma Fronteira  
+indica a Fronteira de uma  
+Nação. 
+Quando duas Nações  
+são vizinhas, duas linhas  
+coloridas correm lado a lado  
+separadas por uma Fronteira  
+branca 
+As áreas marítimas não são  
+regiões e não podem ser  
+atravessadas. As regiões  
+ao longo da grande área  
+marítima do lado esquerdo  
+do tabuleiro são chamadas  
+de  
+regiões costeiras 
+. 
+Letras maiores no nome de  
+uma região indicam que a  
+região tem uma Cidade ou  
+uma Fortaleza. 
+Fortificação 
+Vila dos Povos Livres 
+Vila da Sombra 
+Cidade dos Povos Livres 
+Cidade da Sombra 
+Fortaleza dos Povos Livres 
+Fortaleza da Sombra 
+12 • Guerra do Anel — Segunda Edição  Capítulo II: Componentes do Jogo • 13 
+TA B U L E I RO 
+9 
+1 0 
+7 
+1 4 1 5 
+1 3 
+1 2 
+1 2 
+3 
+5 5 
+4 
+6 
+8 
+1 
+Quadro de Cartas de  
+Evento de Personagem  
+dos Povos Livres 
+2 
+Quadro de Cartas de  
+Evento de Estrátegia dos  
+Povos Livres 
+3 
+Quadro dos Anéis  
+Élficos (controlado  
+pelo jogador dos Povos  
+Livres) 
+4 
+Depósitos de  
+Exércitos 
+5 
+5 
+Quadros de   
+Fortalezas 
+6 
+Quadro de   
+Busca 
+7 
+Registro de   
+Pontos de   
+Vitória 
+8 
+Quadro dos Anéis  
+Élficos 
+(controlado pelo  
+Jogador da Sombra) 
+9 
+Indicador de    
+Avanço da    
+Sociedade 
+1 0 
+Quadro da 
+Sociedade    
+do Anel 
+1 1 
+Quadro do  
+Guia da  
+Sociedade 
+1 2 
+Indicador  
+Político 
+1 3 
+Trilha de    
+Mordor 
+1 4 
+Quadro de    
+Cartas de Evento de  
+Personagem  da Sombra 
+1 5 
+Quadro de      
+Cartas de Evento de  
+Estratégia  da Sombra 
+1 1 
+14 • Guerra do Anel — Segunda Edição Capítulo  : Preparação do Jogo • 15 III 
+CAPÍTU LO I I I: 
+P REPARAÇÃO D O  
+JOG O 
+A 
+ntes de começar a jogar, é necessário decidir quem  
+jogará com os Povos Livres e quem jogará com a  
+Sombra. 
+Depois, prepare o jogo percorrendo os seguintes passos: 
+PASSO 1 
+Coloque o tabuleiro sobre uma superfície adequada, se pos- 
+sível grande o suficiente para haver espaço ao longo das bor- 
+das do tabuleiro (para colocar as cartas descartadas e as peças  
+eliminadas e jogar os dados). 
+PASSO 2 
+Coloque a figuras dos Portadores do Anel em Valfenda, seu  
+lugar no início do jogo. 
+PASSO 3 
+Coloque o Marcador de Progresso da Sociedade na casa 0 do  
+Indicador de Avanço da Sociedade, com o lado “Escondido”  
+para cima. O Marcador de Corrupção também é colocado na  
+casa 0 do Indicador de Avanço da Sociedade. 
+PASSO 4 
+Coloque todas as cartas de Companheiro no espaço que cor- 
+responde ao Guia no Quadro da Sociedade, com a Carta de  
+Personagem  
+Gandalf, o Cinzento 
+, no topo da pilha, pois  
+ele é o primeiro Guia da Sociedade. Separe as cartas de  
+Ara- 
+gorn, Herdeiro de Isildur Gandalf, o Branco 
+,  , e  
+Gollum 
+para serem usadas mais tarde. 
+PASSO 5 
+Coloque todas as figuras dos Companheiros e seus marca- 
+dores no Quadro da Sociedade do Anel. Separe a figura do  
+Gollum 
+ para ser usada mais tarde. 
+PASSO 6 
+Coloque os três marcadores dos Aneis Élficos no Quadro  
+dos Aneis Élficos dos Povos Livres no tabuleiro com o lado  
+“Anel” para cima. 
+PASSO 7 
+Separe as Cartas de todos os Vassalos da Sombra (Rei dos  
+Bruxos, Saruman e a Boca de Sauron) e as figuras correspon- 
+dentes para uso posterior. 
+PASSO 8 
+Separe as Cartas de Evento dos Povos Livres e da Sombra  
+em dois maços, Personagem e Estratégia, de acordo com o  
+verso de cada carta, depois embara-lhe-os separadamente e  
+coloque-os nas áreas correspondentes do tabuleiro. 
+PASSO 9 
+Coloque as Peças de Busca Normais (bege) numa xícara ou  
+algum outro recipiente opaco: Esta é a Reserva da Busca.  
+Separe as Peças de Busca Especiais (azuis e verdes) para uso  
+posterior. 
+PASSO 10 
+Dê sete Dados de Ação da Sombra (vermelhos) para o Joga- 
+dor da Sombra e quatro Dados de Ação dos Povos Livres  
+(azuis) para o jogador dos Povos Livres. Coloque de lado os  
+Dados de Ação restantes para uso posterior. Separe os cinco  
+Dados de Combate. 
+PASSO 11 
+Coloque  o  Marcador  Político  de  cada  Nação  dos  Povos  
+Livres em sua posição inicial no Indicador Político. Todos  
+os Marcadores Políticos das Nações dos Povos Livres, com  
+exceção dos marcadores dos Elfos, são colocados com o lado  
+“Passivo” para cima. Os Marcadores Políticos dos Elfos e  
+de todas as Nações do Exército da Sombra são colocados  
+com o lado “Ativo” para cima. Como se vê pelos símbo- 
+los existentes no Indicador, devemos colocar os Marcadores  
+Políticos das Nações de Rohan, do Norte, dos Elfos e dos  
+Anões na casa de cima, os Marcadores Políticos de Gondor  
+e dos Sulistas/Orientais na segunda casa a partir do topo  
+e, por último, colocar os Marcadores Políticos de Sauron e  
+Isengard na terceira casa a partir do alto — imediatamente  
+acima da casa “Em Guerra”. 
+PASSO 12 
+Separe as figuras de plástico de acordo com a cor e o tipo e  
+siga o diagrama Organização dos Exércitos nas págs. 16 e  
+17 para posicionar os Líderes e as unidades dos Exércitos de  
+cada Nação. Coloque de lado as figuras restantes para usar  
+como reforços, tomando cuidado para não misturá-las com  
+as peças eliminadas à medida que o jogo prossegue. Separe  
+os Marcadores de Exército para uso posterior. 
+Mantenha os componentes restantes na caixa, eles serão usa- 
+dos mais tarde. 
+16 • Guerra do Anel — Segunda Edição Capítulo  : Preparação do Jogo • 17 III 
+O R G A N I Z AÇÃO   D O S   E X É R C I TO S 
+Anões 
+1 
+Erebor: 
+1 Regular, 2 Elite, 1 Líder. 
+2 
+Ered Luin: 
+1 Regular. 
+3 
+Colinas de Ferro:  
+1 Regular. 
+Reforços:  
+2 Regular, 3 Elite, 3 Líder. 
+Elfos 
+4 
+Portos Cinzentos: 
+1 Regular, 1 Elite, 1 Líder. 
+5 
+Valfenda: 
+2 Elite, 1 Líder. 
+6 
+Reino da Floresta: 
+1 Regular, 1 Elite, 1 Líder. 
+7 
+Lórien: 
+1 Regular, 2 Elite, 1 Líder. 
+Reforços:  
+2 Regular, 4 Elite. 
+Gondor 
+8 
+Minas Tirith: 
+3 Regular, 1 Elite, 1 Líder. 
+9 
+Dol Amroth: 
+3 Regular. 
+1 0 
+Osgiliath: 
+2 Regular. 
+1 1 
+Pelargir: 
+1 Regular. 
+Reforços:  
+6 Regular, 4 Elite, 3 Líder. 
+O Norte 
+1 2 
+Bri: 
+1 Regular. 
+1 3 
+Carrocha: 
+1 Regular. 
+1 4 
+Valle: 
+1 Regular, 1 Líder. 
+1 5 
+Colinas do Norte: 
+1 Elite. 
+1 6 
+O Condado: 
+1 Regular. 
+Reforços:  
+6 Regular, 4 Elite, 3 Líder. 
+Rohan 
+1 7 
+Edoras: 
+1 Regular, 1 Elite. 
+1 8 
+Vaus do Isen: 
+2 Regular, 1 Líder. 
+1 9 
+Abismo de Helm: 
+1 Regular. 
+Reforços:  
+6 Regular, 4 Elite, 3 Líder. 
+Isengard 
+Orthanc: 
+1 
+4 Regular, 1 Elite. 
+Terra Parda do Norte: 
+2 
+1 Regular. 
+Terra Parda do Sul: 
+3 
+1 Regular. 
+Reforços:  
+6 Regular, 5 Elite. 
+Sauron 
+Barad-Dûr: 
+4 
+4 Regular, 1 Elite, 1 Nazgûl. 
+Dol Guldur: 
+5 
+5 Regular, 1 Elite, 1 Nazgûl. 
+Gorgoroth: 
+6 
+3 Regular. 
+Minas Morgul: 
+7 
+5 Regular, 1 Nazgûl. 
+Moria: 
+8 
+2 Regular. 
+Monte Gundabad: 
+9 
+2 Regular. 
+Nurn: 
+1 0 
+2 Regular. 
+Morannon: 
+1 1 
+5 Regular, 1 Nazgûl. 
+Reforços:  
+8 Regular, 4 Elite, 4 Nazgûl. 
+Sulistas & Orientais 
+Extremo Harad: 
+1 2 
+3 Regular, 1 Elite. 
+Harad Próximo: 
+1 3 
+3 Regular, 1 Elite. 
+Rhûn do Norte: 
+1 4 
+2 Regular. 
+Rhûn do Sul: 
+1 5 
+3 Regular, 1 Elite. 
+Umbar: 
+1 6 
+3 Regular. 
+Reforços:  
+10 Regular, 3 Elite. 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+1 0 
+1 1 
+1 2 
+13 
+1 6 
+1 5 
+1 4 
+1 
+3 
+2 
+4 
+1 6 
+5 
+6 
+7 
+8 
+9 
+1 0 
+1 1 
+1 3 
+1 2 
+1 4 
+1 5 
+1 7 
+1 8 
+1 9 
+18 • Guerra do Anel — Segunda Edição Capítulo IV: O Turno de Jogo • 19  • 19 
+CAPÍTU LO I V 
+O TURNO DE JOGO 
+G 
+uerra do Anel 
+ é disputado numa série de  
+turnos 
+, até  
+que um dos jogadores vença o jogo. Cada turno é  
+dividido em seis  
+fases 
+. 
+RESUMO DO TURNO 
+As fases do turno são: 
+Fase 1) Recuperar os Dados de Ação e Comprar  
+Cartas de Evento 
+Cada jogador recupera os Dados de Ação que usou no turno  
+anterior, mais os dados que foram adicionados à Parada de  
+Dados  de  Ação,  menos  os  dados  que  foram  retirados  da  
+parada. 
+Depois, cada jogador compra 2 cartas de cada um de seus  
+respectivos Baralhos de Eventos. 
+Fase 2) Fase da Sociedade 
+O jogador dos Povos Livres pode nesse momento  
+tornar  
+pública 
+ a posição da Sociedade. 
+Se a Sociedade for tornada pública em uma Cidade ou Forta- 
+leza de uma Nação dos Povos Livres, aquela Nação é  
+ativada 
+(se o marcador da Nação no Indicador Político estiver com o  
+lado “Passivo” para cima, vire o marcador de modo a deixar  
+o lado “Ativo” para cima) e os Portadores do Anel podem  
+ser  
+curados 
+. 
+Além disso, durante esta fase, o jogador dos Povos Livres  
+pode mudar o Guia da Sociedade. 
+Fase 3) Alocação Para Busca 
+O jogador da Sombra pode agora colocar alguns Dados de  
+Ação no  
+Quadro de Busca 
+ que existe no tabuleiro. O joga- 
+dor da Sombra tem de colocar pelo menos um dado de Ação  
+se o jogador dos Povos Livres tiver recuperado pelo menos 1  
+dado do Quadro de Busca durante a Fase 1. Ele pode alocar  
+um número de dados menor ou igual ao número de Com- 
+panheiros que continuam na Sociedade.  
+Estes dados não são  
+jogados durante a fase Jogada de Ação a seguir. 
+Fase 4) Jogada de Ação 
+Os jogadores rolam seus Dados de Ação (exceto os dados  
+que já se encontram no Quadro de Busca). Depois o joga- 
+dor da Sombra apanha todos os dados cujo resultado foi o  
+“Olho” e os coloca no Quadro de Busca. 
+Fase 5) Resolução de Ações 
+Esta é a principal fase do jogo  
+Guerra do Anel 
+. 
+É durante esta fase que os jogadores utilizam os resultados  
+dos Dados de Ação para movimentar seus Personagens e  
+Exércitos no tabuleiro, ou para realizar outras ações impor- 
+tantes. 
+Os resultados dos Dados de Ação ditam as ações que os joga- 
+dores podem realizar durante esta fase. Começando com o  
+jogador dos Povos Livres, os dois jogadores alternam suas  
+ações, cada um deles realizando uma ação ao escolher e reti- 
+rar um de seus resultados disponíveis (v. também, o pará- 
+grafo  
+Utilização dos Dados de Ação 
+, na pág. 19). 
+Toda vez que o jogador dos Povos Livres usa um Dado de  
+Ação para mover a Sociedade, ele coloca aquele dado no Qua- 
+dro de Busca depois de completar a ação. Todos os outros  
+dados usados são colocados de lado até o próximo turno. 
+O uso de cada Dado de Ação é descrito com mais detalhes  
+adiante. 
+Fase 6) Verificação de Vitória 
+Os jogadores verificam se algum deles obteve as Condições  
+de  Vitória  Militar.  Se  não,  tem  início  mais  um  turno  de  
+jogo. 
+Quando todas as atividades exigidas pelas diferentes fases  
+foram realizadas o turno termina e um novo turno tem início  
+(a menos que um dos jogadores tenha conseguido as Condi- 
+ções de Vitória, caso em que o jogo termina). 
+OS DADOS DE AÇÃO 
+Os Dados de Ação desempenham um papel fundamental no  
+jogo, pois eles ditam as opções disponíveis para cada jogador  
+durante o turno. 
+Estes dados têm ícones especiais em suas faces e cada ícone  
+representa um conjunto de ações do qual o jogador pode  
+escolher uma. Os diferentes números e tipos de ícones que  
+aparecem nos Dados de Ação dos Povos Livres e da Sombra  
+refletem as diferentes atitudes dos dois lados que lutam na 
+Guerra do Anel 
+. 
+A tabela  
+Ícones dos Dados de Ação 
+, na página a seguir, mostra  
+o significado destes ícones. 
+Lembre-se que os Dados de Ação dos Povos  
+Livres têm duas faces com a ação “Personagem”,  
+e  que  nestes  dados  a  Ação  “Exército”  só  
+aparece  numa  face  combinada  com  a  Ação  
+“Alistamento” 
+PARADA DE DADOS DE AÇÃO 
+O número total de Dados de Ação usados por um jogador  
+num turno é chamado de  
+parada de dados 
+. 
+O jogador da Sombra começa o jogo com sete dados em sua  
+parada, mas pode ganhar dados adicionais durante o desen- 
+rolar do jogo, até um máximo de dez. Estes Dados de Ação  
+adicionais entram em jogo quando o jogador da Sombra  
+coloca seus Vassalos em jogo (um dado para  
+Saruman 
+, um  
+para o  
+Rei dos Bruxos 
+ e um para a  
+Boca de Sauron 
+). 
+O jogador dos Povos Livres começa com quatro dados em  
+sua parada. 
+Do mesmo modo que a Sombra, ele também pode ganhar  
+dados adicionais no decorrer do jogo. O jogador dos Povos  
+Livres adiciona um dado a sua parada quando  
+Aragorn,    
+Herdeiro de Isildur 
+ entra em jogo e outro quando  
+Gan- 
+dalf, o Branco 
+, aparece. 
+Tanto o jogador dos Povos Livres quanto o da Sombra  
+perde o dado se o personagem correspondente for elimi- 
+nado. 
+Quando um jogador ganha ou perde um Dado de Ação,  
+o ganho ou a perda se torna efetivo no turno seguinte: o  
+dado é adicionado ou removido da parada durante a fase  
+Recuperar os Dados de Ação e Comprar Cartas de Evento 
+ do  
+turno seguinte. 
+ALOCAÇÃO PARA BUSCA E JOGADA DE  
+AÇÃO 
+Durante a fase Alocação Para Busca, o jogador da Sombra  
+coloca no Quadro de Busca o número de Dados de Ação  
+que ele deseja dedicar à Busca pelo Anel. 
+Se no fim do turno anterior havia um ou mais Dados  
+de Ação da Sociedade no Quadro de Busca, ele tem de  
+colocar  
+pelo menos 
+ 1 dado no Quadro de Busca. 
+O número  
+máximo 
+ de dados que ele pode colocar no  
+Quadro de Busca é igual ao número de Companheiros  
+que há na Sociedade naquele momento (lembre-se que  
+os Portadores do Anel não são considerados Compa- 
+nheiros e não são levados em conta neste máximo). 
+No entanto, o jogador da Sombra sempre pode colocar  
+pelo  
+menos um dado 
+ no Quadro de Busca, mesmo que todos os  
+Companheiros tenham abandonado a Sociedade. 
+Os dados colocados no Quadro de Busca não são usados,  
+mas o jogador da Sombra rola os dados remanescentes em  
+sua parada e, todos os dados cujo resultado for um “Olho”  
+serão imediatamente colocados no Quadro de Busca. 
+O jogador dos Povos Livres simplesmente joga toda sua  
+parada de Dados de Ação. 
+UTILIZAÇÃO DOS DADOS DE AÇÃO 
+Começando com os Povos Livres, os jogadores realizam  
+ações alternadamente, escolhendo um de seus dados de  
+Ação e realizando imediatamente a ação disponibilizada  
+pelo resultado do dado. 
+Cada dado de Ação contém um conjunto de ícones carac- 
+terísticos que correspondem a diferentes ações dentro do  
+jogo. Todas as ações serão descritas em detalhe mais adiante  
+nas regras e resumidamente no Quadro de Referência de  
+Dados de Ação (v. pág. 20, o quadro também existe no  
+Auxílio ao Jogador). 
+Quando a Ação é completada, o dado correspondente é  
+considerado “usado” e colocado de lado até ser necessário  
+novamente no turno seguinte. 
+A única exceção a esta regra é que toda vez que o joga- 
+dor dos Povos Livres usa um Dado de Ação para  
+mover  
+a Sociedade 
+, ele coloca o dado no Quadro de Busca em  
+vez de coloca-lo de lado (lembre-se que esse dado é devol- 
+vido ao jogador dos Povos Livres durante a fase Recuperar  
+os Dados de Ação e Comprar Cartas de Evento do turno  
+seguinte). 
+Se um jogador tem menos Dados de Ação sem usar que seu  
+oponente (normalmente, o jogador dos Povos Livres tem  
+menos dados de Ação que o jogador da Sombra), ele pode  
+passar em vez de realizar uma ação, permitindo que seu  
+oponente realize outra ação. 
+Í C O N E S   D O S   DA D O S   D E  AÇÃO 
+Povos Livres 
+Desígnio do Oeste 
+Ação  
+Personagem* 
+Ação 
+Exército* 
+Ação  
+Alistamento 
+Ação   
+Evento 
+Ação  
+Alistamento/ 
+Exército 
+Ações   
+Especiais 
+Sombra 
+Olho 
+Ação  
+Personagem* 
+Ação  
+Exército* 
+Ação  
+Alistamento 
+Ação   
+Evento 
+Ação  
+Alistamento/ 
+Exército 
+Ações   
+Especiais 
+*Nota: Os Dados de Ação dos Povos Livres têm o ícone Ação Personagem em duas de suas faces. 
+Nestes dados, o ícone Ação Exército aparece numa das faces combinado com o ícone Ação Alistamento. 
+20 • Guerra do Anel — Segunda Edição Capítulo IV: O Turno de Jogo • 21  • 21 
+QUA D RO   D E   R E F E R Ê N C I A   D E   DA D O S   D E  AÇÃO  
+Esta seção traz um pequeno resumo das ações que cada  
+jogador pode realizar usando os Dados de Ação. 
+PERSONAGEM 
+O resultado Personagem pode ser usado para realizar uma  
+das seguintes ações: 
+—  
+Movimento  de  Líder/Ataque  com  Exércitos.  
+Movimente um Exército com um Líder para uma  
+região  adjacente,  que  deve  estar  livre  no  que  se  
+refere a movimentação de Exércitos; ou atacar um  
+Exército inimigo numa região adjacente usando um  
+Exército com um Líder. 
+—  
+Jogar uma Carta de Evento.  
+Jogar uma Carta de  
+Evento de Personagem da sua mão. 
+Só para os Povos Livres 
+—  
+Progresso da Sociedade.  
+Movimente o Marcador  
+de Progresso da Sociedade uma casa para a frente no  
+Indicador de Avanço da Sociedade. Resolva a Busca  
+Pelo Anel, depois coloque o Dado de Ação usado  
+no Quadro de Busca. 
+—  
+Esconder a Sociedade.  
+Se a Sociedade foi revelada  
+anteriormente, ela se torna Escondida novamente. 
+—  
+Separar Companheiros.  
+Separe um Companheiro  
+ou um grupo de Companheiros da Sociedade. As  
+figuras dos Companheiros são retiradas do Quadro  
+da Sociedade e têm de se mover sobre o mapa, até  
+uma distância da Sociedade igual ao número da casa  
+no Indicador de Avanço da Sociedade mais o Nível  
+do Companheiro de maior Nível. 
+—  
+Mover  Companheiros 
+.  Movimente  todos  os  
+Companheiros ou grupos de Companheiros sobre  
+o mapa. Cada Companheiro pode se deslocar um  
+número  de  regiões  menor  ou  igual  ao  Nível  do  
+Companheiro de Nível mais alto do grupo. 
+Só para a Sombra 
+—  
+Mover  Vassalos.  
+Movimente  todos  os  Nazgûl  
+(inclusive o Rei dos Bruxos, se ele estiver em jogo)  
+para  qualquer  lugar  no  mapa  (exceto  para  uma  
+região onde existe uma Fortaleza controlada pelos  
+Povos Livres, a menos que um Exército da Sombra  
+a esteja sitiando). Movimente a Boca de Sauron (se  
+ela estiver em jogo) até três regiões. 
+EXÉRCITO 
+O resultado  
+Exército 
+ pode ser usado para realizar uma das  
+seguintes ações:  
+—  
+Mover Exércitos 
+. Movimente até dois Exércitos  
+de sua(s) região(ões) para região(ões) adjacente(s)  
+que têm de estar livres no que se refere a movi- 
+mentação. 
+—  
+Atacar um Exército Inimigo.  
+Atacar um Exército  
+inimigo  numa  região  adjacente  com  um  de  seus  
+exércitos (ou conduzir um cerco ou uma sortida). 
+—  
+Jogar uma Carta de Evento.  
+Jogue uma Carta de  
+Evento de Exército da sua mão. 
+ALISTAMENTO 
+O resultado  
+Alistamento 
+ pode ser usado para realizar uma  
+das seguintes ações: 
+—  
+Ação Diplomática.  
+Mova o Marcador Político de  
+uma Nação aliada uma casa para a frente (no caso de  
+uma Nação dos Povos Livres, a casa “Em Guerra”  
+só pode ser alcançada se a Nação estiver Ativa). 
+—  
+Jogar uma Carta de Evento.  
+Jogue uma Carta de  
+Evento de Alistamento da sua mão. 
+Só para Nações “Em Guerra” 
+—  
+Recrutar Reforços.  
+Coloque reforços em jogo: 
+—  1  unidade  de  Elite  em  qualquer  Colônia  
+aliada e livre  
+ou 
+—  2 Líderes em duas Colônias aliadas e livres  
+diferentes  
+ou 
+—  3 unidades regulares em duas Colônias alia- 
+das e livres quaisquer  
+ou 
+—  1 Líder e 1 unidade de Exército Regular em  
+duas Colônias aliadas e livres quaisquer. 
+Só para a Sombra 
+—  
+Colocar um Personagem em jogo 
+ de acordo com  
+as regras presentes em sua carta de Personagem 
+EVENTOS 
+O resultado Evento pode ser usado para realizar uma das  
+seguintes ações: 
+—  
+Comprar uma Carta de Evento.  
+Compre uma  
+Carta de Evento de um Baralho de Eventos a sua  
+escolha. 
+—  
+Jogar uma Carta de Evento.  
+Jogue uma Carta de  
+Evento de sua mão, independente do tipo. 
+ALISTAMENTO/ 
+EXÉRCITO 
+Escolha qualquer ação dentre as descritas para os resulta- 
+dos “Alistamento” e “Exército”. 
+ESPECIAL 
+Os resultados Especial são diferentes no dado da Sombra  
+e no dado dos Povos Livres.: 
+OLHO DE SAURON 
+Todos os dados cujo resultado for o Olho devem ser  
+colocados no Quadro de Busca 
+DESÍGNIO DO OESTE 
+—  Antes de realizar uma ação, o resultado Desígnio  
+do Oeste pode ser mudado para qualquer outro  
+resultado do Dado de Ação, de acordo com a von- 
+tade do jogador dos Povos Livres, e ser usado para  
+produzir  o  efeito  descrito  pelo  resultado  esco- 
+lhido. 
+—  O resultado  
+Desígnio do Oeste 
+ também pode ser  
+usado para colocar  
+Gandalf, o Branco 
+, ou  
+Ara- 
+gorn, Herdeiro de Isildur 
+, em jogo, de acordo  
+com as regras existentes em suas cartas de Perso- 
+nagem. 
+Um jogador também pode optar por  
+pular 
+ uma ação e des- 
+cartar um de seus Dados de Ação sem produzir nenhum  
+efeito, em vez de usar aquele dado para realizar uma ação. 
+Se um jogador ficar sem ações antes de seu oponente, o opo- 
+nente realizará as ações que lhe restam uma após a outra. 
+OS ANEIS ÉLFICOS 
+No início da partida, o jogador dos Povos Livres recebe três  
+marcadores que representam os Aneis Élficos de Poder. 
+Ele mantém os marcadores no Quadro dos Aneis Élficos que  
+existe no tabuleiro com o lado do Anel virado para cima, até  
+decidir usá-los. 
+Quando o jogador dos Povos Livres usa um Anel Élfico, ele  
+vira o marcador de modo que ele fique com o “Olho Flame- 
+jante” virado para cima e o dá para o jogador da Sombra. 
+Depois que o jogador da Sombra usar o marcador, ele será  
+retirado do jogo. 
+Portanto, cada marcador Anel Élfico/Olho pode ser usado  
+uma vez por seu proprietário da seguinte maneira: 
+Quando  um  jogador  está  prestes  a  realizar  uma  ação  
+durante a fase Resolução de Ações, ele pode usar um dos  
+Anéis Élficos para mudar o resultado obtido em um de  
+seus Dados de Ação não usados para outro resultado de  
+Dado de Ação de sua escolha. 
+Um jogador que acabou de usar um Anel Élfico para mudar  
+o resultado de um dado passa então a realizar uma ação  
+comum, escolhendo qualquer resultado do dado de Ação  
+(não necessariamente aquele que ele acabou de mudar com  
+o Anel Élfico). 
+O uso de um Anel Élfico está sujeito às seguintes limita- 
+ções: 
+—  Um determinado jogador só pode usar um Anel Élfico  
+durante o decurso de um turno. 
+—  O jogador dos Povos Livres não pode usar um Anel  
+Élfico para mudar o resultado de um Dado de Ação  
+para “Desígnio do Oeste”. 
+—  O jogador da Sombra pode usar um Anel Élfico para  
+mudar o resultado de um dado para “Olho” (este dado  
+é imediatamente colocado no Quadro de Busca). Isto  
+não conta como uma ação, portanto, ele pode reali- 
+zar uma ação normalmente. Entretanto, ele não pode  
+fazer o oposto e usar o Anel Élfico para mudar o resul- 
+tado de um dado de Ação que já é igual a “Olho”. 
+Frente: controlado pelo  
+jogador dos Povos Livres 
+Verso: controlado pelo  
+jogador da Sombra 
+Marcadores de Aneis Élficos 
+22 • Guerra do Anel — Segunda Edição Capítulo V: Cartas de Evento • 23  • 23 
+CAPÍTU LO V: 
+CA RTAS   D E  
+EV ENTO 
+A 
+s Cartas de Evento representam muitos dos episódios  
+afortunados (ou desafortunados) em  
+O Senhor dos  
+Aneis 
+,  bem  como  objetos  especiais,  ocorrências  
+inesperadas e casos de “O que aconteceria se”. 
+Além disso, as Cartas de Evento podem ser usadas alternati- 
+vamente para produzir um efeito de combate especial a ser  
+empregado na batalha. Quando uma Carta de Evento é usada  
+com vistas a sua habilidade em combate, nós nos referimos à  
+carta como uma  
+Carta de Combate 
+. 
+BARALHO DE EVENTOS 
+Cada jogador recebe dois maços de Cartas de Evento:  
+seu Baralho de Estratégia 
+ (representado graficamente por  
+um estandarte) e seu  
+Baralho de Personagem 
+ (representado  
+graficamente por uma espada). 
+As cartas do Baralho de Estratégia normalmente oferecem ao  
+jogador opções políticas e militares. As cartas do Baralho de  
+Personagem são muitas vezes relacionadas com a Sociedade e  
+com as ações de Companheiros e Vassalos sobre o mapa. 
+COMPRAR CARTAS DE EVENTOS 
+Durante a primeira fase de cada turno (incluindo o pri- 
+meiro turno) os dois jogadores têm de comprar uma carta  
+de cada um de seus maços. 
+Os jogadores também podem comprar cartas dos dois maços  
+usando o resultado de um Dado de Ação durante a fase Reso- 
+lução de Ações (v. pág. 21). 
+Os jogadores podem ter a qualquer momento um  
+máximo  
+de seis cartas 
+ em suas mãos e têm de descartar imediata- 
+mente as cartas extras assim que o limite é excedido. As cartas  
+são descartadas com a face para baixo. 
+Se um baralho terminar durante o decorrer do jogo, as cartas  
+descartadas  
+não são reembaralhadas 
+. O jogador não pode  
+mais comprar cartas daquele maço (portanto, ele só pode  
+comprar uma carta do outro maço durante a fase Recuperar  
+os Dados de Ação e Comprar Cartas de Evento). 
+JOGAR CARTAS DE EVENTO 
+As Cartas de Evento podem ser jogadas durante a fase Reso- 
+lução de Ações de duas maneiras: 
+1)  Usando o resultado Evento de um Dado de Ação (o  
+símbolo da Palantir) ou 
+2)  Usando o resultado de um Dado de Ação cujo ícone é  
+igual ao símbolo existente no canto superior direito da  
+carta. 
+Exemplo: 
+ Para jogar a Carta de Estratégia “Tri- 
+lhas dos Woses” o jogador dos Povos Livres tem de usar  
+o resultado de um Dado de Ação com o símbolo da  
+Palantir (o resultado Evento) ou um Dado de Ação  
+com o símbolo Estandarte (um resultado Exército). 
+Em geral, as Cartas de Evento são descartadas logo que seus  
+efeitos são avaliados e aplicados. 
+Os efeitos de uma Carta de Evento são explicados no texto  
+da carta. 
+Muitas vezes, existe algum tipo de exigência a ser satisfeita  
+para que os efeitos da carta possam ser postos em prática; se  
+alguma exigência não for completamente satisfeita, a carta  
+não pode ser jogada. 
+Normalmente, uma carta permite que um jogador realize  
+uma ação que viola as regras normais; isto é intencional, mas  
+as regras que não são explicitamente substituídas pelo texto  
+da carta continuam válidas. 
+Algumas exceções às regras gerais usam a seguinte termino- 
+logia: 
+—  Se o texto de uma carta diz “Coloque sobre a mesa”,  
+ela  quer  dizer  que  a  carta  não  é  descartada  depois  
+de jogada e seus efeitos duram até uma determinada  
+condição ou exigência ser atendida, depois do que a  
+carta é descartada. Se descartar a carta exige o uso de  
+um Dado de Ação, descartar a carta conta como uma  
+ação. Lembre-se que, se a condição exigida para jogar  
+determinada carta deixa de ser atendida, a carta é ime- 
+diatamente descartada. 
+Exemplo: 
+ “A Tolice de Denethor” é descartada se  
+Minas Tirith não estiver mais sendo sitiada. 
+—  Se o texto da carta instrui a “recrutar” unidades ou  
+Líderes, estas unidades ou Líderes são retirados dos  
+reforços disponíveis. Veja também o parágrafo Como  
+Usar Uma Carta de Evento Para Recrutar Tropas 
+, na  
+pág. 27, que explica o funcionamento de Cartas de  
+Evento que permitem recrutamentos. 
+As ações indicadas por uma Carta de Evento são obrigató- 
+rias. No entanto, pode acontecer de os efeitos de uma Carta  
+de Evento não poderem ser completamente aplicados. Neste  
+caso, a carta pode ser jogada, e seus efeitos são aplicados até  
+onde for possível. 
+Exemplo: 
+  A  carta  “Cavaleiros  de  Dol  Amroth”  
+permite que o jogador dos Povos Livres recrute um  
+Líder e uma unidade de Elite (ou Regular) em Dol  
+Amroth. Se não houver nenhum Líder disponível nos  
+reforços dos Povos Livres, apenas a unidade de Elite  
+(ou Regular) é recrutada. 
+Cartas de Evento Provocando Baixas 
+Várias cartas descrevem efeitos que podem levar um jogador  
+a remover algumas figuras do jogo. Se todas as unidades de  
+um Exército são eliminadas devido ao efeito de uma dessas  
+cartas, todos os Líderes dos Povos Livres que estão juntos  
+com  o  Exército  são  imediatamente  removidos,  enquanto  
+Nazgûl, Companheiros ou Vassalos são deixados na região, a  
+menos que haja alguma coisa diferente especificada no texto  
+da carta. 
+CARTAS DE COMBATE 
+Além do texto padrão de Evento, todas as Cartas de Evento  
+têm um texto adicional (na parte inferior da carta) que repre- 
+senta seu uso como  
+Cartas de Combate. 
+Diferente de jogar uma Carta de Evento para obter seu efeito  
+principal, jogá-la como uma Carta de Combate não exige  
+que se realize uma ação. As Cartas de Combate são usadas  
+durante uma batalha. Para mais detalhes, veja o parágrafo  
+Avaliando o Resultado de Uma Batalha 
+ na pág. 29. 
+Do mesmo modo que os efeitos das Cartas de Evento, os  
+efeitos das Cartas de Combate modificam as regras normais  
+do jogo e o texto das cartas sempre têm precedência sobre  
+as regras normais. Cartas de Evento usadas como Cartas de  
+Combate são sempre descartadas imediatamente depois de  
+serem usadas. 
+A S   CA RTA S   D E   E V E N TO S 
+Carta de Evento dos Povos Livres 
+Carta de Evento da Sombra 
+Nome do Evento 
+1 
+Tipo da Carta 
+2 
+Pré-condição do  
+Evento (se existir) 
+3 
+Texto do Evento 
+4 
+Condição de Descarte  
+do Evento (se houver) 
+5 
+6 
+2 
+7 
+8 
+9 
+1 
+3 
+4 
+5 
+1 0 
+1 1 
+6 
+2 
+7 
+8 
+9 
+1 
+3 
+4 
+5 
+1 0 
+1 1 
+6 
+Informação para  
+jogos com mais de 2  
+jogadores (se houver) 
+7 
+Nome do Combate 
+8 
+Pré-condição do  
+Combate (se houver) 
+9 
+Texto do Combate 
+1 0 
+Número da Iniciativa 
+1 1 
+Número da Carta 
+Tipo das Cartas de Evento dos Povos Livres 
+Tipo das Cartas de Eventos da Sombra 
+Personagem Exército Alistamento Personagem Exército Alistamento 
+Verso das Cartas de Eventos dos Povos Livres 
+Verso das Cartas de Evento da Sombra 
+Personagem Estratégia Personagem Estratégia 
+24 • Guerra do Anel — Segunda Edição Capítulo VI: Exércitos e Batalhas • 25  • 25 
+CAPÍTU LO V I: 
+EX ÉRC ITO S E  
+BATAL HAS 
+A 
+s vastas hordas do Senhor do Escuro e os intrépidos  
+defensores do Oeste desempenham um papel central  
+na 
+ Guerra do Anel 
+, e seu alistamento e emprego é  
+crucial. A partir de suas posições iniciais (descritas no parágrafo  
+Preparação do jogo 
+), os Exércitos dos dois jogadores crescerão  
+com reforços e mover-se-ão para a batalha de acordo com as  
+regras a seguir. 
+PERSONAGENS 
+JOGANDO COM PERSONAGENS DOS POVOS  
+LIVRES 
+Os Personagens dos Povos Livres são colocados em jogo de  
+duas maneiras: 
+—  Companheiros entram em jogo quando são separa- 
+dos da Sociedade (v. A  
+Separação de Companheiros da  
+Sociedade 
+, pág. 39); 
+—  
+Gandalf, o Branco 
+, e  
+Aragorn, Herdeiro de Isil- 
+dur 
+, são colocados em jogo com um resultado Desíg- 
+nio do Oeste. Use as regras descritas na carta de Per- 
+sonagem. 
+JOGANDO COM PERSONAGENS DA SOMBRA 
+Os Personagens da Sombra (Vassalos) são colocados em jogo  
+usando um resultado Alistamento. Este uso de um resultado  
+Alistamento não segue as regras normais de recrutamento,  
+use as regras descritas na Carta de Personagem. 
+MOVENDO PERSONAGENS 
+Os Personagens são movidos no tabuleiro durante a fase    
+Resolução de Ações, usando um resultado Personagem  
+de um Dado de Ação (o ícone da Espada), ou jogando  
+uma Carta de Evento que permite a movimentação de  
+Personagens. 
+O  resultado  Personagem  de  um  Dado  de  Ação  pode  ser  
+usado para: 
+—  Mover  
+todos 
+ os Companheiros que não se encontram  
+na Sociedade (apenas o jogador dos Povos Livres). 
+—  Mover  
+todos 
+ os Nazgûl e Vassalos (apenas o jogador  
+da Sombra). 
+Lembre-se que, se o Nível de um Personagem  
+é 0, ele não pode mover-se, mesmo estando  
+ligado a um Exército. 
+Movendo Companheiros 
+Quando o jogador dos Povos Livres usa o resultado Perso- 
+nagem de um Dado de Ação para mover seus Personagens,  
+todos 
+ os Companheiros que se encontram sobre o mapa  
+podem ser movidos um número de regiões menor ou igual a  
+seu  
+Nível 
+ (v. adiante). 
+No entanto, um grupo de Companheiros que se encontra  
+na mesma região pode ser movido para um destino  
+comum 
+ a  
+uma distância menor ou igual ao  
+maior 
+ Nível do grupo. 
+O jogador dos Povos Livres pode criar mais de um grupo  
+de Companheiros na mesma região, que podem mover-se  
+independentemente para destinos diferentes. 
+Quando se movimentam, os Companheiros estão sujeitos às  
+seguintes regras: 
+—  Eles  não  são  afetados  pelos  Exércitos  inimigos.  
+Quando estão se movendo sozinhos ou junto com  
+outros Companheiros, eles podem entrar ou sair de  
+uma região que contém unidades da Sombra, mas têm  
+de parar antes de entrar numa região que contém uma  
+Fortaleza controlada pelo jogador da Sombra. 
+—  Eles não podem entrar ou sair de uma região que con- 
+tém uma Fortaleza aliada sitiada por um Exército ini- 
+migo (a não ser como resultado de certos efeitos de  
+uma Carta de Evento). 
+—  Eles não podem cruzar terreno intransponível (fron- 
+teiras pretas). 
+Movendo Nazgûl e Vassalos 
+Quando o jogador da Sombra usa um resultado Persona- 
+gem do Dado de Ação para movimentar seus personagens,  
+todos os Nazgûl (inclusive o Rei dos Bruxos) podem ser des- 
+locados para qualquer região do tabuleiro com uma única  
+movimentação. Um, alguns ou todos os Nazgûl podem ser  
+movimentados  desta  maneira  usando  um  único  resultado  
+Personagem do Dado de Ação. 
+A única restrição é que os Nazgûl nunca podem se mover  
+desta maneira para uma região na qual há uma Fortaleza  
+controlada pelo jogador dos Povos Livres, a menos que esta  
+Fortaleza esteja sendo sitiada por um Exército da Sombra. 
+Lembre-se que na 
+ Guerra do Anel 
+, para fins de clareza das  
+regras, o Rei dos Bruxos é tratado como um Nazgûl (inclu- 
+sive no que diz respeito a todas as referências a “Nazgûl” nas  
+Cartas de Evento, a menos que o texto da carta faça dife- 
+rença entre eles usando o nome dele ou o título “Vassalo”). 
+A Boca de Sauron e Saruman não têm a capacidade ilimitada  
+de movimento dos Nazgûl, eles estão sujeitos às seguintes  
+regras: 
+—  Saruman nunca pode sair da região de Orthanc. 
+—  A  Boca  de  Sauron  pode  se  mover  até  três  regiões  
+se estiver se deslocando sozinha. Do mesmo modo  
+que os Companheiros, ela não pode cruzar terreno  
+intransponível,  ignora  qualquer  Exército  inimigo  
+quando está se movimentando sozinha e não pode  
+sair ou entrar numa região que contém uma Fortaleza  
+aliada sitiada por um Exército inimigo. 
+Do mesmo modo que os Nazgûl, nenhum Vassalo deslocan- 
+do-se sem um Exército pode ser movido para uma Fortaleza  
+controlada pelos Povos Livres a menos que ela esteja sendo  
+sitiada por um Exército da Sombra. 
+A S   CA RTA S   D E   P E R S O NAG E M 
+Cartas de Companheiro 
+Cartas de Vassalo 
+7 
+2 
+3 
+6 
+1 
+4 
+5 
+8 
+9 
+1 0 
+8 
+7 
+2 
+3 
+6 
+1 
+4 
+5 
+1 
+Retrato 
+2 
+Nome 
+3 
+Habilidades  Especiais  quando  está  
+guiando a Sociedade (se houver). 
+4 
+Nível 
+5 
+Liderança 
+6 
+Habilidades Especiais quando fora da  
+Sociedade (se houver). 
+7 
+Nação  que  o  Companheiro  é  capaz  
+de  ativar  (se  o  símbolo  dos  Povos  
+Livres aparece nesta posição, o Com- 
+panheiro pode ativar qualquer Nação  
+dos Povos Livres). 
+8 
+Condição para jogar o Companheiro  
+(se houver). 
+9 
+Habilidades Especiais 
+10 
+Bônus de Dado de Ação: se o símbolo  
+“Desígnio do Oeste” estiver presente,  
+adicione um dado à Parada de Dados  
+de Ação quando o Companheiro está  
+em jogo. 
+1 
+Retrato 
+2 
+Nome 
+3 
+Condição para jogar o Vassalo. 
+4 
+Nível (o símbolo   representa a  
+capacidade ilimitada de movimenta- 
+ção dos Nazgûl). 
+5 
+Liderança 
+6 
+Habilidades Especiais 
+7 
+Bônus de Dado de Ação: se o sím- 
+bolo “Olho Flamejante” estiver pre- 
+sente, adicione um dado à Parada de  
+Dados de Ação quando o Vassalo está  
+em jogo. 
+8 
+Nação à qual o Vassalo pertence. 
+26 • Guerra do Anel — Segunda Edição Capítulo VI: Exércitos e Batalhas • 27  • 27 
+COMO USAR UMA CARTA DE EVENTO PARA  
+RECRUTAR TROPAS 
+Quando usar uma Carta de Evento cujos efeitos permitem  
+a um jogador recrutar unidades, todas as restrições normais  
+de recrutamento têm de ser respeitadas com as seguintes  
+exceções: 
+—  Se uma carta diz ao jogador para recrutar tropas de  
+uma Nação e aquela Nação não chegou ainda à casa  
+“Em Guerra”, ele pode fazer o recrutamento de qual- 
+quer maneira. 
+—  Se uma carta diz ao jogador para recrutar tropas para  
+a região de uma Fortaleza, as unidades podem ser  
+colocadas mesmo que a Fortaleza esteja sendo sitiada.  
+Com exceção deste caso, uma Carta de Evento que  
+permite recrutar unidades em uma região (ou regiões)  
+específica(s) está sujeita às restrições normais de que  
+um recrutamento não pode ser feito se a região não  
+está livre. 
+Exemplo: A Carta de Evento “Os Cavaleiros de The- 
+óden” permite que o jogador recrute tropas numa  
+região de Rohan onde se encontra um Companheiro.  
+Se  houver  um  companheiro  em  Eastemnet,  mas  
+aquela região também tiver tropas inimigas, não  
+será possível recrutar lá. 
+MOVIMENTAÇÃO DE EXÉRCITOS 
+MOVENDO UM EXÉRCITO 
+Os Exércitos são deslocados durante a fase Resolução  
+de Ações usando um resultado  
+Exército 
+ de um Dado de  
+Ação ou um resultado  
+Personagem 
+ de um Dado de Ação  
+(se o Exército a ser deslocado tiver um Líder ou um Per- 
+sonagem), ou uma Carta de Evento que permite a movi- 
+mentação de Exércitos 
+Um jogador usando um resultado Exército de um Dado de  
+Ação pode movimentar dois Exércitos  
+diferentes 
+, mas não  
+pode movimentar o mesmo Exército duas vezes. 
+Um jogador usando um resultado Personagem pode movi- 
+mentar um Exército  
+que contém pelo menos um Líder ou Per- 
+sonagem. 
+Um Exército é movimentado simplesmente deslocando suas  
+unidades para uma região adjacente. 
+Divisão de um Exército 
+Não é obrigatório que você movimente todas as unidades de  
+um Exército. Um Exército pode se dividir em dois Exércitos  
+diferentes movendo apenas uma parte de suas unidades para  
+uma região adjacente. 
+Líderes dos Povos Livres não podem nunca permanecer numa  
+região sem unidades de combate, por isso, se um Exército  
+em movimento abandona completamente uma região, todos  
+estes Líderes têm de acompanhar o Exército. Se o Exército  
+se divide, os Líderes podem optar por se deslocar ou ficar.  
+Quando um jogador usa um resultado Personagem de um  
+Dado de Ação para movimentar um Exército e ele se divide,  
+pelo menos um Líder ou Personagem tem de se juntar às  
+unidades em movimento. 
+Note que, a menos que o motivo para a movimentação do  
+Exército  seja  um  resultado  Personagem  de  um  Dado  de  
+Ação, os Personagens (Companheiros e Vassalos) e Nazgûl  
+não são obrigados a se deslocar com um Exército, pois eles  
+podem permanecer na região sozinhos. 
+Restrições de Movimentação 
+—  As unidades em movimento, do mesmo modo que  
+Líderes  e  Personagens,  podem  ser  escolhidas  livre- 
+mente, desde que nenhuma figura seja movida duas  
+vezes usando a mesma ação (isto inclui movimenta- 
+ções efetuadas com Cartas de Evento, a menos que  
+a  carta  tenha  instruções  explicitamente  diferentes).  
+Portanto, durante a mesma ação, não é possível des- 
+locar um Exército para uma região que contém outro  
+Exército aliado (juntando os dois Exércitos em um) e  
+depois movimentar o novo Exército com um segundo  
+movimento, pois isto significaria movimentar as uni- 
+dades do primeiro Exército duas vezes. Em termos  
+de movimentação dentro de uma ação, estes Exérci- 
+tos deveriam ser mantidos separados até que ambas as  
+movimentações tenham sido realizadas. 
+—  Qualquer região adentrada por um Exército em movi- 
+mento tem de estar livre (v. o parágrafo Regiões Livres  
+na página 10) ou uma Colônia controlada pelo ini- 
+migo  que  não  tem  unidades  de  Exército  inimigas.  
+Estas regiões são conhecidas como “regiões livres para  
+o propósito de movimentação de Exércitos”. 
+—  Se uma região está ocupada por unidades inimigas, ela  
+não pode ser adentrada e tem de ser atacada (v. pág.  
+28). 
+—  Depois de movimentar um Exército para uma região,    
+você não pode exceder o Limite de Concentração de 10    
+unidades. 
+—  Se um Exército em movimento tem unidades de uma  
+Nação que ainda não está “Em Guerra” no Indicador  
+Político (v. pág. 35), ela não pode entrar numa região  
+que se encontra dentro das fronteiras de outra Nação  
+(mesmo que amigavelmente). 
+—  Um Exército nunca pode se mover para dentro de  
+uma região que é separada da região na qual o Exér- 
+cito se encontra por uma linha preta (que indica ter- 
+reno intransponível). Uma restrição similar se aplica a  
+Personagens (v. pág. 24) e à Sociedade (v. pág. 38). 
+O USO DE CARTAS DE EVENTO PARA  
+MOVIMENTAR EXÉRCITOS 
+Quando for usar Cartas de Evento cujos efeitos permitem ao  
+jogador movimentar Exércitos, todas as restrições normais  
+à movimentação têm de ser respeitadas. Algumas Cartas de  
+Evento permitem que um jogador movimente um ou mais  
+Exércitos atráves de mais de uma região e as regras adicionais  
+a seguir devem ser obedecidas: 
+—  Cada Exército a ser movido é definido no início da  
+movimentação (é possível dividir o Exército antes do  
+movimento). O Exército não pode pegar nem deixar  
+figuras ao longo do trajeto. 
+EXÉRCITOS E CONCENTRAÇÃO 
+COMPOSIÇÃO DE EXÉRCITOS 
+Todas as unidades de Exército, Líderes e Personagens aliados  
+dentro de uma região formam um  
+Exército 
+. 
+Um Exército pode ser composto de unidades pertencentes a  
+diferentes Nações que lutam do mesmo lado. 
+Se um Exército em movimento entra numa região ocupada  
+por outro exército aliado, os dois Exércitos se  
+juntam 
+ for- 
+mando um único Exército no fim daquela ação. 
+Do mesmo modo, um Exército pode ser  
+dividido 
+ simples- 
+mente  movendo  parte  de  suas  unidades  para  uma  região  
+adjacente e deixando o resto para trás. 
+LIMITE DE CONCENTRAÇÃO 
+Uma região pode conter no máximo  
+10 unidades 
+. 
+Se, no final de uma ação (por exemplo, depois de mover ou  
+unir tropas), houver mais de 10 unidades na mesma região,  
+as unidades em excesso têm de ser tiradas de jogo pelo joga- 
+dor que as controla. 
+As unidades removidas desta maneira podem entrar nova- 
+mente em jogo mais tarde como reforços. 
+DEPÓSITOS DE EXÉRCITOS 
+Na margem esquerda do tabuleiro existem três  
+Depósitos  
+de Exércitos 
+   numerados. 
+Se o tamanho e o número de figuras de plástico a serem colo- 
+cadas numa única região gerarem problemas, o jogador que  
+as controla pode mover algumas ou todas as figuras de uma  
+região para um Depósito de Exércitos livre, colocando um  
+marcador de Exército numerado correspondente na região  
+para identificá-la. As figuras podem ser transferidas a qual- 
+quer momento do Depósito de Exércitos para o tabuleiro. 
+Os jogadores têm de ter cuidado para não exceder este limite  
+de concentração quando estiverem fazendo uso de um Depó- 
+sito de Exércitos. Para todos os objetivos, as figuras que se  
+encontram no Depósito são consideradas como estando na  
+região que contém o marcador de Exército. 
+Exemplo: 
+ O jogador dos Povos Livres move um Exér- 
+cito composto de 10 unidades regulares de Gondor  
+para Lossarnach e descobre que elas ocupam espaço  
+demais.  O  Depósito  de  Exércitos  número  3  está  
+livre, por isso o jogador retira 8 das figuras regula- 
+res de Gondor e as coloca no Depósito de Exércitos.  
+Depois, ele coloca o marcador de Exército número  
+3 em Lossarnach junto com as duas figuras restan- 
+tes. Toda vez que se tornar necessário, o marcador  
+pode ser substituído pelas figuras que se encontram   
+no Depósito. 
+O RECRUTAMENTO DE TROPAS 
+O RECRUTAMENTO DE LÍDERES   
+E DE NOVAS UNIDADES 
+Líderes e unidades de Exército adicionais são colocados  
+em jogo durante a fase de Resolução de Ações usando o  
+resultado 
+ Alistamento  
+do Dado de Ação (um ícone elmo)  
+como uma ação, ou jogando uma Carta de Evento que  
+recruta novas unidades. 
+Para poder trazer reforços para o tabuleiro usando o resul- 
+tado Alistamento de um Dado de Ação, as novas unidades  
+têm de pertencer a uma Nação “Em Guerra” (v. adiante). 
+Usando o resultado Alistamento de um Dado de Ação, um  
+jogador pode colocar as seguintes figuras em jogo: 
+—  duas unidades Regulares,  
+ou 
+—  dois Líderes/Nazgûl,  
+ou 
+—  uma unidade Regular e um Líder/Nazgûl,  
+ou 
+—  uma unidade de Elite. 
+Todas as unidades e Líderes recrutados são retirados dos  
+reforços disponíveis para o jogador e só podem ser colocados  
+numa  
+Cidade Vila 
+,   ou  
+Fortaleza 
+ da Nação à qual a unidade  
+pertence. 
+Quando dois Líderes ou unidades Regulares, ou uma com- 
+binação dos dois são colocados em jogo usando o resultado  
+Alistamento de um Dado de Ação, eles podem pertencer a  
+Nações diferentes desde que estas duas Nações estejam “Em  
+Guerra” (v. pág. 35) e cada figura seja colocada numa Cidade,  
+Vila ou Fortaleza da Nação à qual a unidade pertence. 
+Os Nazgûl são sempre recrutados nas Fortalezas da Nação  
+de Sauron. 
+RESTRIÇÕES AO RECRUTAMENTO 
+—  Quando estiver alistando duas figuras (unidades e/ou  
+líderes usando um resultado Alistamento de um Dado  
+de Ação, as duas figuras têm sempre que ser colocadas  
+em colônias  
+separadas 
+). 
+—  Você não pode alistar ou recrutar tropas numa colô- 
+nia capturada pelo inimigo (i.e. no momento ocupado  
+por unidades inimigas ou que contém um Marcador de  
+Controle do inimigo). 
+—  Você não pode alistar tropas numa Fortaleza  
+sitiada 
+(v. págs. 31-32) pelo inimigo, a menos que você esteja  
+recrutando com uma Carta de Evento. 
+—  Os reforços são limitados às figuras disponíveis. Por- 
+tanto, se todas as figuras de um determinado tipo estão  
+em jogo, não é possível recrutar mais unidades daquele  
+tipo. Unidades da Sombra e Nazgûl retirados como  
+baixas  são  recolocados  entre  os  reforços  disponíveis  
+(permitindo, desta maneira, um alistamento quase ili- 
+mitado). Todos os Personagens (inclusive os Vassalos  
+da Sombra), Líderes e unidades dos Povos Livres estão  
+permanentemente fora de jogo se forem eliminados;  
+eles deveriam ser colocadas numa área específica para  
+baixas (como, por exemplo, na caixa do jogo) e não  
+podem mais ser escolhidas para recrutamento. 
+28 • Guerra do Anel — Segunda Edição 
+—  Se um Exército se move através de uma Colônia con- 
+trolada pelo inimigo, ele captura aquela Colônia. 
+—  Se um Exército se move através de regiões que con- 
+têm outros Exércitos aliados, os limites de concentra- 
+ção são verificado somente depois que todas as movi- 
+mentações terminaram 
+RESOLUÇÃO DA BATALHA 
+ATACAR COM EXÉRCITOS 
+Um Exército pode atacar um Exército inimigo durante a  
+fase de Resolução de Ações usando o resultado Exército  
+ou Personagem de um Dado de Ação, ou jogando uma  
+Carta de Evento que permite a um Exército atacar. 
+Apenas Exércitos pertencentes a Nações “Em Guerra” no  
+Indicador Político podem  
+começar uma Batalha 
+. 
+Um jogador pode usar um resultado Exército de um Dado  
+de Ação, ou um resultado Personagem de um Dado de Ação  
+(se o Exército tiver pelo menos um Líder ou Personagem),  
+com os seguintes objetivos: 
+—  Atacar  um  Exército  inimigo  em  uma  região  adja- 
+cente. 
+—  Iniciar um  
+Cerco 
+ ou uma  
+Sortida 
+ contra um Exército  
+inimigo na mesma região (v. pág. 32). 
+Lembre-se que, diferente de quando é usado simplesmente  
+para movimentação, um resultado Exército num Dado de  
+Ação pode ativar apenas  
+um 
+ Exército com o objetivo de  
+atacar. 
+Um Exército usando um resultado Personagem num Dado  
+de Ação para realizar um ataque tem de ter pelo menos um  
+Líder ou Personagem. 
+Nota: 
+  Quando  uma  batalha  é  iniciada,  as  
+unidades  atacantes  não  se  movimentam  para  
+dentro da região que elas estão atacando, em  
+vez disso, elas se mantêm na região em que se  
+encontravam durante todo o ataque. Somente  
+quando a batalha terminar e tiver sido ganha,  
+é que o atacante pode mover as unidades ata- 
+cantes para dentro da região ameada (v.  
+Fim da  
+Batalha 
+, na pág. 31). 
+Divisão de um Exército Atacante 
+Não é obrigatório que todas as figuras que compõem um  
+Exército escolhido para atacar participem da batalha. 
+Quando um jogador está prestes a atacar, ele pode dividir o  
+Exército em dois, separando as figuras que se encontram na  
+região num Exército atacante e um segundo Exército, cha- 
+mado de  
+retaguarda 
+, que não participará da batalha. 
+Cada um dos Exércitos recém-criados tem de conter pelo  
+menos  uma  unidade  de  Exército,  enquanto  que  Líderes,  
+Companheiros e Vassalos podem ser distribuídos entre os  
+dois Exércitos como o jogador achar melhor. 
+Nota: 
+ Se o jogador está usando um Resultado  
+Personagem de um Dado de Ação para atacar,  
+o  Exército  atacante  recém-criado  tem  de  ter  
+pelo menos um Líder ou um Personagem. 
+O Exército escolhido como retaguarda não afeta a batalha de  
+nenhuma forma, ele não pode ser o alvo dos efeitos de uma  
+Carta de Combate, suas figuras não podem ser escolhidas  
+como baixas e ele não poderá avançar em direção à região  
+contestada se a batalha for vencida. 
+Se o Exército atacante tiver uma ou mais figuras que per- 
+tencem a Nações que não estão “Em Guerra”, então será  
+obrigatório dividir o Exército (deixando na retaguarda todas  
+as figuras que não estão “Em Guerra”). 
+Lembre-se que  
+todas 
+ as unidades defensoras, inclusive Líde- 
+res e Personagens são sempre considerados parte da batalha. 
+Força de Combate e Liderança 
+Unidades de Exército atacantes e defensoras, Líderes e Per- 
+sonagens participam todos da avaliação da Força de Com- 
+bate e da Liderança dos Exércitos envolvidos na batalha. 
+—  
+A  Força  de  Combate 
+  de  um  Exército  é  igual  ao  
+número total de unidades daquele Exército (Regular  
+e de Elite). A Força de Combate determina o número  
+de dados a ser jogado na  
+Jogada de Combate 
+ até um  
+máximo de cinco dados. Isto significa que unidades  
+além da quinta não aumentam o número de dados  
+usados por um Exército, mas um Exército com mais  
+de cinco unidades é normalmente capaz de manter  
+sua Força de Combate total por mais tempo — v.  
+Remoção de Baixas 
+, na pág. 30). 
+Capítulo VI: Exércitos e Batalhas • 29  • 29 
+Exemplo: 
+ Um Exército com três unidades Regulares  
+e uma de Elite tem uma Força de Combate igual  
+a 4. Por outro lado, um Exército com seis unidades  
+Regulares e duas de Elite tem uma Força de Com- 
+bate igual a 8 mas jogará o número máximo de  
+dados que é cinco. 
+—  A  
+Liderança 
+ de um Exército é igual ao número de  
+Líderes (ou Nazgûl), mais o valor da Liderança de  
+todos os Personagens participantes (que aparece na  
+Carta de Personagem de cada um deles). A Liderança  
+determina o número de dados que podem ser lança- 
+dos na  
+Jogada do Líder 
+, até um máximo de cinco  
+dados. 
+Em  muitos  momentos,  Cartas  de  Combate  e  habilidades  
+especiais dos Personagens modificam a Força de Combate  
+e a Liderança de um Exército envolvido em uma batalha.  
+Em qualquer caso, o máximo de cinco dados nunca pode ser  
+excedido, independente dos modificadores. 
+AVALIANDO O RESULTADO DE UMA  
+BATALHA 
+O resultado de uma batalha é determinado com uma série de  
+Rodadas de Combate 
+. Em cada rodada, os dois jogadores  
+realizam os seguintes passos: 
+1)  Jogar uma  
+Carta de Combate 
+ (opcional). 
+2)  Lançar os dados da  
+Jogada de Combate 
+. 
+3)  Lançar os dados da  
+Jogada do Líder 
+. 
+4)  Remover as  
+Baixas 
+. 
+5)  Optar por  
+Interromper o Ataque 
+ ou  
+Recuar 
+. 
+Cada um destes passos é realizado simultaneamente pelos  
+dois jogadores (ambos realizam o passo 1, ambos realizam  
+o passo 2, etc.). 
+Jogar uma Carta de Combate 
+No início de cada Rodada de Combate, cada um dos  
+jogadores pode jogar uma Carta de Evento de sua mão  
+como uma Carta de Combate. 
+Primeiro, o atacante diz se ele deseja usar uma Carta de  
+Combate e escolhe a carta. 
+Depois o defensor diz se ele deseja usar uma Carta de Com- 
+bate e escolhe a carta. O defensor pode jogar uma Carta de  
+Combate mesmo que o atacante opte por não fazê-lo. 
+As Cartas são escolhidas em segredo, depois reveladas simul- 
+taneamente. No entanto, o verso da carta escolhida está sem- 
+pre visível para o oponente. 
+É importante que cada jogador leia cuidadosamente o texto  
+de sua Carta de Combate antes de escolhê-la, especialmente  
+no que diz respeito a seus requisitos, modificadores e apli- 
+cação. 
+A menos que haja alguma coisa especificada em contrário,  
+os efeitos de uma carta só se aplicam à Rodada de Combate  
+em curso. 
+As Cartas de Combate são sempre descartadas logo que a  
+Rodada de Combate termina. 
+Sequência das Cartas de Combate 
+O texto de uma Carta de Combate deveria definir com razo- 
+ável clareza quando os efeitos de uma carta devem ser aplica- 
+dos no decorrer da batalha. 
+No caso de alguma incerteza com relação à sequência das  
+cartas de combate, o número de iniciativa no canto esquerdo  
+inferior da carta indica qual carta deve ter seus efeitos apli- 
+cados antes: a carta com o menor número tem seus efeitos  
+aplicados antes. 
+Exemplo: 
+ O jogador da Sombra é o atacante e joga  
+“Ruína de Durin” que lhe permite realizar um ata- 
+que especial antes do combate normal começar (Ini- 
+ciativa: 2). No entanto, o jogador dos Povos Livres  
+joga “Batedores” que lhe permite recuar seu Exército  
+antes que o Combate normal comece (Iniciativa: 1).  
+Como a carta “Batedores” tem um número menor,  
+ela é resolvida primeiro e o Exército dos Povos Livres  
+recua antes que o ataque especial da carta “Ruína  
+de Durin” seja possível. Depois, as duas cartas são  
+descartadas. 
+Se as duas cartas tiverem a mesma Iniciativa, os efeitos da  
+carta do defensor são sempre aplicados primeiro. 
+Requisitos das Cartas de Combate 
+—  Algumas Cartas de Combate têm requisitos especí- 
+ficos (indicados em  
+negrito 
+ sob o Nome do Com- 
+bate) que têm de ser atendidos para a carta poder  
+ser jogada. Por exemplo, algumas cartas podem ser  
+jogadas somente se houver unidades de Elite aliadas  
+envolvidas na batalha. 
+—  Muitas cartas exigem que o jogador “abra mão da”  
+Liderança, o que significa que a figura selecionada (ou  
+figuras) de cuja Liderança se abriu mão não conta(m)  
+como um Líder (quando da determinação dos valores  
+de Liderança) para aquela Rodada de Combate. Você  
+não pode abrir mão da Liderança de uma figura, se  
+aquela Liderança foi cancelada por alguma razão. 
+Jogadas de Ataque Geradas por Cartas de Combate 
+Algumas Cartas de Combate permitem que se faça um ataque  
+adicional antes da Jogada de Combate (passo 2) ou depois  
+da remoção das baixas (passo 4). A menos que haja alguma  
+coisa especificada, estes ataques usam o mesmo número alvo  
+básico  que  a  Jogada  de  Combate.  Eles  são  realizados  da  
+mesma maneira que a Jogada de Combate (v. mais adiante),  
+com três diferenças: 
+—  Nunca é possível fazer uma Jogada do Líder. 
+—  Nenhum dos modificadores da Jogada de Combate  
+concedidos pela Carta de Combate do jogador adver- 
+sário se aplica. 
+—  Todas as baixas são removidas imediatamente e elas  
+não são influenciadas por nenhum efeito da Carta de  
+Combate do oponente. 
+Lançar os Dados da Jogada de Combate 
+Durante este passo, cada jogador lança um número de  
+Dados de Combate igual à Força de Combate de seu res- 
+pectivo Exército (até um máximo de cinco dados). 
+30 • Guerra do Anel — Segunda Edição Capítulo VI: Exércitos e Batalhas • 31  • 31 
+Cada dado rolado marca um ponto de destruição no caso de  
+um resultado igual a “5” ou “6”. Os efeitos das Cartas de  
+Combate, Fortalezas, Cidades e Fortificações, no entanto,  
+podem aumentar ou diminuir o número alvo exigido para se  
+marcar o ponto de destruição. 
+Lancar os Dados da Jogada do Líder 
+Depois da Jogada de Combate, os dois jogadores podem  
+relançar os dados que  
+falharam 
+desde que o número deles  
+seja menor ou igual a sua Liderança (até um máximo de  
+cinco dados). 
+O resultado necessário para marcar um ponto de destruição  
+na Jogada do Líder continua sendo o mesmo necessário para  
+a Jogada de Combate (a menos que ele seja modificado por  
+algum efeito específico da Carta de Combate). 
+Exemplo: 
+ Um jogador tem cinco unidades de Exér- 
+cito  e  três  Líderes  numa  batalha.  Portanto,  sua  
+Força de Combate é 5 e sua Liderança é 3. Ele lança  
+os cinco dados da Jogada de Combate e obtém “1”,  
+“3”, “5”, “5” e “6” (três pontos de destruição). A  
+Liderança dele é 3, mas apenas dois dados falharam,  
+por isso ele os lança novamente. Desta vez, um dos  
+dados consegue um sucesso, o que dá um total de qua- 
+tro pontos de destruição. 
+Modificadores Aplicados ao Resultado da Jogada 
+As Jogadas de Combate e as Jogadas do Líder podem ser  
+alteradas por cartas ou habilidades especiais. Os modificado- 
+res são indicados pela frase “some 1”, “some 2” e assim por  
+diante. 
+O  modificador  é  adicionado  ao  resultado  de  cada  dado  
+rolado, depois o resultado modificado é comparado com o  
+número alvo. Os modificadores são cumulativos, logo eles  
+devem ser somados de modo a obter o modificador total. 
+Exemplo: 
+  se  somar  um  ao  resultado  do  dado  na  
+Jogada de Combate, você marcará um ponto de des- 
+truição no caso de um resultado igual “4”, “5” ou  
+“6”, em vez de “5” ou “6”. 
+Normalmente os efeitos da Carta de Combate dizem para  
+um jogador modificar apenas a Jogada de Combate, a Jogada  
+do Líder ou ambas. 
+Nota: 
+ um resultado igual a “1” é sempre uma  
+falha e um resultado igual a “6” é sempre um  
+sucesso, independente de quaisquer modifica- 
+dores. 
+Remoção de Baixas 
+Depois que tiverem feito sua Jogada de Combate e sua  
+Jogada do Líder, os dois jogadores removem suas baixas. 
+O número de pontos de destruição que o oponente marcou  
+determina o número de baixas que o Exército de um jogador  
+sofre. 
+O atacante decide primeiro como remover suas unidades e as  
+baixas são determinadas da seguinte maneira: 
+Para cada ponto de destruição marcado pelo oponente: 
+—  remova uma unidade Regular,  
+ou 
+—  substitua uma unidade de Elite por uma Regular. 
+Para cada dois pontos de destruição, o jogador pode remo- 
+ver as baixas como descrito acima, duas vezes, ou pode sim- 
+plesmente remover uma unidade de Elite. 
+Exemplo: 
+ Um jogador sofreu dois pontos de destrui- 
+ção. Ele pode remover duas unidades Regulares, ou  
+substituir duas unidades de Elite por duas Regula- 
+res, ou remover uma unidade de Elite. 
+Quando for colocar uma unidade Regular no lugar de uma de  
+Elite, pode-se usar uma unidade Regular das baixas sofridas  
+anteriormente (se houver alguma). Caso contrário, o joga- 
+dor retira a unidade substituta dos reforços disponíveis, se  
+puder. As unidades de Elite substituídas desta maneira pelo  
+jogador dos Povos Livres são colocadas junto com as baixas.  
+Se não houver unidades Regulares disponíveis entre as baixas  
+ou nos reforços, a unidade de Elite não pode ser substituída  
+e é eliminada sem nenhum efeito. 
+Baixas dos Povos Livres e da Sombra 
+Como descrito anteriormente, as baixas sofridas pelas uni- 
+dades dos Povos Livres são colocadas de lado e consideradas  
+fora do jogo. Por isso, é importante que as baixas não sejam  
+colocadas na mesma área que os reforços disponíveis para os  
+Povos Livres. 
+O jogador da Sombra, por outro lado, não tem esse pro- 
+blema e suas unidades nunca ficam fora de jogo. As baixas da  
+Sombra podem, portanto, ser colocadas de novo junto com  
+os reforços disponíveis. 
+Eliminação de Líderes e Personagens 
+Se todas as unidades de um Exército envolvido em uma  
+batalha são eliminadas, os Líderes (incluindo os Perso- 
+nagens) que faziam parte daquele Exército são imediata- 
+mente retirados do jogo. 
+Do  mesmo  modo  que  as  baixas  do  Exército,  os  Líderes  
+dos Povos Livres estão permanentemente fora do jogo. Os  
+Nazgûl podem voltar como reforços. 
+Os  Personagens  (inclusive  todos  os  Vassalos  da  Sombra,  
+Saruman, a Boca de Sauron e o Rei dos Bruxos) que forem  
+eliminados são sempre removidos permanentemente do jogo  
+a menos que sua Carta de Personagem especifique alguma  
+coisa em contrário. 
+Lembre-se que Personagens que se encontram numa região  
+sem Exércitos aliados nunca são levados à batalha, pois eles  
+podem existir numa região que contém unidades de Exército  
+inimigas. A não ser como resultado de certos efeitos de Car- 
+tas de Evento, os Personagens (Vassalos e Companheiros) se  
+tornam vulneráveis apenas quando estão acompanhando um  
+Exército aliado numa batalha e, portanto, podem ser difíceis  
+de eliminar. 
+Optar por Interromper um Ataque, ou Recuar 
+No fim de cada Rodada de Combate, o jogador atacante tem  
+a opção de  
+interromper o ataque. 
+No entanto, se o atacante optar por continuar a batalha, o  
+defensor tem a opção de  
+recuar 
+. Se o defensor declinar de  
+recuar, outra Rodada de Combate é iniciada. 
+Se o Exército atacante interromper seu ataque, as unidades  
+que sobreviveram simplesmente continuam onde estavam no  
+início da batalha. 
+Entretanto, se o jogador defensor optar por recuar, seu Exér- 
+cito tem de recuar imediatamente para uma região adjacente  
+livre. Se não houver uma região nestas condições, o defensor  
+não pode optar por recuar. 
+Exceções Especiais 
+—  Um Exército que defende uma região que contém uma  
+Fortaleza aliada pode recuar para dentro da Fortaleza  
+no início de qualquer Rodada de Combate, Recuando  
+Para Dentro de um Cerco (v. mais adiante). 
+—  Um Exército sitiado não pode recuar. 
+—  Se o Exército em retirada contiver um Personagem  
+de  nível  0,  aquele  personagem  é  deixado  para  trás  
+naquela região. 
+Fim da Batalha 
+A batalha termina quando o atacante para de lutar, o defen- 
+sor bate em retirada ou quando um dos dois Exércitos é  
+completamente eliminado. 
+Se o Exército defensor é eliminado ou recua, o atacante pode  
+imediatamente mover todas as unidades que participaram do  
+ataque (ou parte delas) para a região ameada. 
+Se uma região ameada por um atacante bem sucedido con- 
+tém uma Fortaleza inimiga,  
+e esta Fortaleza contém uni- 
+dades inimigas 
+, a Fortaleza torna-se  
+sitiada 
+ (v. o parágrafo  
+Atacando Uma Fortaleza 
+, mais adiante). 
+FORTIFICAÇÕES, CIDADES,  
+FORTALEZAS E CERCOS. 
+Muitas batalhas de  
+O Senhor dos Anéis 
+ foram disputadas por  
+exércitos que procuravam defender ou conquistar uma for- 
+taleza, vau, cidade ou outra coisa parecida. Fortificações,  
+Cidades e Fortalezas são, portanto, um elemento central  
+na 
+ Guerra do Anel 
+, conforme se vê em detalhe nas regras  
+a seguir. 
+ATACANDO UMA CIDADE OU  
+FORTIFICAÇÃO 
+Durante um ataque contra um inimigo que defende uma  
+região que contém uma Cidade ou Fortificação,  
+somente na  
+primeira rodada do combate 
+ o atacante marca pontos de des- 
+truição no caso de resultados iguais a “6” ou mais (em vez  
+de “5” ou mais). 
+Depois que a primeira Rodada de Combate é resolvida, as  
+regras normais passam a valer. 
+ATACANDO UMA FORTALEZA 
+Durante um ataque contra um inimigo que defende uma  
+região que contém uma Fortaleza,  
+antes de cada rodada da  
+batalha 
+, o defensor tem de optar entre  
+Lutar uma batalha  
+campal 
+ ou  
+Recuar Para Dento de um Cerco. 
+Lutar uma Batalha Campal 
+Uma Batalha Campal é resolvida normalmente como des- 
+crito anteriormente. 
+Recuar Para Dentro de um Cerco 
+Logo que o defensor  
+Recua Para Dentro de um Cerco 
+,  
+a região em torno da Fortaleza é deixada livre para o ini- 
+migo que pode avançar imediatamente para dentro daquela  
+região. 
+Se o Exército atacante optar por avançar, a Fortaleza passa a  
+ser considerada  
+sitiada e a batalha termina 
+. 
+Passa-se a considerar as unidades defensoras dentro da Forta- 
+leza e são colocadas no Reservatório da Fortaleza apropriado  
+que pode ser encontrado no tabuleiro (se for necessário por  
+questões de espaço). 
+Uma Fortaleza cercada pode ter um máximo de cinco uni- 
+dades de Exército (e qualquer número de Líderes). Todas  
+as unidades além da quinta são imediatamente removidas  
+no momento em que a Fortaleza se vê sitiada. As unidades  
+removidas desta maneira podem voltar ao jogo mais tarde  
+como reforços. 
+Um cerco termina se o Exército atacante deixa a região, ou  
+se, a qualquer momento, o Exército atacante ou o defensor  
+é completamente eliminado. 
+Durante o cerco, a região em torno da Fortaleza é conside- 
+rada livre para o jogador que está sitiando enquanto a Forta- 
+leza em si continua sob o controle do jogador sitiado. 
+32 • Guerra do Anel — Segunda Edição Capítulo VI: Exércitos e Batalhas • 33  • 33 
+Quando um cerco termina, é preciso transferir os defensores  
+sobreviventes do Reservatório da Fortaleza para a região que  
+ela ocupa no mapa. 
+CONDUZINDO UM CERCO 
+Quando uma Fortaleza está sendo sitiada, as tropas que se  
+encontram dentro dela só podem ser atacadas por um Exér- 
+cito  
+na mesma região 
+ usando um Dado de Ação para a bata- 
+lha durante a fase de Resolução de Ações. 
+Qualquer batalha iniciada contra um Exército sitiado é con- 
+siderada uma  
+Batalha de Cerco. 
+Durante uma Batalha de Cerco, o atacante marca um ponto  
+de destruição somente no caso de um resultado maior ou  
+igual a “6”, enquanto o defensor o faz no caso de um resul- 
+tado maior ou igual a “5”. 
+Além disso, como acontece no combate normal, a Batalha  
+de Cerco  
+dura apenas uma Rodada de Combate 
+, a menos  
+que o atacante decida voluntariamente rebaixar uma de suas  
+unidades de Elite transformando-a em Regular. Se isso acon- 
+tecer, a Batalha de Cerco dura mais uma Rodada. 
+É possível estender uma Batalha de Cerco repetidamente,  
+enquanto o atacante tiver unidades de Elite disponíveis para  
+rebaixar no fim da rodada. 
+Se uma Batalha de Cerco terminar e ainda houver unidades  
+defensoras e atacantes, as unidades defensoras continuarão  
+sendo consideradas sitiadas. 
+Restrições 
+—  Um Exército defensor sitiado não pode nunca optar  
+por recuar para uma região adjacente. 
+—  Um Exército sitiando uma Fortaleza pode se afastar da  
+região. Se nenhuma unidade de Exército for deixada  
+para trás, a Fortaleza não estará mais sendo sitiada. 
+SORTIDA 
+Um Exército dentro de uma Fortaleza sitiada pode atacar o  
+Exército que o cerca usando um Dado de Ação para a bata- 
+lha durante a fase de Resolução de Ações. 
+Uma batalha na qual o atacante está sendo sitiado é chamada  
+de  
+Sortida 
+. 
+Numa sortida, o Exército sitiado luta numa Batalha Campal  
+durante pelo menos uma rodada, abrindo mão das vantagens  
+de defender a Fortaleza. 
+Uma retaguarda (v. o parágrafo  
+Divisão de um Exército Ata- 
+cante 
+, na pág. 28) pode ser formada e deixada para trás guar- 
+dando a Fortaleza. 
+O combate é resolvido normalmente (com os dois Exérci- 
+tos marcando pontos de destruição no caso de um resul- 
+tado maior ou igual a “5”), mas, se o jogador atacante quiser  
+interromper a batalha, o Exército atacante volta para a For- 
+taleza. 
+Como sempre, o Exército defensor que sitia a Fortaleza pode  
+recuar para uma região adjacente livre. 
+Se vencer a Sortida, o Exército atacante não pode sair da  
+região. 
+ABRANDAR UM CERCO 
+Um Exército que se encontra numa região adjacente pode  
+atacar um Exército inimigo que está sitiando uma Fortaleza  
+aliada usando as regras normais. 
+O Exército que se encontra dentro da Fortaleza não parti- 
+cipa da batalha. 
+O Exército atacante não pode avançar para dentro da região  
+que contém a Fortaleza a menos que o Exército que realiza  
+o cerco seja destruído ou recue. 
+REFORÇAR UM CERCO 
+Enquanto uma Fortaleza é sitiada, o jogador que realiza o  
+cerco pode mover novas tropas para aquela região (porque  
+ela é uma região livre). Isto é considerado um movimento,  
+não um ataque. 
+CAPTURAR UMA COLÔNIA 
+No início do jogo, todas as Colônias pertencem à Nação na  
+qual sua região está localizada. 
+Uma Colônia é considerada capturada quando: 
+—  Um  Exército  inimigo  entra  na  região  que  contém  
+uma Cidade, Vila, ou Fortaleza desocupada,  
+ou 
+—  Todas as unidades que defendem uma Fortaleza são  
+eliminadas e o Exército que realiza o certo ainda tem  
+pelo menos uma unidade na região. 
+O jogador que realiza a captura coloca um  
+Marcador de  
+Controle de Colônia 
+ na região para indicar seu controle. 
+Uma Cidade, Vila ou Fortaleza capturada não pode ser usada  
+para alistar tropas ou avançar casas no Indicador Político. 
+Cidades e Fortalezas capturadas dão Pontos de Vitória ao  
+jogador que as captura que servem para definir uma vitória  
+militar (v. pág. 44). Adiante em um ponto o Marcador de  
+Pontos de Vitória do jogador que fez a captura no Registro  
+de Pontos de Vitória no caso de uma Cidade capturada, ou  
+dois pontos no caso de uma Fortaleza. 
+Se o dono original da região conseguir recapturá-la, o Mar- 
+cador de Controle de Colônia é removido e os pontos de  
+Vitória conseguidos com a conquista são perdidos. 
+Marcador de Controle de  
+Colônia dos Povos Livres 
+Marcador de Controle de  
+Colônia da Sombra 
+Marcadores de Controle de Colônia 
+34 • Guerra do Anel — Segunda Edição Capítulo VII: A Política na Terra-Média • 35 
+CAPÍTU LO V II: 
+A POL ÍT ICA   NA  
+TERRA- MÉ D IA 
+O 
+fim da Terceira Era foi uma época sombria para a Terra- 
+Média. Apesar das alianças básicas dos Povos Livres estarem  
+bem definidas, suas opiniões individuais com relação a uma  
+ameaça de Sauron diferiam enormemente. A postura diplomática  
+das várias Nações é representada em  
+Guerra do Anel 
+ pela posição da  
+Nação no  
+Indicador Político 
+ que se encontra no tabuleiro. 
+O INDICADOR POLÍTICO 
+A posição inicial de uma Nação no Indicador Político (assinalada  
+pela posição do ícone da Nação no próprio Indicador) representa  
+sua postura diplomática no início da guerra. Quanto mais distante  
+está o Marcador Politico da casa “Em Guerra” do Indicador, menos  
+inclinada está a Nação a se envolver no conflito. 
+Para uma nação ser considerada completamente mobilizada e pre- 
+parada para lutar, seu Marcador Político tem de estar na última casa  
+do Indicador, marcada “Em Guerra”. 
+Para refletir sua relutância em entrar na guerra, todas as nações dos  
+Povos Livres, com exceção dos Elfos, começam o jogo num estado  
+passivo 
+  (representado  pelo  lado  cinza  do  Marcador  Político  da  
+Nação virado para cima). 
+Enquanto se mantiver passiva, a Nação não poderá ser movida  
+para a última casa do Indicador Político (“Em Guerra”) e com  
+isso, ser completamente mobilizada. 
+A ATIVAÇÃO DAS NAÇÕES DOS POVOS  
+LIVRES. 
+O Marcador Político de uma Nação dos Povos Livres é colocado  
+com o lado ativo para cima (o lado azul claro) quando um dos  
+seguintes eventos acontece: 
+—  Uma região daquela Nação é adentrada por um Exército  
+inimigo. 
+—  Um Exército contendo unidades daquela Nação é atacado. 
+—  A Sociedade do Anel é tornada pública em uma Cidade ou  
+Fortaleza daquela Nação. 
+—  Quando um Companheiro (capaz de ativar aquela Nação)  
+termina sua movimentação em uma das Cidades ou Fortale- 
+zas daquela Nação. 
+Cada Carta de Companheiro tem um símbolo no seu canto inferior  
+direito que indica que Nação dos Povos Livres ele é capaz de ativar  
+terminando sua movimentação em uma das Cidades ou Fortalezas  
+daquela Nação. 
+Lembre-se que Gandalf, Aragorn, Meriadoc Brandibuque e Pere- 
+grin Tûk têm o símbolo dos “Povos Livres” em vez do ícone de  
+uma nação específica. Estes Personagens são capazes de ativar qual- 
+quer Nação dos Povos Livres terminando sua movimentação em  
+uma das Cidades ou Fortalezas daquela Nação. 
+AVANÇAR UMA POSIÇÃO POLÍTICA 
+O Marcador Político de uma Nação avança (movendo-se uma casa  
+na direção da casa “Em Guerra”) no Indicador Político com o uso  
+do resultado Alistamento de um Dado de Ação ou jogando-se cer- 
+tas Cartas de Evento. 
+Adicionalmente, o marcador de uma Nação avança  
+automatica- 
+mente 
+ uma casa se qualquer um dos seguintes eventos acontecer: 
+—  Toda  vez  que  um  Exército  contendo  unidades  daquela  
+nação é atacado (cada batalha conta como um ataque inde- 
+pendente do número de rodadas). Lembre-se também que,  
+quando o Exército de uma Nação é atacado, aquela Nação  
+se torna ativa. 
+—  Toda vez que uma Colônia (Vila, Cidade ou Fortaleza) de  
+uma Nação é capturada pelo oponente. 
+Exemplo: 
+ O jogador da Sombra está atacando um Exér- 
+cito do Norte na Cidade de Valle. Depois da primeira  
+rodada  de  combate,  o  jogador  dos  Povos  Livres  decide  
+recuar a única unidade Regular do Norte sobrevivente.  
+O Exército da Sombra marcha para dentro da Cidade  
+recém capturada e coloca um Marcador de Controle nela.  
+Em consequência disso, o Norte é ativado e seu Marcador  
+Político avança duas casas no Indicador Político, pois um  
+Exército do Norte foi atacado e uma Cidade do Norte foi  
+capturada pela Sombra. 
+CARTAS DE EVENTO QUE AFETAM O  
+INDICADOR POLÍTICO 
+Todas as cartas que iniciam um ataque de um Exército disparam  
+uma reação política (ativação e/ou avanço no Indicador Político).  
+As três Cartas de Evento “Ent” e a Carta de Evento “Mortos do  
+Templo da Colina” também disparam uma reação política. Os efei- 
+tos dessas cartas são considerados batalhas nas quais o Exército Ini- 
+migo não pode reagir. Todas as outras cartas que disparam reações  
+políticas têm o efeito político declarado explicitamente no texto. 
+ENTRAR EM GUERRA 
+Uma nação que não está “Em Guerra” é considerada  
+não-belige- 
+rante 
+. 
+As  capacidades  das  tropas  de  uma  Nação  não  beligerante  estão  
+sujeitas a vários limites: 
+Em detalhe, unidades de Exércitos e Líderes de uma Nação não  
+beligerante têm de se submeter às seguintes restrições: 
+—  Elas podem se mover fora de suas fronteiras Nacionais, mas  
+não podem cruzar as fronteiras de outras Nações (inclusive  
+as aliadas). 
+—  Elas não podem atacar Exércitos inimigos (mas podem se  
+defender se forem atacadas). 
+—  Elas  não  podem  ser  recrutadas  usando  resultados  Alista- 
+mento de um Dado de Ação. 
+Todas as restrições relacionadas acima se aplicam mesmo que as  
+unidades de uma Nação não beligerante estejam concentradas com  
+unidades de uma Nação “Em Guerra”. 
+Exceção: 
+  Unidades  não  beligerantes  podem  cruzar  a  fronteira  
+nacional de outra Nação quando estiverem recuando de uma bata- 
+lha. Se o fizerem, da próxima vez que se moverem, elas terão de  
+se movimentar para fora daquela Nação, a menos que elas entrem  
+“Em Guerra” nesse meio tempo. 
+Exemplo: 
+ As unidades do Norte em Valle recuam de uma  
+batalha. Mesmo que o Norte não esteja “Em Guerra”,  
+as unidades podem recuar para Erebor (que pertence à  
+Nação dos Anões). Elas não poderiam fazer isso numa  
+movimentação  normal,  mas  este  movimento  é  possível  
+como uma retirada de um combate. 
+Quando o Marcador Político de uma Nação chega à última casa  
+do Indicador Político, aquela Nação está ”Em Guerra”. 
+Uma Nação “Em Guerra” não está sujeita a nenhuma das restri- 
+ções  que  constrangem  uma  nação  não-beligerante.  Seus  Exérci- 
+tos podem cruzar livremente todas as fronteiras Nacionais e ata- 
+car Exércitos inimigos, e suas tropas podem ser recrutadas usando  
+resultados Alistamento do Dado de Ação. 
+Como mencionado anteriormente, uma Nação dos Povos Livres  
+passiva nunca pode entrar na casa “Em Guerra”, ela tem de ser  
+ativada antes. 
+PERSONAGENS EM GUERRA 
+Companheiros, Vassalos e Nazgûl podem se mover livremente e se  
+envolver em batalhas independente da posição política da Nação a  
+que eles pertencem. Em essência, eles já deveriam ser considerados  
+“Em Guerra”. 
+Exemplo: 
+ O Nazgûl pode participar de um ataque mesmo  
+que Sauron ainda não esteja “Em Guerra”. 
+O Norte 
+Rohan 
+Sulistas &  
+Orientais 
+Sauron 
+Elfos 
+Anões 
+Gondor 
+Isengard 
+O S   M A R CA D OR E S   P O L Í T I C O S 
+Anões 
+Frente: 
+ ativo 
+Verso: 
+ passivo 
+Gondor 
+Frente: 
+ ativo 
+Verso: 
+ passivo 
+O Norte 
+Frente: 
+ ativo 
+Verso: 
+ passivo 
+Rohan 
+Frente: 
+ ativo 
+Verso: 
+ passivo 
+Elfos 
+Isengard 
+Sauron Sulistas & Orientais 
+36 • Guerra do Anel — Segunda Edição Capítulo VIII: A Sociedade do Anel • 37 
+CAPÍTU LO V III : 
+A S OC I E DA D E  
+DO ANE L 
+E 
+m  
+Guerra do Anel 
+, Frodo e Sam são inseparáveis e são  
+representados coletivamente como os  
+Portadores do  
+Anel 
+. Como se conta em  
+O Senhor dos Aneis 
+, os dois  
+hobbits  são  acompanhados  por  diversos  Companheiros,  
+escolhidos dentre os Povos Livres da Terra-Média. 
+Estes  Personagens  juntos  formam  a  
+Sociedade  do  Anel 
+.  
+Enquanto Frodo e Sam estão determinados a chegar à Mon- 
+tanha da Perdição para completar sua demanda, os outros  
+Companheiros  têm  opção:  eles  podem  ficar  e  proteger  a  
+Sociedade, ou, no momento apropriado, deixar a Sociedade  
+para ajudar os Povos Livres do Oeste em sua luta contra a  
+Sombra. 
+FIGURAS E MARCADORES DA  
+SOCIEDADE 
+A Sociedade do Anel é representada por uma série de figuras  
+e marcadores. 
+—  A figura  
+Portadores do Anel 
+ (Frodo e Sam) assinala  
+a  
+última posição conhecida 
+ da Sociedade. Ela é colo- 
+cada na região onde a Sociedade foi tornada pública  
+ou revelada pela última vez (v. pág. 38). No início do  
+jogo, ela é colocada em Valfenda. Toda vez que as  
+regras ou Cartas de Evento se referem à posição atual  
+da Sociedade, ela é determinada pela posição desta  
+figura independente da posição do Marcador de Pro- 
+gresso da Sociedade (v. a seguir). 
+—  O  
+Marcador de Progresso da Sociedade 
+ mostra quão  
+longe a Sociedade viajou a partir de sua última posição  
+conhecida e indica se a Sociedade está E 
+scondida 
+ ou  
+Revelada 
+. Este marcador é colocado no  
+Indicador  
+de Avanço da Sociedade 
+ e é movido uma casa para a  
+frente toda vez que a Sociedade avança. 
+—  As  figuras  e  marcadores  dos  
+Companheiros 
+  (sete  
+Personagens) representam os heróis dos Povos Livres.  
+No início do jogo, as figuras e marcadores destes Per- 
+sonagens são colocados no Quadro da  
+Sociedade do  
+Anel 
+ que se encontra no tabuleiro e indicam que eles  
+são parte da Sociedade. Quando um Companheiro  
+deixa a Sociedade, sua figura é retirada do quadro e  
+colocada no mapa e seu marcador é retirado do Qua- 
+dro da Sociedade 
+A Sociedade do Anel 
+Figura dos Portadores do Anel 
+Marcador de Progresso da Sociedae 
+Frente: Escondida Verso: Revelada 
+Marcadores dos Companheiros 
+Meriadoc Peregrin Gimli Legolas 
+Boromir 
+Gandalf o Cinzento 
+Passalargo 
+OS PORTADORES DO ANEL 
+A figura dos Portadores do Anel representa Sam e Frodo  
+juntos, pois em  
+Guerra do Anel 
+, estes dois hobbits nunca  
+se separam um do outro nem deixam a Sociedade. Por isso,  
+a posição dos Portadores do Anel é sempre a indicada pela  
+figura. 
+CORRUPÇÃO 
+O peso sempre crescente de carregar o Um Anel para sua  
+destruição é representado pela  
+Corrupção 
+ dos Portadores  
+do Anel, um valor numérico que começa em zero, mas pode  
+aumentar até 12. 
+Quando os Portadores do Anel chegam a 12 pontos de Cor- 
+rupção, a missão falhou, pois eles sucumbiram ao poder do  
+Um Anel e o jogo é ganho pela Sombra. 
+O jogador dos Povos Livres mantêm-se a par da Corrup- 
+ção dos Portadores do Anel movendo o  
+Marcador de Cor- 
+rupção 
+ ao longo do Indicador de Avanço da Sociedade no  
+tabuleiro (que também contém o Marcador de Progresso da  
+Sociedade), colocando-o sobre o espaço numerado. 
+CARTAS DE PERSONAGEM DOS  
+COMPANHEIROS 
+Cada Companheiro é descrito junto com suas habilidades  
+em sua  
+Carta de Personagem 
+ (v. pág. 25). 
+No início do jogo, todos os Companheiros fazem parte da  
+Sociedade e suas Cartas estão empilhadas de modo a formar  
+o  
+Baralho da Sociedade 
+ (separado das cartas de Gollum,  
+Aragorn, Herdeiro de Isildur e Gandalf, o Branco). 
+O baralho é colocado na metade que corresponde ao Guia  
+do Quadro da Sociedade. Enquanto os Companheiros per- 
+manecerem na Sociedade, a carta correspondente a cada um  
+deles estará no Baralho da Sociedade. 
+Quando um Companheiro deixa a Sociedade, sua carta é  
+retirada do baralho e colocada na mesa em frente ao jogador  
+dos Povos Livres. 
+As  Cartas  de  Personagem  têm  as  seguintes  informações  
+acerca do Personagem representado. 
+—  Seu  
+Níve 
+l, um número que é usado durante a Busca  
+Pelo Anel (v. o parágrafo Efeitos da Busca, na pág. 41)  
+e quando o Companheiro está sendo movimentado. 
+—  O ícone de sua  
+Nação 
+ indica que Nações o Compa- 
+nheiro é capaz de ativar. 
+—  Sua  
+Habilidade Especial 
+ que só funciona quando ele  
+é o Guia da Sociedade (v. mais adiante). 
+—  Sua  
+Habilidade Especial 
+ que só funciona depois que  
+ele abandona a Sociedade. 
+—  O  
+Valor de sua Liderança 
+ que é usado em batalha. 
+O GUIA DA SOCIEDADE 
+Um dos Companheiros da Sociedade é considerado o  
+Guia 
+do grupo durante a demanda. 
+No início de cada partida de  
+Guerra do Anel 
+, esse Compa- 
+nheiro é  
+Gandalf, o Cinzento 
+. 
+O Guia deve sempre ser o Companheiro de maior Nível que  
+restou na Sociedade. No caso de um empate, o jogador dos  
+Povos Livres pode escolher o Guia dentre os Companheiros  
+que têm o maior Nível. 
+Exemplo: 
+ Durante o primeiro turno do jogo, o joga- 
+dor da Sociedade pode colocar Passolargo como Guia  
+no lugar de Gandalf, pois os dois têm Nível 3. 
+O jogador dos Povos Livres pode nomear um novo Guia no  
+fim de cada Fase da Sociedade, ou quando a composição da  
+Sociedade mudar durante o curso de um turno, pelo fato de  
+um Personagem se separar da Sociedade ou ser eliminado. 
+No entanto, mesmo quando há uma troca de Guias durante a  
+Fase da Sociedade, somente o Personagem que tem o maior  
+Nível pode ser designado como Guia. 
+A Carta de Personagem do Companheiro que funciona como  
+Guia é sempre mantida no topo do Baralho da Sociedade, de  
+modo que suas habilidades especiais possam ser facilmente  
+consultadas. 
+Quando um Companheiro está agindo como Guia, somente  
+a habilidade especial que está marcada  
+Guia 
+ (se houver) pode  
+ser usada. Nenhuma das outras habilidades relacionadas na  
+carta está disponível, pois elas se aplicam somente depois que  
+o Companheiro deixa a Sociedade. 
+GOLLUM COMO GUIA 
+Se todos os Companheiros tiverem se separado da Sociedade  
+do Anel, os Portadores do Anel ficarão sozinhos e Gollum se  
+tornará o Guia da Sociedade. Quando isso acontece, a Carta  
+de Personagem do Gollum é colocada na metade do Quadro  
+da Sociedade que corresponde ao Guia. 
+O INDICADOR DE AVANÇO DA  
+SOCIEDADE 
+Para manter controle da movimentação secreta dos Portado- 
+res do Anel, os jogadores usam o  
+Indicador de Avanço da  
+Sociedade 
+. 
+A figura dos portadores do Anel é usada no tabuleiro para  
+indicar  a  última  posição  conhecida  da  Sociedade,  mas  
+somente o  
+Marcador de Progresso da Sociedade 
+ é movido  
+no  Indicador  de  Avanço  da  Sociedade  toda  vez  que  ela    
+se move. 
+Quanto maior o número alcançado no Indicador de Avanço  
+da Sociedade, mais distante de sua última posição conhecida  
+ela se encontra naquele momento. 
+MOVIMENTAÇÃO DA SOCIEDADE 
+Durante a Fase de Resolução de Ações, o jogador dos  
+Povos  Livres  pode  avançar  o  Marcador  de  Progresso  
+da Sociedade usando um resultado Personagem em um  
+Dado de Ação, ou usando certas Cartas de Evento. 
+Toda vez que a Sociedade se movimenta, o Marcador de  
+Progresso da Sociedade é movido  
+uma casa 
+ para a frente no  
+Indicador de Avanço da Sociedade (mantendo-se o Marca- 
+dor de Progresso com o lado  
+Escondido 
+ para cima). 
+Depois de cada vez que o Marcador de Progresso da Socie- 
+dade é movido, o jogador da Sombra tem uma oportunidade  
+de Buscar a Sociedade em movimento (v. mais adiante). O  
+Senhor  de  Mordor  tem  esperança  de  recobrar  seu  pre- 
+cioso anel corrompendo os Portadores do Anel, matando  
+os Companheiros ou, no mínimo, descobrindo o paradeiro    
+da Sociedade. 
+Se a Sociedade se move mais do que uma vez num turno,  
+a Busca se torna cada vez mais perigosa:  
+toda vez 
+ que um  
+Dado de Ação é usado para mover a Sociedade, aquele dado  
+é colocado no Quadro de Busca depois que a Busca é com- 
+pletada (cada dado adicionado dará um bônus no Teste de  
+Busca, como explicado na pág. 41). 
+Exceção: 
+ Quando o jogador dos Povos Livres movimenta  
+a  Sociedade  usando  uma  Carta  de  Evento,  o  Dado  de  
+Ação usado para jogar a carta não é adicionado ao Quadro    
+de Busca. 
+38 • Guerra do Anel — Segunda Edição Capítulo VIII: A Sociedade do Anel • 39 
+Todos os Dados de Ação que o jogador dos Povos Livres  
+coloca no Quadro de Busca são devolvidos para ele no início  
+do turno seguinte. 
+LOCALIZANDO A SOCIEDADE 
+As casas numeradas do Indicador de Avanço da Sociedade  
+representam a distância (medida em regiões) percorrida pela  
+Sociedade desde sua última posição conhecida (a região na  
+qual se encontra a figura dos Portadores do Anel). 
+A verdadeira posição da Sociedade é determinada somente se  
+acontecer uma de duas coisas: 
+1)  O jogador dos Povos Livres decide tornar pública a  
+posição da Sociedade  
+ou 
+2)  Uma Busca Pelo Anel é bem sucedida e revela a Socie- 
+dade 
+As duas situações fazem com que a figura dos Portadores  
+do Anel seja movida para uma nova posição no tabuleiro e o  
+Marcador de Progresso da Sociedade volte para a casa “0”. 
+Quando a figura dos Portadores do Anel é movida no tabu- 
+leiro, ela não pode cruzar uma fronteira preta (que designa  
+terrenos intransponíveis). 
+Note que, se o Marcador de Progresso da Sociedade estiver  
+na casa “0” do Indicador de Avanço quando a Sociedade  
+for tornada pública ou revelada, ela terá de se manter na  
+mesma região em que se encontrava (pois, de fato, ela não  
+se moveu). 
+Existem  diferenças  importantes  entre  “tornar  pública”  e  
+“revelar”  a  Sociedade  que  exigem  mais  explicação  (v.  a  
+seguir). 
+A Sociedade Torna Pública Sua Posição 
+Se a Sociedade estiver Escondida (o Marcador de Pro- 
+gresso está com a face  
+Escondida 
+ para cima), sua posição  
+pode ser tornada pública pelo jogador dos Povos Livres  
+durante a Fase da Sociedade. 
+Esta  opção  normalmente  acontece  porque  o  jogador  dos  
+Povos Livres deseja que os Portadores do Anel sejam curados  
+de alguma Corrupção em uma Cidade ou Fortaleza, quer  
+ativar uma Nação, ou quer usar uma Carta de Evento que  
+exige que os Portadores do Anel estejam em um lugar espe- 
+cífico. 
+Quando a Sociedade é tornada pública, o jogador dos Povos  
+Livres pode deslocar imediatamente a figura dos Portadores  
+do Anel um número de regiões (a partir de sua última posição  
+conhecida) menor ou igual ao número indicado pelo Marca- 
+dor de Progresso da Sociedade no Indicador de Avanço (o  
+jogador dos Povos Livres pode optar por deixar a figura dos  
+Portadores do Anel em sua posição atual, se quiser). 
+Então, o jogador dos Povos Livres volta o Marcador de Pro- 
+gresso da Sociedade para a casa “0” do Indicador de Avanço.  
+O lado Escondido do Marcador de Progresso da Sociedade  
+continua virado para cima. 
+Exemplo: 
+ Durante a Fase da Sociedade do quarto  
+turno,  o  jogador  dos  Povos  Livres  decide  tornar  
+pública a posição da Sociedade. A última posição  
+conhecida da Sociedade e, portanto a localização da  
+figura dos Portadores do Anel, é Valfenda e o Mar- 
+cador de Progresso da Sociedade está na casa “5”. 
+O jogador movimenta os Portadores do Anel e os faz  
+atravessar Vaus do Bruinen, Azevim, Moria e o Vale  
+do Riacho Escuro até chegar em Lorien. O Marca- 
+dor de Progresso da Sociedade volta para a casa “0”  
+do Indicador de Avanço. A Sociedade ainda está  
+Escondida, sua segurança garantida pela floresta  
+dourada de Lorien. Se os Portadores do Anel tiverem  
+sofrido alguma Corrupção, um ponto de Corrupção  
+pode  ser  curado,  pois  a  Sociedade  se  encontra  em  
+uma Fortaleza dos Povos Livres. 
+Nota: 
+ A Sociedade pode entrar ou sair de uma  
+Fortaleza sitiada livremente. 
+A Sociedade é Revelada por uma Busca pelo Anel 
+Se a Sociedade está escondida, sua posição pode ser  
+reve- 
+lada 
+ pelo jogador da Sombra como um resultado de uma  
+Busca  bem  sucedida,  ou  se  ele  jogar  certas  Cartas  de  
+Evento. 
+Quando a Sociedade é revelada, temos de virar o Marcador  
+de Progresso da Sociedade de modo que ele fique o com o  
+lado “ 
+Revelado 
+” virado para cima, depois do que o joga- 
+dor dos Povos Livres pode mover a figura dos Portadores  
+do Anel (como descrito na seção anterior), com a diferença  
+que este movimento  
+não pode nunca 
+ terminar numa região  
+que  contém  uma  Cidade  ou  Fortaleza  controlada  pelos    
+Povos Livres. 
+IMPORTANTE: 
+ Depois que tiver sido reve- 
+lada,  a  Sociedade  não  pode  ser  movida  pelo  
+jogador dos Povos Livres usando um Resultado  
+Personagem  do  Dado  de  Ação  até  ela  estar  
+Escondida novamente. 
+Além do mais, uma Sociedade Revelada é mais vulnerável a  
+certas Cartas de Evento da Sombra cujo alvo é ferir os Porta- 
+dores do Anel ou retardar o avanço da Sociedade. 
+Exemplo: 
+ Durante o segundo turno de jogo, uma  
+Busca bem sucedida revela a posição da Sociedade. A  
+última posição conhecida da Sociedade era Valfenda  
+e o Marcador de Progresso da Sociedade estava na  
+casa “3” do Indicador de Avanço. 
+O jogador dos Povos Livres poderia mover os Porta- 
+dores do Anel através dos Vaus de Bruinen e Azevim  
+e chegar em Moria, mas deslocar-se para dentro da  
+região de Moria (com sua Fortaleza da Sombra) sig- 
+nificaria comprar uma Peça de Busca adicional (v.  
+pág. 39). Por isso, o jogador dos Povos Livres decide  
+mover os Portadores do Anel para o Portão dos Orcs,  
+passando pelos Vaus de Bruinen e a Pasagem Alta.  
+O Marcador de Progresso da Sociedade é colocado  
+na casa “0” do Indicador de Avanço com o lado   
+Revelado  para  cima.  A  Sociedade  tem  de  estar  
+Escondida antes de se mover novamente. 
+A Sociedade em Fortalezas da Sombra 
+Quando a Sociedade é revelada e o trajeto que ela percor- 
+reu desde sua última posição conhecida é determinado, se  
+a Sociedade  
+atravessa, sai, entra ou fica estacionária 
+ numa  
+Fortaleza ainda controlada pela Sombra, então uma  
+Peça de  
+Busca 
+ é imediatamente comprada como se a Busca tivesse  
+sido bem sucedida. 
+Esta compra de uma Peça de Busca só é feita se a Sociedade  
+tiver sido revelada pelo jogador da Sombra. Além do mais,  
+isto é feito de maneira a complementar os efeitos de uma  
+Busca bem sucedida. As peças de Busca são descritas com  
+mais detalhes na pág. 40. 
+ESCONDENDO A SOCIEDADE 
+O jogador dos Povos Livres pode usar um resultado Perso- 
+nagem de um Dado de Ação durante a fase de Resolução de  
+Ações (ou pode jogar uma Carta de Evento apropriada), para  
+virar um Marcador de Progresso da Sociedade de modo que  
+ele fique com a face Escondida para cima. 
+Note que usar um resultado Personagem de um Dado de  
+Ação para esconder a Sociedade não permite que ela também  
+se mova durante aquela ação (e o dado usado não é colocado  
+no Quadro de Busca). O jogador dos Povos Livres tem de  
+usar outro resultado Personagem para movimentar a Socie- 
+dade agora Escondida. 
+Lembre-se  que  a  Sociedade  precisa  estar  Escondida  para  
+poder se movimentar. 
+CURANDO O PORTADOR DO ANEL 
+Os Portadores do Anel podem receber algum alívio do fardo  
+do Anel repousando num santuário apropriado. 
+Portanto, se durante a fase Sociedade, a Sociedade é  
+tornada  
+pública 
+ numa região que contém uma Cidade ou uma Forta- 
+leza dos Povos Livres que não se encontra sob o controle do  
+inimigo, um ponto de Corrupção é imediatamente removido  
+(até um mínimo de Corrupção igual a zero). O jogador dos  
+Povos Livres ajusta a posição do Marcador de Corrupção no  
+Indicador de Avanço da Sociedade. 
+Se a Sociedade permanecer vários turnos na Cidade ou For- 
+taleza, durante a fase Sociedade de cada turno, é possível  
+tornar pública a presença deles naquela região e curar um  
+ponto de Corrupção a cada turno. 
+ENTRANDO EM MORDOR 
+Mordor é o reino do Senhor do Escuro. Suas montanhas são  
+quase impossíveis de escalar e seus passos são bem guarda- 
+dos. Por isso, algumas das regras normais da Sociedade não  
+se aplicam neste lugar. 
+Mais cedo ou mais tarde no decurso da maioria dos jogos, a  
+Sociedade deveria chegar à região de  
+Morannon 
+ ou  
+Minas  
+Morgul 
+. É obrigatório a Sociedade estar em um destes luga- 
+res durante uma fase Sociedade para ela poder começar a  
+última parte da jornada em direção à Montanha da Perdição  
+(v. o parágrafo  
+A Sociedade em Mordor 
+, na pág. 43). 
+A SEPARAÇÃO DE  
+COMPANHEIROS DA SOCIEDADE 
+Sempre se supõe que os Companheiros que se encontram no  
+Quadro da Sociedade estão na mesma região que os Porta- 
+dores do Anel. 
+No entanto, durante a fase de Resolução de Ações, o  
+jogador dos Povos Livres pode separar um Companheiro  
+(ou um grupo de Companheiros) da Sociedade usando  
+um resultado Personagem do Dado de Ação (a menos  
+que a Sociedade esteja na Trilha de Mordor, onde isso é  
+proibido, v. pág. 43). 
+Quando um Companheiro se separa da Sociedade, a figura  
+do Companheiro separado é movida do Quadro da Socie- 
+dade para o mapa. 
+O Companheiro pode se deslocar um número de regiões  
+menor ou igual ao número da casa do Indicador de Avanço  
+da Sociedade em que se encontra o Marcador de Progresso  
+da Sociedade,  
+mais 
+ seu Nível de Companheiro. 
+Se o jogador dos Povos Livres separa um  
+grupo 
+ de Compa- 
+nheiros, ele movimenta as figuras de todos eles juntas para  
+uma região que pode ser alcançada pelo Companheiro que  
+tiver  
+o maior 
+ Nível do grupo. 
+A  movimentação  de  Companheiros  separados  obedece  
+às  mesmas  regras  que  a  movimentação  de  um  Persona- 
+gem, descrita na página 24. Lembre-se que, se a figura dos  
+Portadores do Anel estiver numa região que contém uma  
+Fortaleza sitiada que é controlada pelos Povos Livres, o(s)  
+Companheiro(s) entrará(ão) separados na Fortaleza e não  
+poderão partir. 
+Toda vez que separa Companheiros, o jogador dos Povos  
+Livres remove as Cartas de Personagem deles do Baralho da  
+Sociedade e os Marcadores dos Companheiros do Quadro  
+da Sociedade. 
+Exemplo: 
+ A última posição conhecida da Sociedade  
+é  Valfenda  e  o  Marcador  de  Progresso  da  Socie- 
+dade encontra-se naquele momento na quinta casa  
+do Indicador de Avanço da Sociedade. O jogador  
+dos Povos Livres decide separar Legolas (Nível 2)  
+e  Meriadoc  (Nível  1)  como  um  grupo.  Legolas  e  
+Meriadoc podem ser deslocados até 7 regiões (5+2) a  
+partir de Valfenda. O jogador decide levá-los juntos  
+para o Reino da Floresta. 
+Se o Guia da Sociedade é separado da Sociedade, um dos  
+Companheiros de maior Nível torna-se o novo Guia (ou  
+Gollum se torna o Guia, se todos os Companheiros tiverem  
+deixado a Sociedade). 
+Depois que um Companheiro se separa da Sociedade, ele  
+não pode mais voltar a se juntar a ela. 
+40 • Guerra do Anel — Segunda Edição Capítulo IX: A Busca pelo Anel • 41 
+CAPÍTU LO I X : 
+A B USCA P EL O  
+AN EL 
+E 
+nquanto  a  Sociedade  tenta  chegar  secretamente  à  
+Montanha da Perdição, Sauron procura incansavelmente  
+os Portadores do Anel e seus Companheiros. O Senhor  
+do Escuro ouve os rumores e envia espiões, na esperança de  
+finalmente recuperar seu tesouro perdido há tanto tempo.  
+Estes  esforços  são  representados  na 
+  Guerra  do  Anel 
+  pela  
+Busca pelo Anel. 
+A RESERVA DA BUSCA 
+A  
+Reserva da Busca 
+ é um conjunto de peças de papelão que  
+representam os efeitos de uma Busca bem sucedida. Estas  
+peças deveriam ser colocadas num recipiente opaco no início  
+do jogo (como uma xícara ou algo semelhante), pois as peças  
+devem ser retiradas  
+aleatoriamente 
+ toda vez que uma Busca  
+é bem sucedida. 
+Se, a qualquer momento,  
+todas 
+ as peças da Reserva de Busca  
+tiverem sido usadas, devolva todas as peças de Busca nor- 
+mais (bege) para a Reserva, mas não recoloque na Reserva  
+nenhuma Peça Especial (azul/vermelho), ou qualquer peça  
+que tenha sido removida permanentemente do jogo devido  
+a um efeito de uma Carta de Evento. 
+PEÇAS DE BUSCA NORMAIS 
+A maioria das  
+Peças de Busca Normais 
+ (que têm um fundo  
+bege) têm um valor numérico que varia ente 0 e 3. Este valor  
+representa a efetividade da Busca bem sucedida e é chamado  
+de  
+Estrago da Busca. 
+Algumas  Peças  de  Busca  têm  ícones  especiais  descritos  a  
+seguir: 
+—  O ícone do  
+Olho 
+   de Sauron, que representa um  
+valor numérico variável (v. o parágrafo  
+Determinação  
+do Estrago da Busca 
+, na pág. 41). 
+—  O  ícone  
+Revelar 
+    que  representa  a  Sociedade  
+sendo revelada a Sauron. 
+PEÇAS DE BUSCA ESPECIAIS 
+As peças de busca especiais (que têm um fundo azul, no caso  
+das Peças de Busca Especiais da Sociedade, ou um fundo ver- 
+melho, no caso das Peças de Busca Especiais da Sombra) são  
+colocadas de lado no início da partida 
+ e entram em jogo  
+somente com o uso de Cartas de Evento. 
+Quando estas Cartas de Evento são jogadas, a Peça de Busca  
+Espacial em questão é colocada de lado até a Sociedade entrar  
+em Mordor (v. pág. 43). Quando a Sociedade entra em Mor- 
+dor, todas estas Peças de Busca Especiais são adicionadas à  
+Reserva de Busca. 
+Se a Sociedade já estiver na Trilha de Mordor quando uma  
+Peça de Busca Especial entrar em jogo, coloque a peça ime- 
+diatamente na Reserva de Busca. 
+Algumas das Peças de Busca Especais apresentam um número  
+negativo ou um valor aleatório, descrito a seguir: 
+—  Um valor negativo (-2 ou -1) significa que não há  
+Estrago da Busca e o valor indicado é  
+subtraído 
+ da  
+Corrupção dos Portadores do Anel no Indicador de  
+Avanço da Sociedade (até um valor mínimo igual a  
+zero). 
+—  Um ícone  
+Dado 
+   significa que o Estrago da Busca  
+é igual ao resultado de um dado (jogue depois que a  
+peça tiver sido mostrada). Uma peça de Busca dessas  
+é considerada uma peça numerada no que diz respeito  
+aos efeitos de todas as Cartas de Evento. 
+—  Todas as Peças Especiais da Sombra têm um ícone  
+Parar 
+   no canto direito inferior (v. mais adiante). 
+A BUSCA DA SOCIEDADE 
+O TESTE DE BUSCA 
+Toda vez que o jogador dos Povos Livres movimenta a  
+Sociedade, o jogador da Sombra rola os dados para defi- 
+nir os efeitos da Busca. 
+O efeito de uma Busca é determinado da seguinte maneira. 
+Primeiro, o jogador da Sombra determina o  
+Nível da Busca 
+.  
+O Nível da Busca é igual ao número total de Dados de Ação  
+da Sombra no Quadro de Busca. 
+Nota: 
+ Estes dados foram colocados no Quadro  
+de Busca pelo jogador da Sombra durante a  
+fase de Alocação Para Busca,  
+mais  todos 
+ os  
+resultados Olho que ele conseguiu durante a  
+fase Jogada de Ação. 
+Depois,  o  jogador  da  Sombra  faz  um  
+Teste  de  Busca 
+,  
+rolando um número de Dados de Combate igual ao Nível da  
+Busca. Cada resultado igual a “6” é um  
+sucesso 
+. 
+O número máximo de dados que pode ser rolado num Teste  
+de Busca é cinco. Um Nível de Busca maior do que cinco  
+não adiciona dados ao teste. 
+Modificadores do Teste de Busca 
+Se a Sociedade se mover mais de uma vez por turno, a Busca  
+se torna mais fácil. 
+Para cada Dado de Ação que o jogador dos Povos Livres  
+colocou  no  Quadro  de  Busca  (um  dado  de  Ação  dos  
+Povos Livres é colocado ali para cada movimentação da  
+Sociedade, v. o parágrafo  
+Movimentação da Sociedade 
+, na  
+pág. 37), o jogador da Sombra adicona +1 ao resultado  
+de cada dado do teste de Busca. 
+Se o resultado de um dado for “6” ou mais depois desta  
+adição, é um sucesso. 
+Exemplo: 
+ Quando a Sociedade se movimenta pela  
+primeira  vez  durante  um  turno,  o  jogador  da  
+Sombra  precisa  obter  resultados  iguais  a  “6”  em  
+seus Dados de Busca para conseguir um Sucesso na  
+Busca. Se, no entanto, a Sociedade se movimentar  
+pela segunda vez (depois do jogador dos Povos Livres  
+ter usado um Dado de Ação para a primeira movi- 
+mentação e colocado o dado no Quadro de Busca), o  
+jogador da Sombra precisa apenas de um resultado  
+igual a “5” ou “6” para obter um sucesso na Busca. 
+Nota: 
+ Lembre-se que um resultado igual a “1”  
+é sempre uma falha, independente de qualquer  
+modificador. 
+Reavaliação de Busca 
+A presença de servos ou Fortalezas de Sauron torna a movi- 
+mentação da Sociedade mais perigosa. 
+Se, durante a Busca, os Portadores do Anel estiverem numa  
+região que contém uma ou mais das seguintes coisas: 
+—  Uma fortaleza controlada pelo poder da Sombra. 
+—  Uma ou mais unidades de Exército da Sombra. 
+—  Um ou mais Nazgûl. 
+o  jogador  da  Sombra  poderá,  depois  do  Teste  de  Busca,  
+relançar um dado do Teste de Busca que falhou para cada  
+uma das condições acima que for verdadeira. 
+Exemplo  1: 
+  Três  unidades  de  Exército  e  cinco  
+Nazgûl se encontram na região que contém a figura  
+da Sociedade, portanto o jogador da Sombra pode  
+relançar dois dados (um por causa da presença de  
+unidades de Exército e outro devido à presença dos  
+Nazgûl). 
+Exemplo 2: 
+ Encontram-se na região que contém a  
+figura da Sociedade, um Nazgûl, quatro unidades  
+de Exército e uma Fortaleza da Sombra, portanto o  
+jogador da Sombra pode relançar três dados (porque  
+todas as condições relacionadas são verdadeiras). 
+Estes relançamentos também recebem um bônus igual a +1  
+para cada dado dos Povos Livres que houver no Quadro de  
+Busca. 
+DETERMINAÇÃO DO ESTRAGO DA BUSCA 
+Se o jogador da Sombra conseguir pelo menos um sucesso  
+em sua Jogada de Busca (incluindo relançamentos), a Busca  
+terá sido bem sucedida e o jogador da Sombra compra uma  
+peça da Reserva de Busca. 
+—  se a peça é  
+numerada 
+, seu valor representa o  
+Estrago  
+da Busca 
+ provocado na Sociedade. 
+—  se a peça tem um  
+Olho 
+, o Estrago da Busca é igual ao  
+número de sucessos conseguidos no Teste de Busca  
+(se a peça tiver sido comprada pelo fato de a Socie- 
+dade estar entrando ou saindo de uma Fortaleza da  
+Sombra, ou devido a uma Carta de Evento, o Olho  
+tem valor 0). 
+—  se a peça tiver um ícone  
+Revelar 
+, a Sociedade é  
+reve- 
+lada 
+ depois de resolver os outros efeitos. 
+EFEITOS DA BUSCA QUANDO SE  
+REVELA OU SE TORNA PÚBLICA A  
+SOCIEDADE 
+Quando  o  jogador  dos  Povos  Livres  torna  pública  a  
+Sociedade, certas habilidades e eventos podem forçá-lo  
+a comprar uma Peça de Busca. Quando isto acontece,  
+deve-se ignorar qualquer ícone Revelar que houver na  
+peça comprada se a Sociedade tiver sido tornada pública  
+numa Cidade ou Fortaleza dos Povos Livres. 
+Quando a Sociedade é  
+revelada 
+, se o jogador dos Povos  
+Livres é forçado a comprar várias peças de Busca por  
+causa da presença de uma Fortaleza, eventos e habili- 
+dades, o efeito de cada peça é resolvido completamente  
+antes de aplicar o efeito da peça seguinte. Primeiro o  
+jogador  resolve  o  efeito  da  peça  que  fez  com  que  a  
+Sociedade fosse revelada. Depois, ele resolve todas as  
+peças relacionadas a eventos e habilidades. Por último,  
+ele resolve a peça comprada por causa da Fortaleza da  
+Sombra. 
+Exemplo: 
+ Uma Peça de Busca revela a Sociedade  
+em Moria e a carta “Balrog de Moria” está em  
+jogo.  Três  Peças  de  Busca  são  compradas  (uma  
+por causa da Busca, outra pelo Balrog e a terceira  
+devido à Fortaleza da Sombra). Primeiro o joga- 
+dor aplica todos os efeitos devidos à primeira Peça  
+de Busca (aquela que fez com que a Sociedade fosse  
+revelada), depois o efeito da peça comprada por  
+causa do Balrog é aplicado e, por fim, o efeito da  
+peça comprada devido à Fortaleza é resolvido. 
+PEÇAS DE BUSCA 
+1 
+2 
+3 
+A cor do fundo indica o tipo de peça: bege =  
+normal, azul = Sociedade, vermelho = Sombra 
+1 
+Ícone Revelar (se houver) 
+2 
+Estrago da Busca 
+3 
+Ícone Parar (se houver) 
+42 • Guerra do Anel — Segunda Edição Capítulo IX: A Busca pelo Anel • 43 
+EFEITOS DA BUSCA 
+Para aplicar os efeitos de uma Busca bem sucedida, siga os  
+passos abaixo: 
+1)  O jogador dos Povos Livres pode usar  
+uma 
+ Carta de  
+Evento “Coloque sobre a Mesa” relevante para cance- 
+lar ou reduzir o Estrago da Busca. 
+2)  Depois, o jogador dos Povos livres pode usar a habi- 
+lidade especial do Guia. Se, depois destes passos, o  
+Estrago da Busca for maior ou igual a um, o jogador  
+dos Povos Livres pode decidir reduzir o Estrago da  
+Busca sofrendo uma baixa (v. a seguir) — perdendo  
+um Companheiro devido às dificuldades encontradas  
+pela Sociedade ou uma luta entre a Sociedade e os  
+servos da Sombra. 
+3)  O Estrago da Busca que sobrar tem de ser tratado  
+usando o Anel 
+ (v. a seguir), o que aumentará a Cor- 
+rupção dos Portadores do Anel. 
+4)  Se a Busca revelar a Sociedade, ela passará a estar reve- 
+lada (às vezes, o fato de revelar a Sociedade pode levar  
+á compra de uma nova peça, veja o parágrafo  
+Efeitos  
+da Busca Quando se Revela ou se Torna Pública a Socie- 
+dade 
+). 
+Nota: 
+ Se, a qualquer momento durante a reso- 
+lução da Busca, um novo Guia for apontado  
+(isto acontece, por exemplo, quando você usa  
+a habilidade de Guia de Meriadoc e Peregrin  
+ou porque o Guia foi eliminado), a habilidade  
+do novo Guia pode ser usada imediatamente,  
+se for aplicável. 
+Sofrer uma Baixa 
+Se o jogador dos Povos Livres  
+sofre uma baixa 
+, ele tem de  
+eliminar um Companheiro. 
+O jogador dos Povos Livres pode optar entre ter o Guia como  
+uma  baixa  ou  escolher  um  Companheiro  aleatoriamente  
+(excluindo os Portadores do Anel, mas incluindo o Guia)  
+da Sociedade. Se o jogador dos Povos Livres preferir sofrer  
+uma baixa, o jogador da Sombra escolhe aleatoriamente um  
+Marcador de Companheiro virado para baixo no Quadro da  
+Sociedade. O companheiro comprado é eliminado do jogo. 
+Se o Estrago da Busca for maior do que o Nível do Com- 
+panheiro eliminado (incluindo um Guia eliminado), o dano  
+restante deverá ser assumido como Corrupção dos Portado- 
+res do Anel (v. a seguir). 
+Se o Estrago da Busca for  
+menor 
+ que o Nível do Compa- 
+nheiro, ele é eliminado mesmo assim (i.e. é impossível ferir  
+Companheiros). 
+Usar o Anel 
+Quando o jogador dos Povos Livres usa o anel, ele avança o  
+Marcador de Corrupção no Indicador de Avanço da Socie- 
+dade um número de casas igual ao Estrago da Busca. 
+Exemplo: Durante o quarto turno do jogo, os por- 
+tadores do anel encontram-se na região do Portão  
+dos Orcs e o jogador dos Povos Livres está movendo o  
+Marcador de Progresso da Sociedade da casa 1 para  
+a casa 2 do Indicador de Avanço da Sociedade. 
+No Quadro de Busca, existem três dados da Sombra  
+e um dado dos Povos Livres, pois esta é a segunda vez  
+que a Sociedade se movimenta neste turno. 
+O jogador da Sombra rola três Dados de Combate:  
+ele tem de tirar pelo menos um “5” ou “6” para a  
+Busca ser bem sucedida. Ele tira “2”, “5” e “6”, um  
+total de dois sucessos (o jogador da Sombra precisava  
+de apenas um sucesso para a Busca ser bem suce- 
+dida). Ele então compra uma peça da Reserva da  
+Busca: uma peça com um “3” e sem o ícone Revelar.  
+O Estrago da Busca tem de ser aplicado. 
+Não  há  cartas  nem  habilidades  de  Personagens  
+a serem usadas e o jogador dos Povos Livres decide  
+sofrer uma baixa. Passolargo está guiando a Socie- 
+dade e o jogador não deseja que ele morra, por isso  
+ele decide escolher um Personagem aleatoriamente.  
+Todos os Marcadores de Personagem estão embara- 
+lhados e um é escolhido. Um valoroso anão morre  
+confrontando os servos da Sombra. Como Gimli tem  
+nível 2 e o Estrago da Busca é 3, ainda existe 1 ponto  
+de Estrago da Busca a ser aplicado como Corrupção,  
+e a Corrupção dos Portadores do Anel aumenta. 
+Pelo fato de a peça não ter o ícone Revelar, o lado  
+Escondido do Marcador de Progresso da Sociedade  
+continua virado para cima. 
+O UM ANEL E A DEMANDA DA  
+MONTANHA DA PERDIÇÃO 
+Mesmo enquanto procura desesperadamente pelo Um Anel,  
+o  Senhor  do  Escuro  nunca  seria  capaz  de  imaginar  que  
+alguém o levaria a Mordor. Consequentemente, ele não pro- 
+cura o Anel dentro das fronteiras de seu próprio território. 
+Em  
+Guerra do Anel 
+, a partir do momento em que o Um  
+Anel chega às fronteiras de Mordor, eventos são provocados  
+que estão além do controle dos próprios jogadores. A verda- 
+deira luta é agora travada entre a vontade do Anel de voltar  
+a seu Mestre e a determinação dos Portadores do Anel de  
+chegarem ao fim de sua amarga missão. 
+O FARDO DO ANEL 
+A luta física, moral e mental dos Portadores do Anel é repre- 
+sentada pela  
+Corrupção 
+. 
+A Corrupção dos Portadores do Anel aumenta toda vez que  
+o Anel é usado para conter os efeitos de uma Busca bem  
+sucedida, ou como o resultado de várias Cartas de Evento. 
+A Corrupção dos Portadores do Anel diminui através de des- 
+canso em uma Cidade ou Fortaleza aliada ou com o uso de  
+certas habilidades especiais e Cartas de Eventos. 
+Toda vez que a Corrupção aumenta ou diminui, o jogador  
+dos Povos Livres ajusta o Marcador de Corrupção no Indi- 
+cador de Avanço da Sociedade. 
+Assim que o Marcador de Corrupção chegar a 12 pontos de  
+Corrupção no Indicador de Avanço da Sociedade, o jogador  
+dos Povos Livres perde o jogo. 
+A SOCIEDADE EM MORDOR 
+Em Mordor, o poder do Senhor do Escuro está em toda  
+parte e o fardo representado pelo Anel fica maior a cada  
+passo. A  
+Trilha de Mordor 
+ é a parte final da jornada para  
+destruir o Um Anel. 
+A Trilha é representada por círculos superpostos na região  
+de  
+Gorgoroth 
+ no mapa. Note que estes círculos não são  
+realmente considerados como fazendo parte daquela região  
+e a Sociedade não é considerada como estando na região de  
+Gorgoroth, ou em qualquer outra região, quando ela está na  
+Trilha de Mordor. 
+Se a Sociedade está em  
+Minas Morgul 
+ ou em  
+Morannon 
+durante a Fase da Sociedade, o jogador dos Povos Livres  
+pode optar por entrar em Mordor. Neste caso, passe imedia- 
+tamente para os passos a seguir (depois de tornar pública a  
+posição da Sociedade, se isso for necessário). 
+1)  Coloque a figura dos Portadores do Anel  
+na primeira  
+casa da Trilha de Mordor 
+ (que leva o numeral “0”  
+em élfico). A partir deste momento, a Sociedade é  
+considerada como estando na Trilha de Mordor. O  
+Marcador de Progresso da Sociedade não avança mais  
+no Indicador de Avanço da Sociedade, mas ainda é  
+usado para mostrar se a Sociedade está Escondida ou  
+foi Revelada. 
+2)  Crie uma nova Reserva de Busca colocando todas as  
+peças com Olho compradas antes de volta junto com  
+as peças remanescentes da Reserva da Busca e adicione  
+todas as Peças Especiais colocadas em jogo por Cartas  
+de Evento. Não coloque de volta na Reserva peças  
+que foram removidas permanentemente do jogo. 
+Regras Especiais 
+As regras especiais a seguir devem ser usadas quando a Socie- 
+dade estiver na Trilha de Mordor, 
+—  Companheiros na Sociedade não podem ser separados  
+como resultado do uso de um Dado de Ação ou como  
+efeito de habilidades especiais ou Cartas de Evento.  
+Toda ação que normalmente separaria um Compa- 
+nheiro, remove-o do jogo. 
+—  Quando o jogador dos Povos Livres tenta movimen- 
+tar a Sociedade durante a fase de Resolução de Ações,  
+não jogue os Dados de Busca. Em vez disso, compre  
+uma peça da Reserva da Busca. Os efeitos desta peça  
+são  aplicados  normalmente  como  no  caso  de  uma  
+Busca bem sucedida, com as seguintes diferenças: 
+—  Se a peça comprada tiver um Olho, o Estrago  
+da Busca é igual ao número de dados no Qua- 
+dro de Busca (incluindo os dados dos Povos  
+Livres usados anteriormente para movimentar  
+a Sociedade durante o mesmo turno). 
+—  Normalmente a Sociedade avança uma casa na  
+Trilha de Mordor quando se movimenta. No  
+entanto, se a peça tiver o ícone Parar, a Socie- 
+dade permanecerá na mesma casa e não se des- 
+locará para a frente. 
+—  A Sociedade ainda tem de estar Escondida para avan- 
+çar na Trilha de Mordor. Se a Sociedade for revelada,  
+o jogador dos Povos Livres tem de, como é normal,  
+usar um resultado Personagem de um Dado de Ação  
+para esconder a Sociedade novamente. 
+—  Se, no fim da fase de Resolução de Ações, o jogador  
+dos Povos Livres não tiver tentado movimentar ou  
+esconder a Sociedade na Trilha de Mordor durante  
+aquele turno, um ponto de Corrupção é automatica- 
+mente somado aos Portadores do Anel. 
+—  Quando a Sociedade tiver percorrido todas as cinco  
+casas da Trilha de Mordor , a Fenda da Perdição terá  
+sido alcançada e o jogador dos Povos Livres vence o  
+jogo (a menos que os Portadores do Anel tenham  
+chegado a 12 pontos de Corrupção, v. pág. 44). 
+REGISTRO DA CORRUPÇÃO 
+Marcadores de Corrupção 
+A posição do Marcador de Corrupção no  
+Indicador de Avanço da Sociedade é usada para  
+anotar a Corrupção dos Portadores do Anel 
+T R I L H A   D E   M O R D O R 
+—  A Trilha de Mordor não é considerada uma  
+parte da região de Gorgoroth.  
+—  Quando a Sociedade entre em Mordor a figura  
+dos Portadores do Anel é colocada no primeiro  
+Círculo da Trilha. 
+—  Se a Sociedade entrar na Fenda da Perdição e os  
+Portadores do Anel não tiverem 12 pontos de  
+Corrupção, o jogador dos Povos Livres ganha o  
+jogo. 
+44 • Guerra do Anel — Segunda Edição Capítulo XI: Regras para mais de dois jogadores • 45 
+CAPÍTU LO X: 
+VE NCE ND O O  
+JOG O 
+E 
+xistem  quatro  maneiras  de  vencer  o  jogo.  Duas  
+Condições  de  Vitória  podem  ser  obtidas  a  qualquer  
+momento dentro de um turno (v. o parágrafo  
+Condições  
+de Vitória Baseadas no Anel 
+, mais adiante), enquanto as duas  
+outras Condições de Vitória se aplicam somente na fase 6 do  
+turno, a  
+Verificação de Vitória 
+ (v. o parágrafo  
+Condições de  
+Vitória Militar 
+, mais adiante). 
+Se alguma dessas condições for satisfeita, o jogo termina com  
+a vitória para um dos jogadores. 
+Lembre-se que as Condições de Vitória com números  
+menores têm precedência sobre as Condições de Vitória  
+com números maiores, se duas ou mais delas forem satis- 
+feitas no mesmo turno. 
+CONDIÇÕES DE VITÓRIA BASEADAS NO  
+ANEL 
+O objetivo mais importante para Sauron é recuperar o Um  
+Anel,  enquanto  que  o  objetivo  mais  importante  para  os  
+Povos Livres é destruir o Anel. 
+Por esta razão, se um destes dois eventos  
+acontecer a qual- 
+quer momento durante um turno 
+, o jogo termina imedia- 
+tamente  
+sem esperar pela Fase de Verificação de Vitória 
+. 
+1)  
+Corrupção dos Portadores do Anel: 
+ Se tiverem 12  
+ou mais pontos de Corrupção, os Portadores do Anel  
+falharam em sua demanda. Sauron recupera o Anel e  
+o jogador da Sombra vence o jogo. 
+2)  
+Destruição do Anel: 
+ Se a figura dos Portadores do  
+Anel estiver na casa “Fenda da Perdição” da Trilha  
+de Mordor e os Portadores do Anel tiverem menos  
+do que 12 Pontos de Corrupção, o Anel é destruído.  
+Sauron é derrotado e o jogador dos Povos Livres  
+vence o jogo. 
+CONDIÇÕES DE VITÓRIA MILITAR 
+Na história de  
+O Senhor dos Aneis 
+, se Sauron tivesse conse- 
+guido destruir as Nações dos Povos Livres, nem mesmo a  
+destruição do Anel seria uma vitória adequada para os Povos  
+Livres. 
+Ao mesmo tempo, se os povos Livres tivessem conseguido  
+desafiar Sauron militarmente, o Senhor do Escuro teria sido  
+obrigado a um foco tão intenso na luta contra os Exércitos  
+dos Povos Livres que teria sido muito mais fácil para os Por- 
+tadores do Anel chegarem à Montanha da Perdição. 
+Portanto, se, no fim do jogo, qualquer uma das duas condi- 
+ções a seguir for verdadeira, o jogo termina com uma vitória  
+militar. 
+3)  
+A Sombra conquista a Terra-Média: 
+ Se o Jogador  
+da Sombra controla Colônias dos Povos Livres que  
+valem 10 ou mais Pontos de Vitória, o jogador da  
+Sombra vence o jogo. 
+4)  
+Sauron  é  banido  da  Terra-Média. 
+  Se  controlar  
+Colônias da Sombra que valem 4 ou mais pontos de  
+Vitória, o jogador dos Povos Livres vence. 
+As Condições de Vitória Militar baseiam-se no  
+controle 
+ de  
+uma Colônia. 
+Para fins de uma Vitória Militar, um jogador controla uma  
+Colônia  inimiga  se  ele  tiver  o  Marcador  de  Controle  de  
+Colônia sobre ela. 
+Cada Cidade inimiga que um jogador controla vale 1 Ponto  
+de Vitória, enquanto que cada Fortaleza inimiga que um  
+jogador controla vale 2 Pontos de Vitória. 
+Os jogadores usam seus Marcadores de Pontos de Vitória e  
+o Registro de Pontos de Vitória para controlar o valor em  
+Pontos de Vitória de suas conquistas. 
+Marcadores de Pontos de Vitória 
+Marcador de Pontos de  
+Vitória dos Povos Livres 
+Marcador de Pontos de  
+Vitória da Sombra 
+P O N TO S   D E  V I TÓ R I A 
+O símbolo   em uma  
+Cidade é um lembrete  
+de que o controle  
+daquela região vale 1  
+Ponto de Vitória para  
+o oponente. 
+O símbolo    em uma  
+Fortaleza é um lem- 
+brete de que o con- 
+trole daquela Fortaleza  
+vale 2 Pontos de Vitó- 
+ria para o oponente. 
+CAPÍTU LO  XI: 
+RE GR A S  PA RA  
+MAI S DE  D OI S  
+JOGAD ORES 
+N 
+uma  partida  com  três  ou  quatro  jogadores,  cada  
+jogador representa um dos poderes mais importantes  
+de  
+O Senhor dos Anéis 
+ e controla algumas da Nações  
+e certos Personagens. 
+QUATRO JOGADORES 
+No caso de quatro jogadores, as responsabilidades dos joga- 
+dores são divididas da seguinte maneira: 
+Povos Livres: 
+—  Jogador 1:  
+Gondor 
+ (também controla os elfos) 
+—  Jogador 2:  
+Rohan 
+ (também controla o Norte e os  
+Anões) 
+Sombra: 
+—  Jogador 1: O  
+Rei dos Bruxos 
+ (a Nação de Sauron) 
+—  Jogador 2:  
+Saruman e os Aliados de Sauron 
+(Isengard e os Sulistas e Orientais) 
+Todas as regras do jogo padrão continuam válidas com as  
+seguintes exceções: 
+No início da partida, o jogador de Gondor e o jogador do  
+Rei dos Bruxos pegam as Insígnias de Jogador Principal 
+No início de cada turno (com exceção do primeiro), o Joga- 
+dor Principal de uma equipe passa a Insígnia de Jogador  
+Principal para seu companheiro de equipe. 
+COMPRA DE EVENTOS 
+No turno 1, cada jogador compra uma carta para cada um de  
+seus respectivos Baralhos de Eventos. 
+Nos turnos seguintes, cada jogador compra uma carta do  
+Baralho de Eventos que ele preferir. 
+Depois de comprar as cartas, e descartar as cartas em excesso,  
+os jogadores da mesma equipe podem trocar as cartas com  
+seu companheiro de equipe. 
+Os jogadores não podem mostrar nem falar sobre suas cartas.  
+Eles podem apenas perguntar um ao outro se eles desejam  
+trocar uma carta ou não. A carta é trocada somente se os dois  
+jogadores concordarem. 
+Numa partida com quatro participantes, o número de cartas  
+limite na mão de cada jogador é quatro em vez de seis. 
+FASE DA SOCIEDADE 
+O Jogador Principal da equipe dos Povos Livres decide se  
+deve ou não tornar pública a Sociedade e quem é o Guia da  
+Sociedade. 
+ALOCAÇÃO PARA BUSCA E DADOS DE  
+AÇÃO 
+O Jogador Principal da equipe da Sombra decide quantos  
+Dados de Ação ele colocará no Quadro de Busca. 
+O Jogador Principal de cada equipe joga os Dados de Ação. 
+RESOLUÇÃO DA AÇÃO 
+A equipe dos Povos Livres vai primeiro. 
+O Jogador Secundário dos Povos Livres escolhe um Dado de  
+Ação e usa-o apenas para uma das Nações que ele controla  
+ou para alguma ação relacionada com a Sociedade ou algum  
+dos Companheiros, como movimentar ou esconder a Socie- 
+dade ou deslocar os Companheiros no mapa. 
+Depois o Jogador Secundário da equipe da Sombra usa um  
+Dado de Ação, seguido pelo Jogador Principal dos Povos  
+Livres e, então, o Jogador Principal da equipe da Sombra. 
+As ações são todas realizadas nesta ordem até os dois times  
+terem usado todos os seus Dados de Ação. 
+Se um jogador decide passar uma ação, ele ainda tem o direito  
+de realizar sua próxima ação depois que a equipe adversária  
+realizou a ação dela. 
+LIMITES ÁS AÇÕES 
+Cada jogador controla apenas algumas Nações e só pode  
+usar seus Dados de Ação e Cartas de Evento para recrutar,  
+movimentar ou lutar com Exércitos destas Nações. Somente  
+o  jogador  que  controla  uma  Nação  pode  movimentar  o  
+Marcador Político daquela Nação, a menos que a habilidade  
+especial de algum Personagem seja usada. 
+As regras relativas a regiões contendo unidades de Nações  
+controladas pelos dois jogadores de uma equipe estão descri- 
+tas no parágrafo  
+Exércitos Mistos 
+, a seguir. 
+SUMÁRIO 
+Povos Livres 
+—  O jogador de Gondor controla Gondor e as Nações  
+Élficas. 
+—  O jogador de Rohan controla as Nações de Rohan, do  
+Norte e os Anões. 
+—  Qualquer jogador pode movimentar ou esconder a  
+Sociedade. 
+—  Qualquer jogador pode movimentar ou separar Com- 
+panheiros. 
+—  Os efeitos da Busca sobre a Sociedade são decididos e  
+aplicados pelo Jogador Principal. 
+46 • Guerra do Anel — Segunda Edição Capítulo I: Introdução • 47 
+Sombra 
+—  O jogador do Rei dos Bruxos controla a Nação de  
+Sauron, o Rei dos Bruxos e a Boca de Sauron. 
+—  O jogador de Saruman e dos Aliados de Sauron con- 
+trola as Nações de Isengard e dos Sulistas e Orientais  
+e Saruman. 
+—  Qualquer jogador pode buscar a Sociedade. 
+—  Qualquer jogador pode movimentar os Nazgûl, mas  
+somente o jogador do Rei dos Bruxos pode recrutar  
+novos Nazgûl. 
+—  O número de Dados de Ação alocados no Quadro  
+de Busca antes de jogar os Dados de Ação é decidido  
+pelo Jogador Principal. 
+EXÉRCITOS MISTOS 
+Se, depois de uma ação, houver unidades e Líderes contro- 
+lados por jogadores diferentes na mesma região, elas podem  
+continuar como Exércitos independentes ou podem se trans- 
+formar num  
+Exército Misto 
+. 
+Se os Exércitos continuarem independentes, cada jogador  
+mantém o controle de suas próprias unidades e Líderes. Se  
+o número total de unidades dos dois Exércitos exceder o  
+Limite de Concentração, os jogadores terão de remover uma  
+unidade cada, começando com o Jogador Secundário, até o  
+limite voltar a ser respeitado. 
+As  tropas  dos  dois  jogadores  podem  se  transformar  num  
+Exército Misto se os dois jogadores concordarem com isso;  
+eles são obrigados a se tornar um Exército Misto, se a região  
+for atacada. 
+O jogador controlador de um Exército Misto é o jogador que  
+controla o maior número de unidades naquela região. No caso  
+de empate, o jogador que tiver o maior número de unidades  
+de Elite será o controlador. Se continuar havendo empate, o  
+Jogador Principal atual será o jogador controlador. 
+Somente o jogador controlador pode usar Dados de Ação  
+para  movimentar  ou  atacar  com  o  Exército  Misto.  Se  o  
+número de unidades mudar, o controle do Exército Misto  
+pode ser transferido para o outro jogador. 
+Um jogador pode recuperar o controle de suas unidades  
+num Exército Misto simplesmente usando uma ação para  
+mover estas unidades para fora da região onde se encontra  
+o Exército Misto. 
+Um Exército Misto também está sujeito às restrições políti- 
+cas (como não poder atravessar outra fronteira) que qualquer  
+outra Nação não-beligerante que é parte do Exército Misto. 
+EVENTOS 
+Normalmente, as Cartas de Evento só podem ser usadas por  
+um jogador se elas se aplicam a uma Nação ou Personagem  
+que elas controlam. 
+O ícone no canto direito inferior da porção Evento de uma  
+carta indica que jogador pode usar aquela carta. 
+As cartas que não têm um ícone podem ser usadas por qual- 
+quer jogador. 
+Ícones Dos Jogadores 
+Jogador de  
+Gondor 
+Jogador de  
+Rohan 
+Jogador  
+do Rei dos  
+Bruxos 
+Jogador de  
+Saruman e  
+Aliados de  
+Sauron 
+UNIDADES DE ELITE DOS SULISTAS E  
+ORIENTAIS 
+Numa partida com mais de dois jogadores, quando Saruman  
+está em jogo, cada unidade de Elite dos Sulistas e Orientais,  
+bem como cada unidade de Elite de Isengard, é considerada  
+um Líder além de uma unidade de Exército em questões de  
+movimentação e combate. 
+JOGOS COM TRÊS PARTICIPANTES 
+A partida com três jogadores usa as mesmas regras que as de  
+quatro participantes, mas tem apenas um jogador do lado  
+dos Povos Livres, cuja participação é igual à de um jogo com  
+dois participantes com a seguinte  
+Exceção: 
+—  O jogador dos Povos Livres não pode usar duas ações  
+consecutivas sobre a mesma Nação (ex. ele não pode  
+usar duas ações consecutivas para recrutar e mover  
+soldados de Gondor). Ele pode usar duas ações con- 
+secutivas sobre Exércitos Mistos, mas não sobre um  
+Exército padrão (ex. ele pode movimentar um Exér- 
+cito de Gondor uma vez e depois um Exército Misto  
+de Gondor e Rohan, mas não pode agir duas vezes  
+sobre o mesmo exército Misto de Gondor e Rohan). 
+CONDIÇÕES DE VITÓRIA 
+Cada equipe vence da mesma maneira que nos jogos com  
+dois participantes. Para determinar a vitória individual den- 
+tro de uma equipe: 
+—  Se a equipe da Sombra vencer, conte o valor em Pon- 
+tos  de  Vitória  de  Fortalezas  e  Cidades  capturadas  
+pelas Nações de cada jogador da Sombra e subtraia  
+os Pontos de Vitória de Fortalezas e Cidades que eles  
+perderam. O jogador que tiver o maior número de  
+Pontos de Vitória vence. 
+—  Se a equipe dos Povos Livres vencer, o jogador que  
+tiver perdido o menor número de Pontos de Vitória  
+em Fortalezas e Cidades conquistadas pela Sombra  
+vence a partida. 
+S UM Á RIO 
+CAPÍTULO I:   
+INTRODUÇÃO  .  .  .  .  .  .  . 
+3 
+NÚMERO DE JOGADORES.  .  .  .  .  .  . 
+3 
+NOTAS SOBRE A 2ª EDIÇÃO .  .  .  .  .  .   
+3 
+CAPÍTULO II:   
+COMPONENTES DO JOGO  . 
+4 
+LISTA DE COMPONENTES .  .  .  .  .  .  . 
+4 
+PEÇAS DO JOGO  .  .  .  .  .  .  .  .  .  .  . 
+8 
+FIGURAS .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  
+8 
+Exércitos 
+  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  8 
+Líderes dos Povos Livres   .  .  .  .  .  .  .  .  .  .  .  8 
+Nazgûl 
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  8 
+Personagens .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .   8 
+O TABULEIRO DO JOGO  .  .  .  .  .  .  . 
+9 
+REGIÕES  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+10 
+Regiões Livres .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 10 
+NAÇÕES  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+10 
+FORTIFICAÇÕES E COLÔNIAS  .  .  .  .  .  .  .  . 
+10 
+Fortificações 
+  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 10 
+Colônias   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  11 
+QUADROS E REGISTROS  .  .  .  .  .  .  .  .  .  .  .  
+11 
+CAPÍTULO III:   
+PREPARAÇÃO DO JOGO  .  
+14 
+CAPÍTULO IV:   
+O TURNO DO JOGO  .  .  .  . 
+18 
+RESUMO DO TURNO  .  .  .  .  .  .  .  .  
+18 
+OS DADOS DE AÇÃO  .  .  .  .  .  .  .  .  
+18 
+PARADA DE DADOS DE AÇÃO  .  .  .  .  .  .  .  .  
+18 
+ALOCAÇÃO PARA BUSCA E   
+ JOGADA DE AÇÃO  .  .  .  .  .  .  .  .  .  .  .  .  .  
+19 
+UTILIZAÇÃO DOS DADOS DE AÇÃO  .  .  .  .  .  
+19 
+OS ANEIS ÉLFICOS 
+  .  .  .  .  .  .  .  .  .  .  .  .  .  .  21 
+CAPÍTULO V:   
+CARTAS DE EVENTO  .  .  .  
+22 
+BARALHO DE EVENTOS  .  .  .  .  .  .  .  .  .  .  .22 
+COMPRAR CARTAS DE EVENTOS 
+.  .  .  .  .  .  .22 
+JOGAR CARTAS DE EVENTOS.  .  .  .  .  .  .  .  .22 
+Cartas de Evento provocando Baixas 
+  .  .  .  .  .22 
+CARTAS DE COMBATE  .  .  .  .  .  .  .  .  .  .  .  . 
+23 
+CAPÍTULO VI:   
+EXÉRCITOS E BATALHAS 
+.  .   
+24 
+PERSONAGENS  .  .  .  .  .  .  .  .  .  .  .  
+24 
+JOGANDO COM PERSONAGENS   
+ DOS POVOS LIVRES  .  .  .  .  .  .  .  .  .  .  .  .  .24 
+ DA SOMBRA 
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .24 
+MOVENDO PERSONAGENS 
+.  .  .  .  .  .  .  .  .  .24 
+Movendo Companheiros 
+.  .  .  .  .  .  .  .  .  .  .24 
+Movendo Nazgûl e Vassalos   .  .  .  .  .  .  .  .  .24 
+EXÉRCITOS E CONCENTRAÇÃO .  .  . 
+26 
+COMPOSIÇÃO DE EXÉRCITO 
+ .  .  .  .  .  .  .  .  .26 
+LIMITE DE CONCENTRAÇÃO 
+.  .  .  .  .  .  .  .  .26 
+DEPÓSITOS DE EXÉRCITOS 
+  .  .  .  .  .  .  .  .  .  .26 
+O RECRUTAMENTO DE TROPAS .  .  .  
+26 
+O RECRUTAMENTO   
+ DE NOVAS UNIDADES E LÍDERES .  .  .  .  .  .  .26 
+RESTRIÇÕES AO RECRUTAMENTO  .  .  .  .  .  .26 
+COMO USAR UMA CARTA DE EVENTO PARA  
+RECRUTAR TROPAS.  .  .  .  .  .  .  .  .  .  .  .  .  . 
+27 
+MOVIMENTAÇÃO DE EXÉRCITOS  .  .  
+27 
+MOVENDO UM EXÉRCITO 
+  .  .  .  .  .  .  .  .  .  . 27 
+Divisão de um Exército .  .  .  .  .  .  .  .  .  .  .  . 27 
+Restrições de Movimentação  .  .  .  .  .  .  .  .  . 27 
+O USO DE CARTAS DE EVENTO PARA  
+MOVIMENTAR EXÉRCITOS 
+ .  .  .  .  .  .  .  .  .  . 27 
+RESOLUÇÃO DA BATALHA  .  .  .  .  .  
+28 
+ATACAR COM EXÉRCITOS 
+  .  .  .  .  .  .  .  .  .  . 28 
+Divisão de um Exército Atacante  .  .  .  .  .  .  . 28 
+Força de Combate e Liderança  .  .  .  .  .  .  .  . 28 
+AVALIANDO O RESULTADO DE   
+ UMA BATALHA  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+29 
+Jogar uma Carta de Combate 
+  .  .  .  .  .  .  .  . 29 
+Lançar os Dados da Jogada de Combate .  .  .  . 29 
+Lançar os Dados da Jogada do Líder   .  .  .  .  . 30 
+Modificadores Aplicados ao    
+ Resultado da Jogada 
+  .  .  .  .  .  .  .  .  .  .  .  . 30 
+Remoção de Baixas   .  .  .  .  .  .  .  .  .  .  .  .  . 30 
+Optar por Interromper um Ataque, ou Recuar 30   
+Fim da Batalha 
+  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  31 
+FORTIFICAÇÕES, CIDADES, FORTALEZAS,  
+E CERCOS .  .  .  .  .  .  .  .  .  .  .  .  .  .   
+31 
+ATACANDO UMA CIDADE OU  
+ FORTIFICAÇÃO  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  
+31 
+ATACANDO UMA FORTALEZA .  .  .  .  .  .  .  .  
+31 
+Lutando uma Batalha Campal   .  .  .  .  .  .  .  .  31 
+Recuar para dentro de um Cerco 
+.  .  .  .  .  .  . 31 
+CONDUZINDO UM CERCO .  .  .  .  .  .  .  .  .  . 32 
+Restrições 
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 32 
+SORTIDA .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+32 
+ABRANDAR UM CERCO  .  .  .  .  .  .  .  .  .  .  . 
+32 
+REFORÇAR UM CERCO 
+.  .  .  .  .  .  .  .  .  .  .  . 32 
+CAPTURAR UMA COLÔNIA  .  .  .  .  
+32 
+CAPÍTULO VII:   
+A POLÍTICA NA   
+TERRA-MÉDIA 
+.  .  .  .  .  .  .   
+34 
+O INDICADOR POLÍTICO  .  .  .  .  .  .  
+34 
+ATIVAÇÃO DAS NAÇÕES DOS POVOS LIVRES  34 
+AVANÇAR UMA POSIÇÃO POLÍTICA.  .  .  .  . 
+34 
+CARTAS DE EVENTOS QUE AFETAM O  
+INDICADOR POLÍTICO .  .  .  .  .  .  .  .  .  .  .  . 
+35 
+ENTRAR EM GUERRA  .  .  .  .  .  .  .  .  .  .  .  . 
+35 
+PERSONAGENS EM GUERRA  .  .  .  .  .  .  .  .  . 
+35 
+CAPÍTULO VIII:   
+A SOCIEDADE DO ANEL.  .   
+36 
+FIGURAS E MARCADORES DA  
+SOCIEDADE .  .  .  .  .  .  .  .  .  .  .  .  .  
+36 
+OS PORTADORES DO ANEL  .  .  .  .  .  
+36 
+CORRUPÇÃO 
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 36 
+CARTAS DE PERSONAGEM DOS  
+COMPANHEIROS  .  .  .  .  .  .  .  .  .  .  
+37 
+O GUIA DA SOCIEDADE.  .  .  .  .  .  . 
+37 
+Gollum como Guia   .  .  .  .  .  .  .  .  .  .  .  .  . 37 
+O INDICADOR DE AVANÇO DA  
+SOCIEDADE .  .  .  .  .  .  .  .  .  .  .  .  .  
+37 
+MOVIMENTAÇÃO DA SOCIEDADE  .  .  .  .  .  . 
+37 
+LOCALIZANDO A SOCIEDADE  .  .  .  .  .  .  .  . 
+38 
+Torna pública sua posição 
+  .  .  .  .  .  .  .  .  .  . 38 
+É revelada por uma Busca pelo Anel 
+  .  .  .  .  . 38 
+Em Fortalezas Sombra 
+ .  .  .  .  .  .  .  .  .  .  .  . 39 
+ESCONDENDO A SOCIEDADE 
+.  .  .  .  .  .  .  .  . 39 
+CURANDO O PORTADOR DO ANEL  .  .  .  .  . 
+39 
+ENTRANDO EM MORDOR  .  .  .  .  .  .  .  .  .  . 
+39 
+A SEPARAÇÃO DE COMPANHEIROS DA  
+SOCIEDADE .  .  .  .  .  .  .  .  .  .  .  .  .  
+39 
+CAPÍTULO IX:   
+A BUSCA PELO ANEL .  .  .  
+40 
+A RESERVA DE BUSCA.  .  .  .  .  .  .  . 
+40 
+PEÇAS DE BUSCA NORMAIS  .  .  .  .  .  .  .  .  . 
+40 
+PEÇAS DE BUSCA ESPECIAIS.  .  .  .  .  .  .  .  .  . 
+40 
+A BUSCA DA SOCIEDADE .  .  .  .  .  .  
+40 
+O TESTE DE BUSCA .  .  .  .  .  .  .  .  .  .  .  .  .  . 40 
+Modificadores do Teste de Busca 
+  .  .  .  .  .  .  .  41 
+Reavaliação de Busca 
+.  .  .  .  .  .  .  .  .  .  .  .  . 41 
+EFETOS DA BUSCA QUANDO SE REVELA OU  
+SE TORNA PÚBLICA A SOCIEDADE  .  .  .  .  .  .  
+41 
+DETERMINAÇÃO DO ESTRAGO DA BUSCA 
+.  . 41 
+EFEITOS DA BUSCA 
+.  .  .  .  .  .  .  .  .  .  .  .  .  .42 
+Sofrer uma Baixa   .  .  .  .  .  .  .  .  .  .  .  .  .  .42 
+Usar o Anel 
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .42 
+O UM ANEL E A DEMANDA DA  
+MONTANHA DA PERDIÇÃO.  .  .  .  . 
+42 
+O FARDO DO ANEL.  .  .  .  .  .  .  .  .  .  .  .  .  . 
+43 
+A SOCIEDADE EM MORDOR  .  .  .  .  .  .  .  .  . 
+43 
+Regras Especiais 
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  . 43 
+CAPÍTULO X:   
+VENCENDO O JOGO .  .  .  
+44 
+CONDIÇÕES DE VITÓRIA BASEADAS   
+ NO ANEL  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .44 
+CONDIÇÕES DE VITÓRIA MILITAR  .  .  .  .  .  .44 
+CAPÍTULO XI:   
+REGRAS PARA MAIS DE DOIS  
+JOGADORES  .  .  .  .  .  .  .  
+45 
+QUATRO JOGADORES  .  .  .  .  .  .  .  
+45 
+COMPRA DE EVENTOS .  .  .  .  .  .  .  .  .  .  .  . 
+45 
+FASE DA SOCIEDADE  .  .  .  .  .  .  .  .  .  .  .  .  . 
+45 
+ALOCAÇÃO PARA BUSCA E   
+ DADOS DE AÇÃO  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+45 
+RESOLUÇÃO DA AÇÃO.  .  .  .  .  .  .  .  .  .  .  . 
+45 
+LIMITES ÀS AÇÃO  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+45 
+SUMÁRIO  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+45 
+Povos Livres 
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 45 
+Sombra    .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .46 
+EXÉRCITOS MISTOS 
+.  .  .  .  .  .  .  .  .  .  .  .  .  .46 
+EVENTOS.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .46 
+UNIDADES DE ELITE SULISTAS & ORIENTAIS  .46 
+JOGOS COM TRÊS PARTICIPANTES  .  
+46 
+CONDIÇÕES DE VITÓRIA  .  .  .  .  .  .  
+46 
+SUMÁRIO .  .  .  .  .  .  .  .  . 47 
+48 • Guerra do Anel — Segunda Edição 
+Um jogo de  
+ROBERTO DI MEGLIO, MARCO MAGGI E FRANCESCO NEPITELLO 
+Design do jogo:  
+ROBERTO DI MEGLIO, MARCO MAGGI E FRANCESCO NEPITELLO 
+Arte:  
+JOHN HOWE 
+Direção de Arte e Design Gráfico:  
+FABIO MAIORANA 
+Esculturas:  
+BOB NAISMITH 
+Design das Esculturas:  
+JOHN HOWE E MATTEO MACCHI 
+Fotos:  
+CHRISTOPH CIANCI 
+Produção:  
+ROBERTO DI MEGLIO E FABRIZIO ROLLA 
+Tradução para o Português:  
+DOUGLAS QUINTA REIS 
+Diagramação:  
+TINO CHAGAS 
+Playtesters: 
+DOUG ADAMS, CHRISTOPHER BENGTSSON, KEVIN CHAPMAN, DEREK COON, ANDY DAGLISH, CALEB DIFFELL, UGO DI MEGLIO,  
+DAVID FRISTROM, SERGIO GUERRI, KRIS HALL, MICHAEL HALL, MILKE HELBA, STEVE HOPE, CHRISTIAN HRDLICKA, SEAN MCCARTHY,  
+MARCO MOLIN, DON MOODY, PAOLO MORESCHALCHI, STEVE OWEN, CHRISTIAN PETERSEN, DAN RASPLER, ALEX ROCKWELL, STEVE SAN - 
+DERS, DOUGLAS SILFEN, MATTHIAS STABER, MARCELLO TAGLIOLI, 
+ e  
+RENAUD VERLAQUE. 
+Playtesters Da Segunda Edição: 
+AMADO ANGULO, MELANIE CHAPMAN, DAVID FORTNER, TOM HANKS, PETER MAJEK, DAVID MORSE, LUIGI  
+PIUOTO, ANDREW POULTER, CRAIG ROSE, RALF SCHEMMANN, GLENN “MAGIC GEEK” SHANLEY, ALIJA VILLA, WES WAGNER, KEVIN WARREN- 
+DER, KEVIN WOJTASZCZYK 
+ e  
+CHRIS YIOUNG. 
+Agradecimentos Especiais: 
+KRISTOPHER BENGTSSON, KEVIN CHAPMAN 
+ e  
+Andrew Poulter 
+ pelo seu apoio continuado para a clarificação das regras  
+de guerra do anel e seu precioso feedverso incorporado nesta edição. 
+Um jogo criado, públicado e distribuido no mundo todo por  
+ARES GAMES SRL 
+Edição em Português:  
+DEVIR LIVRARIA LTDA. 
+Rua Teodureto Souto, 624 
+Cambuci 
+São Paulo – SP 
+Cep 01539-000 
+www.devir.com.br 
+Terra-Média, O Hobbit,  
+O Senhor dos Aneis Guerra do Anel 
+ ,   e os personagens, objetos eventos e lugares são marcas ou marcas registradas da The  
+Saul Zaentz Company d/b/a Middle-earth Enterprises e são usadas sob licença pela Sophisticated Games Ltd e seus respectivos licenciantes. Guerra  
+do Anel ©2011 Ares Games Srl. ©2011 Sophisticated Games Ltd. Aviso Impróprio para crianças com menos de 36 meses. Contém partes pequenas.  
+Perigo de choking. Fabricado na China. 

@@ -8,8 +8,8 @@ module Strategy
 end
 
 function Base.string(s::Choice)
-	s == Military && return "military"
-	s == Corruption && return "corruption"
+	s == Military && return "militar"
+	s == Corruption && return "corrupção"
 	return nothing
 end
 
@@ -17,6 +17,9 @@ function parse(s::AbstractString)
 	for strat in instances(Choice)
 		s == string(strat) && return strat
 	end
+	# Aceita também os nomes em inglês (para compatibilidade com arquivos de grafo)
+	s == "military" && return Military
+	s == "corruption" && return Corruption
 	return nothing
 end
 
@@ -24,7 +27,7 @@ end
 
 function StrategyChoice(s::AbstractString)
 	strat = Strategy.parse(s)
-	isnothing(strat) && error("\"$(s)\" is not a valid strategy.")
+	isnothing(strat) && error("\"$(s)\" não é uma estratégia válida.")
 	return strat
 end
 
@@ -49,11 +52,11 @@ struct FaceInfo
 end
 
 const FaceInfos = Dict(
-	Character => FaceInfo("Character Die",'C',"a"),
-	Army => FaceInfo("Army Die",'A',"an"),
-	Muster => FaceInfo("Muster Die",'M',"a"),
-	ArmyMuster => FaceInfo("Muster/Army Die",'H',"a"),
-	Event => FaceInfo("Event Die",'P',"an"),
+	Character => FaceInfo("Dado de Personagem",'C',"um"),
+	Army => FaceInfo("Dado de Exército",'A',"um"),
+	Muster => FaceInfo("Dado de Recrutamento",'M',"um"),
+	ArmyMuster => FaceInfo("Dado de Recrutamento/Exército",'H',"um"),
+	Event => FaceInfo("Dado de Evento",'P',"um"),
 	# Eye => FaceInfo("Eye",'E',"an"),
 	# WillOfTheWest => FaceInfo("Will of the West",'W',"a"),
 	)
@@ -82,7 +85,7 @@ end
 
 function DieFace(c)
 	f = Die.parse(c)
-	isnothing(f) && error("\'$(c)\' is not a valid die.")
+	isnothing(f) && error("'$(c)' não é um dado válido.")
 	return f
 end
 

@@ -46,7 +46,7 @@ mutable struct End <: NonInteractiveNode
 	id::String
 	text::String
 
-	End(text="End of Action") = (obj = new(); obj.text = strip(text); obj)
+	End(text="Fim da Ação") = (obj = new(); obj.text = strip(text); obj)
 end
 getnext(n::End) = error("$(typeof(n)) have no children.")
 getmsg(n::End) = n.text
@@ -75,7 +75,7 @@ mutable struct JumpToGraph <: NonInteractiveNode
 end
 getnext(n::JumpToGraph) = n.next
 setnext!(n::JumpToGraph, next::Node) = (n.next = next)
-getmsg(n::JumpToGraph) = "Jump to: $(n.jump_graph)"
+getmsg(n::JumpToGraph) = "Pular para: $(n.jump_graph)"
 
 
 mutable struct ReturnFromGraph <: NonInteractiveNode
@@ -84,7 +84,7 @@ mutable struct ReturnFromGraph <: NonInteractiveNode
 	ReturnFromGraph() = new()
 end
 getnext(n::ReturnFromGraph) = error("$(typeof(n)) have no children.")
-getmsg(n::ReturnFromGraph) = "Continue from where\nyou jumped to this\n graph."
+getmsg(n::ReturnFromGraph) = "Continuar de onde\nvocê pulou para este\n grafo."
 
 
 
@@ -95,7 +95,7 @@ mutable struct PerformAction <: InteractiveNode
 	action::String
 	next::Node
 
-	PerformAction(action="Continue from where\nyou jumped to this\n graph.") = (obj = new(); obj.action = strip(action); obj)
+	PerformAction(action="Continuar de onde\nvocê pulou para este\n grafo.") = (obj = new(); obj.action = strip(action); obj)
 end
 getopt(n::PerformAction) = [CMD.Blank()]
 getnext(n::PerformAction, opt::CMD.Blank) = n.next
@@ -151,10 +151,10 @@ function load_graphs(files...)
 	graphs = mapreduce(load_graphs_from_file, vcat, files)
 
 	unique, conflicts = unique_root_ids(graphs)
-	!unique && error("Error loading graphs, not all root node ids are unique. Conflictings graphs:\n$(strvec2str(conflicts))")
+	!unique && error("Erro ao carregar grafos, nem todos os IDs dos nós raiz são únicos. Grafos em conflito:\n$(strvec2str(conflicts))")
 
 	jumps_exists, conflicts = all_jump_points_exists(graphs)
-	!jumps_exists && error("Warning, not all jumps exists. Non-existing jumps:\n$(strvec2str(conflicts))")
+	!jumps_exists && error("Aviso, nem todos os saltos existem. Saltos inexistentes:\n$(strvec2str(conflicts))")
 
 	return Dict(getid(g) => g for g in graphs)
 end
@@ -208,7 +208,7 @@ macro graphs(node_block)
 				setnext!(n, name, __nodes[next])
 			end
 		catch e
-			e isa KeyError && error("Can't link to node '$(string(e.key))', node not found.")
+			e isa KeyError && error("Não é possível vincular ao nó '$(string(e.key))', nó não encontrado.")
 			rethrow()
 		end
 
@@ -217,7 +217,7 @@ macro graphs(node_block)
 
 		undef_nodes = filter(!(fieldsdefined), nodes)
 		for n in undef_nodes
-			error("Not all edges set on node '$(getid(n))' (or it have another un-initialized field).")
+			error("Nem todas as arestas estão definidas no nó '$(getid(n))' (ou possui outro campo não inicializado).")
 		end
 
 		(starts, nodes)
@@ -267,7 +267,7 @@ macro node(exp)
 
 	return quote
 		id = $(Meta.quot(id))
-		id in keys(__nodes) && error("Node '$(string(id))' already exists.")
+		id in keys(__nodes) && error("Nó '$(string(id))' já existe.")
 
 		n = $node
 		setid!(n,id)

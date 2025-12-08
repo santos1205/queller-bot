@@ -1,117 +1,117 @@
 @graphs begin
 	def_card_prio = """
-	After the Free Peoples' player have selected their combat card, select and play a card. If no card is matching the 4 first items in the priority list, do not play any card.
+	Depois que o jogador dos Povos Livres tiver selecionado sua carta de combate, selecione e jogue uma carta. Se nenhuma carta corresponder aos 4 primeiros itens na lista de prioridades, não jogue nenhuma carta.
 
-	Priority:
-	1. Strategy card that cancels the Free Peoples' card
-	2. Doesn't use the term "Fellowship revealed"
-	3. Doesn't add a hunt tile or corruption
-	4. Character card
-	5. Ascending order of initiative
-	6. Random
+	Prioridade:
+	1. Carta de Estratégia que cancela a carta dos Povos Livres
+	2. Não usa o termo "Sociedade revelada"
+	3. Não adiciona uma peça de caçada ou corrupção
+	4. Carta de Personagem
+	5. Ordem crescente de iniciativa
+	6. Aleatório
 
-	If the selected card requires units to be downgraded or sacrificed, do so as long as the army does not become non-*aggressive*.
+	Se a carta selecionada exigir que unidades sejam rebaixadas ou sacrificadas, faça isso desde que o exército não se torne não-*agressivo*.
 	"""
 
 	sortie_card_prio = """
-	After the Free Peoples' player have selected their combat card, select and play a card. If no card is matching the 2 first items in the priority list, do not play any card.
+	Depois que o jogador dos Povos Livres tiver selecionado sua carta de combate, selecione e jogue uma carta. Se nenhuma carta corresponder aos 2 primeiros itens na lista de prioridades, não jogue nenhuma carta.
 
-	Priority:
-	1. Charcter card that doesn't use the term "Fellowship revealed"
-	2. Character card that doesn't add a hunt tile or corruption
-	3. Ascending order of initiative
-	4. Random
+	Prioridade:
+	1. Carta de Personagem que não usa o termo "Sociedade revelada"
+	2. Carta de Personagem que não adiciona uma peça de caçada ou corrupção
+	3. Ordem crescente de iniciativa
+	4. Aleatório
 
-	If the selected card requires units to be downgraded or sacrificed, do so as long as the army does not become non-*aggressive*.
+	Se a carta selecionada exigir que unidades sejam rebaixadas ou sacrificadas, faça isso desde que o exército não se torne não-*agressivo*.
 	"""
 
 	wk_card_prio = """
-	After the Free Peoples' player have selected their combat card, select and play a card.
+	Depois que o jogador dos Povos Livres tiver selecionado sua carta de combate, selecione e jogue uma carta.
 
-	Priority:
-	1. Strategy card
-	2. Durin's Bane
-	3. Character card
-	4. Doesn't use the term "Fellowship revealed"
-	5. Doesn't add a hunt tile or corruption
-	6. Ascending order of initiative
-	7. Random
+	Prioridade:
+	1. Carta de Estratégia
+	2. Bane de Durin
+	3. Carta de Personagem
+	4. Não usa o termo "Sociedade revelada"
+	5. Não adiciona uma peça de caçada ou corrupção
+	6. Ordem crescente de iniciativa
+	7. Aleatório
 
-	If the selected card requires units to be downgraded or sacrificed, do so as long as the army does not become non-*aggressive*.
+	Se a carta selecionada exigir que unidades sejam rebaixadas ou sacrificadas, faça isso desde que o exército não se torne não-*agressivo*.
 	"""
 
 	attack_card_prio = """
-	After the Free Peoples' player have selected their combat card, select and play a card.
+	Depois que o jogador dos Povos Livres tiver selecionado sua carta de combate, selecione e jogue uma carta.
 
-	Priority:
-	1. Durin's Bane
-	2. Strategy card
-	3. Character card
-	4. Doesn't use the term "Fellowship revealed"
-	5. Doesn't add a hunt tile or corruption
-	6. Ascending order of initiative
-	7. Random
+	Prioridade:
+	1. Bane de Durin
+	2. Carta de Estratégia
+	3. Carta de Personagem
+	4. Não usa o termo "Sociedade revelada"
+	5. Não adiciona uma peça de caçada ou corrupção
+	6. Ordem crescente de iniciativa
+	7. Aleatório
 
-	If the selected card requires units to be downgraded or sacrificed, do so as long as the army does not become non-*aggressive*.
+	Se a carta selecionada exigir que unidades sejam rebaixadas ou sacrificadas, faça isso desde que o exército não se torne não-*agressivo*.
 	"""
 
 
 	################################################################################
 	 @node battle = Start() -> rearguard
-	 @node rearguard = PerformAction("All units from nations not at war form the rearguard.") -> army_attacking
-	 @node army_attacking = BinaryCondition("The Shadow army is attacking.") -> [n_true = is_sortie, n_false = def_in_stronghold]
+	 @node rearguard = PerformAction("Todas as unidades de nações que não estão em guerra formam a retaguarda.") -> army_attacking
+	 @node army_attacking = BinaryCondition("O exército da Sombra está atacando.") -> [n_true = is_sortie, n_false = def_in_stronghold]
 
 	 ########################################
 	 @node def_in_stronghold = BinaryCondition("""
-					 The Shadow army is defending in a region with a stronghold.
+					 O exército da Sombra está se defendendo em uma região com uma fortaleza.
 					 """) -> [n_true = should_retreat_to_stronghold, n_false = field_def_card_prio]
 	 @node field_def_card_prio = PerformAction(def_card_prio) -> field_def_resolve
 	 @node field_def_resolve = JumpToGraph("battle_resolve") -> field_attacking_fp_continues
 	 @node field_attacking_fp_continues = BinaryCondition("""
-														  The Free Peoples' player is continuing the attack.
+														  O jogador dos Povos Livres está continuando o ataque.
 														  """) -> [n_true = retreat_prio, n_false = field_def_end]
 	 @node retreat_prio = PerformAction("""
-				   Retreat from combat into region accroding to the following prioirty.
+				   Retirar-se do combate para a região de acordo com a seguinte prioridade.
 
-				   Priority:
-				   1. Does not creat a *threat*
-				   2. Reduce distance to *target* or *exposed* region
-				   3. Increase the number of *mobile* armies
-				   4. Increase the number of *aggressive* armies
-				   5. Contains a settlement
-				   6. Contains the highest *value* army
-				   7. Adjacent to the highest *value* army
-				   8. Random
+				   Prioridade:
+				   1. Não cria uma *ameaça*
+				   2. Reduz distância para região *alvo* ou *exposta*
+				   3. Aumenta o número de exércitos *móveis*
+				   4. Aumenta o número de exércitos *agressivos*
+				   5. Contém um assentamento
+				   6. Contém o exército de maior *valor*
+				   7. Adjacente ao exército de maior *valor*
+				   8. Aleatório
 				   """) -> field_def_end
-	 @node field_def_end = End("End of Battle") -> []
+	 @node field_def_end = End("Fim da Batalha") -> []
 
 
 	 ########################################
 	 @node should_retreat_to_stronghold = BinaryCondition("""
-					 The Shadow army is not under siege.
-					 And, the *value* is less or equal to the attacking army's.
-					 And, the number of units is less than 8.
+					 O exército da Sombra não está sob cerco.
+					 E, o *valor* é menor ou igual ao do exército atacante.
+					 E, o número de unidades é menor que 8.
 					 """) -> [n_true = retreat_to_stronghold, n_false = def_card_prio]
 	 @node def_card_prio = PerformAction(def_card_prio) -> def_resolve
 	 @node def_resolve = JumpToGraph("battle_resolve") -> attacking_fp_continues
 	 @node attacking_fp_continues = BinaryCondition("""
-													The Free Peoples' player is continuing the attack.
+													O jogador dos Povos Livres está continuando o ataque.
 													""") -> [n_true = should_retreat_to_stronghold, n_false = def_end]
-	 @node def_end = End("End of Battle") -> []
+	 @node def_end = End("Fim da Batalha") -> []
 
-	 @node retreat_to_stronghold = PerformAction("Retreat into stronghold.") -> retreat_stronghold_end
-	 @node retreat_stronghold_end = End("End of Battle") -> []
+	 @node retreat_to_stronghold = PerformAction("Retirar-se para dentro da fortaleza.") -> retreat_stronghold_end
+	 @node retreat_stronghold_end = End("Fim da Batalha") -> []
 
 
 	 ########################################
-	 @node is_sortie = BinaryCondition("Battle is a sortie.") -> [n_true = sortie_card_prio, n_false = army_with_wk]
+	 @node is_sortie = BinaryCondition("A batalha é uma sortida.") -> [n_true = sortie_card_prio, n_false = army_with_wk]
 	 @node sortie_card_prio = PerformAction(sortie_card_prio) -> sortie_resolve
 	 @node sortie_resolve = JumpToGraph("battle_resolve") -> sortie_round_end
 	 @node sortie_round_end = JumpToGraph("battle_round_end") -> sortie_card_prio
 
 
 	 ########################################
-	 @node army_with_wk = BinaryCondition("Army include the Witch King.") -> [n_true = wk_card_prio, n_false = should_play_card]
+	 @node army_with_wk = BinaryCondition("O exército inclui o Rei Bruxo.") -> [n_true = wk_card_prio, n_false = should_play_card]
 	 @node wk_card_prio = PerformAction(wk_card_prio) -> wk_resolve
 	 @node wk_resolve = JumpToGraph("battle_resolve") -> wk_round_end
 	 @node wk_round_end = JumpToGraph("battle_round_end") -> should_play_card
@@ -119,27 +119,27 @@
 
 	 ########################################
 	 @node should_play_card = BinaryCondition("""
-					 The Shadow is conducting a siege.
-					 Or, the Shadow is holding more than 4 cards.
+					 A Sombra está conduzindo um cerco.
+					 Ou, a Sombra está segurando mais de 4 cartas.
 					 """) -> [n_true = attack_card_prio, n_false = attack_play_no_card]
 
 	 @node attack_card_prio = PerformAction(attack_card_prio) -> attack_resolve
-	 @node attack_play_no_card = PerformAction("Do not play a combat card.") -> attack_resolve
+	 @node attack_play_no_card = PerformAction("Não jogar uma carta de combate.") -> attack_resolve
 	 @node attack_resolve = JumpToGraph("battle_resolve") -> attack_round_end
 	 @node attack_round_end = JumpToGraph("battle_round_end") -> should_play_card
 
 
 	 ################################################################################
 	 @node battle_resolve = Start() -> roll
-	 @node roll = PerformAction("Roll for combat and reroll misses.") -> casualties
+	 @node roll = PerformAction("Rolar para combate e rerolar erros.") -> casualties
 	 @node casualties = PerformAction("""
-				   Remove casualties.
+				   Remover baixas.
 
-				   Priority:
-				   1. Maximizes effect of the card played
-				   2. Retains highest army *value* with lowest number of units
-				   3. Keeps one unit of each nation
-				   4. Random
+				   Prioridade:
+				   1. Maximiza efeito da carta jogada
+				   2. Retém o maior *valor* de exército com o menor número de unidades
+				   3. Mantém uma unidade de cada nação
+				   4. Aleatório
 				   """) -> battle_resolve_return
 	 @node battle_resolve_return = ReturnFromGraph() -> []
 
@@ -148,41 +148,41 @@
 
 	 ################################################################################
 	 @node battle_round_end = Start() -> is_fp_dead
-	 @node is_fp_dead = BinaryCondition("There are Free Peoples' units remaining.") -> [n_true = press_on, n_false = no_fp_left]
+	 @node is_fp_dead = BinaryCondition("Há unidades dos Povos Livres restantes.") -> [n_true = press_on, n_false = no_fp_left]
 	 @node no_fp_left = BinaryCondition("""
-					 Moving in to the conquered region would:
-					 - win the game; or
-					 - decrease distance to *target*; or
-					 - remove a *threat*.
+					 Mover para a região conquistada:
+					 - venceria o jogo; ou
+					 - diminuiria a distância para o *alvo*; ou
+					 - removeria uma *ameaça*.
 					 """) -> [n_true = move_into_conquered, n_false = end_without_moving]
 
-	 @node move_into_conquered = PerformAction("Move the largest *value* possible into the conquered region.") -> move_into_conquered_end
-	 @node move_into_conquered_end = End("End of Battle") -> []
+	 @node move_into_conquered = PerformAction("Mover o maior *valor* possível para a região conquistada.") -> move_into_conquered_end
+	 @node move_into_conquered_end = End("Fim da Batalha") -> []
 
 
-	 @node end_without_moving = PerformAction("Do not move any units into the conquered region.") -> end_without_moving_end
-	 @node end_without_moving_end = End("End of Battle") -> []
+	 @node end_without_moving = PerformAction("Não mover nenhuma unidade para a região conquistada.") -> end_without_moving_end
+	 @node end_without_moving_end = End("Fim da Batalha") -> []
 
 
 	 @node press_on = BinaryCondition("""
-					 A field battle was fought.
+					 Uma batalha de campo foi lutada.
 					 """) -> [n_true = aggressive_if_continue, n_false = mili_strat]
 	 @node mili_strat = CheckStrategy("military") -> [n_true = aggressive_if_continue, n_false = press_on_2]
 	 @node press_on_2 = BinaryCondition("""
-					 The Fellowship is on the Mordor track.
+					 A Sociedade está na trilha de Mordor.
 					 """) -> [n_true = another_round_if_possible, n_false = no_more_round]
 	 @node aggressive_if_continue = BinaryCondition("""
-					 The Shadow army is *aggressive* and, if a siege battle is being fought, would remain *aggressive* after an Elite downgrade to continue the battle.
+					 O exército da Sombra é *agressivo* e, se uma batalha de cerco estiver sendo lutada, permaneceria *agressivo* após um rebaixamento de Elite para continuar a batalha.
 					 """) -> [n_true = another_round_if_possible, n_false = no_more_round_2]
-	 @node another_round_if_possible = BinaryCondition("A siege battle is being fought and the Shadow army has no Elites left") -> [n_true = no_more_round_2, n_false = one_more_round]
-	 @node one_more_round = PerformAction("Continue the battle, downgrade an Elite if necessary.") -> one_more_round_return
+	 @node another_round_if_possible = BinaryCondition("Uma batalha de cerco está sendo lutada e o exército da Sombra não tem Elites restantes") -> [n_true = no_more_round_2, n_false = one_more_round]
+	 @node one_more_round = PerformAction("Continuar a batalha, rebaixar uma Elite se necessário.") -> one_more_round_return
 	 @node one_more_round_return = ReturnFromGraph() -> []
 
 
-	 @node no_more_round = PerformAction("End battle") -> no_more_round_end
-	 @node no_more_round_end = End("End of Battle") -> []
+	 @node no_more_round = PerformAction("Encerrar batalha") -> no_more_round_end
+	 @node no_more_round_end = End("Fim da Batalha") -> []
 
-	 @node no_more_round_2 = PerformAction("End battle") -> no_more_round_end_2
-	 @node no_more_round_end_2 = End("End of Battle") -> []
+	 @node no_more_round_2 = PerformAction("Encerrar batalha") -> no_more_round_end_2
+	 @node no_more_round_end_2 = End("Fim da Batalha") -> []
 
 end

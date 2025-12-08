@@ -82,8 +82,8 @@
 
 	########################################
 	@node a7 = Dummy() -> a7_1
-	@node a7_1 = BinaryCondition("The Shadow player is allowed to pass.") -> [n_true = a7_action, n_false = a8]
-	@node a7_action = PerformAction("Pass") -> a7_end
+	@node a7_1 = BinaryCondition("O jogador das Sombras tem permissão para passar.") -> [n_true = a7_action, n_false = a8]
+	@node a7_action = PerformAction("Passar") -> a7_end
 	@node a7_end = End() -> []
 
 

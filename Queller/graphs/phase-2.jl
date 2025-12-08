@@ -2,20 +2,20 @@
 	@node phase_2 = Start() -> p2_check
 	@node p2_check = CheckStrategy("military") -> [n_true=p2_mili, n_false=p2_corr]
 
-	# Military
+	# Militar
 	@node p2_mili = BinaryCondition("""
-									The Shadow's victory points are less than the corruption points after the Free Peoples' have chosen whether to reveal.
+									Os pontos de vitória das Sombras são menores que os pontos de corrupção após os Povos Livres escolherem se revelam.
 									""") -> [n_true=p2_mili_change, n_false=p2_mili_end]
 	@node p2_mili_change = SetStrategy("corruption") -> p2_mili_end
 
-	@node p2_mili_end = End("End of Phase") -> []
+	@node p2_mili_end = End("Fim da Fase") -> []
 
-	# Corruption
+	# Corrupção
 	@node p2_corr = BinaryCondition("""
-									The corruption points are less than the Shadow's victory points after the Free Peoples' have chosen whether to reveal.
+									Os pontos de corrupção são menores que os pontos de vitória das Sombras após os Povos Livres escolherem se revelam.
 									""") -> [n_true=p2_corr_change, n_false=p2_corr_end]
 	@node p2_corr_change = SetStrategy("military") -> p2_corr_end
 
-	@node p2_corr_end = End("End of Phase") -> []
+	@node p2_corr_end = End("Fim da Fase") -> []
 
 end

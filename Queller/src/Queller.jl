@@ -60,48 +60,48 @@ function ProgramState()
 end
 
 greeting_str = """
-Queller CLI: War of the Ring Shadow AI
+Queller CLI: IA das Sombras para War of the Ring
 
-Type 'help' and press enter for more information regarding the operation of the program.
+Digite 'ajuda' e pressione enter para mais informações sobre a operação do programa.
 """
 
 help_str = """
-Queller CLI: War of the Ring Shadow AI
+Queller CLI: IA das Sombras para War of the Ring
 
--- Usage --
+-- Uso --
 
-This program will present a number of statements, selections, and actions for each of the 5 game phases. Simply answer/perform these when they are presented to you. All statments refer to the Shadow player's hand, armies etc. unless specifically stated that it refers to the Free People's hand, armies etc.
+Este programa apresentará várias declarações, seleções e ações para cada uma das 5 fases do jogo. Simplesmente responda/execute-as quando forem apresentadas. Todas as declarações referem-se à mão, exércitos etc. do jogador das Sombras, a menos que especificado que se refere à mão, exércitos etc. dos Povos Livres.
 
-Read the short manual before starting and have it available. Words between asterisks, e.g., *threat*, refers to the glossary in the manual.
+Leia o manual curto antes de começar e mantenha-o disponível. Palavras entre asteriscos, por exemplo, *ameaça*, referem-se ao glossário no manual.
 
--- Dice --
+-- Dados --
 
-The program will keep track of the dice available to the Shadow player and instruct you on which to use. However, it is possible, due to both mistakes and legitimate reasons, that the program will get out of sync with reality. There is a menu option in Phase 5 for correcting this.
+O programa manterá o controle dos dados disponíveis para o jogador das Sombras e instruirá você sobre quais usar. No entanto, é possível, devido a erros e razões legítimas, que o programa fique fora de sincronia com a realidade. Há uma opção de menu na Fase 5 para corrigir isso.
 
--- Inputs --
+-- Entradas --
 
-The valid options for a query are given by the input prompt. If the options are separated by "/" only one of the options should be given. If they are separated by "," several options can be given. To select an options, simply type in the selected option and press enter, multiple options should be separated by spaces or nothing at all.
+As opções válidas para uma consulta são dadas pelo prompt de entrada. Se as opções forem separadas por "/" apenas uma das opções deve ser fornecida. Se forem separadas por "," várias opções podem ser fornecidas. Para selecionar uma opção, simplesmente digite a opção selecionada e pressione enter; múltiplas opções devem ser separadas por espaços ou nada.
 
-All inputs are case insensitive and can in many cases be shorten to one letter, i.e., "t" for "true", "f" for "false", "u" for "undo" etc.
+Todas as entradas não diferenciam maiúsculas de minúsculas e em muitos casos podem ser encurtadas para uma letra, ou seja, "v" para "verdadeiro", "f" para "falso", "d" para "desfazer" etc.
 
-Examples:
+Exemplos:
 
-[true/false] > true
-[true/false] > f
+[verdadeiro/falso] > verdadeiro
+[verdadeiro/falso] > f
 [1/2/3/4] > 3
 [1,2,3,4] > 2 4 1
 [C,A,M,H,P] > mappc
 
--- Commands --
+-- Comandos --
 
-The following commands can (almost) always be used when prompted for input. To use a command type the name of the command and press enter.
+Os seguintes comandos podem (quase) sempre ser usados quando solicitado entrada. Para usar um comando, digite o nome do comando e pressione enter.
 
-help        :: Shows this help message.
-exit        :: Exits the program.
-undo        :: Undo the latest input and step back. Note, everything can not be undone, use the "reset" or "phase" command in these circumstances.
-repeat      :: Repeats the latest query.
-reset       :: Reset and restart the current phase.
-phase <nbr> :: Jumps to the beginning of a phase, e.g., type "phase 3" to jump to phase 3
+ajuda       :: Mostra esta mensagem de ajuda.
+sair        :: Sai do programa.
+undo        :: Desfazer a última entrada e voltar um passo. Note que nem tudo pode ser desfeito; use o comando "reiniciar" ou "fase" nessas circunstâncias.
+repetir     :: Repete a última consulta.
+reiniciar   :: Reinicia e recomeça a fase atual.
+fase <número> :: Pula para o início de uma fase, por exemplo, digite "fase 3" para pular para a fase 3
 
 ----------
 """
@@ -132,7 +132,7 @@ function resolve_decision_graph(state, graph)
 
 	abort = Ref(false)
 	callback(cmd) = proceed!(gc, cmd)
-	callback(cmd::CMD.Undo) = !undo!(gc) && (abort[] = !print_read_process(state, "Cannot undo more.", [CMD.Blank()], x->nothing))
+	callback(cmd::CMD.Undo) = !undo!(gc) && (abort[] = !print_read_process(state, "Não é possível desfazer mais.", [CMD.Blank()], x->nothing))
 
 	while !at_end(gc)
 		msg, options = getinteraction(gc)
@@ -174,10 +174,10 @@ handle_general_command(state,cmd::CMD.Phase) = (state.reset_phase = true; state.
 handle_general_command(state,cmd::CMD.Help) = display_message(state.iop, help_str)
 
 
-phase1(state) = graph_phase(state, "phase_1", "Phase 1")
-phase2(state) = graph_phase(state, "phase_2", "Phase 2")
-phase3(state) = graph_phase(state, "phase_3", "Phase 3")
-phase4(state) = graph_phase(state, "phase_4", "Phase 4")
+phase1(state) = graph_phase(state, "phase_1", "Fase 1")
+phase2(state) = graph_phase(state, "phase_2", "Fase 2")
+phase3(state) = graph_phase(state, "phase_3", "Fase 3")
+phase4(state) = graph_phase(state, "phase_4", "Fase 4")
 
 function graph_phase(state, graph, name)
 	display_message(state.iop, name)
@@ -186,16 +186,16 @@ end
 
 function phase5(state)
 	menu = """
-	Available Dice: $(strvec2str(sort(Die.char.(state.available_dice)),','))
+	Dados Disponíveis: $(strvec2str(sort(Die.char.(state.available_dice)),','))
 
-	Select phase 5 action.
+	Selecione a ação da fase 5.
 
-	1. Choose Shadow action
-	2. Resolve a card effect
-	3. Resolve a battle
-	4. Recruit a minion as Shadow's final action with die set aside earlier
-	5. Change the available dice (use this if the bot's available dice do not match reality)
-	6. End turn and go to phase 1
+	1. Escolher ação das Sombras
+	2. Resolver um efeito de carta
+	3. Resolver uma batalha
+	4. Recrutar um lacaio como ação final das Sombras com dado reservado anteriormente
+	5. Alterar os dados disponíveis (use isto se os dados disponíveis do bot não correspondem à realidade)
+	6. Encerrar turno e ir para a fase 1
 	"""
 
 	graphs = [
@@ -215,7 +215,7 @@ function phase5(state)
 
 	elseif choice[] == 6
 		# Confirm exit
-		msg = "Exit phase 5 and return to phase 1."
+		msg = "Sair da fase 5 e retornar à fase 1."
 		exit = Ref(false)
 
 		exit_callback(cmd::CMD.False) = (exit[] = false)
@@ -234,7 +234,7 @@ end
 include("graphviz.jl")
 
 function check_queller_graphs()
-	println("\nAll graphs in PostScript can be found in Queller/graph_output.")
+	println("\nTodos os grafos em PostScript podem ser encontrados em Queller/graph_output.")
 	graph_output_file(f) = joinpath(PKG_DIR, "graph_output", splitext(basename(f))[1]*".ps")
 
 	for f in getfield.(values(GRAPHS),:source_file)
@@ -242,7 +242,7 @@ function check_queller_graphs()
 	end
 
 	unjumped = get_graphs_not_jumped_to(values(GRAPHS))
-	println("\nGraphs that are not jumped to from another graph:\n$(strvec2str(unjumped))")
+	println("\nGrafos que não são referenciados de outro grafo:\n$(strvec2str(unjumped))")
 
 	return
 end

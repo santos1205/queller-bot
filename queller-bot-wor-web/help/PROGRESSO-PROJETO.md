@@ -1,8 +1,9 @@
 # 📊 **PROGRESSO DO PROJETO: Queller Bot Web**
 
 **Data de Início:** 8 de Dezembro de 2025  
-**Versão Atual:** 0.40 (40% completo)  
-**Base:** Transpilação do Queller Bot Julia para JavaScript/Web
+**Versão Atual:** 0.50 (50% completo) 🎉  
+**Base:** Transpilação do Queller Bot Julia para JavaScript/Web  
+**Última Atualização:** 9 de Dezembro de 2025
 
 ---
 
@@ -26,9 +27,11 @@
 | Sistema de Estratégias | `dice_and_strategy.jl` | `strategy.js` | ✅ Completo | **100%** |
 | Estado do Jogo | `quellerstate.jl` + `Queller.jl` | `state.js` | ✅ Funcional | **90%** |
 | Interface | `cli.jl` (terminal) | `ui.js` + `index.html` | ✅ Completo | **100%** |
-| Loop Principal | `Queller.jl` (main) | `main.js` | ✅ Básico | **70%** |
+| Loop Principal | `Queller.jl` (main) | `main.js` | ✅ Integrado | **80%** |
 | Sistema de Grafos | `graph.jl` | `graph.js` | ✅ Completo | **100%** |
 | Navegador de Grafos | `crawler.jl` | `navigator.js` | ✅ Completo | **100%** |
+| Carregador de Grafos | `load_graphs()` | `graph-loader.js` | ✅ Completo | **100%** |
+| Fase 1 (Grafos) | `phase-1.jl` | `phase-1.js` | ✅ Completo | **100%** |
 | Estilização | - | `css/style.css` | ✅ Completo | **100%** |
 
 ### 2. **Funcionalidades Implementadas** ✅
@@ -227,12 +230,12 @@
 
 - **Arquivos Criados:** 11 de ~25 estimados (44%)
 - **Linhas de Código:** ~2.500 de ~5.000 estimadas (50%)
-- **Funcionalidades Core:** 7 de 12 (58%)
+- **Funcionalidades Core:** 8 de 12 (67%)
 - **Interface:** 100% completa ✅
 - **Sistema de Grafos:** 100% completo ✅
-- **Integração Fase 1:** 100% funcional ✅ **NOVO!**
-- **Testes:** 13 de 16 aprovados (81%) ✅ **NOVO!**
-- **Lógica de IA:** 20% implementada ⚠️ (Fase 1 transpilada e integrada)
+- **Integração Fase 1:** 100% funcional ✅
+- **Testes:** 16 de 16 aprovados (100%) ✅ 🎉
+- **Lógica de IA:** 20% implementada (Fase 1 completa, faltam 4 fases)
 
 ### **Tempo de Desenvolvimento**
 
@@ -262,25 +265,35 @@
 
 **Status:** ✅ **COMPLETO** | **Tempo:** 1 hora
 
-#### Passo 3: Fase 1 (Mais Simples) ✅
-- [x] Transpilar `phase-1.jl` para JSON/JS
+#### Passo 3: Fase 1 (Mais Simples) ✅ **COMPLETO**
+- [x] Transpilar `phase-1.jl` para JavaScript
 - [x] Criar arquivo `js/graphs/phase-1.js`
 - [x] Integrar com navigator
 - [x] Testar fluxo completo
 - [x] Testar caminho Militar ✅
-- [ ] Testar caminho Corrupção (próximo)
+- [x] Testar caminho Corrupção ✅
+- [x] Testar histórico e desfazer ✅
+- [x] Testar compatibilidade com fases legado ✅
 
-**Status:** ✅ **COMPLETO** | **Tempo:** 2 horas | **Prioridade:** 🔴 Crítica
+**Status:** ✅ **COMPLETO** | **Tempo:** 3 horas | **Resultado:** 16/16 testes aprovados (100%)
 
-**Estimativa:** 1-2 horas | **Prioridade:** 🔴 Crítica
+#### Passo 4: Fase 2 (Camaradagem) ⏳ **PRÓXIMO**
+- [ ] Estudar `phase-2.jl` (~80 linhas)
+- [ ] Transpilar para `js/graphs/phase-2.js`
+- [ ] Adicionar ao graph-loader.js
+- [ ] Integrar em main.js (substituir demonstratePhase2)
+- [ ] Testar fluxo completo
+- [ ] Validar transição Fase 2 → Fase 3
 
-#### Passo 4: Fases 2, 4, 5
-- [ ] Transpilar `phase-2.jl`
-- [ ] Transpilar `phase-4.jl`
-- [ ] Transpilar `phase-5.jl`
-- [ ] Testar cada fase individualmente
+#### Passo 6: Fase 3 (Ações - Mais Complexa)
+- [ ] Transpilar `phase-3.jl`
+- [ ] Integrar subgrafos de seleção (select-action-mili, select-action-corr)
+- [ ] Implementar lógica de uso de dados
+- [ ] Testar priorização de ações
 
-**Estimativa:** 3-4 horas | **Prioridade:** 🔴 Crítica
+**Estimativa:** 3-4 horas | **Prioridade:** 🔴 Alta | **Complexidade:** ⭐⭐⭐ Alta
+
+**Estimativa:** 2-3 horas | **Prioridade:** 🔴 Alta
 
 #### Passo 5: Fase 3 (Mais Complexa)
 - [ ] Transpilar `phase-3.jl`
@@ -288,9 +301,9 @@
 - [ ] Testar lógica de priorização
 
 **Estimativa:** 2-3 horas | **Prioridade:** 🔴 Crítica
-
 ### **Fase 3: Subgrafos de Ações** 🟡
 
+#### Passo 7: Subgrafos Essenciais
 #### Passo 6: Subgrafos Essenciais
 - [ ] `select-action-mili.jl` (Seleção Militar)
 - [ ] `select-action-corr.jl` (Seleção Corrupção)
@@ -299,7 +312,7 @@
 
 **Estimativa:** 4-6 horas | **Prioridade:** 🟡 Alta
 
-#### Passo 7: Subgrafos Secundários
+#### Passo 8: Subgrafos Secundários
 - [ ] `character.jl` (Personagem)
 - [ ] `muster.jl` (Recrutar)
 - [ ] `event-cards.jl` (Cartas)
@@ -309,7 +322,7 @@
 
 ### **Fase 4: Polimento** 🟢
 
-#### Passo 8: Funcionalidades Avançadas
+#### Passo 9: Funcionalidades Avançadas
 - [ ] Comando "Repetir"
 - [ ] Comando "Ir para Fase X"
 - [ ] Salvar/Carregar partida (LocalStorage)
@@ -317,7 +330,7 @@
 
 **Estimativa:** 2-3 horas | **Prioridade:** 🟢 Baixa
 
-#### Passo 9: Melhorias de UX
+#### Passo 10: Melhorias de UX
 - [ ] Tutorial interativo
 - [ ] Modo debug (mostrar árvore)
 - [ ] Melhorias visuais adicionais
@@ -378,27 +391,31 @@ queller-bot-wor-web/
 - **Arquivos Pendentes:** 16
 - **Progresso:** 36%
 
-### **Marco 1: MVP Funcional** 🎯 ← ESTAMOS AQUI
+### **Marco 1: MVP Funcional** ✅ **COMPLETO!**
 - [x] Interface visual completa
 - [x] Sistema de interação funcional
 - [x] Fluxo básico das 5 fases
 - [x] Histórico e desfazer
 - [x] Sistema de grafos implementado ✅
-- [x] Fase 1 completa e integrada ✅ **NOVO!**
-- [x] Navegação por grafos funcional ✅ **NOVO!**
+- [x] Fase 1 completa e integrada ✅
+- [x] Navegação por grafos funcional ✅
+- [x] Todos os testes aprovados (16/16) ✅
 
-**Status:** 90% completo | **Próximo:** Testar Fase 1 Corrupção e validar compatibilidade
+**Status:** ✅ 100% completo | **Alcançado em:** 8 Dez 2025
 - [x] Sistema de grafos implementado ✅
 - [ ] Pelo menos 1 fase completa (Fase 1)
 
 **Status:** 70% completo | **Próximo:** Transpilar Fase 1
+### **Marco 2: Core Completo** 🎯 ← ESTAMOS AQUI
+- [x] Sistema de grafos 100% funcional ✅
+- [x] Fase 1 transpilada ✅
+- [ ] Fase 2 transpilada ⏳ **PRÓXIMO**
+- [ ] Fases 4 e 5 transpiladas
+- [ ] Fase 3 transpilada (mais complexa)
+- [ ] Navegação entre todas as fases
+- [ ] Fluxo de jogo completo via grafos
 
-### **Marco 2: Core Completo** 🎯
-- [ ] Todas as 5 fases transpiladas
-- [ ] Sistema de grafos 100% funcional
-- [ ] Navegação entre grafos
-- [ ] Fluxo de jogo completo
-
+**Status:** 20% (1/5 fases) | **Estimativa:** +8-10 horas
 **Status:** 0% | **Estimativa:** +10 horas
 
 ### **Marco 3: Feature Complete** 🎯
@@ -462,31 +479,51 @@ queller-bot-wor-web/
 2. ✅ **Histórico Visual:** Melhor que texto rolando
 3. ✅ **Botões Interativos:** Mais intuitivo que digitar
 4. ✅ **Modal de Ajuda:** Mais acessível
-5. ✅ **Responsive:** Funciona em celular/tablet
-6. ✅ **Sem Instalação:** Abre no navegador
-## 📝 **CHANGELOG**
-
-### **Versão 0.50** (8 Dez 2025) ← **VERSÃO ATUAL**
-- ✅ **Fase 1 totalmente integrada com sistema de grafos!**
+### **Versão 0.50** (8-9 Dez 2025) ← **VERSÃO ATUAL** 🎉
+- ✅ **Fase 1 100% completa e aprovada!**
   - Transpilação completa de `phase-1.jl` para `phase-1.js`
-  - 15 nós (Start, CheckStrategy, 2 caminhos, 2 End nodes)
-  - Caminho Militar testado e aprovado (Teste 13)
+  - 15 nós (Start, CheckStrategy, 2 caminhos completos, 2 End nodes)
+  - Caminho Militar testado e aprovado ✅
+  - Caminho Corrupção testado e aprovado ✅
   - Diferenciação correta entre estratégias
+  - Segunda BinaryCondition exclusiva da Corrupção validada
 - ✅ **Carregador de grafos** (`graph-loader.js`)
   - Carregamento sem ES6 modules (sem CORS)
-  - Validação automática
-  - Arquivos separados mantidos (estrutura Julia)
-- ✅ **Integração com main.js**
+  - Validação automática de todos os grafos
+  - Arquitetura de arquivos separados (estilo Julia)
+- ✅ **Integração completa com main.js**
   - Navigator global com acesso a gameState
-  - Processamento de nós interativos
+  - Processamento de todos os tipos de nós interativos
   - Detecção automática de End nodes
-  - Transição correta entre fases
-- ✅ **Testes aprovados:** 13/16 (81%)
+  - Transições corretas entre fases
+- ✅ **Sistema híbrido validado**
+  - Fase 1 via grafos funcional
+  - Fases 2-5 (legado) compatíveis
+  - Histórico integrado com grafos
+  - Desfazer funciona com navigator
+- ✅ **Todos os testes aprovados: 16/16 (100%)** 🎊
   - Teste 12: Carregamento ✅
   - Teste 13: Navegação Militar ✅
-  - Teste 14: Navegação Corrupção (próximo)
+  - Teste 14: Navegação Corrupção ✅
+  - Teste 15: Histórico e Desfazer ✅
+  - Teste 16: Compatibilidade Legado ✅
+- ✅ **Testes aprovados:** 13/16 (81%)
+### **Próxima Versão 0.55** (Planejada - Dez 2025)
 
-### **Versão 0.40** (8 Dez 2025)
+**Foco:** Transpilar Fase 2 para grafos
+
+**Objetivos:**
+- [ ] Estudar e analisar `phase-2.jl` (~80 linhas)
+- [ ] Criar `js/graphs/phase-2.js` com todos os nós
+- [ ] Integrar ao graph-loader.js
+- [ ] Substituir demonstratePhase2() em main.js
+- [ ] Testar fluxo completo da Fase 2
+- [ ] Validar transição Fase 2 → Fase 3
+- [ ] Criar testes para Fase 2 (17-20)
+
+**Estimativa:** 1-2 horas  
+**Complexidade:** ⭐⭐ Média  
+**Prioridade:** 🔴 Alta
 ## 📝 **CHANGELOG**
 
 ### **Versão 0.40** (8 Dez 2025)
@@ -497,9 +534,9 @@ queller-bot-wor-web/
   - Import/Export JSON
 ### **Próxima Versão 0.55** (Planejada)
 - [ ] Teste 14 completo (caminho Corrupção)
-- [ ] Testes 15-16 completos (histórico e compatibilidade)
-- [ ] Fase 2 transpilada
-- [ ] Sistema de grafos 100% validado
+**Última Atualização:** 9 de Dezembro de 2025 (Versão 0.50)  
+**Versão do Documento:** 1.3  
+**Progresso:** 40% → 50% → Fase 1 100% Aprovada! Próximo: Fase 2 🚀
 
 --- Integração com index.html
 

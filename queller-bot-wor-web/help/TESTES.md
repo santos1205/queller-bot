@@ -96,7 +96,7 @@ js/
     - [x] Lista completa de 6 prioridades do Militar
     - [x] Clicar "✅ Concluído"
     - [x] Fase completa, avançou para Fase 2
-  - [ ] Testado "Não": fase completa, avança para Fase 2 (não testado nesta rodada)
+  - [x] Testado "Não": fase completa, avança para Fase 2
 
 **Resultado:** ✅ Navegação via grafo funciona perfeitamente! Sistema detectou End node e avançou para Fase 2 corretamente.
 

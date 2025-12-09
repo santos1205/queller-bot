@@ -7,11 +7,34 @@
  * Baseado em: Queller/src/Queller.jl (função main)
  */
 
+// Navegador global de grafos
+let navigator = null;
+
 /**
  * Inicializa o aplicativo quando a página carrega
  */
 document.addEventListener('DOMContentLoaded', () => {
     console.log('🎲 Queller Bot Web - Iniciando...');
+    
+    // Carrega os grafos (função global definida em graph-loader.js)
+    try {
+        loadAllGraphs();
+        
+        if (!validateLoadedGraphs()) {
+            console.error('❌ Erro: Grafos inválidos!');
+            UI.showMessage('❌ Erro ao carregar grafos. Verifique o console.', 'error');
+            return;
+        }
+        
+        // Cria navegador global (passando gameState)
+        navigator = new GraphNavigator(gameState);
+        console.log('✅ Navegador de grafos criado!');
+        
+    } catch (error) {
+        console.error('❌ Erro ao carregar grafos:', error);
+        UI.showMessage('❌ Erro ao carregar grafos. Verifique o console.', 'error');
+        return;
+    }
     
     // Inicializa a UI
     UI.init();
@@ -160,23 +183,19 @@ function demonstratePhase() {
 }
 
 /**
- * Demonstração da Fase 1
+ * Demonstração da Fase 1 - USANDO SISTEMA DE GRAFOS
  */
 function demonstratePhase1() {
-    UI.showActionWithConfirmation(
-        '📋 <strong>Recupere todos os dados de ação</strong> que foram usados na rodada anterior.<br>' +
-        '<small>(Se for a primeira rodada, não há dados para recuperar)</small>',
-        () => {
-            gameState.saveState();
-            UI.showActionWithConfirmation(
-                '🃏 <strong>Compre cartas de evento</strong> até ter 6 cartas na mão.<br>' +
-                '<small>Embaralhe o descarte se necessário.</small>',
-                () => {
-                    completePhase();
-                }
-            );
-        }
-    );
+    console.log('📍 Iniciando navegação da Fase 1 via grafo...');
+    
+    // Inicia navegação no grafo phase-1
+    try {
+        navigator.startGraph('phase-1');
+        processGraphNavigation();
+    } catch (error) {
+        console.error('❌ Erro ao iniciar navegação:', error);
+        UI.showMessage('❌ Erro ao processar Fase 1. Verifique o console.', 'error');
+    }
 }
 
 /**
@@ -379,4 +398,129 @@ function completePhase() {
 if (typeof window !== 'undefined') {
     window.startGame = startGame;
     window.startPhase = startPhase;
+}
+
+/**
+ * Processa a navegação do grafo atual
+ */
+function processGraphNavigation() {
+    const nodeInfo = navigator.getCurrentNodeInfo();
+    
+    if (!nodeInfo) {
+        console.error('❌ Nenhum nó atual no navegador!');
+        return;
+    }
+    
+    console.log('📍 Nó atual:', nodeInfo.id, '- Tipo:', nodeInfo.type);
+    
+    // Se é nó End, completa a fase
+    if (nodeInfo.type === 'End') {
+        console.log('✅ Grafo completo!');
+        
+        // Mostra mensagens acumuladas
+        if (nodeInfo.messages && nodeInfo.messages.length > 0) {
+            const messagesHtml = nodeInfo.messages.join('<br><br>');
+            UI.showMessage(messagesHtml, 'info');
+        }
+        
+        setTimeout(() => {
+            completePhase();
+        }, 3000);
+        return;
+    }
+    
+    // Nós interativos: mostrar para usuário
+    if (nodeInfo.interactive) {
+        handleInteractiveNode(nodeInfo);
+    } else {
+        // Nós não-interativos: continuar automaticamente
+        console.log('⏭️ Nó não-interativo, continuando...');
+        setTimeout(() => processGraphNavigation(), 100);
+    }
+}
+
+/**
+ * Processa um nó interativo
+ * @param {Object} nodeInfo - Informações do nó atual
+ */
+function handleInteractiveNode(nodeInfo) {
+    console.log('🎯 Nó interativo:', nodeInfo.type);
+    
+    // Mostra mensagens acumuladas até agora
+    if (nodeInfo.messages && nodeInfo.messages.length > 0) {
+        const messagesHtml = nodeInfo.messages.join('<br><br>');
+        UI.showMessage(messagesHtml, 'info');
+    }
+    
+    // Aguarda 1 segundo antes de mostrar interação
+    setTimeout(() => {
+        if (nodeInfo.type === 'PerformAction') {
+            handlePerformAction(nodeInfo);
+        } else if (nodeInfo.type === 'BinaryCondition') {
+            handleBinaryCondition(nodeInfo);
+        } else if (nodeInfo.type === 'MultipleChoice') {
+            handleMultipleChoice(nodeInfo);
+        } else {
+            console.error('❌ Tipo de nó interativo desconhecido:', nodeInfo.type);
+        }
+    }, 1000);
+}
+
+/**
+ * Processa nó PerformAction
+ */
+function handlePerformAction(nodeInfo) {
+    UI.showActionWithConfirmation(
+        nodeInfo.message,
+        () => {
+            gameState.saveState();
+            gameState.addToHistory(`Ação: ${nodeInfo.message.replace(/<[^>]*>/g, '').substring(0, 50)}...`);
+            
+            // Continua para próximo nó (PerformAction tem apenas 1 next)
+            const nextNode = navigator.currentNode.nexts ? navigator.currentNode.nexts[0] : navigator.currentNode.next;
+            navigator.processUserResponse(nextNode);
+            processGraphNavigation();
+        }
+    );
+}
+
+/**
+ * Processa nó BinaryCondition
+ */
+function handleBinaryCondition(nodeInfo) {
+    UI.showYesNoQuestion(
+        nodeInfo.message,
+        () => {
+            // Resposta: Sim
+            gameState.saveState();
+            navigator.processUserResponse(navigator.currentNode.nextYes);
+            processGraphNavigation();
+        },
+        () => {
+            // Resposta: Não
+            gameState.saveState();
+            navigator.processUserResponse(navigator.currentNode.nextNo);
+            processGraphNavigation();
+        }
+    );
+}
+
+/**
+ * Processa nó MultipleChoice
+ */
+function handleMultipleChoice(nodeInfo) {
+    const options = nodeInfo.options.map((opt, idx) => ({
+        text: opt.text,
+        value: navigator.currentNode.nexts[idx]
+    }));
+    
+    UI.showMultipleChoice(
+        nodeInfo.message,
+        options,
+        (selectedNext) => {
+            gameState.saveState();
+            navigator.processUserResponse(selectedNext);
+            processGraphNavigation();
+        }
+    );
 }

@@ -1,8 +1,211 @@
 # 🧪 **TESTES DO PROJETO QUELLER BOT WEB**
 
 **Data dos Testes:** 8 de Dezembro de 2025  
-**Versão Testada:** 0.35  
+**Versão Testada:** 0.40  
 **Testador:** Mario
+
+---
+
+## 🔄 **FASE ATUAL: INTEGRAÇÃO SISTEMA DE GRAFOS**
+
+**Status:** ✅ **COMPLETA**  
+**Data de Início:** 8 Dez 2025  
+**Data de Conclusão:** 8 Dez 2025  
+**Versão:** 0.40 → 0.50
+
+### **O que foi implementado:**
+- ✅ Sistema de grafos completo (`graph.js`) com 11 tipos de nós
+- ✅ Navegador de grafos (`navigator.js`) com autocrawl
+- ✅ Fase 1 transpilada para ES6 Module (`js/graphs/phase-1.js`)
+- ✅ Carregador dinâmico de grafos (`graph-loader.js`)
+- ✅ Integração com `main.js` - Fase 1 agora usa grafos reais
+- ✅ Funções de processamento de nós interativos
+
+### **Arquitetura ES6 Modules:**
+```
+js/
+  ├── graphs/
+  │   └── phase-1.js         ← Grafo da Fase 1 (export const phase1)
+  ├── graph-loader.js         ← Carrega todos os grafos
+  ├── graph.js                ← Classes dos nós e grafo
+  ├── navigator.js            ← Navegação e autocrawl
+  └── main.js                 ← Integração (type="module")
+```
+
+### **Como funciona agora:**
+1. `DOMContentLoaded` → carrega grafos com `loadAllGraphs()`
+2. Valida grafos com `validateLoadedGraphs()`
+3. Cria `GraphNavigator` global
+4. Na Fase 1: `navigator.startGraph('phase-1')`
+5. Autocrawl percorre nós não-interativos
+6. Pausa em nós interativos (PerformAction, BinaryCondition, MultipleChoice)
+7. Usuário responde → `processUserResponse()` → continua navegação
+8. Nó End → completa fase e avança
+
+### **Testes Necessários:**
+
+#### **TESTE 12: Sistema de Grafos - Carregamento** ✅
+**Prioridade:** 🔴 **CRÍTICA**  
+**Status:** ✅ **APROVADO**  
+**Data:** 8 Dez 2025
+
+**O que foi testado:**
+- [x] Abrir `index.html` no navegador
+- [x] Verificar console (F12):
+  - [x] "[GraphLoader] Carregando phase-1..."
+  - [x] "[GraphLoader] phase-1 carregado com sucesso!"
+  - [x] "[GraphLoader] 1 grafo(s) carregado(s): ['phase-1']"
+  - [x] "[GraphLoader] ✅ Todos os grafos são válidos!"
+  - [x] "✅ Navegador de grafos criado!"
+  - [x] "✅ Queller Bot Web - Pronto!"
+- [x] **Não teve erros no console**
+- [x] Interface carregou normalmente
+
+**Resultado:** ✅ Sistema carrega grafos antes de iniciar UI
+
+**Observações:**
+- Arquivos separados funcionando (js/graphs/phase-1.js)
+- Sem erros CORS (usando scripts globais ao invés de ES6 modules)
+- GraphManager singleton funcional
+
+---
+
+#### **TESTE 13: Fase 1 - Navegação por Grafo (Militar)** ✅
+**Prioridade:** 🔴 **CRÍTICA**  
+**Status:** ✅ **APROVADO**  
+**Data:** 8 Dez 2025
+
+**O que foi testado:**
+- [x] Iniciar jogo
+- [x] Escolher estratégia (aleatória → Militar)
+- [x] Confirmar dados (ex: 3 dados Exército)
+- [x] Verificar console:
+  - [x] "📍 Iniciando navegação da Fase 1 via grafo..."
+  - [x] "📍 Nó atual: phase_1 - Tipo: Start"
+  - [x] "⏭️ Nó não-interativo, continuando..."
+  - [x] "📍 Nó atual: p1_strat - Tipo: CheckStrategy"
+  - [x] "📍 Nó atual: p1_mili_1 - Tipo: PerformAction" (Militar)
+  - [x] "🎯 Nó interativo: PerformAction"
+- [x] Primeira mensagem: "📋 Recupere todos os dados de ação que foram usados na rodada anterior."
+- [x] Clicar "✅ Concluído"
+- [x] Segunda mensagem: "🃏 Compre cartas de evento até ter 6 cartas na mão."
+- [x] Clicar "✅ Concluído"
+- [x] Terceira pergunta: "❓ Você está segurando mais de 6 cartas?"
+  - [x] Testado "Sim": aparece mensagem de descarte (Militar)
+    - [x] Mensagem mostra prioridade: "1. Cartas que NÃO usam 'Sociedade revelada'..."
+    - [x] Lista completa de 6 prioridades do Militar
+    - [x] Clicar "✅ Concluído"
+    - [x] Fase completa, avançou para Fase 2
+  - [ ] Testado "Não": fase completa, avança para Fase 2 (não testado nesta rodada)
+
+**Resultado:** ✅ Navegação via grafo funciona perfeitamente! Sistema detectou End node e avançou para Fase 2 corretamente.
+
+**Observações:**
+- Autocrawl funcionando (Start e CheckStrategy automáticos)
+- CheckStrategy escolheu caminho Militar corretamente
+- Todos os 3 PerformAction funcionaram
+- BinaryCondition com Sim/Não funcional
+- Mensagens do grafo aparecem corretamente (sem erros de .data.message)
+- End node detectado e tratado
+- Transição para Fase 2 funcionou
+- Console mostra todos os passos da navegação claramente
+
+---
+
+#### **TESTE 14: Fase 1 - Navegação por Grafo (Corrupção)** ✅
+**Prioridade:** 🔴 **CRÍTICA**  
+**Status:** ✅ **APROVADO**  
+**Data:** 8 Dez 2025
+
+**O que foi testado:**
+- [x] Reiniciado jogo até obter estratégia **Corrupção 🔥**
+- [x] Executado Fase 1 completa
+- [x] Console mostrou nós Corrupção corretos:
+  - [x] "p1_corr_1", "p1_corr_2", "p1_corr_3"
+- [x] Primeira mensagem: "📋 Recupere todos os dados..." ✅
+- [x] Segunda mensagem: "🃏 Compre cartas de evento..." ✅
+- [x] Terceira pergunta: "❓ Você está segurando mais de 6 cartas?"
+  - [x] Clicado "Sim": apareceu pergunta adicional ✅
+    - [x] "❓ Você está segurando mais de 1 carta de estratégia?"
+    - [x] Clicado "Sim": descarte com prioridade 1 (Corrupção múltiplas estratégias) ✅
+    - [x] Mensagem mostrou 6 prioridades corretas
+- [x] Clicado "Concluído"
+- [x] Console confirmou: `[Navigator] Reached END node: p1_corr_end_2` ✅
+- [x] Fase avançou para Fase 2 automaticamente ✅
+
+**Resultado:** ✅ Caminho Corrupção funciona perfeitamente! Segunda BinaryCondition exclusiva da Corrupção validada.
+
+**Observações:**
+- Caminho Corrupção possui 9 nós (vs 7 do Militar)
+- Segunda pergunta sobre cartas de estratégia é exclusiva da Corrupção
+- Testado caminho "Sim" + "Sim" (discard_1 com prioridades para múltiplas cartas)
+- Transição suave entre Fase 1 (grafos) e Fase 2 (legado)
+
+---
+
+#### **TESTE 15: Histórico e Desfazer com Grafos** ✅
+**Prioridade:** 🟡 **MÉDIA**  
+**Status:** ✅ **APROVADO**  
+**Data:** 8 Dez 2025
+
+**O que foi testado:**
+- [x] Executado Fase 1 completa via grafos (Corrupção)
+- [x] Verificado histórico registrou todas as ações:
+  - [x] "Fase 1 - 22:59:42: Indo para Fase 1"
+  - [x] "Fase 1 - 23:00:13: Dados registrados: ⚔️ Exército, ⚔️ Exército, 🏰 Recrutar, 👤 Personagem"
+  - [x] Todas as PerformActions registradas
+  - [x] Respostas das BinaryConditions registradas
+- [x] Painel de status atualizou corretamente durante toda a navegação
+- [x] Testado botão "⏮️ Desfazer":
+  - [x] Voltou à pergunta anterior ✅
+  - [x] Estado do grafo voltou ao nó anterior ✅
+  - [x] Navigator restaurado corretamente ✅
+  - [x] Interface permitiu continuar navegação ✅
+- [x] Clicado novamente nas opções funcionou perfeitamente
+- [x] Histórico atualizou após continuar
+
+**Resultado:** ✅ Sistema de desfazer totalmente integrado com grafos! Restauração de estado funciona perfeitamente.
+
+**Observações:**
+- Histórico integrado com grafos funciona perfeitamente
+- Desfazer mantém consistência entre gameState e navigator
+- Timestamps precisos para cada entrada
+- Possível voltar múltiplos passos (testado com múltiplos desfazer)
+- Sistema de pilha funciona corretamente
+
+---
+
+#### **TESTE 16: Compatibilidade com Fases Legado** ✅
+**Prioridade:** 🟢 **BAIXA**  
+**Status:** ✅ **APROVADO**  
+**Data:** 8 Dez 2025
+
+**O que foi testado:**
+- [x] Completado Fase 1 via grafos (Corrupção)
+- [x] Fase 2 iniciou automaticamente usando sistema legado ✅
+- [x] Mensagem da Fase 2: "A Sociedade está no tabuleiro?" apareceu
+- [x] Respondido pergunta da Fase 2
+- [x] Transição Fase 2 → 3 funcionou ✅
+- [x] Fase 3: "Ações (Sistema Legado)" executada
+- [x] Transição Fase 3 → 4 funcionou ✅
+- [x] Fase 4: "Olho de Sauron" executada
+- [x] Transição Fase 4 → 5 funcionou ✅
+- [x] Fase 5: "Verificação de Vitória" executada
+- [x] Sistema voltou para Fase 1 após completar ciclo ✅
+- [x] Nenhum erro no console durante todo o processo ✅
+- [x] Todas as transições foram suaves e automáticas
+
+**Resultado:** ✅ Sistema híbrido (Fase 1 grafos + Fases 2-5 legado) funciona perfeitamente! Zero erros e 100% compatibilidade.
+
+---
+
+### **🎯 Próximos Passos Após Testes:**
+1. ✅ Testar integração Fase 1 com grafos (Testes 12-16)
+2. ⏳ Transpilar Fases 2, 4, 5 para ES6 modules
+3. ⏳ Transpilar Fase 3 (mais complexa - com subgrafos)
+4. ⏳ Implementar subgrafos de ação (battle, character, movement, etc.)
+5. ⏳ Integrar todas as fases com sistema de grafos
+6. ⏳ Remover código legado de `demonstratePhase2-5()`
 
 ---
 
@@ -10,6 +213,13 @@
 
 | Teste | Descrição | Status | Observações |
 |-------|-----------|--------|-------------|
+| **FASE ATUAL: INTEGRAÇÃO GRAFOS** |
+| 12 | Carregamento de Grafos | ✅ **APROVADO** | Validação ES6 modules → scripts globais |
+| 13 | Fase 1 - Grafo Militar | ✅ **APROVADO** | Navegação automática funcionando |
+| 14 | Fase 1 - Grafo Corrupção | ✅ **APROVADO** | Caminho Corrupção funcional |
+| 15 | Histórico com Grafos | ✅ **APROVADO** | Undo/Redo integrado com grafos |
+| 16 | Compatibilidade Legado | ✅ **APROVADO** | Híbrido grafo+legado OK |
+| **FASE ANTERIOR: INTERFACE BÁSICA** |
 | 1 | Inicialização | ✅ **APROVADO** | Interface carrega corretamente |
 | 2 | Modal de Ajuda | ✅ **APROVADO** | Modal funciona perfeitamente |
 | 3 | Iniciar Jogo | ✅ **APROVADO** | Estratégia escolhida corretamente |
@@ -22,7 +232,9 @@
 | 10 | Reiniciar Fase | ✅ **APROVADO** | Reset de fase funciona |
 | 11 | Responsividade | ✅ **APROVADO** | Adapta-se a todos os tamanhos |
 
-**Progresso:** 11/11 testes completos (100%) 🎉
+**Progresso Geral:** 16/16 testes completos (100%) 🎉  
+**Fase Atual:** 5/5 testes (100%) ✅  
+**Fase Anterior:** 11/11 testes (100%) ✅
 
 ---
 
@@ -392,27 +604,34 @@
 ## 📊 **ESTATÍSTICAS DOS TESTES**
 
 ### **Resumo Geral**
-- **Total de Testes:** 11
-- **Aprovados:** 11 ✅✅✅
-- **Pendentes:** 0 ⏳
+- **Total de Testes:** 16 (11 básicos + 5 grafos)
+- **Aprovados:** 13 ✅
+- **Pendentes:** 3 ⏳ (fase atual)
 - **Reprovados:** 0 ❌
-- **Progresso:** 100% 🎉🎊🏆
+- **Progresso Geral:** 81% (13/16)
+
+### **Por Fase**
+- 🟢 **Fase Anterior (Interface Básica):** 11/11 (100%) ✅
+- 🟡 **Fase Atual (Sistema de Grafos):** 2/5 (40%) ✅⏳
 
 ### **Por Prioridade**
-- 🔴 **Alta:** 2 testes (2 aprovados) ✅
-- 🟡 **Média:** 6 testes (6 aprovados) ✅
-- 🟢 **Baixa:** 3 testes (3 aprovados) ✅
+- 🔴 **Crítica:** 4 testes (2 aprovados, 2 pendentes)
+- 🟡 **Média:** 7 testes (7 aprovados, 0 pendente)
+- 🟢 **Baixa:** 5 testes (4 aprovados, 1 pendente)
 
 ### **Por Categoria**
-| Categoria | Aprovados | Pendentes | Total |
-|-----------|-----------|-----------|-------|
-| Interface | 3/3 | 0 | 100% ✅ |
-| Seletor de Dados | 1/1 | 0 | 100% ✅ |
-| Fluxo de Fases | 5/5 | 0 | 100% ✅ |
-| Controles | 2/2 | 0 | 100% ✅ |
-| Responsividade | 1/1 | 0 | 100% ✅ |
+| Categoria | Aprovados | Pendentes | Total | % |
+|-----------|-----------|-----------|-------|---|
+| Interface | 3/3 | 0 | 3 | 100% ✅ |
+| Seletor de Dados | 1/1 | 0 | 1 | 100% ✅ |
+| Fluxo de Fases (Legado) | 5/5 | 0 | 5 | 100% ✅ |
+| Controles | 2/2 | 0 | 2 | 100% ✅ |
+| Responsividade | 1/1 | 0 | 1 | 100% ✅ |
+| **Sistema de Grafos** | **2/4** | **2** | **4** | **50%** ✅⏳ |
+| **Compatibilidade** | **0/1** | **1** | **1** | **0%** ⏳ |
 
-### **🎉 TODOS OS TESTES APROVADOS! 🎉**
+### **🎉 PROGRESSO SIGNIFICATIVO!**
+A integração do sistema de grafos está 40% completa. Carregamento e navegação Militar funcionando perfeitamente!
 
 ---
 
@@ -471,7 +690,7 @@
 
 ## 🎯 **PRÓXIMOS PASSOS**
 
-### **✅ TODOS OS TESTES COMPLETOS!**
+### **✅ FASE ANTERIOR COMPLETA**
 1. ✅ ~~Executar **Teste 1-3** (Interface)~~ - **COMPLETO**
 2. ✅ ~~Executar **Teste 4** (Seletor de Dados)~~ - **COMPLETO**
 3. ✅ ~~Executar **Teste 5** (Fase 1)~~ - **COMPLETO**
@@ -482,38 +701,51 @@
 8. ✅ ~~Executar **Teste 10** (Reiniciar Fase)~~ - **COMPLETO**
 9. ✅ ~~Executar **Teste 11** (Responsividade)~~ - **COMPLETO**
 
-### **🏆 100% DOS TESTES APROVADOS! 🏆**
+### **⏳ FASE ATUAL - SISTEMA DE GRAFOS**
+1. ✅ ~~Executar **Teste 12** (Carregamento de Grafos)~~ - 🔴 **COMPLETO** ⭐
+2. ✅ ~~Executar **Teste 13** (Fase 1 - Grafo Militar)~~ - 🔴 **COMPLETO** ⭐
+3. ⏳ Executar **Teste 14** (Fase 1 - Grafo Corrupção) - 🔴 CRÍTICO
+4. ⏳ Executar **Teste 15** (Histórico com Grafos) - 🟡 MÉDIO
+5. ⏳ Executar **Teste 16** (Fases 2-5 Legado) - 🟢 BAIXO
 
-### **Desenvolvimento Futuro (Opcional):**
-- Implementar sistema de grafos (AI decisões reais)
-- Adicionar sons e animações
-- Modo "explicação" que mostra raciocínio do bot
-- Exportar/importar estado do jogo (JSON)
-- Multiplayer/compartilhamento de sessão
+### **🔮 Desenvolvimento Futuro**
+- Transpilar Fases 2, 4, 5 para grafos
+- Transpilar Fase 3 (com subgrafos)
+- Implementar subgrafos de ação
+- Remover código legado após migração completa
+- (Opcional) Sons, animações, modo explicação
 
 ---
 
 ## ✅ **CRITÉRIOS DE ACEITAÇÃO**
 
-Para considerar os testes **completos e aprovados:**
-
-### **Obrigatório:**
+### **✅ Fase Anterior (Interface Básica) - COMPLETO**
 - [x] Todos os testes de Interface (1-3) aprovados ✅
 - [x] Teste do Seletor de Dados (4) aprovado ✅
 - [x] Teste de Fase 1 (5) aprovado ✅
 - [x] Testes de Fases 2-5 (6-8) aprovados ✅
 - [x] Teste de Desfazer (9) aprovado ✅
-
-### **Desejável:**
 - [x] Teste de Reiniciar Fase (10) aprovado ✅
 - [x] Teste de Responsividade (11) aprovado ✅
 
-### **🎊 TODOS OS CRITÉRIOS ATENDIDOS COM SUCESSO! 🎊**
+### **✅ Fase Atual (Sistema de Grafos) - COMPLETA!**
 
-### **Opcional:**
+**Obrigatório para v0.40:**
+- [x] Teste de Carregamento de Grafos (12) aprovado ✅
+- [x] Teste de Navegação Militar (13) aprovado ✅
+- [x] Teste de Navegação Corrupção (14) aprovado ✅
+
+**Desejável para v0.40:**
+- [x] Teste de Histórico com Grafos (15) aprovado ✅
+- [x] Teste de Compatibilidade Legado (16) aprovado ✅
+
+🎉 **TODOS OS TESTES DA v0.40 APROVADOS!**
+
+**Opcional para versões futuras:**
 - [ ] Testes em navegadores diferentes (Chrome, Firefox, Edge)
 - [ ] Testes em dispositivos móveis reais
 - [ ] Testes de performance com muitas ações
+- [ ] Testes de todas as fases via grafos (após transpilação completa)
 
 ---
 
@@ -525,27 +757,50 @@ Para considerar os testes **completos e aprovados:**
 **Arquivo de Progresso:** `help/PROGRESSO-PROJETO.md`  
 **Baseado em:** [Queller Bot Julia](https://github.com/mvmorin/queller-bot)
 
----
-
 ## 🎊 **CONCLUSÃO FINAL** 🎊
 
-**🏆 PROJETO 100% TESTADO E APROVADO! 🏆**
+**🎯 VERSÃO 0.35 - INTERFACE BÁSICA: 100% APROVADA** ✅
 
 - ✅ Todos os 11 testes executados com sucesso
 - ✅ Zero bugs encontrados nos testes finais
 - ✅ Interface totalmente responsiva
 - ✅ Sistema de undo/redo funcional
 - ✅ Fluxo completo de jogo operacional
-- ✅ Pronto para uso em produção!
+- ✅ Pronto para uso em produção (modo básico)!
 
-**Conquistas:**
-- 🎯 100% dos testes obrigatórios aprovados
-- 🎯 100% dos testes desejáveis aprovados
-- 🎯 Interface profissional e moderna
-- 🎯 Código limpo e bem estruturado
-- 🎯 Sistema estável e confiável
+**🎉 VERSÃO 0.40 - SISTEMA DE GRAFOS: 100% APROVADA!** ✅
+
+**O que foi implementado:**
+- ✅ Sistema de grafos completo (11 tipos de nós)
+- ✅ Navegador de grafos com autocrawl
+- ✅ Fase 1 transpilada para JavaScript
+- ✅ Carregador dinâmico de grafos (scripts globais)
+- ✅ Integração completa com main.js
+- ✅ Arquitetura de arquivos separados (estilo Julia)
+
+**Testes executados:**
+- ✅ **Teste 12:** Carregamento de grafos sem CORS ✅
+- ✅ **Teste 13:** Navegação Fase 1 Militar ✅
+- ✅ **Teste 14:** Navegação Fase 1 Corrupção ✅
+- ✅ **Teste 15:** Histórico e Desfazer com grafos ✅
+- ✅ **Teste 16:** Compatibilidade híbrido grafo+legado ✅
+
+**Resultados:**
+- ✅ 16/16 testes aprovados (100%)
+- ✅ Zero erros encontrados
+- ✅ Sistema híbrido funciona perfeitamente
+- ✅ Fase 1 totalmente navegada por grafos
+- ✅ Compatibilidade total com fases legado (2-5)
+
+**Próximos passos (v0.55):**
+- Transpilar fases restantes (2, 3, 4, 5)
+- Implementar subgrafos de ação
+- Remover código legado das fases
 
 ---
 
-**Última Atualização:** 8 de Dezembro de 2025 - Após completar todos os 11 testes (100%)  
-**Status Final:** ✅ **PROJETO COMPLETO E APROVADO!** Pronto para uso! 🎉
+**Última Atualização:** 8 de Dezembro de 2025 - v0.40 100% aprovada! 🎉  
+**Status Anterior:** ✅ **INTERFACE BÁSICA APROVADA!** (v0.35 - 11/11 testes)  
+**Status Atual:** ✅ **SISTEMA DE GRAFOS APROVADO!** (v0.40 - 16/16 testes) 🚀s (v0.40)  
+**Status Anterior:** ✅ **INTERFACE BÁSICA APROVADA!** (v0.35 - 11/11 testes)  
+**Status Atual:** ⏳ **SISTEMA DE GRAFOS EM TESTE** (v0.40 - 0/5 testes pendentes)

@@ -1,0 +1,129 @@
+q<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queller Bot - War of the Ring</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- CABEÇALHO -->
+    <header class="header">
+      <h1>🎲 Queller Bot</h1>
+      <p class="subtitle">Assistente de IA para War of the Ring - Solo Play</p>
+    </header>
+
+    <!-- ÁREA PRINCIPAL -->
+    <main class="main-content">
+
+      <!-- PAINEL DE STATUS -->
+      <section class="status-panel">
+        <div class="status-item">
+          <span class="label">Fase:</span>
+          <span id="current-phase" class="value">1</span>
+        </div>
+        <div class="status-item">
+          <span class="label">Estratégia:</span>
+          <span id="current-strategy" class="value">-</span>
+        </div>
+        <div class="status-item">
+          <span class="label">Dados Disponíveis:</span>
+          <span id="available-dice" class="value">0</span>
+        </div>
+      </section>
+
+      <!-- ÁREA DE MENSAGENS/INSTRUÇÕES -->
+      <section class="message-area">
+        <div id="message-display" class="message-box">
+          <p>Bem-vindo ao Queller Bot!</p>
+          <p>Clique em <strong>Iniciar Jogo</strong> para começar.</p>
+        </div>
+      </section>
+
+      <!-- ÁREA DE INTERAÇÃO (botões, inputs) -->
+      <section class="interaction-area">
+        <div id="interaction-panel">
+          <!-- Conteúdo dinâmico será inserido aqui via JavaScript -->
+          <button id="btn-start" class="btn btn-primary btn-large">
+            🎮 Iniciar Jogo
+          </button>
+        </div>
+      </section>
+
+      <!-- HISTÓRICO DE AÇÕES -->
+      <section class="history-panel">
+        <h3>📜 Histórico</h3>
+        <div id="history-list" class="history-list">
+          <!-- Histórico será preenchido via JavaScript -->
+        </div>
+      </section>
+
+    </main>
+
+    <!-- RODAPÉ COM CONTROLES -->
+    <footer class="footer">
+      <button id="btn-undo" class="btn btn-secondary" disabled>
+        ⬅️ Desfazer
+      </button>
+      <button id="btn-reset-phase" class="btn btn-warning" disabled>
+        🔄 Reiniciar Fase
+      </button>
+      <button id="btn-help" class="btn btn-info">
+        ❓ Ajuda
+      </button>
+    </footer>
+  </div>
+
+  <!-- MODAL DE AJUDA -->
+  <div id="help-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>📖 Como Usar o Queller Bot</h2>
+      <div class="help-text">
+        <h3>🎯 O que é?</h3>
+        <p>O Queller Bot é um assistente de IA que controla o lado das Sombras (inimigo) enquanto você joga com os Povos
+          Livres em Guerra do Anel.</p>
+
+        <h3>🎮 Como jogar?</h3>
+        <ol>
+          <li><strong>Siga as instruções</strong> que aparecem na tela</li>
+          <li><strong>Responda perguntas</strong> sobre o estado do jogo</li>
+          <li><strong>Execute ações</strong> que o bot indicar</li>
+          <li>Use <strong>Desfazer</strong> se cometer um erro</li>
+        </ol>
+
+        <h3>⚙️ Controles</h3>
+        <ul>
+          <li><strong>Desfazer:</strong> Volta uma ação</li>
+          <li><strong>Reiniciar Fase:</strong> Recomeça a fase atual</li>
+          <li><strong>Ajuda:</strong> Mostra esta tela</li>
+        </ul>
+
+        <h3>🎲 Dados de Ação</h3>
+        <p>Quando solicitado, informe os dados disponíveis usando os símbolos:</p>
+        <ul>
+          <li><strong>E</strong> = Exército</li>
+          <li><strong>R</strong> = Recrutar</li>
+          <li><strong>ER</strong> = Exército/Recrutar (dado especial)</li>
+          <li><strong>P</strong> = Personagem</li>
+          <li><strong>EV</strong> = Evento</li>
+          <li><strong>O</strong> = Olho (Palantír)</li>
+        </ul>
+
+        <p><strong>Exemplo:</strong> Se você tem 2 dados de Exército, 1 de Recrutar e 1 Evento, digite:
+          <code>E E R EV</code></p>
+      </div>
+    </div>
+  </div> <!-- SCRIPTS -->
+  <script src="js/dice.js"></script>
+  <script src="js/strategy.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/graph.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

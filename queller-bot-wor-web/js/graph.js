@@ -258,13 +258,73 @@ class GetAvailableDiceNode extends InteractiveNode {
 }
 
 /**
- * 11. Dummy - Nó auxiliar para estruturação de grafos
+ * 11. SetStrategy - Trocar a estratégia atual
+ * Não-interativo, apenas atualiza o estado
+ */
+class SetStrategyNode extends NonInteractiveNode {
+    constructor(id, strategyName, next) {
+        super(id, next);
+        this.type = 'SetStrategy';
+        this.strategyName = strategyName; // "military" ou "corruption"
+    }
+
+    validate() {
+        super.validate();
+        if (!this.strategyName) {
+            throw new Error(`SetStrategyNode ${this.id} must have strategyName`);
+        }
+        return true;
+    }
+}
+
+/**
+ * 12. Dummy - Nó auxiliar para estruturação de grafos
  * Não faz nada, apenas conecta outros nós
  */
 class DummyNode extends NonInteractiveNode {
     constructor(id, next) {
         super(id, next);
         this.type = 'Dummy';
+    }
+}
+
+/**
+ * 13. SetRingAvailable - Define disponibilidade de anel élfico
+ * Não-interativo, apenas atualiza o estado
+ */
+class SetRingAvailableNode extends NonInteractiveNode {
+    constructor(id, value, next) {
+        super(id, next);
+        this.type = 'SetRingAvailable';
+        this.value = value; // true ou false
+    }
+
+    validate() {
+        super.validate();
+        if (typeof this.value !== 'boolean') {
+            throw new Error(`SetRingAvailableNode ${this.id} must have boolean value`);
+        }
+        return true;
+    }
+}
+
+/**
+ * 14. SetMoDTAvailable - Define disponibilidade de Mensageiro da Torre Negra
+ * Não-interativo, apenas atualiza o estado
+ */
+class SetMoDTAvailableNode extends NonInteractiveNode {
+    constructor(id, value, next) {
+        super(id, next);
+        this.type = 'SetMoDTAvailable';
+        this.value = value; // true ou false
+    }
+
+    validate() {
+        super.validate();
+        if (typeof this.value !== 'boolean') {
+            throw new Error(`SetMoDTAvailableNode ${this.id} must have boolean value`);
+        }
+        return true;
     }
 }
 
@@ -401,7 +461,8 @@ class Graph {
                     node = new PerformActionNode(nodeData.id, nodeData.message, nodeData.nexts[0]);
                     break;
                 case 'BinaryCondition':
-                    node = new BinaryConditionNode(nodeData.id, nodeData.message, nodeData.nextYes, nodeData.nextNo);
+                    // nexts[0] = Yes, nexts[1] = No
+                    node = new BinaryConditionNode(nodeData.id, nodeData.message, nodeData.nexts[0], nodeData.nexts[1]);
                     break;
                 case 'MultipleChoice':
                     node = new MultipleChoiceNode(nodeData.id, nodeData.message, nodeData.options, nodeData.nexts);
@@ -414,6 +475,15 @@ class Graph {
                     break;
                 case 'CheckStrategy':
                     node = new CheckStrategyNode(nodeData.id, nodeData.nextMilitar, nodeData.nextCorrupcao);
+                    break;
+                case 'SetStrategy':
+                    node = new SetStrategyNode(nodeData.id, nodeData.strategyName, nodeData.next);
+                    break;
+                case 'SetRingAvailable':
+                    node = new SetRingAvailableNode(nodeData.id, nodeData.value, nodeData.next);
+                    break;
+                case 'SetMoDTAvailable':
+                    node = new SetMoDTAvailableNode(nodeData.id, nodeData.value, nodeData.next);
                     break;
                 case 'UseActiveDie':
                     node = new UseActiveDieNode(nodeData.id, nodeData.dieTypeMap);

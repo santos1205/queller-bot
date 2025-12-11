@@ -109,6 +109,32 @@ class GraphNavigator {
                 this.moveToNext(nextNode);
                 break;
                 
+            case 'SetStrategy':
+                // Trocar estratégia atual
+                const newStrategy = node.strategyName;
+                const oldStrategy = this.gameState.strategy;
+                this.gameState.strategy = newStrategy;
+                console.log(`  🔄 SetStrategy: ${oldStrategy} → ${newStrategy}`);
+                this.messageBuffer.push(`🔄 <strong>Estratégia alterada:</strong> ${oldStrategy === 'military' ? '⚔️ Militar' : '🔥 Corrupção'} → ${newStrategy === 'military' ? '⚔️ Militar' : '🔥 Corrupção'}`);
+                this.moveToNext(node.next);
+                break;
+                
+            case 'SetRingAvailable':
+                // Configurar disponibilidade de anel élfico
+                this.gameState.ringAvailable = node.value;
+                console.log(`  💍 SetRingAvailable: ${node.value}`);
+                this.messageBuffer.push(`💍 <strong>Anel élfico:</strong> ${node.value ? 'Disponível' : 'Não disponível'}`);
+                this.moveToNext(node.next);
+                break;
+                
+            case 'SetMoDTAvailable':
+                // Configurar disponibilidade de Mensageiro da Torre Negra
+                this.gameState.modtAvailable = node.value;
+                console.log(`  📜 SetMoDTAvailable: ${node.value}`);
+                this.messageBuffer.push(`📜 <strong>Mensageiro da Torre Negra:</strong> ${node.value ? 'Disponível' : 'Não disponível'}`);
+                this.moveToNext(node.next);
+                break;
+                
             case 'UseActiveDie':
                 // Usar dado ativo e escolher caminho baseado no tipo
                 const activeDie = this.gameState.activeDie;
@@ -180,9 +206,10 @@ class GraphNavigator {
                 break;
                 
             case 'BinaryCondition':
-                // Sim/Não
-                nextNodeId = response ? node.nextYes : node.nextNo;
-                console.log(`  → Response: ${response ? 'Yes' : 'No'} → ${nextNodeId}`);
+                // Sim/Não - response é o nextNodeId já processado pelo main.js
+                // O main.js envia nexts[0] ou nexts[1] diretamente
+                nextNodeId = response;
+                console.log(`  → Response: ${nextNodeId}`);
                 break;
                 
             case 'MultipleChoice':

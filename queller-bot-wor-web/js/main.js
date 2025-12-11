@@ -178,6 +178,7 @@ function demonstratePhase() {
     } else if (phase === 4) {
         demonstratePhase4();
     } else if (phase === 5) {
+        // Fase 5 agora usa sistema de grafos
         demonstratePhase5();
     }
 }
@@ -202,22 +203,9 @@ function demonstratePhase1() {
  * Demonstração da Fase 2
  */
 function demonstratePhase2() {
-    UI.showYesNoQuestion(
-        'A Sociedade está no tabuleiro?',
-        () => {
-            // Sim - Sociedade está no tabuleiro
-            UI.showActionWithConfirmation(
-                '👣 <strong>Mova a Sociedade</strong> de acordo com as regras do jogo.',
-                () => {
-                    askAboutDeclarations();
-                }
-            );
-        },
-        () => {
-            // Não - Sociedade não está no tabuleiro
-            askAboutDeclarations();
-        }
-    );
+    console.log("📍 Iniciando navegação da Fase 2 via grafo...");
+    navigator.startGraph('phase-2');
+    processGraphNavigation();
 }
 
 function askAboutDeclarations() {
@@ -315,9 +303,25 @@ function demonstratePhase4() {
 }
 
 /**
- * Demonstração da Fase 5
+ * Demonstração da Fase 5 - USANDO SISTEMA DE GRAFOS
  */
 function demonstratePhase5() {
+    console.log('📍 Iniciando navegação da Fase 5 via grafo...');
+    
+    // Inicia navegação no grafo phase-5
+    try {
+        navigator.startGraph('phase-5');
+        processGraphNavigation();
+    } catch (error) {
+        console.error('❌ Erro ao iniciar navegação:', error);
+        UI.showMessage('❌ Erro ao processar Fase 5. Verifique o console.', 'error');
+    }
+}
+
+/**
+ * [LEGADO] Demonstração da Fase 5 - SISTEMA ANTIGO (não usado mais)
+ */
+function demonstratePhase5_LEGACY() {
     UI.showYesNoQuestion(
         '🏆 Algum jogador venceu o jogo?',
         () => {
@@ -491,15 +495,20 @@ function handleBinaryCondition(nodeInfo) {
     UI.showYesNoQuestion(
         nodeInfo.message,
         () => {
-            // Resposta: Sim
+            // Resposta: Sim (nexts[0])
             gameState.saveState();
-            navigator.processUserResponse(navigator.currentNode.nextYes);
+            const yesPath = navigator.currentNode.nexts[0];
+            console.log(`🔍 Debug: BinaryCondition YES - nexts[0] = ${yesPath}`);
+            navigator.processUserResponse(yesPath);
             processGraphNavigation();
         },
         () => {
-            // Resposta: Não
+            // Resposta: Não (nexts[1])
             gameState.saveState();
-            navigator.processUserResponse(navigator.currentNode.nextNo);
+            const noPath = navigator.currentNode.nexts[1];
+            console.log(`🔍 Debug: BinaryCondition NO - nexts[1] = ${noPath}`);
+            console.log(`🔍 Debug: nexts array =`, navigator.currentNode.nexts);
+            navigator.processUserResponse(noPath);
             processGraphNavigation();
         }
     );

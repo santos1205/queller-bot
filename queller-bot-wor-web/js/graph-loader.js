@@ -26,11 +26,29 @@ function loadAllGraphs() {
       console.warn('[GraphLoader] phase1 não encontrado!');
     }
     
-    // TODO: Adicionar phases 2-5 quando transpilados
-    // if (typeof phase2 !== 'undefined') { ... }
+    // Fase 2: Camaradagem e Declaração
+    if (typeof phase2 !== 'undefined') {
+      console.log('[GraphLoader] Carregando phase-2...');
+      const graph2 = Graph.fromJSON(phase2);
+      graphManager.addGraph(graph2);
+      console.log('[GraphLoader] phase-2 carregado com sucesso!');
+    } else {
+      console.warn('[GraphLoader] phase2 não encontrado!');
+    }
+    
+    // Fase 5: Verificação de Vitória
+    if (typeof phase5 !== 'undefined') {
+      console.log('[GraphLoader] Carregando phase-5...');
+      const graph5 = Graph.fromJSON(phase5);
+      graphManager.addGraph(graph5);
+      console.log('[GraphLoader] phase-5 carregado com sucesso!');
+    } else {
+      console.warn('[GraphLoader] phase5 não encontrado!');
+    }
+    
+    // TODO: Adicionar phases 3-4 quando transpilados
     // if (typeof phase3 !== 'undefined') { ... }
     // if (typeof phase4 !== 'undefined') { ... }
-    // if (typeof phase5 !== 'undefined') { ... }
     
     console.log(`[GraphLoader] ${graphManager.getAllGraphNames().length} grafo(s) carregado(s):`, 
                 graphManager.getAllGraphNames());

@@ -1,7 +1,7 @@
 # 🧪 **TESTES DO PROJETO QUELLER BOT WEB**
 
-**Data dos Testes:** 8-11 de Dezembro de 2025  
-**Versão Testada:** 0.80  
+**Data dos Testes:** 8-13 de Dezembro de 2025  
+**Versão Testada:** 0.90 (em desenvolvimento)  
 **Testador:** Mario
 
 ---
@@ -13,27 +13,222 @@
 | Interface Básica | 11 | 11/11 (100%) | ✅ Completa | 0.35 |
 | Fase 1 (Grafos) | 5 | 5/5 (100%) | ✅ Completa | 0.50 |
 | Fase 2 (Grafos) | 5 | 5/5 (100%) | ✅ Completa | 0.60 |
+| Fase 3 (Grafos) | 5 | 5/5 (100%) | ✅ Completa | 0.90 |
 | Fase 4 (Grafos) | 5 | 5/5 (100%) | ✅ Completa | 0.80 |
 | Fase 5 (Grafos) | 5 | 5/5 (100%)* | ⚠️ Parcial | 0.70 |
-| **TOTAL** | **31** | **31/31 (100%)** | ✅ **Completo** | **0.80** |
+| **TOTAL** | **36** | **36/36 (100%)** | ✅ **Completo** | **0.90** |
 
-**🎉 TODOS OS 31 TESTES APROVADOS! 🎉**
+**🎉 TODOS OS 36 TESTES APROVADOS! 🎉**
 
 **Progresso do Projeto:**
 - ✅ Fase 1: 100% implementada (grafos)
 - ✅ Fase 2: 100% implementada (grafos)
-- ✅ Fase 4: 100% implementada (grafos) ← **NOVO!**
+- ✅ Fase 3: 100% implementada (grafos) ← **NOVO!**
+- ✅ Fase 4: 100% implementada (grafos)
 - ✅ Fase 5: 100% implementada (grafos - *limitação: JumpToGraph requer subgrafos)
-- ⏳ Fase 3: 0% (próxima - mais complexa)
-- ⏳ Subgrafos: 0% (select_action_mili, select_action_corr, etc)
+- ⏳ Subgrafos: 0% (select_action_mili, select_action_corr, etc - próxima etapa)
 
-**Versão Atual:** 0.80 → **4 de 5 fases usando sistema de grafos!**
+**Versão Atual:** 0.90 → **5 de 5 fases transpiladas e 100% testadas!** 🎊
 
-**⚠️ Nota:** Fase 5 funciona perfeitamente até encontrar nós JumpToGraph que dependem de subgrafos ainda não implementados (Fase 3).
+**⚠️ Nota:** Fase 5 funciona perfeitamente até encontrar nós JumpToGraph que dependem de subgrafos ainda não implementados.
 
 ---
 
-## 🔄 **FASE ATUAL: FASE 4 - OLHO DE SAURON**
+## 🔄 **FASE ATUAL: FASE 3 - AÇÕES**
+
+**Status:** ⏳ **EM TESTE**  
+**Data de Início:** 13 Dez 2025  
+**Data de Conclusão:** Pendente  
+**Versão:** 0.80 → 0.90
+
+### **O que foi implementado:**
+- ✅ Fase 3 transpilada para JavaScript (`js/graphs/phase-3.js`)
+- ✅ 2 caminhos completos: Militar (7 nós) + Corrupção (11 nós)
+- ✅ Lógica de reserva de caça (hunt pool allocation)
+- ✅ Integração com `graph-loader.js`
+- ✅ `demonstratePhase3()` agora usa navegação por grafo
+- ✅ Script adicionado ao `index.html`
+
+### **Arquitetura da Fase 3:**
+```
+phase_3:
+  Start → CheckStrategy
+    ├─ Militar: 3 BinaryConditions → 4 PerformActions → End
+    └─ Corrupção: 5 BinaryConditions → 6 PerformActions → End
+```
+
+**Decisões implementadas:**
+
+**Caminho Militar:**
+1. Sociedade na trilha de Mordor? → Atribuir máximo de dados à caça
+2. Progresso > 5? → Atribuir 2 dados à caça
+3. Posição inicial com progresso 0? → Atribuir 0 ou 1 dado à caça
+
+**Caminho Corrupção:**
+1. Posição inicial com progresso 0? → d6: 4+ = 1 dado à caça
+2. Trilha de Mordor? → Atribuir máximo de dados à caça
+3. Exército adjacente ao alvo OU 7 dados? → 1 dado à caça
+4. Progresso > 4? → 2 dados à caça
+5. Caminho passa por fortaleza? → 2 ou 1 dado à caça
+
+### **Testes Necessários:**
+
+#### ⏳ Teste 32: Carregamento do Grafo
+**Objetivo:** Verificar se o grafo phase_3 foi carregado corretamente  
+**Passos:**
+1. Abrir `index.html` no navegador
+2. Abrir console do navegador (F12)
+3. Verificar mensagens de carregamento
+
+**Esperado:**
+- Mensagem: `[GraphLoader] Carregando phase-3...`
+- Mensagem: `[GraphLoader] phase-3 carregado com sucesso!`
+- Total de grafos: 6 (phase-1, phase-2, phase_3, phase_4, adjust_dice, phase-5)
+- Zero erros de validação
+
+**Resultado:** ✅ **APROVADO**
+- ✅ Mensagem `[GraphLoader] Carregando phase-3...` exibida
+- ✅ Mensagem `[GraphLoader] phase-3 carregado com sucesso!` confirmada
+- ✅ Total de 6 grafos carregados: phase_1, phase_2, phase_3, phase_4, adjust_dice, phase-5
+- ✅ Zero erros de validação
+- ✅ Grafo phase_3 disponível no GraphManager
+
+---
+
+#### ⏳ Teste 33: Navegação Militar (Sociedade na Trilha)
+**Objetivo:** Testar caminho Militar quando Sociedade está na trilha de Mordor  
+**Passos:**
+1. Iniciar jogo
+2. Selecionar estratégia Militar (ou aguardar sorteio)
+3. Avançar até Fase 3
+4. Responder "Sim" para "A Sociedade está na trilha de Mordor?"
+
+**Esperado:**
+- ✅ Navegador entra no grafo phase_3
+- ✅ CheckStrategy detecta Militar e vai para p3_mili_1
+- ✅ BinaryCondition exibe pergunta sobre trilha de Mordor
+- ✅ Ao responder "Sim", vai para p3_mili_1_yes
+- ✅ PerformAction exibe: "Atribuir o número máximo permitido de dados à reserva de caça"
+- ✅ Vai para p3_mili_end_phase (End)
+- ✅ Transição automática para Fase 4
+
+**Resultado:** ✅ **APROVADO**
+- ✅ Fase 3 iniciada com estratégia Militar
+- ✅ BinaryCondition p3_mili_1 exibiu pergunta sobre trilha de Mordor
+- ✅ Ao responder "Sim", navegou para p3_mili_1_yes (PerformAction)
+- ✅ Ação exibida: "Atribuir o número máximo permitido de dados à reserva de caça"
+- ✅ Navigator alcançou End node (p3_mili_end_phase) corretamente
+- ✅ Transição automática para Fase 4 funcionou perfeitamente
+- ✅ Zero erros no console durante toda a navegação
+
+---
+
+#### ⏳ Teste 34: Navegação Militar (Progresso > 5)
+**Objetivo:** Testar caminho Militar quando progresso da Sociedade > 5  
+**Passos:**
+1. Iniciar jogo com estratégia Militar
+2. Avançar até Fase 3
+3. Responder "Não" para trilha de Mordor
+4. Responder "Sim" para progresso > 5
+
+**Esperado:**
+- ✅ Vai de p3_mili_1 → p3_mili_2 (segunda BinaryCondition)
+- ✅ PerformAction: "Atribuir 2 dados à reserva de caça"
+- ✅ Vai para End e transita para Fase 4
+
+**Resultado:** ✅ **APROVADO**
+- ✅ Primeira pergunta respondida com "Não" → navegou para p3_mili_2
+- ✅ Segunda pergunta apareceu: "O progresso da Sociedade é maior que 5?"
+- ✅ Ao responder "Sim", navegou para p3_mili_2_yes (PerformAction)
+- ✅ Ação correta exibida: "Atribuir 2 dados à reserva de caça" (não máximo)
+- ✅ Navigator alcançou End node corretamente
+- ✅ Transição automática para Fase 4 funcionou
+- ✅ Zero erros no console
+
+---
+
+#### ⏳ Teste 35: Navegação Corrupção (Posição Inicial)
+**Objetivo:** Testar caminho Corrupção com Sociedade na posição inicial  
+**Passos:**
+1. Iniciar jogo com estratégia Corrupção
+2. Avançar até Fase 3
+3. Responder "Sim" para "Sociedade na posição inicial com progresso 0?"
+
+**Esperado:**
+- ✅ CheckStrategy detecta Corrupção e vai para p3_corr_1
+- ✅ BinaryCondition exibe pergunta sobre posição inicial
+- ✅ PerformAction: "Role um d6. Em 4+, atribuir 1 dado à reserva de caça"
+- ✅ Vai para p3_corr_end_phase (End)
+- ✅ Transição para Fase 4
+
+**Resultado:** ✅ **APROVADO**
+- ✅ Estratégia Corrupção (🔥) detectada corretamente pelo CheckStrategy
+- ✅ Navigator entrou no caminho p3_corr_1 (primeiro nó de Corrupção)
+- ✅ Primeira pergunta do caminho Corrupção exibida corretamente
+- ✅ Ao responder "Sim", navegou para p3_corr_1_yes (PerformAction)
+- ✅ Ação característica da Corrupção: "Role um d6. Em 4+, atribuir 1 dado..."
+- ✅ Navigator alcançou End node (p3_corr_end_phase)
+- ✅ Transição automática para Fase 4 funcionou
+- ✅ Zero erros no console
+
+---
+
+#### ⏳ Teste 36: Compatibilidade Híbrida (Fase 3 + Outras)
+**Objetivo:** Validar que Fase 3 se integra corretamente com as outras fases  
+**Passos:**
+1. Iniciar jogo e completar ciclo: Fase 1 → 2 → 3 → 4 → 5
+2. Verificar transições entre grafos
+3. Verificar histórico de ações
+
+**Esperado:**
+- ✅ Fase 1 (grafos) funciona
+- ✅ Fase 2 (grafos) funciona
+- ✅ Fase 3 (grafos) funciona ← **NOVO!**
+- ✅ Fase 4 (grafos) funciona
+- ✅ Fase 5 (grafos) funciona até JumpToGraph
+- ✅ Transições suaves entre todas as fases
+- ✅ Zero erros no console (exceto JumpToGraph esperado)
+- ✅ Histórico registra todas as ações corretamente
+
+**Resultado:** ✅ **APROVADO**
+- ✅ Ciclo completo testado: Fase 1 → 2 → 3 → 4 → 5
+- ✅ Todas as transições entre fases foram suaves e sem erros
+- ✅ Fase 1 (grafos) funcionou perfeitamente
+- ✅ Fase 2 (grafos) funcionou perfeitamente
+- ✅ Fase 3 (grafos) funcionou perfeitamente ← **NOVO!**
+- ✅ Fase 4 (grafos) funcionou perfeitamente
+- ✅ Fase 5 (grafos) funcionou até JumpToGraph (esperado)
+- ✅ Sistema híbrido 100% validado com todas as 5 fases
+- ✅ Histórico registrou todas as ações corretamente
+- ✅ Zero erros críticos no console
+- ✅ Navegação por grafos funcionando em 100% das fases implementadas
+
+---
+
+### **Resumo da Fase 3:**
+
+| Teste | Descrição | Status | Observações |
+|-------|-----------|--------|-------------|
+| 32 | Carregamento do grafo | ✅ Aprovado | 6 grafos carregados com sucesso |
+| 33 | Militar - Trilha Mordor | ✅ Aprovado | Máximo de dados à caça funcionou |
+| 34 | Militar - Progresso > 5 | ✅ Aprovado | 2 dados à caça funcionou |
+| 35 | Corrupção - Posição inicial | ✅ Aprovado | Rolagem d6 exibida corretamente |
+| 36 | Compatibilidade híbrida | ✅ Aprovado | Todas as 5 fases funcionando! |
+
+**Melhorias Implementadas:**
+- ✅ Todas as 5 fases agora usam sistema de grafos
+- ✅ Lógica de caça à Sociedade implementada
+- ✅ Decisões complexas com múltiplas condições
+- ✅ Sistema 100% baseado em grafos (exceto subgrafos de ação)
+- ✅ Caminho Militar com 3 condições encadeadas
+- ✅ Caminho Corrupção com 5 condições encadeadas
+- ✅ Diferenciação correta entre estratégias Militar e Corrupção
+
+**🎉 FASE 3 COMPLETA - 5/5 TESTES APROVADOS (100%)! 🎉**
+
+---
+
+## 🔄 **FASE ANTERIOR: FASE 4 - OLHO DE SAURON**
 
 **Status:** ✅ **COMPLETA**  
 **Data de Início:** 11 Dez 2025  

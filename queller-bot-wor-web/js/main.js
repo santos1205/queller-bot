@@ -229,59 +229,16 @@ function askAboutDeclarations() {
 }
 
 /**
- * Demonstração da Fase 3
+ * Demonstração da Fase 3 - USANDO SISTEMA DE GRAFOS
  */
 function demonstratePhase3() {
-    if (gameState.availableDice.length === 0) {
-        UI.showMessage(
-            '✅ Não há mais dados disponíveis.<br>Fase de Ações completa!',
-            'success'
-        );
-        setTimeout(() => completePhase(), 3000);
-        return;
-    }
+    console.log('[Main] Iniciando Fase 3 via grafos...');
     
-    // Escolhe um dado aleatório para usar
-    const randomIndex = Math.floor(Math.random() * gameState.availableDice.length);
-    const selectedDie = gameState.availableDice[randomIndex];
+    // Inicia navegação no grafo phase_3
+    navigator.startGraph('phase_3');
     
-    UI.showMessage(
-        `🎲 <strong>Dado selecionado:</strong> ${Dice.format(selectedDie)}<br><br>` +
-        `O bot usará este dado para realizar uma ação baseada na estratégia ${Strategy.format(gameState.strategy)}.`,
-        'info'
-    );
-    
-    setTimeout(() => {
-        performActionWithDie(selectedDie);
-    }, 3000);
-}
-
-function performActionWithDie(die) {
-    const actions = {
-        'E': ['Mover exército', 'Atacar', 'Recrutar unidades com exército'],
-        'R': ['Recrutar unidades', 'Mover e recrutar'],
-        'ER': ['Escolher entre exército ou recrutar'],
-        'P': ['Mover personagem', 'Usar habilidade de personagem'],
-        'EV': ['Jogar carta de evento', 'Comprar cartas'],
-        'O': ['Caçar a Sociedade', 'Mover Nazgûl']
-    };
-    
-    const possibleActions = actions[die] || ['Ação genérica'];
-    const action = possibleActions[Math.floor(Math.random() * possibleActions.length)];
-    
-    UI.showActionWithConfirmation(
-        `📋 <strong>Ação do bot:</strong> ${action}<br>` +
-        `<small>Usando dado: ${Dice.format(die)}</small>`,
-        () => {
-            gameState.saveState();
-            gameState.removeDie(die);
-            gameState.addToHistory(`Ação executada: ${action} (${Dice.getName(die)})`);
-            UI.updateAll();
-            
-            // Continua com próximo dado
-            setTimeout(() => demonstratePhase3(), 2000);
-        }
-    );
+    // Processa a navegação
+    processGraphNavigation();
 }
 
 /**

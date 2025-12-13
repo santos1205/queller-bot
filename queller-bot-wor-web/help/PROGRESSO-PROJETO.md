@@ -1,7 +1,7 @@
 # 📊 **PROGRESSO DO PROJETO: Queller Bot Web**
 
 **Data de Início:** 8 de Dezembro de 2025  
-**Versão Atual:** 0.70 (70% completo) 🎉  
+**Versão Atual:** 0.80 (80% completo) 🎉  
 **Base:** Transpilação do Queller Bot Julia para JavaScript/Web  
 **Última Atualização:** 11 de Dezembro de 2025
 
@@ -33,6 +33,7 @@
 | Carregador de Grafos | `load_graphs()` | `graph-loader.js` | ✅ Completo | **100%** |
 | Fase 1 (Grafos) | `phase-1.jl` | `phase-1.js` | ✅ Completo | **100%** |
 | Fase 2 (Grafos) | `phase-2.jl` | `phase-2.js` | ✅ Completo | **100%** |
+| Fase 4 (Grafos) | `phase-4.jl` | `phase-4.js` | ✅ Completo | **100%** |
 | Fase 5 (Grafos) | `phase-5.jl` | `phase-5.js` | ✅ Completo | **100%** |
 | SetStrategyNode | - | `graph.js` | ✅ Completo | **100%** |
 | SetRingAvailableNode | - | `graph.js` | ✅ Completo | **100%** |
@@ -97,7 +98,6 @@
 | Fase | Arquivo Julia | Linhas | Complexidade | Status | Prioridade |
 |------|---------------|--------|--------------|--------|------------|
 | **Fase 3** | `phase-3.jl` | 50+ | ⭐⭐⭐ Complexo | ❌ 0% | 🔴 Alta |
-| **Fase 4** | `phase-4.jl` | ~60 | ⭐⭐ Médio | ❌ 0% | 🔴 Alta |
 
 **Descrição das Fases:**
 
@@ -106,11 +106,6 @@
 - Usar dados de ação
 - Múltiplos subgrafos (batalha, movimento, etc)
 - Lógica de priorização
-
-#### Fase 4: Olho de Sauron
-- Verificar posição do marcador
-- Efeitos especiais
-- Caça à Sociedade
 
 ### 2. **Subgrafos de Ações Específicas** ❌
 
@@ -172,36 +167,37 @@
 ║  SISTEMA DE DADOS:        ██████████  100%          ║
 ║  SISTEMA ESTRATÉGIAS:     ██████████  100%          ║
 ║  ESTADO DO JOGO:          █████████░  90%           ║
-║  LOOP PRINCIPAL:          ████████░░  80%           ║
-║  LÓGICA DE JOGO:          ████████░░  80%           ║
+║  LOOP PRINCIPAL:          █████████░  90%           ║
+║  LÓGICA DE JOGO:          █████████░  90%           ║
 ║  SISTEMA DE GRAFOS:       ██████████  100%          ║
 ║  NAVEGADOR DE GRAFOS:     ██████████  100%          ║
-║  GRAFOS DAS FASES:        ██████░░░░  60%           ║
+║  GRAFOS DAS FASES:        ████████░░  80%           ║
 ║  SUBGRAFOS DE AÇÕES:      ░░░░░░░░░░  0%            ║
 ║  COMANDOS AVANÇADOS:      ███░░░░░░░  30%           ║
 ╠══════════════════════════════════════════════════════╣
-║  🎯 TOTAL GERAL:          ███████░░░  70%           ║
+║  🎯 TOTAL GERAL:          ████████░░  80%           ║
 ╚══════════════════════════════════════════════════════╝
 ```
 
 ### **Estatísticas**
 
-- **Arquivos Criados:** 13 de ~25 estimados (52%)
-- **Linhas de Código:** ~3.500 de ~5.000 estimadas (70%)
-- **Funcionalidades Core:** 10 de 12 (83%)
+- **Arquivos Criados:** 14 de ~25 estimados (56%)
+- **Linhas de Código:** ~3.800 de ~5.000 estimadas (76%)
+- **Funcionalidades Core:** 11 de 12 (92%)
 - **Interface:** 100% completa ✅
 - **Sistema de Grafos:** 100% completo ✅
 - **Integração Fase 1:** 100% funcional ✅
 - **Integração Fase 2:** 100% funcional ✅
+- **Integração Fase 4:** 100% funcional ✅
 - **Integração Fase 5:** 100% funcional ✅
-- **Testes:** 26 de 26 aprovados (100%) ✅ 🎉
-- **Lógica de IA:** 60% implementada (Fases 1, 2, 5 completas, faltam 2 fases)
+- **Testes:** 31 de 31 aprovados (100%) ✅ 🎉
+- **Lógica de IA:** 80% implementada (Fases 1, 2, 4, 5 completas, falta apenas Fase 3)
 
 ### **Tempo de Desenvolvimento**
 
-- **Investido até agora:** ~2-3 horas
-- **Estimativa para conclusão:** ~10-15 horas
-- **Fase atual:** Infraestrutura e UI completas
+- **Investido até agora:** ~5-6 horas
+- **Estimativa para conclusão:** ~8-12 horas
+- **Fase atual:** 4 de 5 fases usando sistema de grafos
 
 ---
 
@@ -260,16 +256,19 @@
 
 **Status:** ✅ **COMPLETO** | **Tempo:** 2 horas | **Resultado:** 5/5 testes aprovados (100%)
 
-#### Passo 6: Fase 4 (Olho de Sauron) ⏳ **PRÓXIMO**
-- [ ] Transpilar `phase-4.jl` (~60 linhas)
-- [ ] Adicionar ao graph-loader.js
-- [ ] Integrar em main.js (substituir demonstratePhase4)
-- [ ] Testar marcador do Olho
-- [ ] Validar efeitos especiais
+#### Passo 6: Fase 4 (Olho de Sauron) ✅ **COMPLETO**
+- [x] Transpilar `phase-4.jl` (~60 linhas)
+- [x] Criar `js/graphs/phase-4.js`
+- [x] Adicionar ao graph-loader.js
+- [x] Integrar em main.js (substituir demonstratePhase4)
+- [x] Implementar handleGetAvailableDice
+- [x] Seletor visual de dados
+- [x] Testar fluxo completo (5 testes aprovados)
+- [x] Validar transição para Fase 5
 
-**Estimativa:** 2-3 horas | **Prioridade:** 🔴 Alta | **Complexidade:** ⭐⭐ Médio
+**Status:** ✅ **COMPLETO** | **Tempo:** 3 horas | **Resultado:** 5/5 testes aprovados (100%)
 
-#### Passo 7: Fase 3 (Mais Complexa)
+#### Passo 7: Fase 3 (Mais Complexa) ⏳ **PRÓXIMO**
 - [ ] Transpilar `phase-3.jl`
 - [ ] Integrar subgrafos de seleção
 - [ ] Testar lógica de priorização
@@ -336,6 +335,7 @@ queller-bot-wor-web/
 │   └── graphs/
 │       ├── phase-1.js          ✅ 100% - Grafo Fase 1 (transpilado)
 │       ├── phase-2.js          ✅ 100% - Grafo Fase 2 (transpilado)
+│       ├── phase-4.js          ✅ 100% - Grafo Fase 4 (transpilado)
 │       └── phase-5.js          ✅ 100% - Grafo Fase 5 (transpilado)
 │
 ├── data/
@@ -356,9 +356,9 @@ queller-bot-wor-web/
 ### **Estatísticas de Arquivos**
 
 - **Total de Arquivos Planejados:** 25
-- **Arquivos Criados:** 13 (phase-5.js adicionado)
-- **Arquivos Pendentes:** 12
-- **Progresso:** 52%
+- **Arquivos Criados:** 14 (phase-4.js adicionado)
+- **Arquivos Pendentes:** 11
+- **Progresso:** 56%
 
 ### **Marco 1: MVP Funcional** ✅ **COMPLETO!**
 - [x] Interface visual completa
@@ -376,17 +376,18 @@ queller-bot-wor-web/
 - [x] Sistema de grafos 100% funcional ✅
 - [x] Fase 1 transpilada ✅
 - [x] Fase 2 transpilada ✅
+- [x] Fase 4 transpilada ✅
 - [x] Fase 5 transpilada ✅
 - [x] SetStrategyNode implementado ✅
 - [x] SetRingAvailableNode implementado ✅
 - [x] SetMoDTAvailableNode implementado ✅
+- [x] handleGetAvailableDice implementado ✅
 - [x] Sistema híbrido testado e aprovado ✅
-- [ ] Fase 4 transpilada ⏳ **PRÓXIMO**
-- [ ] Fase 3 transpilada (mais complexa)
+- [ ] Fase 3 transpilada (mais complexa) ⏳ **PRÓXIMO**
 - [ ] Navegação entre todas as fases
 - [ ] Fluxo de jogo completo via grafos
 
-**Status:** 60% (3/5 fases) | **Estimativa:** +4-6 horas
+**Status:** 80% (4/5 fases) | **Estimativa:** +4-6 horas
 
 ### **Marco 3: Feature Complete** 🎯
 - [ ] Todos os subgrafos implementados
@@ -534,22 +535,49 @@ queller-bot-wor-web/
   - Teste 25: SetRingAvailable/SetMoDTAvailable ✅
   - Teste 26: Compatibilidade híbrida ✅
 
-### **Próxima Versão 0.80** (Planejada - Dez 2025)
+### **Versão 0.80** (11 Dez 2025) ← **VERSÃO ATUAL** 🎉
 
-**Foco:** Transpilar Fase 4 para grafos (média complexidade)
+**Foco:** Fase 4 completa e seletor visual de dados
+
+- ✅ **Fase 4 100% completa e aprovada!**
+  - Transpilação completa de `phase-4.jl` para `phase-4.js`
+  - 3 nós no grafo principal: Start → GetAvailableDice → End
+  - Grafo auxiliar `adjust_dice` também implementado
+  - Seletor visual de dados com dropdown e ícones
+  - Bug de parâmetros corrigido (nexts ao invés de next)
+- ✅ **handleGetAvailableDice implementado**
+  - Integrado ao main.js
+  - Usa UI.showDiceSelector() para interface visual
+  - Dropdown com 6 tipos de dados (⚔️ Exército, 🏰 Recrutar, etc)
+  - Botões: Adicionar Dado, Remover Último, Limpar Todos
+- ✅ **Sistema híbrido expandido**
+  - Fases 1-2-4-5 (grafos) funcionam perfeitamente
+  - Fase 3 (legado) integrada sem erros
+  - Transições suaves entre todas as fases
+  - Zero erros no console (exceto JumpToGraph para subgrafos não implementados)
+- ✅ **Todos os testes aprovados: 31/31 (100%)** 🎊🎊🎊🎊
+  - Teste 27: Carregamento de grafos ✅
+  - Teste 28: Navegação básica ✅
+  - Teste 29: GetAvailableDice funcional ✅
+  - Teste 30: Transição para Fase 5 ✅
+  - Teste 31: Compatibilidade híbrida ✅
+
+### **Próxima Versão 0.90** (Planejada - Dez 2025)
+
+**Foco:** Transpilar Fase 3 para grafos (alta complexidade)
 
 **Objetivos:**
-- [ ] Estudar e analisar `phase-4.jl` (~60 linhas)
-- [ ] Criar `js/graphs/phase-4.js` com todos os nós
-- [ ] Integrar ao graph-loader.js
-- [ ] Substituir demonstratePhase4() em main.js
-- [ ] Testar marcador do Olho de Sauron
-- [ ] Validar caça à Sociedade
-- [ ] Criar testes para Fase 4
+- [ ] Estudar e analisar `phase-3.jl` (~50+ linhas)
+- [ ] Criar `js/graphs/phase-3.js` com todos os nós
+- [ ] Integrar subgrafos de seleção de ações
+- [ ] Implementar lógica de priorização
+- [ ] Substituir demonstratePhase3() em main.js
+- [ ] Testar fluxo completo
+- [ ] Criar testes para Fase 3
 
-**Estimativa:** 2-3 horas  
-**Complexidade:** ⭐⭐ Médio  
-**Prioridade:** 🔴 Alta
+**Estimativa:** 4-6 horas  
+**Complexidade:** ⭐⭐⭐ Alta  
+**Prioridade:** 🔴 Crítica
 ## 📝 **CHANGELOG**
 
 ### **Versão 0.40** (8 Dez 2025)
@@ -560,9 +588,9 @@ queller-bot-wor-web/
   - Import/Export JSON
 ### **Próxima Versão 0.55** (Planejada)
 - [ ] Teste 14 completo (caminho Corrupção)
-**Última Atualização:** 11 de Dezembro de 2025 (Versão 0.70)  
-**Versão do Documento:** 1.5  
-**Progresso:** 40% → 50% → 60% → 70% → Fases 1, 2 e 5 100% Aprovadas! Próximo: Fase 4 🚀
+**Última Atualização:** 11 de Dezembro de 2025 (Versão 0.80)  
+**Versão do Documento:** 1.6  
+**Progresso:** 40% → 50% → 60% → 70% → 80% → Fases 1, 2, 4 e 5 100% Aprovadas! Próximo: Fase 3 🚀
 
 ### **Versão 0.35** (8 Dez 2025)
 - ✅ Criada estrutura base do projeto

@@ -285,21 +285,19 @@ function performActionWithDie(die) {
 }
 
 /**
- * Demonstração da Fase 4
+ * Demonstração da Fase 4 - USANDO SISTEMA DE GRAFOS
  */
 function demonstratePhase4() {
-    UI.showYesNoQuestion(
-        '👁️ O marcador do Olho de Sauron está em uma posição especial?',
-        () => {
-            UI.showActionWithConfirmation(
-                'Execute os efeitos do Olho de Sauron conforme as regras.',
-                () => completePhase()
-            );
-        },
-        () => {
-            completePhase();
-        }
-    );
+    console.log('📍 Iniciando navegação da Fase 4 via grafo...');
+    
+    // Inicia navegação no grafo phase_4
+    try {
+        navigator.startGraph('phase_4');
+        processGraphNavigation();
+    } catch (error) {
+        console.error('❌ Erro ao iniciar navegação:', error);
+        UI.showMessage('❌ Erro ao processar Fase 4. Verifique o console.', 'error');
+    }
 }
 
 /**
@@ -464,6 +462,8 @@ function handleInteractiveNode(nodeInfo) {
             handleBinaryCondition(nodeInfo);
         } else if (nodeInfo.type === 'MultipleChoice') {
             handleMultipleChoice(nodeInfo);
+        } else if (nodeInfo.type === 'GetAvailableDice') {
+            handleGetAvailableDice(nodeInfo);
         } else {
             console.error('❌ Tipo de nó interativo desconhecido:', nodeInfo.type);
         }
@@ -532,4 +532,26 @@ function handleMultipleChoice(nodeInfo) {
             processGraphNavigation();
         }
     );
+}
+
+/**
+ * Processa nó GetAvailableDice
+ */
+function handleGetAvailableDice(nodeInfo) {
+    // Se houver prompt personalizado, mostra antes do seletor
+    if (nodeInfo.prompt) {
+        UI.showMessage(nodeInfo.prompt, 'info');
+    }
+    
+    UI.showDiceSelector((diceArray) => {
+        gameState.saveState();
+        gameState.setAvailableDice(diceArray);
+        gameState.addToHistory(`Dados inseridos: ${Dice.format(diceArray)}`);
+        UI.updateAll();
+        
+        // Continua para próximo nó (GetAvailableDice tem nexts[0])
+        const nextNode = navigator.currentNode.nexts[0];
+        navigator.processUserResponse(nextNode);
+        processGraphNavigation();
+    });
 }

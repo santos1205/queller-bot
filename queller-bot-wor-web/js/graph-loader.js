@@ -36,6 +36,26 @@ function loadAllGraphs() {
       console.warn('[GraphLoader] phase2 não encontrado!');
     }
     
+    // Fase 4: Olho de Sauron (grafo principal)
+    if (typeof phase4 !== 'undefined') {
+      console.log('[GraphLoader] Carregando phase-4...');
+      const graph4 = Graph.fromJSON(phase4);
+      graphManager.addGraph(graph4);
+      console.log('[GraphLoader] phase-4 carregado com sucesso!');
+    } else {
+      console.warn('[GraphLoader] phase4 não encontrado!');
+    }
+    
+    // Grafo auxiliar adjust_dice
+    if (typeof adjustDice !== 'undefined') {
+      console.log('[GraphLoader] Carregando adjust_dice...');
+      const adjustGraph = Graph.fromJSON(adjustDice);
+      graphManager.addGraph(adjustGraph);
+      console.log('[GraphLoader] adjust_dice carregado com sucesso!');
+    } else {
+      console.warn('[GraphLoader] adjustDice não encontrado!');
+    }
+    
     // Fase 5: Verificação de Vitória
     if (typeof phase5 !== 'undefined') {
       console.log('[GraphLoader] Carregando phase-5...');
@@ -46,9 +66,8 @@ function loadAllGraphs() {
       console.warn('[GraphLoader] phase5 não encontrado!');
     }
     
-    // TODO: Adicionar phases 3-4 quando transpilados
+    // TODO: Adicionar phase 3 quando transpilada
     // if (typeof phase3 !== 'undefined') { ... }
-    // if (typeof phase4 !== 'undefined') { ... }
     
     console.log(`[GraphLoader] ${graphManager.getAllGraphNames().length} grafo(s) carregado(s):`, 
                 graphManager.getAllGraphNames());

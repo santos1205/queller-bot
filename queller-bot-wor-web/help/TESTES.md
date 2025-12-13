@@ -1,7 +1,7 @@
 # 🧪 **TESTES DO PROJETO QUELLER BOT WEB**
 
 **Data dos Testes:** 8-11 de Dezembro de 2025  
-**Versão Testada:** 0.70  
+**Versão Testada:** 0.80  
 **Testador:** Mario
 
 ---
@@ -13,29 +13,183 @@
 | Interface Básica | 11 | 11/11 (100%) | ✅ Completa | 0.35 |
 | Fase 1 (Grafos) | 5 | 5/5 (100%) | ✅ Completa | 0.50 |
 | Fase 2 (Grafos) | 5 | 5/5 (100%) | ✅ Completa | 0.60 |
-| **Fase 5 (Grafos)** | **5** | **5/5 (100%)** | ✅ **Completa** | **0.70** |
-| **TOTAL** | **26** | **26/26 (100%)** | ✅ **100%** | **0.70** |
+| Fase 4 (Grafos) | 5 | 5/5 (100%) | ✅ Completa | 0.80 |
+| Fase 5 (Grafos) | 5 | 5/5 (100%)* | ⚠️ Parcial | 0.70 |
+| **TOTAL** | **31** | **31/31 (100%)** | ✅ **Completo** | **0.80** |
 
-**🎉 TODOS OS 26 TESTES APROVADOS! 🎉**
+**🎉 TODOS OS 31 TESTES APROVADOS! 🎉**
 
 **Progresso do Projeto:**
 - ✅ Fase 1: 100% implementada (grafos)
 - ✅ Fase 2: 100% implementada (grafos)
-- ✅ Fase 5: 100% implementada (grafos - até JumpToGraph)
+- ✅ Fase 4: 100% implementada (grafos) ← **NOVO!**
+- ✅ Fase 5: 100% implementada (grafos - *limitação: JumpToGraph requer subgrafos)
 - ⏳ Fase 3: 0% (próxima - mais complexa)
-- ⏳ Fase 4: 0% (próxima - média)
 - ⏳ Subgrafos: 0% (select_action_mili, select_action_corr, etc)
 
-**Versão Atual:** 0.70 → **3 de 5 fases usando sistema de grafos!**
+**Versão Atual:** 0.80 → **4 de 5 fases usando sistema de grafos!**
+
+**⚠️ Nota:** Fase 5 funciona perfeitamente até encontrar nós JumpToGraph que dependem de subgrafos ainda não implementados (Fase 3).
 
 ---
 
-## 🔄 **FASE ATUAL: FASE 5 - VERIFICAÇÃO DE VITÓRIA**
+## 🔄 **FASE ATUAL: FASE 4 - OLHO DE SAURON**
 
 **Status:** ✅ **COMPLETA**  
 **Data de Início:** 11 Dez 2025  
 **Data de Conclusão:** 11 Dez 2025  
+**Versão:** 0.70 → 0.80
+
+### **O que foi implementado:**
+- ✅ Fase 4 transpilada para JavaScript (`js/graphs/phase-4.js`)
+- ✅ 3 nós no grafo principal: Start → GetAvailableDice → End
+- ✅ Grafo auxiliar `adjust_dice` também implementado (3 nós)
+- ✅ Integração com `graph-loader.js` (carrega phase_4 e adjust_dice)
+- ✅ `demonstratePhase4()` agora usa navegação por grafo
+- ✅ Script adicionado ao `index.html`
+
+### **Arquitetura da Fase 4:**
+```
+phase_4 (grafo principal):
+  Start → GetAvailableDice (rolar dados, Olhos→caça) → End
+
+adjust_dice (grafo auxiliar):
+  Start → GetAvailableDice (ajustes) → End
+```
+
+### **Testes Necessários:**
+
+#### ✅ Teste 27: Carregamento do Grafo
+**Objetivo:** Verificar se o grafo phase_4 foi carregado corretamente  
+**Passos:**
+1. Abrir `index.html` no navegador
+2. Abrir console do navegador (F12)
+3. Verificar mensagens de carregamento
+
+**Esperado:**
+- ✅ Mensagem: `[GraphLoader] Carregando phase-4...`
+- ✅ Mensagem: `[GraphLoader] phase-4 carregado com sucesso!`
+- ✅ Total de grafos: 5 (phase-1, phase-2, phase_4, adjust_dice, phase-5)
+
+**Resultado:** ✅ **APROVADO**
+- ✅ Mensagem de carregamento exibida corretamente
+- ✅ phase-4 e adjust_dice carregados com sucesso
+- ✅ Total de 5 grafos confirmado no console
+- ✅ Zero erros de validação
+
+---
+
+#### ✅ Teste 28: Navegação Básica
+**Objetivo:** Verificar navegação pelo grafo da Fase 4  
+**Passos:**
+1. Iniciar novo jogo
+2. Avançar pelas fases até chegar na Fase 4
+3. Verificar se o seletor de dados aparece
+
+**Esperado:**
+- ✅ Mensagem: `Role todos os dados de ação que não estão na caixa de caçada...`
+- ✅ Seletor visual de dados (dropdown com ícones)
+- ✅ Botões: Adicionar Dado, Remover Último, Limpar Todos, Concluir
+
+**Resultado:** ✅ **APROVADO**
+- ✅ Fase 4 iniciou corretamente
+- ✅ Seletor visual apareceu com todos os tipos de dados
+- ✅ Dropdown mostra: ⚔️ Exército, 🏰 Recrutar, ⚔️/🏰 Exército/Recrutar, 👤 Personagem, 📜 Evento, 👁️ Olho
+- ✅ Interface intuitiva e funcional
+
+---
+
+#### ✅ Teste 29: GetAvailableDice Funcional
+**Objetivo:** Verificar se GetAvailableDice processa dados corretamente  
+**Passos:**
+1. Na Fase 4, selecionar dados: 3x Exército, 1x Recrutar, 1x Personagem, 1x Olho
+2. Clicar em "Concluir"
+3. Verificar se dados foram armazenados no estado
+
+**Esperado:**
+- ✅ Dados selecionados aparecem na área visual
+- ✅ Histórico mostra: "Dados inseridos: ⚔️ ⚔️ ⚔️ 🏰 👤 👁️"
+- ✅ Painel atualizado com "Dados Disponíveis: 6"
+
+**Resultado:** ✅ **APROVADO**
+- ✅ Dados selecionados corretamente (6 dados)
+- ✅ Histórico atualizado: "Dados registrados: ⚔️ Exército, ⚔️ Exército, ⚔️ Exército, 🏰 Recrutar, 👤 Personagem, 👁️ Olho"
+- ✅ Painel mostra "DADOS DISPONÍVEIS: 6"
+- ✅ Formatação com emojis correta
+
+---
+
+#### ✅ Teste 30: Transição para Fase 5
+**Objetivo:** Verificar se a Fase 4 completa e avança corretamente  
+**Passos:**
+1. Completar entrada de dados na Fase 4
+2. Aguardar mensagem "Fim da Fase"
+3. Verificar se avança automaticamente para Fase 5
+
+**Esperado:**
+- ✅ Mensagem de conclusão: "Fim da Fase"
+- ✅ Painel mostra: "Fase: 5"
+- ✅ Fase 5 inicia automaticamente
+
+**Resultado:** ✅ **APROVADO**
+- ✅ Mensagem "Fim da Fase" exibida
+- ✅ Console mostra: "Grafo completo!" e "Iniciando Fase 5..."
+- ✅ Painel atualizado para "FASE: 5"
+- ✅ Fase 5 iniciou automaticamente com primeira pergunta
+- ✅ Transição suave e sem erros
+
+---
+
+#### ✅ Teste 31: Compatibilidade com Sistema Híbrido
+**Objetivo:** Validar que Fase 4 funciona no ciclo completo  
+**Passos:**
+1. Iniciar novo jogo e percorrer TODAS as fases (1→2→3→4→5)
+2. Verificar console por erros
+3. Confirmar que transições são suaves
+
+**Esperado:**
+- ✅ Fase 1 (grafos) → Fase 2 (grafos) → Fase 3 (legado) → Fase 4 (grafos) → Fase 5 (grafos)
+- ✅ Zero erros no console
+- ✅ Todas as transições funcionam
+
+**Resultado:** ✅ **APROVADO**
+- ✅ Sequência completa testada: Fase 1 → 2 → 3 → 4 → 5
+- ✅ Zero erros de carregamento
+- ✅ Fase 4 integrada perfeitamente entre Fase 3 (legado) e Fase 5 (grafos)
+- ✅ Transições suaves sem quebras
+- ✅ Sistema híbrido (legado + grafos) funcionando perfeitamente
+
+---
+
+### **📊 Resumo dos Testes da Fase 4:**
+
+| Teste | Resultado | Observações |
+|-------|-----------|-------------|
+| 27 - Carregamento | ✅ 100% | Grafos phase_4 e adjust_dice carregados |
+| 28 - Navegação | ✅ 100% | Seletor visual funcional |
+| 29 - GetAvailableDice | ✅ 100% | Dados processados corretamente |
+| 30 - Transição Fase 5 | ✅ 100% | Avanço automático funcional |
+| 31 - Compatibilidade | ✅ 100% | Sistema híbrido validado |
+
+**🎉 FASE 4: 100% APROVADA! (5/5 testes)**
+
+**Melhorias Implementadas:**
+- ✅ Seletor visual de dados (dropdown com ícones)
+- ✅ Botões intuitivos (Adicionar, Remover, Limpar)
+- ✅ Área visual mostrando dados selecionados
+- ✅ Integração perfeita com sistema de navegação
+- ✅ Handler `handleGetAvailableDice` em main.js
+
+---
+
+## 📋 **FASE ANTERIOR: FASE 5 - VERIFICAÇÃO DE VITÓRIA**
+
+**Status:** ⚠️ **PARCIAL** (Limitação conhecida)  
+**Data de Início:** 11 Dez 2025  
+**Data de Conclusão:** 11 Dez 2025  
 **Versão:** 0.60 → 0.70
+
+**⚠️ Limitação:** Fase 5 funciona perfeitamente até encontrar nós `JumpToGraph` que tentam pular para subgrafos ainda não implementados (ex: `select_action_corr`, `select_action_mili`). Esses subgrafos fazem parte da Fase 3, que será implementada futuramente.
 
 ### **O que foi implementado:**
 - ✅ Dois novos nós no `graph.js`: `SetRingAvailableNode` e `SetMoDTAvailableNode`

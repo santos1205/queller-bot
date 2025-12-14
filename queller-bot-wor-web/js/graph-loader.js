@@ -76,6 +76,16 @@ function loadAllGraphs() {
       console.warn('[GraphLoader] phase5 não encontrado!');
     }
     
+    // Subgrafo: Threat Exposed
+    if (typeof threatExposed !== 'undefined') {
+      console.log('[GraphLoader] Carregando threat_exposed...');
+      const graphThreat = Graph.fromJSON(threatExposed);
+      graphManager.addGraph(graphThreat);
+      console.log('[GraphLoader] threat_exposed carregado com sucesso!');
+    } else {
+      console.warn('[GraphLoader] threatExposed não encontrado!');
+    }
+    
     console.log(`[GraphLoader] ${graphManager.getAllGraphNames().length} grafo(s) carregado(s):`, 
                 graphManager.getAllGraphNames());
     
@@ -138,3 +148,6 @@ function getGraphStats() {
   
   return stats;
 }
+
+// Expor graphManager globalmente para debug no console
+window.graphManager = graphManager;

@@ -135,15 +135,54 @@ class GraphNavigator {
                 this.moveToNext(node.next);
                 break;
                 
+            case 'SetActiveDie':
+                // Tentar pegar um dado do tipo especificado
+                const dieType = node.dieType;
+                const availableDice = this.gameState.dice || [];
+                const foundDie = availableDice.find(d => d === dieType);
+                
+                if (foundDie) {
+                    this.gameState.activeDie = foundDie;
+                    console.log(`  🎲 SetActiveDie: ${dieType} encontrado → ${node.next}`);
+                    this.messageBuffer.push(`🎲 <strong>Dado ativo:</strong> ${Dice.format(foundDie)}`);
+                    this.moveToNext(node.next);
+                } else if (node.noDie) {
+                    console.log(`  🎲 SetActiveDie: ${dieType} não encontrado → ${node.noDie}`);
+                    this.gameState.activeDie = null;
+                    this.moveToNext(node.noDie);
+                } else {
+                    throw new Error(`SetActiveDie: No die of type ${dieType} available and no noDie path`);
+                }
+                break;
+                
+            case 'CheckActiveDie':
+                // Verificar se dado ativo é de um tipo específico
+                const currentDie = this.gameState.activeDie;
+                const checkType = node.dieType;
+                const nextPath = node.getNext(currentDie);
+                console.log(`  🔍 CheckActiveDie: ${currentDie || 'none'} === ${checkType}? → ${nextPath}`);
+                this.moveToNext(nextPath);
+                break;
+                
             case 'UseActiveDie':
-                // Usar dado ativo e escolher caminho baseado no tipo
+                // Usar dado ativo (remove dos disponíveis)
                 const activeDie = this.gameState.activeDie;
                 if (!activeDie) {
                     throw new Error('UseActiveDie: No active die set');
                 }
-                const nextForDie = node.getNext(activeDie);
-                console.log(`  🎲 UseActiveDie: ${activeDie.type} → ${nextForDie}`);
-                this.moveToNext(nextForDie);
+                // Remover dado dos disponíveis (dados são strings como 'E', 'R', 'P')
+                const diceArray = this.gameState.dice || [];
+                const index = diceArray.indexOf(activeDie);
+                if (index >= 0) {
+                    diceArray.splice(index, 1);
+                    this.gameState.dice = diceArray;
+                    console.log(`  ✔️ UseActiveDie: ${activeDie} removido (${diceArray.length} restantes)`);
+                } else {
+                    console.warn(`  ⚠️ UseActiveDie: Dado ativo ${activeDie} não encontrado na lista`);
+                }
+                // Limpar dado ativo após uso
+                this.gameState.activeDie = null;
+                this.moveToNext(node.next);
                 break;
                 
             case 'JumpToGraph':
@@ -160,7 +199,14 @@ class GraphNavigator {
             case 'ReturnFromGraph':
                 // Voltar para o grafo anterior
                 if (this.contextStack.length === 0) {
-                    throw new Error('ReturnFromGraph: No context to return to');
+                    console.log(`  ↙️  ReturnFromGraph: No context (standalone execution)`);
+                    // Em standalone, tratar como End e parar o autocrawl
+                    return {
+                        type: 'End',
+                        messages: this.messageBuffer,
+                        node: node,
+                        stop: true
+                    };
                 }
                 const context = this.contextStack.pop();
                 console.log(`  ↙️  ReturnFromGraph: back to ${context.graph}`);

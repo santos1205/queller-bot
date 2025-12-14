@@ -218,31 +218,12 @@ class CheckStrategyNode extends NonInteractiveNode {
 
 /**
  * 9. UseActiveDie - Usar o dado ativo atual
- * Ramifica baseado no tipo de dado
+ * Marca o dado como usado e remove dos disponíveis
  */
 class UseActiveDieNode extends NonInteractiveNode {
-    constructor(id, dieTypeMap) {
-        super(id, null);
+    constructor(id, next) {
+        super(id, next);
         this.type = 'UseActiveDie';
-        this.dieTypeMap = dieTypeMap; // { 'E': nextId, 'R': nextId, ... }
-    }
-
-    validate() {
-        super.validate();
-        if (!this.dieTypeMap || typeof this.dieTypeMap !== 'object') {
-            throw new Error(`UseActiveDieNode ${this.id} must have dieTypeMap object`);
-        }
-        return true;
-    }
-
-    // Override: next depende do tipo do dado ativo
-    getNext(activeDie) {
-        const dieType = activeDie.type;
-        const next = this.dieTypeMap[dieType];
-        if (!next) {
-            throw new Error(`UseActiveDieNode ${this.id}: no route for die type ${dieType}`);
-        }
-        return next;
     }
 }
 
@@ -325,6 +306,62 @@ class SetMoDTAvailableNode extends NonInteractiveNode {
             throw new Error(`SetMoDTAvailableNode ${this.id} must have boolean value`);
         }
         return true;
+    }
+}
+
+/**
+ * 15. SetActiveDie - Seleciona um dado ativo de um tipo específico
+ * Não-interativo, tenta pegar um dado do tipo especificado
+ */
+class SetActiveDieNode extends NonInteractiveNode {
+    constructor(id, dieType, next, noDie = null, mayUseRing = false) {
+        super(id, next);
+        this.type = 'SetActiveDie';
+        this.dieType = dieType;         // 'E', 'R', 'C', 'A', 'M', 'P'
+        this.noDie = noDie;             // ID do nó se não houver dado disponível
+        this.mayUseRing = mayUseRing;   // Se true, pode usar anel élfico para esse dado
+    }
+
+    validate() {
+        super.validate();
+        if (!this.dieType) {
+            throw new Error(`SetActiveDieNode ${this.id} must have dieType`);
+        }
+        return true;
+    }
+}
+
+/**
+ * 16. CheckActiveDie - Verifica se o dado ativo é de um tipo específico
+ * Não-interativo, ramifica baseado no tipo do dado ativo
+ */
+class CheckActiveDieNode extends NonInteractiveNode {
+    constructor(id, dieType, nextTrue, nextFalse) {
+        super(id, null);
+        this.type = 'CheckActiveDie';
+        this.dieType = dieType;     // 'E', 'R', 'C', 'A', 'M', 'P'
+        this.nextTrue = nextTrue;   // Se o dado ativo for do tipo
+        this.nextFalse = nextFalse; // Se o dado ativo NÃO for do tipo
+    }
+
+    validate() {
+        super.validate();
+        if (!this.dieType) {
+            throw new Error(`CheckActiveDieNode ${this.id} must have dieType`);
+        }
+        if (!this.nextTrue || !this.nextFalse) {
+            throw new Error(`CheckActiveDieNode ${this.id} must have nextTrue and nextFalse`);
+        }
+        return true;
+    }
+
+    // Override: next depende do tipo do dado ativo
+    // Dados são strings como 'E', 'R', 'P'
+    getNext(activeDie) {
+        if (!activeDie) {
+            return this.nextFalse;
+        }
+        return activeDie === this.dieType ? this.nextTrue : this.nextFalse;
     }
 }
 
@@ -486,13 +523,19 @@ class Graph {
                     node = new SetMoDTAvailableNode(nodeData.id, nodeData.value, nodeData.next);
                     break;
                 case 'UseActiveDie':
-                    node = new UseActiveDieNode(nodeData.id, nodeData.dieTypeMap);
+                    node = new UseActiveDieNode(nodeData.id, nodeData.next);
                     break;
                 case 'GetAvailableDice':
                     node = new GetAvailableDiceNode(nodeData.id, nodeData.nexts[0]);
                     break;
                 case 'Dummy':
                     node = new DummyNode(nodeData.id, nodeData.next);
+                    break;
+                case 'SetActiveDie':
+                    node = new SetActiveDieNode(nodeData.id, nodeData.dieType, nodeData.next, nodeData.noDie, nodeData.mayUseRing);
+                    break;
+                case 'CheckActiveDie':
+                    node = new CheckActiveDieNode(nodeData.id, nodeData.dieType, nodeData.nextTrue, nodeData.nextFalse);
                     break;
                 default:
                     throw new Error(`Unknown node type: ${nodeData.type}`);
@@ -588,6 +631,11 @@ if (typeof module !== 'undefined' && module.exports) {
         UseActiveDieNode,
         GetAvailableDiceNode,
         DummyNode,
+        SetStrategyNode,
+        SetRingAvailableNode,
+        SetMoDTAvailableNode,
+        SetActiveDieNode,
+        CheckActiveDieNode,
         Graph,
         GraphManager,
         graphManager

@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Cria navegador global (passando gameState)
         navigator = new GraphNavigator(gameState);
+        
         console.log('✅ Navegador de grafos criado!');
         
     } catch (error) {

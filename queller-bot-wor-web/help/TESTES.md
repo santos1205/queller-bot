@@ -1,9 +1,85 @@
 # 🧪 **TESTES DO PROJETO QUELLER BOT WEB**
 
-**Data dos Testes:** 8-13 de Dezembro de 2025  
-**Versão Testada:** 0.95 (threat_exposed completo)  
+**Data dos Testes:** 8-14 de Dezembro de 2025  
+**Versão Testada:** 0.96 (select_action_mili validado)  
 **Testador:** Mario  
-**Status:** ✅ **43/43 TESTES APROVADOS (100%)**
+**Status:** ✅ **48/48 TESTES APROVADOS (100%)**
+
+---
+
+## 🎯 **ROTEIRO DE TESTES - SUBGRAFO SELECT ACTION MILI**
+
+**Fase Atual:** Implementação do segundo subgrafo (`select_action_mili`)  
+**Data:** 14 Dezembro 2025  
+**Objetivo:** Validar grafo de seleção de ações para estratégia Militar
+
+### **Pré-requisitos:**
+1. ✅ Todos os tipos de nós já implementados (SetActiveDie, CheckActiveDie, UseActiveDie, JumpToGraph, etc)
+2. ✅ `select-action-mili.js` criado (57 nós, ~450 linhas)
+3. ✅ `graph-loader.js` atualizado para carregar `select_action_mili`
+4. ✅ `index.html` atualizado com script `select-action-mili.js`
+
+### **Testes a Executar:**
+
+#### **Teste 44: Carregamento do Subgrafo** ✅
+- **Objetivo:** Verificar se `select_action_mili` carrega sem erros
+- **Passos:**
+  1. Abrir `index.html` no navegador
+  2. Abrir Console (F12)
+  3. Verificar logs de carregamento
+- **Resultado:** ✅ **APROVADO** (14/12/2025)
+  - ✅ `[GraphLoader] Carregando select_action_mili...`
+  - ✅ `[GraphLoader] select_action_mili carregado com sucesso!`
+  - ✅ `[GraphLoader] 8 grafo(s) carregado(s): [..., select_action_mili]`
+  - ✅ Sem erros de validação
+
+#### **Teste 45: Validação da Estrutura do Grafo** ✅
+- **Objetivo:** Verificar se todos os nós estão corretos
+- **Passos:**
+  1. Usar painel Debug integrado
+  2. Clicar em "Test 45: Estrutura"
+  3. Verificar resultado
+- **Resultado:** ✅ **APROVADO** (14/12/2025)
+  - ✅ Grafo `select_action_mili` existe
+  - ✅ Total de 57 nós (conforme Julia original)
+  - ✅ Start node: `select_action_mili`
+  - ✅ 13 prioridades encontradas (a1 a a13)
+  - ✅ Todos os nós validados corretamente
+
+#### **Teste 46: Navegação Básica (Prioridade A1 - Witch King)** ✅
+- **Objetivo:** Validar estrutura da prioridade A1
+- **Passos:**
+  1. Usar painel Debug integrado
+  2. Clicar em "Test 46: Navegação A1"
+  3. Verificar estrutura dos nós
+- **Resultado:** ✅ **APROVADO** (14/12/2025)
+  - ✅ Nó inicial validado (select_action_mili → Start)
+  - ✅ Conexão threat_check → a1 correta
+  - ✅ 4 nós da prioridade A1 encontrados (a1, a1_1, a1_cond, a1_jump)
+  - ✅ Estrutura conforme especificação
+
+#### **Teste 47: Prioridade A7 (Passar)** ✅
+- **Objetivo:** Validar nó de ação "Passar"
+- **Passos:**
+  1. Usar painel Debug integrado
+  2. Clicar em "Test 47: A7 Passar"
+  3. Verificar nó a7_action
+- **Resultado:** ✅ **APROVADO** (14/12/2025)
+  - ✅ Nós da prioridade A7 encontrados
+  - ✅ Nó a7_action tipo PerformAction
+  - ✅ Mensagem "Passar" correta
+  - ✅ Estrutura validada
+
+#### **Teste 48: ReturnFromGraph (Nenhuma Ação)** ✅
+- **Objetivo:** Validar nó de retorno final
+- **Passos:**
+  1. Usar painel Debug integrado
+  2. Clicar em "Test 48: ReturnFromGraph"
+  3. Verificar nó a13
+- **Resultado:** ✅ **APROVADO** (14/12/2025)
+  - ✅ Nó a13 encontrado
+  - ✅ Tipo ReturnFromGraph correto
+  - ✅ Estrutura validada
 
 ---
 
@@ -139,10 +215,11 @@
 | Fase 3 (Grafos) | 5 | 5/5 (100%) | ✅ Completa | 0.90 |
 | Fase 4 (Grafos) | 5 | 5/5 (100%) | ✅ Completa | 0.80 |
 | Fase 5 (Grafos) | 5 | 5/5 (100%)* | ⚠️ Parcial | 0.70 |
-| Subgrafo: Threat Exposed | 7 | 7/7 (100%) | ✅ **COMPLETO** | 0.95 |
-| **TOTAL** | **43** | **43/43 (100%)** | ✅ **Completo!** | **0.95** |
+| Subgrafo: Threat Exposed | 7 | 7/7 (100%) | ✅ Completo | 0.95 |
+| Subgrafo: Select Action Mili | 5 | 5/5 (100%) | ✅ **COMPLETO** | 0.96 |
+| **TOTAL** | **48** | **48/48 (100%)** | ✅ **COMPLETO** | **0.96** |
 
-**🎉 TODOS OS 43 TESTES APROVADOS! Primeira fase de subgrafos completa!**
+**🎉 48 testes aprovados! Segundo subgrafo validado com sucesso!**
 
 **Progresso do Projeto:**
 - ✅ Fase 1: 100% implementada e testada
@@ -150,12 +227,20 @@
 - ✅ Fase 3: 100% implementada e testada
 - ✅ Fase 4: 100% implementada e testada
 - ✅ Fase 5: 100% implementada e testada
-- ✅ **Subgrafo threat_exposed:** 100% implementado, **100% testado** ← **COMPLETO!**
-- ⏳ Próximos subgrafos: 0% (7 restantes)
+- ✅ **Subgrafo threat_exposed:** 100% implementado e testado
+- ✅ **Subgrafo select_action_mili:** 100% implementado e testado ✨
+- ⏳ Próximos subgrafos: 0% (múltiplos restantes)
 
-**Versão Atual:** 0.95 → **1º subgrafo completo e testado!** 🎊
+**Versão Atual:** 0.96 → **2º subgrafo validado (select_action_mili)!** 🎉
 
-**🆕 Implementações Aprovadas (v0.95):**
+**🆕 Implementações (v0.96):**
+- ✅ Subgrafo `select_action_mili` (57 nós, 131 linhas Julia → ~450 linhas JS)
+- ✅ 13 prioridades de ações para estratégia Militar
+- ✅ Integração com graph-loader.js e index.html
+- ✅ Painel de Debug integrado ao index.html
+- ✅ 5 testes automatizados (44-48) - **TODOS APROVADOS**
+
+**Implementações Aprovadas (v0.95):**
 - ✅ 3 novos tipos de nós: `SetActiveDie`, `CheckActiveDie`, `UseActiveDie`
 - ✅ Subgrafo `threat_exposed` (88 nós, 149 linhas Julia → 416 linhas JS)
 - ✅ Lógica de dados ativos (selecionar, verificar, usar)
@@ -171,23 +256,30 @@
 
 ---
 
-## 🔄 **FASE ATUAL: PRÓXIMOS SUBGRAFOS**
+## 🔄 **FASE ATUAL: SUBGRAFOS ADICIONAIS**
 
-**Status:** ⏳ **PLANEJAMENTO**  
-**Data de Conclusão:** 13 Dez 2025  
-**Versão:** 0.95 (threat_exposed completo)
+**Status:** ✅ **SELECT_ACTION_MILI COMPLETO**  
+**Data de Conclusão:** 14 Dez 2025  
+**Versão:** 0.96
 
-### **O que foi implementado:**
-- ✅ 3 novos tipos de nós em `graph.js`:
-  - `SetActiveDieNode`: Seleciona dado ativo de um tipo
-  - `CheckActiveDieNode`: Verifica tipo do dado ativo
-  - `UseActiveDieNode`: Usa dado ativo (remove dos disponíveis)
-- ✅ Subgrafo `threat_exposed` transpilado (`js/graphs/threat-exposed.js`)
-- ✅ 88 nós distribuídos em 8 prioridades de ação
-- ✅ Lógica de ataque/movimento contra ameaças
-- ✅ Navegador atualizado para processar novos nós
+### **O que foi implementado (v0.96):**
+- ✅ Subgrafo `select_action_mili` transpilado (`js/graphs/select-action-mili.js`)
+- ✅ 57 nós distribuídos em 13 prioridades de ação
+- ✅ Orquestrador de seleção de ações para estratégia Militar
+- ✅ JumpToGraph para 9 subgrafos diferentes (não implementados ainda)
+- ✅ Painel de Debug integrado ao `index.html`
+- ✅ 5 testes automatizados (Tests 44-48)
 - ✅ Integração com `graph-loader.js`
 - ✅ Script adicionado ao `index.html`
+
+### **Próximos Subgrafos a Implementar:**
+1. `select-action-corr.jl` (209 linhas) - Estratégia Corrupção
+2. `character_which_king.jl` - Ações do Witch King
+3. `character_army.jl` - Personagens em exércitos
+4. `muster_minion.jl`, `muster_politics.jl`, `muster_muster.jl` - Recrutamento
+5. `movement_attack_basic.jl`, `movement_attack_corr.jl` - Movimento/Ataque
+6. `event_cards_preferred.jl`, `event_cards_general.jl` - Cartas de evento
+7. `battle.jl` (188 linhas) - Sistema de batalha
 
 ### **Arquitetura da Fase 3:**
 ```

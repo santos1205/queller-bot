@@ -86,6 +86,16 @@ function loadAllGraphs() {
       console.warn('[GraphLoader] threatExposed não encontrado!');
     }
     
+    // Subgrafo: Select Action Mili
+    if (typeof selectActionMili !== 'undefined') {
+      console.log('[GraphLoader] Carregando select_action_mili...');
+      const graphSelMili = Graph.fromJSON(selectActionMili);
+      graphManager.addGraph(graphSelMili);
+      console.log('[GraphLoader] select_action_mili carregado com sucesso!');
+    } else {
+      console.warn('[GraphLoader] selectActionMili não encontrado!');
+    }
+    
     console.log(`[GraphLoader] ${graphManager.getAllGraphNames().length} grafo(s) carregado(s):`, 
                 graphManager.getAllGraphNames());
     

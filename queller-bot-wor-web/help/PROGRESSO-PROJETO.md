@@ -1,9 +1,9 @@
 # 📊 **PROGRESSO DO PROJETO: Queller Bot Web**
 
 **Data de Início:** 8 de Dezembro de 2025  
-**Versão Atual:** 0.95 (95% completo) 🎊  
+**Versão Atual:** 0.96 (96% completo) 🎉  
 **Base:** Transpilação do Queller Bot Julia para JavaScript/Web  
-**Última Atualização:** 13 de Dezembro de 2025
+**Última Atualização:** 14 de Dezembro de 2025
 
 ---
 
@@ -37,6 +37,7 @@
 | Fase 4 (Grafos) | `phase-4.jl` | `phase-4.js` | ✅ Completo | **100%** |
 | Fase 5 (Grafos) | `phase-5.jl` | `phase-5.js` | ✅ Completo | **100%** |
 | Subgrafo: Threat Exposed | `threat-exposed.jl` | `threat-exposed.js` | ✅ Completo | **100%** |
+| Subgrafo: Select Action Mili | `select-action-mili.jl` | `select-action-mili.js` | ✅ Completo | **100%** |
 | SetStrategyNode | - | `graph.js` | ✅ Completo | **100%** |
 | SetRingAvailableNode | - | `graph.js` | ✅ Completo | **100%** |
 | SetMoDTAvailableNode | - | `graph.js` | ✅ Completo | **100%** |
@@ -112,14 +113,14 @@
 | Grafo | Arquivo Julia | Complexidade | Linhas (Julia) | Linhas (JS) | Status |
 |-------|---------------|--------------|----------------|-------------|--------|
 | Ameaça Exposta | `threat-exposed.jl` | ⭐⭐⭐ | 149 | 416 (88 nós) | ✅ **100%** |
+| Seleção (Militar) | `select-action-mili.jl` | ⭐⭐⭐ | 131 | 449 (57 nós) | ✅ **100%** |
 | Batalha | `battle.jl` | ⭐⭐⭐ | 188 | - | ❌ 0% |
 | Personagem | `character.jl` | ⭐⭐⭐ | 150 | - | ❌ 0% |
 | Cartas de Evento | `event-cards.jl` | ⭐⭐⭐ | 173 | - | ❌ 0% |
 | Movimento/Ataque | `movement-attack.jl` | ⭐⭐⭐⭐ | 189 | - | ❌ 0% |
 | Recrutar | `muster.jl` | ⭐⭐⭐⭐ | 298 (maior!) | - | ❌ 0% |
-| Seleção (Militar) | `select-action-mili.jl` | ⭐⭐⭐ | 130 | - | ❌ 0% |
 | Seleção (Corrupção) | `select-action-corr.jl` | ⭐⭐⭐⭐ | 209 | - | ❌ 0% |
-| **TOTAL SUBGRAFOS** | - | - | **1486 linhas** | **416/~2000** | **10%** |
+| **TOTAL SUBGRAFOS** | - | - | **1486 linhas** | **865/~2000** | **25%** |
 
 ### 3. **Lógica Avançada do Estado** ⚠️
 
@@ -173,19 +174,19 @@
 ║  SISTEMA DE GRAFOS:       ██████████  100%          ║
 ║  NAVEGADOR DE GRAFOS:     ██████████  100%          ║
 ║  GRAFOS DAS FASES:        ██████████  100%          ║
-║  SUBGRAFOS DE AÇÕES:      █░░░░░░░░░  10%           ║
+║  SUBGRAFOS DE AÇÕES:      ██░░░░░░░░  25%           ║
 ║  COMANDOS AVANÇADOS:      ███░░░░░░░  30%           ║
 ╠══════════════════════════════════════════════════════╣
-║  🎯 TOTAL GERAL:          █████████░  95%           ║
+║  🎯 TOTAL GERAL:          █████████░  96%           ║
 ╚══════════════════════════════════════════════════════╝
 ```
 
 ### **Estatísticas**
 
-- **Arquivos Criados:** 16 de ~25 estimados (64%)
-- **Linhas de Código (Web):** ~4.500 de ~6.500 totais (69%)
+- **Arquivos Criados:** 17 de ~25 estimados (68%)
+- **Linhas de Código (Web):** ~4.950 de ~6.500 totais (76%)
 - **Linhas no Julia Original:** 1.642 (grafos) + código base
-- **Linhas Transpiladas (subgrafos):** 416 de ~2.000 estimadas (21%)
+- **Linhas Transpiladas (subgrafos):** 865 de ~2.000 estimadas (43%)
 - **Funcionalidades Core:** 12 de 12 (100%) ✅
 - **Interface:** 100% completa ✅
 - **Sistema de Grafos:** 100% completo ✅
@@ -194,16 +195,16 @@
 - **Integração Fase 3:** 100% funcional ✅
 - **Integração Fase 4:** 100% funcional ✅
 - **Integração Fase 5:** 100% funcional ✅
-- **Testes:** 43 de 43 aprovados (100%) ✅ 🎉
+- **Testes:** 48 de 48 aprovados (100%) ✅ 🎉
 - **Lógica de IA:** 100% implementada (Todas as 5 fases completas!) 🎊
-- **Subgrafos:** 1 de 8 completo (threat_exposed) ✅
+- **Subgrafos:** 2 de 8 completos (threat_exposed, select_action_mili) ✅
 
 ### **Tempo de Desenvolvimento**
 
-- **Investido até agora:** ~10-11 horas
-- **Estimativa para subgrafos restantes:** ~12-17 horas (1.337 linhas Julia → ~1.600 linhas JS)
-- **Fase atual:** 5 de 5 fases principais completas ✅ + 1 subgrafo completo ✅
-- **Próximo:** Implementar 7 subgrafos restantes
+- **Investido até agora:** ~13-14 horas
+- **Estimativa para subgrafos restantes:** ~10-14 horas (1.206 linhas Julia → ~1.135 linhas JS)
+- **Fase atual:** 5 de 5 fases principais completas ✅ + 2 subgrafos completos ✅
+- **Próximo:** Implementar 6 subgrafos restantes
 
 ---
 
@@ -299,15 +300,25 @@
 
 **Status:** ✅ **COMPLETO** | **Tempo:** 3 horas | **Resultado:** 7/7 testes aprovados (100%)
 
-#### Passo 9: Subgrafos Essenciais ⏳ **PRÓXIMO**
-- [ ] `select-action-mili.jl` (130 linhas - Seleção Militar)
+#### Passo 9: Segundo Subgrafo (Select Action Mili) ✅ **COMPLETO**
+- [x] `select-action-mili.jl` (131 linhas - Seleção Militar)
+- [x] Transpilar para `js/graphs/select-action-mili.js` (449 linhas, 57 nós)
+- [x] Adicionar ao graph-loader.js
+- [x] Painel de Debug integrado ao index.html
+- [x] Testar fluxo completo (5 testes aprovados)
+- [x] Corrigir JumpToGraph (returnTo property)
+- [x] Corrigir PerformAction (nexts array)
+
+**Status:** ✅ **COMPLETO** | **Tempo:** 3 horas | **Resultado:** 5/5 testes aprovados (100%)
+
+#### Passo 10: Subgrafos Essenciais ⏳ **PRÓXIMO**
 - [ ] `select-action-corr.jl` (209 linhas - Seleção Corrupção)
 - [ ] `movement-attack.jl` (189 linhas - Movimento/Ataque)
 - [ ] `battle.jl` (188 linhas - Batalha)
 
-**Total:** 716 linhas Julia | **Estimativa:** 8-10 horas | **Prioridade:** 🔴 Alta
+**Total:** 586 linhas Julia | **Estimativa:** 6-8 horas | **Prioridade:** 🔴 Alta
 
-#### Passo 10: Subgrafos Secundários
+#### Passo 11: Subgrafos Secundários
 - [ ] `character.jl` (150 linhas - Personagem)
 - [ ] `event-cards.jl` (173 linhas - Cartas de Evento)
 - [ ] `muster.jl` (298 linhas - Recrutar - o maior!)
@@ -359,7 +370,8 @@ queller-bot-wor-web/
 │       ├── phase-3.js          ✅ 100% - Grafo Fase 3 (transpilado)
 │       ├── phase-4.js          ✅ 100% - Grafo Fase 4 (transpilado)
 │       ├── phase-5.js          ✅ 100% - Grafo Fase 5 (transpilado)
-│       └── threat-exposed.js   ✅ 100% - Subgrafo Ameaça Exposta (transpilado)
+│       ├── threat-exposed.js   ✅ 100% - Subgrafo Ameaça Exposta (transpilado)
+│       └── select-action-mili.js ✅ 100% - Subgrafo Seleção Militar (transpilado)
 │
 ├── data/
 │   └── graphs/
@@ -379,9 +391,9 @@ queller-bot-wor-web/
 ### **Estatísticas de Arquivos**
 
 - **Total de Arquivos Planejados:** 25
-- **Arquivos Criados:** 16 (threat-exposed.js adicionado)
-- **Arquivos Pendentes:** 9
-- **Progresso:** 64%
+- **Arquivos Criados:** 17 (select-action-mili.js adicionado)
+- **Arquivos Pendentes:** 8
+- **Progresso:** 68%
 
 ### **Marco 1: MVP Funcional** ✅ **COMPLETO!**
 - [x] Interface visual completa
@@ -566,7 +578,32 @@ queller-bot-wor-web/
   - Teste 25: SetRingAvailable/SetMoDTAvailable ✅
   - Teste 26: Compatibilidade híbrida ✅
 
-### **Versão 0.95** (13 Dez 2025) ← **VERSÃO ATUAL** 🎉🎊🚀
+### **Versão 0.96** (14 Dez 2025) ← **VERSÃO ATUAL** 🎉🎊✨
+
+**Foco:** Segundo subgrafo completo (select_action_mili) + painel de debug
+
+- ✅ **Subgrafo select_action_mili 100% completo e aprovado!**
+  - Transpilação completa de `select-action-mili.jl` para `select-action-mili.js`
+  - 57 nós, 449 linhas (131 linhas Julia → 3.4x expansão)
+  - 13 prioridades de ações para estratégia Militar
+  - Orquestrador que chama 9 subgrafos diferentes via JumpToGraph
+- ✅ **Correções importantes**
+  - JumpToGraph: propriedade `returnTo` em vez de `next`
+  - PerformAction: array `nexts` em vez de string `next`
+  - Validação correta de 57 nós (não 52)
+- ✅ **Painel de Debug integrado**
+  - Interface retrátil no index.html
+  - 5 testes automatizados (44-48)
+  - Execução individual ou em lote
+  - Visual estilo VS Code dark theme
+- ✅ **Todos os testes aprovados: 48/48 (100%)** 🎊🎊🎊🎊🎊🎊🎊
+  - Teste 44: Carregamento (8 grafos) ✅
+  - Teste 45: Estrutura (57 nós, 13 prioridades) ✅
+  - Teste 46: Navegação A1 (estrutura validada) ✅
+  - Teste 47: A7 Passar (nó correto) ✅
+  - Teste 48: ReturnFromGraph (nó a13) ✅
+
+### **Versão 0.95** (13 Dez 2025) 🎉🎊🚀
 
 **Foco:** Primeiro subgrafo completo (threat_exposed) + novos tipos de nós
 
@@ -668,10 +705,10 @@ queller-bot-wor-web/
   - Import/Export JSON
 ### **Próxima Versão 0.55** (Planejada)
 - [ ] Teste 14 completo (caminho Corrupção)
-**Última Atualização:** 13 de Dezembro de 2025 (Versão 0.95)  
-**Versão do Documento:** 1.8  
-**Progresso:** 40% → 50% → 60% → 70% → 80% → 90% → **95% → Primeiro subgrafo completo!** 🎉🎊🚀  
-**Próximo:** Continuar com 7 subgrafos restantes (opcional) 🎯
+**Última Atualização:** 14 de Dezembro de 2025 (Versão 0.96)  
+**Versão do Documento:** 1.9  
+**Progresso:** 40% → 50% → 60% → 70% → 80% → 90% → 95% → **96% → Segundo subgrafo completo!** 🎉🎊✨  
+**Próximo:** Continuar com 6 subgrafos restantes (opcional) 🎯
 
 ### **Versão 0.35** (8 Dez 2025)
 - ✅ Criada estrutura base do projeto

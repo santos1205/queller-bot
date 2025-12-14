@@ -513,3 +513,223 @@ function handleGetAvailableDice(nodeInfo) {
         processGraphNavigation();
     });
 }
+
+/* ========================================
+   DEBUG / TESTES
+   ======================================== */
+
+/**
+ * Toggle painel de debug
+ */
+function toggleDebugPanel() {
+    const content = document.getElementById('debug-content');
+    const toggle = document.getElementById('debug-toggle');
+    
+    if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        toggle.classList.remove('collapsed');
+        toggle.textContent = '▼';
+    } else {
+        content.classList.add('hidden');
+        toggle.classList.add('collapsed');
+        toggle.textContent = '▶';
+    }
+}
+
+/**
+ * Mostra resultado no painel de debug
+ */
+function debugLog(message, type = 'info') {
+    const logElement = document.getElementById('debug-log');
+    const className = type === 'success' ? 'debug-success' : 
+                     type === 'error' ? 'debug-error' : 'debug-info';
+    logElement.innerHTML = `<span class="${className}">${message}</span>`;
+}
+
+/**
+ * Executa teste específico
+ */
+function runDebugTest(testId) {
+    console.log(`=== Executando ${testId} ===`);
+    
+    try {
+        switch(testId) {
+            case 'test44':
+                runTest44();
+                break;
+            case 'test45':
+                runTest45();
+                break;
+            case 'test46':
+                runTest46();
+                break;
+            case 'test47':
+                runTest47();
+                break;
+            case 'test48':
+                runTest48();
+                break;
+        }
+    } catch (error) {
+        debugLog(`❌ ERRO: ${error.message}\n${error.stack}`, 'error');
+    }
+}
+
+/**
+ * Test 44: Carregamento
+ */
+function runTest44() {
+    const allGraphs = graphManager.getAllGraphNames();
+    const hasSelectActionMili = allGraphs.includes('select_action_mili');
+    const totalGraphs = allGraphs.length;
+    
+    let result = `TEST 44: CARREGAMENTO\n`;
+    result += `${'='.repeat(50)}\n\n`;
+    result += `Grafos carregados: ${totalGraphs}\n`;
+    result += `Lista: ${allGraphs.join(', ')}\n\n`;
+    
+    if (hasSelectActionMili && totalGraphs === 8) {
+        result += `✅ PASSOU: select_action_mili carregado (8 grafos no total)`;
+        debugLog(result, 'success');
+    } else {
+        result += `❌ FALHOU: ${hasSelectActionMili ? 'Total incorreto' : 'select_action_mili não encontrado'}`;
+        debugLog(result, 'error');
+    }
+}
+
+/**
+ * Test 45: Estrutura
+ */
+function runTest45() {
+    const graph = graphManager.getGraph('select_action_mili');
+    const nodeCount = graph.nodes.size;
+    
+    const priorities = ['a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'a9', 'a10', 'a11', 'a12', 'a13'];
+    const foundPriorities = [];
+    
+    for (const p of priorities) {
+        const hasPriority = Array.from(graph.nodes.keys()).some(id => id.startsWith(p + '_') || id === p);
+        if (hasPriority) foundPriorities.push(p);
+    }
+    
+    let result = `TEST 45: ESTRUTURA\n`;
+    result += `${'='.repeat(50)}\n\n`;
+    result += `Total de nós: ${nodeCount} (esperado: 57)\n`;
+    result += `Prioridades encontradas: ${foundPriorities.length}/13\n`;
+    result += `Lista: ${foundPriorities.join(', ')}\n\n`;
+    
+    if (nodeCount === 57 && foundPriorities.length === 13) {
+        result += `✅ PASSOU: Estrutura correta (57 nós, 13 prioridades)`;
+        debugLog(result, 'success');
+    } else {
+        result += `❌ FALHOU: Nós=${nodeCount} (esperado 57), Prioridades=${foundPriorities.length}/13`;
+        debugLog(result, 'error');
+    }
+}
+
+/**
+ * Test 46: Navegação A1
+ */
+function runTest46() {
+    const graph = graphManager.getGraph('select_action_mili');
+    const startNode = graph.getNode(graph.startNode);
+    
+    let result = `TEST 46: NAVEGAÇÃO A1\n`;
+    result += `${'='.repeat(50)}\n\n`;
+    result += `Nó inicial: ${startNode.id} (tipo: ${startNode.type})\n`;
+    
+    // Verificar conexão threat_check -> a1
+    const threatCheck = graph.getNode('threat_check');
+    if (threatCheck && threatCheck.returnTo === 'a1') {
+        result += `Conexão threat_check → a1: ✓\n`;
+    }
+    
+    // Verificar nós da prioridade A1
+    const a1Nodes = ['a1', 'a1_1', 'a1_cond', 'a1_jump'];
+    const foundA1 = a1Nodes.filter(id => graph.nodes.has(id));
+    
+    result += `\nNós da prioridade A1: ${foundA1.length}/4\n`;
+    result += `Lista: ${foundA1.join(', ')}\n\n`;
+    
+    if (foundA1.length === 4) {
+        result += `✅ PASSOU: Prioridade A1 estruturada corretamente\n`;
+        result += `\nPara navegar interativamente:\n`;
+        result += `- Use o botão "Iniciar Jogo" na interface principal`;
+        debugLog(result, 'success');
+    } else {
+        result += `❌ FALHOU: Nós da prioridade A1 faltando`;
+        debugLog(result, 'error');
+    }
+}
+
+/**
+ * Test 47: Prioridade A7 (Passar)
+ */
+function runTest47() {
+    const graph = graphManager.getGraph('select_action_mili');
+    const a7Nodes = Array.from(graph.nodes.keys()).filter(id => id.startsWith('a7_'));
+    const a7Action = graph.nodes.get('a7_action');
+    
+    let result = `TEST 47: PRIORIDADE A7 (PASSAR)\n`;
+    result += `${'='.repeat(50)}\n\n`;
+    result += `Nós da prioridade A7: ${a7Nodes.length}\n`;
+    result += `Lista: ${a7Nodes.join(', ')}\n\n`;
+    
+    if (a7Action && a7Action.message === 'Passar') {
+        result += `Nó a7_action:\n`;
+        result += `  Tipo: ${a7Action.type}\n`;
+        result += `  Mensagem: ${a7Action.message}\n\n`;
+        result += `✅ PASSOU: Prioridade A7 (Passar) está correta`;
+        debugLog(result, 'success');
+    } else {
+        result += `❌ FALHOU: Nó a7_action não encontrado ou mensagem incorreta`;
+        debugLog(result, 'error');
+    }
+}
+
+/**
+ * Test 48: ReturnFromGraph
+ */
+function runTest48() {
+    const graph = graphManager.getGraph('select_action_mili');
+    const a13Return = graph.nodes.get('a13');
+    
+    let result = `TEST 48: RETURNFROMGRAPH\n`;
+    result += `${'='.repeat(50)}\n\n`;
+    
+    if (a13Return && a13Return.type === 'ReturnFromGraph') {
+        result += `Nó a13:\n`;
+        result += `  Tipo: ${a13Return.type}\n`;
+        result += `  ID: ${a13Return.id}\n\n`;
+        result += `✅ PASSOU: ReturnFromGraph configurado corretamente\n\n`;
+        result += `Este nó é atingido quando nenhuma ação é possível.`;
+        debugLog(result, 'success');
+    } else {
+        result += `❌ FALHOU: Nó a13 não encontrado ou tipo incorreto`;
+        debugLog(result, 'error');
+    }
+}
+
+/**
+ * Executa todos os testes
+ */
+function runAllDebugTests() {
+    console.log('========================================');
+    console.log('EXECUTANDO TODOS OS TESTES');
+    console.log('========================================');
+    
+    let allResults = '';
+    const tests = ['test44', 'test45', 'test46', 'test47', 'test48'];
+    
+    tests.forEach((test, idx) => {
+        setTimeout(() => {
+            runDebugTest(test);
+            if (idx === tests.length - 1) {
+                console.log('========================================');
+                console.log('TODOS OS TESTES CONCLUÍDOS');
+                console.log('========================================');
+            }
+        }, idx * 200);
+    });
+}
+

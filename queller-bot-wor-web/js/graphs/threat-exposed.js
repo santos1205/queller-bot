@@ -399,7 +399,7 @@ const threatExposed = {
         {
             id: "tx_c_1",
             type: "JumpToGraph",
-            targetGraph: "character_move",
+            targetGraph: "character_army",
             returnTo: "tx_return"
         },
 

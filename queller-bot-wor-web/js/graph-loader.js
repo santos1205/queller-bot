@@ -16,88 +16,39 @@ function loadAllGraphs() {
   // graphManager é a instância singleton global (não GraphManager.getInstance())
   
   try {
-    // Fase 1: Recuperar e Comprar
-    if (typeof phase1 !== 'undefined') {
-      console.log('[GraphLoader] Carregando phase-1...');
-      const graph1 = Graph.fromJSON(phase1);
-      graphManager.addGraph(graph1);
-      console.log('[GraphLoader] phase-1 carregado com sucesso!');
-    } else {
-      console.warn('[GraphLoader] phase1 não encontrado!');
-    }
+    // Carregar todos os grafos silenciosamente
+    if (typeof phase1 !== 'undefined') graphManager.addGraph(Graph.fromJSON(phase1));
+    if (typeof phase2 !== 'undefined') graphManager.addGraph(Graph.fromJSON(phase2));
+    if (typeof phase3 !== 'undefined') graphManager.addGraph(Graph.fromJSON(phase3));
+    if (typeof phase4 !== 'undefined') graphManager.addGraph(Graph.fromJSON(phase4));
+    if (typeof adjustDice !== 'undefined') graphManager.addGraph(Graph.fromJSON(adjustDice));
+    if (typeof phase5 !== 'undefined') graphManager.addGraph(Graph.fromJSON(phase5));
+    if (typeof threatExposed !== 'undefined') graphManager.addGraph(Graph.fromJSON(threatExposed));
+    if (typeof selectActionMili !== 'undefined') graphManager.addGraph(Graph.fromJSON(selectActionMili));
+    if (typeof selectActionCorr !== 'undefined') graphManager.addGraph(Graph.fromJSON(selectActionCorr));
+    if (typeof battle !== 'undefined') graphManager.addGraph(Graph.fromJSON(battle));
+    if (typeof battleResolve !== 'undefined') graphManager.addGraph(Graph.fromJSON(battleResolve));
+    if (typeof battleRoundEnd !== 'undefined') graphManager.addGraph(Graph.fromJSON(battleRoundEnd));
+    if (typeof movementAttackBesiege !== 'undefined') graphManager.addGraph(Graph.fromJSON(movementAttackBesiege));
+    if (typeof movementAttackCorr !== 'undefined') graphManager.addGraph(Graph.fromJSON(movementAttackCorr));
+    if (typeof movementAttackBasic !== 'undefined') graphManager.addGraph(Graph.fromJSON(movementAttackBasic));
+    if (typeof movementAttackCard !== 'undefined') graphManager.addGraph(Graph.fromJSON(movementAttackCard));
+    if (typeof musterMinion !== 'undefined') graphManager.addGraph(Graph.fromJSON(musterMinion));
+    if (typeof musterMinionSelection !== 'undefined') graphManager.addGraph(Graph.fromJSON(musterMinionSelection));
+    if (typeof musterPolitics !== 'undefined') graphManager.addGraph(Graph.fromJSON(musterPolitics));
+    if (typeof musterMuster !== 'undefined') graphManager.addGraph(Graph.fromJSON(musterMuster));
+    if (typeof musterCard !== 'undefined') graphManager.addGraph(Graph.fromJSON(musterCard));
+    if (typeof eventCardsPreferred !== 'undefined') graphManager.addGraph(Graph.fromJSON(eventCardsPreferred));
+    if (typeof eventCardsGeneral !== 'undefined') graphManager.addGraph(Graph.fromJSON(eventCardsGeneral));
+    if (typeof eventCardsCorruption !== 'undefined') graphManager.addGraph(Graph.fromJSON(eventCardsCorruption));
+    if (typeof eventCardsResolveEffect !== 'undefined') graphManager.addGraph(Graph.fromJSON(eventCardsResolveEffect));
+    // Character graphs (4 grafos: 1 consolidado + 3 prio)
+    if (typeof characterArmy !== 'undefined') graphManager.addGraph(Graph.fromJSON(characterArmy));
+    if (typeof characterWkPrio !== 'undefined') graphManager.addGraph(Graph.fromJSON(characterWkPrio));
+    if (typeof characterNazgulPrio !== 'undefined') graphManager.addGraph(Graph.fromJSON(characterNazgulPrio));
+    if (typeof characterMosPrio !== 'undefined') graphManager.addGraph(Graph.fromJSON(characterMosPrio));
     
-    // Fase 2: Camaradagem e Declaração
-    if (typeof phase2 !== 'undefined') {
-      console.log('[GraphLoader] Carregando phase-2...');
-      const graph2 = Graph.fromJSON(phase2);
-      graphManager.addGraph(graph2);
-      console.log('[GraphLoader] phase-2 carregado com sucesso!');
-    } else {
-      console.warn('[GraphLoader] phase2 não encontrado!');
-    }
-    
-    // Fase 3: Ações
-    if (typeof phase3 !== 'undefined') {
-      console.log('[GraphLoader] Carregando phase-3...');
-      const graph3 = Graph.fromJSON(phase3);
-      graphManager.addGraph(graph3);
-      console.log('[GraphLoader] phase-3 carregado com sucesso!');
-    } else {
-      console.warn('[GraphLoader] phase3 não encontrado!');
-    }
-    
-    // Fase 4: Olho de Sauron (grafo principal)
-    if (typeof phase4 !== 'undefined') {
-      console.log('[GraphLoader] Carregando phase-4...');
-      const graph4 = Graph.fromJSON(phase4);
-      graphManager.addGraph(graph4);
-      console.log('[GraphLoader] phase-4 carregado com sucesso!');
-    } else {
-      console.warn('[GraphLoader] phase4 não encontrado!');
-    }
-    
-    // Grafo auxiliar adjust_dice
-    if (typeof adjustDice !== 'undefined') {
-      console.log('[GraphLoader] Carregando adjust_dice...');
-      const adjustGraph = Graph.fromJSON(adjustDice);
-      graphManager.addGraph(adjustGraph);
-      console.log('[GraphLoader] adjust_dice carregado com sucesso!');
-    } else {
-      console.warn('[GraphLoader] adjustDice não encontrado!');
-    }
-    
-    // Fase 5: Verificação de Vitória
-    if (typeof phase5 !== 'undefined') {
-      console.log('[GraphLoader] Carregando phase-5...');
-      const graph5 = Graph.fromJSON(phase5);
-      graphManager.addGraph(graph5);
-      console.log('[GraphLoader] phase-5 carregado com sucesso!');
-    } else {
-      console.warn('[GraphLoader] phase5 não encontrado!');
-    }
-    
-    // Subgrafo: Threat Exposed
-    if (typeof threatExposed !== 'undefined') {
-      console.log('[GraphLoader] Carregando threat_exposed...');
-      const graphThreat = Graph.fromJSON(threatExposed);
-      graphManager.addGraph(graphThreat);
-      console.log('[GraphLoader] threat_exposed carregado com sucesso!');
-    } else {
-      console.warn('[GraphLoader] threatExposed não encontrado!');
-    }
-    
-    // Subgrafo: Select Action Mili
-    if (typeof selectActionMili !== 'undefined') {
-      console.log('[GraphLoader] Carregando select_action_mili...');
-      const graphSelMili = Graph.fromJSON(selectActionMili);
-      graphManager.addGraph(graphSelMili);
-      console.log('[GraphLoader] select_action_mili carregado com sucesso!');
-    } else {
-      console.warn('[GraphLoader] selectActionMili não encontrado!');
-    }
-    
-    console.log(`[GraphLoader] ${graphManager.getAllGraphNames().length} grafo(s) carregado(s):`, 
-                graphManager.getAllGraphNames());
+    console.log(`✅ ${graphManager.getAllGraphNames().length} grafos carregados`);
     
   } catch (error) {
     console.error('[GraphLoader] Erro ao carregar grafos:', error);

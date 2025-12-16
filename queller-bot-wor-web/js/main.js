@@ -58,10 +58,15 @@ function startGame() {
         'success'
     );
     
-    // Após 3 segundos, inicia a Fase 1
+    // Esconde botões durante transição
+    const interactionPanel = document.getElementById('interaction-panel');
+    if (interactionPanel) interactionPanel.style.display = 'none';
+    
+    // Após 5 segundos, inicia a Fase 1
     setTimeout(() => {
+        if (interactionPanel) interactionPanel.style.display = 'block';
         startPhase(1);
-    }, 3000);
+    }, 5000);
 }
 
 /**
@@ -84,8 +89,13 @@ function startPhase(phaseNumber) {
     
     UI.showMessage(phaseMessages[phaseNumber] || `Fase ${phaseNumber}`, 'info');
     
+    // Esconde botões durante transição
+    const interactionPanel = document.getElementById('interaction-panel');
+    if (interactionPanel) interactionPanel.style.display = 'none';
+    
     // Solicitar dados apenas na Fase 1, depois vai direto para demonstração
     setTimeout(() => {
+        if (interactionPanel) interactionPanel.style.display = 'block';
         if (phaseNumber === 1) {
             // Fase 1: solicitar dados se ainda não tiver
             if (gameState.availableDice.length === 0) {
@@ -97,7 +107,7 @@ function startPhase(phaseNumber) {
             // Fases 2-5: ir direto para demonstração
             startDecisionProcess();
         }
-    }, 3000);
+    }, 5000);
 }
 
 /**
@@ -307,7 +317,7 @@ function demonstratePhase5_LEGACY() {
                         startPhase(1);
                     }
                 );
-            }, 3000);
+            }, 5000);
         }
     );
 }
@@ -325,7 +335,12 @@ function completePhase() {
         'success'
     );
     
+    // Esconde botões durante transição
+    const interactionPanel = document.getElementById('interaction-panel');
+    if (interactionPanel) interactionPanel.style.display = 'none';
+    
     setTimeout(() => {
+        if (interactionPanel) interactionPanel.style.display = 'block';
         if (gameState.currentPhase < 5) {
             startPhase(gameState.currentPhase + 1);
         } else {
@@ -336,7 +351,7 @@ function completePhase() {
                 'success'
             );
         }
-    }, 3000);
+    }, 5000);
 }
 
 // Exporta funções globais
@@ -368,9 +383,14 @@ function processGraphNavigation() {
             UI.showMessage(messagesHtml, 'info');
         }
         
+        // Esconde botões durante transição
+        const interactionPanel = document.getElementById('interaction-panel');
+        if (interactionPanel) interactionPanel.style.display = 'none';
+        
         setTimeout(() => {
+            if (interactionPanel) interactionPanel.style.display = 'block';
             completePhase();
-        }, 3000);
+        }, 5000);
         return;
     }
     

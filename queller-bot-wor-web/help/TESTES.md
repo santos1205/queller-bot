@@ -1,53 +1,168 @@
-# 🧪 **TESTES DO PROJETO QUELLER BOT WEB**
+# 🧪 TESTE: Debug de Persistência da Fase
 
-**Data dos Testes:** 8-15 de Dezembro de 2025  
-**Versão Testada:** 1.02 (100% TRANSPILAÇÃO COMPLETA!) 🎉  
-**Testador:** Mario  
-**Status:** 🏆 **82/82 TESTES APROVADOS (100%)** 🏆⚡🔥
+**Data:** 16/12/2024  
+**Status:** 🔄 Em execução  
+**Prioridade:** 🔴 Alta - Bug crítico bloqueando testes de gameplay
+
+### 📋 Cenário do Bug Reportado
+
+Usuário estava na **Fase 3**, recarregou a página (F5) e voltou para **Fase 1**.
+
+### 🎯 Objetivo
+
+Identificar por que a fase não está sendo salva/carregada corretamente no localStorage.
 
 ---
 
-## 🎯 **ROTEIRO DE TESTES - SUBGRAFO SELECT ACTION MILI**
+## 🧪 Procedimento de Teste
 
-**Fase Atual:** Implementação do segundo subgrafo (`select_action_mili`)  
-**Data:** 14 Dezembro 2025  
-**Objetivo:** Validar grafo de seleção de ações para estratégia Militar
+### Passo 1: Preparação
+1. Abrir o navegador (Chrome/Edge recomendado)
+2. Pressionar **F12** para abrir DevTools
+3. Ir na aba **Console**
+4. Abrir o arquivo `index.html`
 
-### **Pré-requisitos:**
-1. ✅ Todos os tipos de nós já implementados (SetActiveDie, CheckActiveDie, UseActiveDie, JumpToGraph, etc)
-2. ✅ `select-action-mili.js` criado (57 nós, ~450 linhas)
-3. ✅ `graph-loader.js` atualizado para carregar `select_action_mili`
-4. ✅ `index.html` atualizado com script `select-action-mili.js`
+### Passo 2: Novo Jogo Limpo
+1. Clicar no botão **"Novo Jogo"** (no rodapé)
+2. Confirmar para limpar dados antigos
+3. Observar no console se aparece confirmação de limpeza
 
-### **Testes a Executar:**
+### Passo 3: Iniciar e Avançar até Fase 3
+1. Clicar em **"Iniciar Jogo"**
+2. Observar os logs no console:
+   ```
+   🎯 goToPhase(1) - Fase anterior: undefined
+   ✅ Fase atualizada para: 1
+   💾 Salvando estado - Fase: 1
+   ✅ Estado salvo com sucesso. Fase: 1
+   ```
 
-#### **Teste 44: Carregamento do Subgrafo** ✅
-- **Objetivo:** Verificar se `select_action_mili` carrega sem erros
-- **Passos:**
-  1. Abrir `index.html` no navegador
-  2. Abrir Console (F12)
-  3. Verificar logs de carregamento
-- **Resultado:** ✅ **APROVADO** (14/12/2025)
-  - ✅ `[GraphLoader] Carregando select_action_mili...`
-  - ✅ `[GraphLoader] select_action_mili carregado com sucesso!`
-  - ✅ `[GraphLoader] 8 grafo(s) carregado(s): [..., select_action_mili]`
-  - ✅ Sem erros de validação
+3. **Completar Fase 1** (seguir as instruções do bot)
+4. Observar transição para Fase 2 nos logs:
+   ```
+   🎯 goToPhase(2) - Fase anterior: 1
+   ✅ Fase atualizada para: 2
+   💾 Salvando estado - Fase: 2
+   ✅ Estado salvo com sucesso. Fase: 2
+   ```
 
-#### **Teste 45: Validação da Estrutura do Grafo** ✅
-- **Objetivo:** Verificar se todos os nós estão corretos
-- **Passos:**
-  1. Usar painel Debug integrado
-  2. Clicar em "Test 45: Estrutura"
-  3. Verificar resultado
-- **Resultado:** ✅ **APROVADO** (14/12/2025)
-  - ✅ Grafo `select_action_mili` existe
-  - ✅ Total de 57 nós (conforme Julia original)
-  - ✅ Start node: `select_action_mili`
-  - ✅ 13 prioridades encontradas (a1 a a13)
-  - ✅ Todos os nós validados corretamente
+5. **Completar Fase 2**
+6. Observar transição para Fase 3:
+   ```
+   🎯 goToPhase(3) - Fase anterior: 2
+   ✅ Fase atualizada para: 3
+   💾 Salvando estado - Fase: 3
+   ✅ Estado salvo com sucesso. Fase: 3
+   ```
 
-#### **Teste 46: Navegação Básica (Prioridade A1 - Witch King)** ✅
-- **Objetivo:** Validar estrutura da prioridade A1
+### Passo 4: Recarregar Página
+1. **Anotar** qual é a fase atual mostrada na tela (deve ser Fase 3)
+2. Pressionar **F5** para recarregar
+3. **IMEDIATAMENTE** observar os logs no console:
+   ```
+   📂 Carregando estado salvo - Fase: ?
+   ✅ Estado carregado. Fase atual: ?
+   ```
+
+4. Verificar na interface qual fase está sendo mostrada
+
+### Passo 5: Verificar localStorage Manualmente
+1. No DevTools, ir na aba **Application** (ou Storage)
+2. No menu lateral, expandir **Local Storage**
+3. Clicar no domínio (file:// ou localhost)
+4. Procurar a chave: `quellerbot_gamestate`
+5. Clicar para ver o valor JSON
+6. Procurar o campo `"currentPhase"` - **qual é o valor?**
+
+---
+
+## 📊 Template para Coletar Dados
+
+Copie e preencha durante o teste:
+
+```
+=== LOGS DO CONSOLE ===
+
+[Fase 1]
+- goToPhase: _____
+- Salvando: _____
+- Salvo com sucesso: _____
+
+[Fase 2]
+- goToPhase: _____
+- Salvando: _____
+- Salvo com sucesso: _____
+
+[Fase 3]
+- goToPhase: _____
+- Salvando: _____
+- Salvo com sucesso: _____
+
+[APÓS RELOAD (F5)]
+- Carregando estado salvo - Fase: _____
+- Estado carregado. Fase atual: _____
+
+=== VERIFICAÇÃO localStorage (Aba Application) ===
+Chave: quellerbot_gamestate
+Campo currentPhase: _____
+
+=== INTERFACE ===
+Fase mostrada na tela após reload: _____
+```
+
+---
+
+## ✅ Critério de Sucesso
+
+- localStorage deve ter `"currentPhase": 3`
+- Ao recarregar, logs devem mostrar: `📂 Carregando estado salvo - Fase: 3`
+- Tela deve mostrar **"Fase 3 de 5"**
+
+## ❌ Critério de Falha
+
+- localStorage tem `currentPhase` diferente de 3
+- Logs mostram fase inconsistente entre salvar e carregar
+- Tela mostra fase diferente da que foi salva
+
+---
+
+## 🐛 Possíveis Causas do Bug
+
+Se o teste falhar, investigar:
+
+1. **Fase não está sendo atualizada antes de salvar?**
+   - Verificar se `goToPhase()` realmente atualiza `this.currentPhase`
+
+2. **Salvamento acontece antes da atualização?**
+   - Verificar ordem de execução: atualizar → depois salvar
+
+3. **Algo sobrescreve a fase após salvar?**
+   - Procurar outras chamadas de `goToPhase(1)` no código
+
+4. **Carregamento não restaura corretamente?**
+   - Verificar se `loadFromLocalStorage()` lê o valor correto
+
+---
+
+## 📝 Resultado do Teste
+
+**Status:** 🔄 Aguardando execução
+
+**Logs coletados:**
+```
+[Cole aqui os logs do console após executar o teste]
+```
+
+**Valor no localStorage:**
+```json
+{
+  "currentPhase": ???
+}
+```
+
+**Observações:**
+```
+[Descreva qualquer comportamento inesperado ou pista sobre o problema]
 - **Passos:**
   1. Usar painel Debug integrado
   2. Clicar em "Test 46: Navegação A1"

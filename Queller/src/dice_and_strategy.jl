@@ -75,7 +75,7 @@ function parse(c::Char)
 end
 
 function parse(s::AbstractString)
-	s = filter(!isspace, collect(s)) # remove any spaces
+	s = filter(c -> !isspace(c) && c != ',', collect(s)) # remove spaces and commas
 	fs = parse.(s)
 	(isempty(s) || any(isnothing.(fs))) && return nothing
 	return fs

@@ -33,6 +33,7 @@ const UI = {
             // Botões do rodapé
             btnUndo: document.getElementById('btn-undo'),
             btnResetPhase: document.getElementById('btn-reset-phase'),
+            btnNewGame: document.getElementById('btn-new-game'),
             btnHelp: document.getElementById('btn-help'),
 
             // Modal de ajuda
@@ -47,6 +48,20 @@ const UI = {
      * Configura event listeners dos botões fixos
      */
     setupEventListeners() {
+        // Botão Novo Jogo
+        this.elements.btnNewGame.addEventListener('click', () => {
+            this.showYesNoQuestion(
+                '⚠️ Tem certeza que deseja começar um novo jogo? O progresso atual será perdido.',
+                () => {
+                    gameState.clearLocalStorage();
+                    location.reload();
+                },
+                () => {
+                    // Cancelar
+                }
+            );
+        });
+
         // Botão de ajuda
         this.elements.btnHelp.addEventListener('click', () => {
             this.showHelpModal();
@@ -114,7 +129,8 @@ const UI = {
             return;
         }
 
-        this.elements.historyList.innerHTML = history.map(entry => {
+        // Inverte a ordem para mostrar mais recente primeiro
+        this.elements.historyList.innerHTML = history.reverse().map(entry => {
             const time = this.formatTime(entry.timestamp);
             return `
                 <div class="history-item">
@@ -124,19 +140,22 @@ const UI = {
             `;
         }).join('');
 
-        // Scroll para o final
-        this.elements.historyList.scrollTop = this.elements.historyList.scrollHeight;
+        // Scroll para o topo (mais recente)
+        this.elements.historyList.scrollTop = 0;
     },
 
     /**
      * Formata timestamp para exibição
-     * @param {Date} date
+     * @param {Date|string} date
      * @returns {string}
      */
     formatTime(date) {
-        const hours = String(date.getHours()).padStart(2, '0');
-        const minutes = String(date.getMinutes()).padStart(2, '0');
-        const seconds = String(date.getSeconds()).padStart(2, '0');
+        // Converte string para Date se necessário (após carregar do localStorage)
+        const dateObj = typeof date === 'string' ? new Date(date) : date;
+        
+        const hours = String(dateObj.getHours()).padStart(2, '0');
+        const minutes = String(dateObj.getMinutes()).padStart(2, '0');
+        const seconds = String(dateObj.getSeconds()).padStart(2, '0');
         return `${hours}:${minutes}:${seconds}`;
     },
 
@@ -239,9 +258,18 @@ const UI = {
         btnGroup.className = 'btn-group';
         
         const btnYes = this.createButton('✅ Sim', () => {
-            gameState.addToHistory(`Resposta: SIM - ${question}`);
-            onYes();
-            this.updateAll();
+            // Corrige bug: só adiciona ao histórico DEPOIS do load se for continuar jogo salvo
+            if (question.includes('Continuar jogo salvo')) {
+                if (gameState.loadFromLocalStorage()) {
+                    gameState.addToHistory(`Resposta: SIM - ${question}`);
+                    resumeSavedGame();
+                    this.updateAll();
+                }
+            } else {
+                gameState.addToHistory(`Resposta: SIM - ${question}`);
+                onYes();
+                this.updateAll();
+            }
         }, 'btn-success');
         
         const btnNo = this.createButton('❌ Não', () => {

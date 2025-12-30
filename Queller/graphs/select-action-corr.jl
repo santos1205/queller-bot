@@ -9,8 +9,8 @@
 	@node a1_1 = SetActiveDie('C', may_use_ring = true) -> [next = a1_2, no_die = a2]
 	@node a1_2 = SetActiveDie('P', may_use_ring = true) -> [next = a1_cond, no_die = a2]
 	@node a1_cond = BinaryCondition("""
-									The Fellowship is on the Mordor track or is revealed.
-									And, a character card is held.
+									A Sociedade está na trilha de Mordor ou está revelada.
+									E, uma carta de personagem está na mão.
 									""") -> [n_true = a1_jump, n_false = a2]
 	@node a1_jump = JumpToGraph("event_cards_corruption") -> a2
 
@@ -18,7 +18,7 @@
 	@node a2 = Dummy() -> a2_1
 	@node a2_1 = SetActiveDie('C') -> [next = a2_cond, no_die = a3]
 	@node a2_cond = BinaryCondition("""
-									The Fellowship is in a region with no Nazgûl and which Nazgûl can move to.
+									A Sociedade está em uma região sem Nazgûl e para a qual um Nazgûl pode se mover.
 									""") -> [n_true = a2_jump, n_false = a3]
 	@node a2_jump = JumpToGraph("character_move") -> a3
 
@@ -26,7 +26,7 @@
 	@node a3 = Dummy() -> a3_1
 	@node a3_1 = SetActiveDie('C', may_use_ring = true) -> [next = a3_cond, no_die = a4]
 	@node a3_cond = BinaryCondition("""
-									The Which King is in play and not in a *mobile* army but is able to create or join one.
+									O Rei dos Bruxos está em jogo e não está em um exército *móvel*, mas é capaz de criar ou se juntar a um.
 									""") -> [n_true = a3_jump, n_false = a4]
 	@node a3_jump = JumpToGraph("character_which_king") -> a4
 
@@ -48,8 +48,8 @@
 	@node a6_1_ring = SetActiveDie('C', may_use_ring = true) -> [next = a6_cond_ring, no_die = a6_2_ring]
 	@node a6_2_ring = SetActiveDie('A', may_use_ring = true) -> [next = a6_cond_ring, no_die = a7]
 	@node a6_cond_ring = BinaryCondition("""
-										 A *mobile* army is adjacent to its *target*.
-										 And, the *target* gives enough points to win or the Fellowship is on the Mordor track.
+										 Um exército *móvel* está adjacente ao seu *alvo*.
+										 E, o *alvo* fornece pontos suficientes para vencer ou a Sociedade está na trilha de Mordor.
 										 """) -> [n_true = a6_jump_1_die_ring, n_false = a6_1_no_ring]
 	@node a6_jump_1_die_ring = SetActiveDie('C', may_use_ring = true) -> [next = a6_jump_1_ring, no_die = a6_jump_2_die_ring]
 	@node a6_jump_1_ring = JumpToGraph("character_army") -> a6_jump_2_die_ring
@@ -60,8 +60,8 @@
 	@node a6_1_no_ring = SetActiveDie('C') -> [next = a6_cond_no_ring, no_die = a6_2_no_ring]
 	@node a6_2_no_ring = SetActiveDie('A') -> [next = a6_cond_no_ring, no_die = a7]
 	@node a6_cond_no_ring = BinaryCondition("""
-											A *mobile* army is adjacent to its *target*.
-											And, the *target* is in a nation at war and not under siege.
+											Um exército *móvel* está adjacente ao seu *alvo*.
+											E, o *alvo* está em uma nação em guerra e não está sob cerco.
 											""") -> [n_true = a6_jump_1_die_no_ring, n_false = a7]
 	@node a6_jump_1_die_no_ring = SetActiveDie('C') -> [next = a6_jump_1_no_ring, no_die = a6_jump_2_die_no_ring]
 	@node a6_jump_1_no_ring = JumpToGraph("character_army") -> a6_jump_2_die_no_ring
@@ -89,7 +89,7 @@
 	@node a9_1 = SetActiveDie('C') -> [next = a9_cond, no_die = a9_2]
 	@node a9_2 = SetActiveDie('A') -> [next = a9_cond, no_die = a10]
 	@node a9_cond = BinaryCondition("""
-									A *mobile* army is adjacent to its *target* that is not under siege.
+									Um exército *móvel* está adjacente ao seu *alvo* que não está sob cerco.
 									""") -> [n_true = a9_jump_1_die, n_false = a10]
 	@node a9_jump_1_die = SetActiveDie('C') -> [next = a9_jump_1, no_die = a9_jump_2_die]
 	@node a9_jump_1 = JumpToGraph("character_army") -> a9_jump_2_die
@@ -134,7 +134,7 @@
 	@node a14 = Dummy() -> a14_1
 	@node a14_1 = SetActiveDie('C', may_use_ring=true) -> [next = a14_cond, no_die = a15]
 	@node a14_cond = BinaryCondition("""
-									 The Fellowship is in a region with no Nazgûl which a Nazgûl can move to.
+									 A Sociedade está em uma região sem Nazgûl para a qual um Nazgûl pode se mover.
 									 """) -> [n_true = a14_jump, n_false = a15]
 	@node a14_jump = JumpToGraph("character_move") -> a15
 
@@ -149,8 +149,8 @@
 	@node a16_1 = SetActiveDie('C', may_use_ring=true) -> [next = a16_cond, no_die = a16_2]
 	@node a16_2 = SetActiveDie('A', may_use_ring=true) -> [next = a16_cond, no_die = a17]
 	@node a16_cond = BinaryCondition("""
-									 A *mobile* army is adjacent to its *target*.
-									 And, the *target* is in a nation at war and not under siege.
+									 Um exército *móvel* está adjacente ao seu *alvo*.
+									 E, o *alvo* está em uma nação em guerra e não está sob cerco.
 									 """) -> [n_true = a16_jump_1_die, n_false = a17]
 	@node a16_jump_1_die = SetActiveDie('C', may_use_ring=true) -> [next = a16_jump_1, no_die = a16_jump_2_die]
 	@node a16_jump_1 = JumpToGraph("character_army") -> a16_jump_2_die
@@ -170,7 +170,7 @@
 	@node a18_1 = SetActiveDie('C', may_use_ring=true) -> [next = a18_cond, no_die = a18_2]
 	@node a18_2 = SetActiveDie('A', may_use_ring=true) -> [next = a18_cond, no_die = a19]
 	@node a18_cond = BinaryCondition("""
-									A *mobile* army is adjacent to its *target* that is not under siege.
+									Um exército *móvel* está adjacente ao seu *alvo* que não está sob cerco.
 									""") -> [n_true = a18_jump_1_die, n_false = a19]
 	@node a18_jump_1_die = SetActiveDie('C', may_use_ring=true) -> [next = a18_jump_1, no_die = a18_jump_2_die]
 	@node a18_jump_1 = JumpToGraph("character_army") -> a18_jump_2_die

@@ -34,9 +34,109 @@ document.addEventListener('DOMContentLoaded', () => {
     // Inicializa a UI
     UI.init();
     
-    // Mostra tela inicial
-    UI.showStartScreen(startGame);
+    // Verifica se existe jogo salvo
+    if (gameState.hasSavedGame()) {
+        UI.showMessage(
+            '💾 <strong>Jogo anterior encontrado!</strong><br>' +
+            'Deseja continuar de onde parou?',
+            'info'
+        );
+        
+        UI.showYesNoQuestion(
+            'Continuar jogo salvo?',
+            () => {
+                // Carregar jogo salvo
+                // LOG: Estado salvo ao clicar em 'Sim' para continuar
+                console.log('[CONTINUAR] Antes do loadFromLocalStorage:', localStorage.getItem('quellerbot_gamestate'));
+                
+                // Corrigir ordem: carregar antes de addToHistory
+                const originalShowYesNoQuestion = UI.showYesNoQuestion;
+                UI.showYesNoQuestion = function(question, onYes, onNo) {
+                    originalShowYesNoQuestion.call(UI, question, () => {
+                        // Se for o prompt de continuar jogo salvo, carrega antes de addToHistory
+                        if (question.includes('Continuar jogo salvo')) {
+                            if (gameState.loadFromLocalStorage()) {
+                                gameState.addToHistory(`Resposta: SIM - ${question}`);
+                                resumeSavedGame();
+                                UI.updateAll();
+                            }
+                        } else {
+                            gameState.addToHistory(`Resposta: SIM - ${question}`);
+                            onYes();
+                            UI.updateAll();
+                        }
+                    }, onNo);
+                };
+                
+                if (gameState.loadFromLocalStorage()) {
+                    UI.clearInteractionPanel();
+                    UI.updateAll();
+                    UI.showMessage(
+                        '✅ <strong>Jogo carregado!</strong><br>' +
+                        `Você estava na Fase ${gameState.currentPhase}`,
+                        'success'
+                    );
+
+                    // Esconde botões durante transição
+                    const interactionPanel = document.getElementById('interaction-panel');
+                    if (interactionPanel) interactionPanel.style.display = 'none';
+
+                    // Retoma o jogo salvo sem sobrescrever estado
+                    setTimeout(() => {
+                        if (interactionPanel) interactionPanel.style.display = 'block';
+                        resumeSavedGame();
+                    }, 3000);
+                } else {
+                    UI.showMessage('❌ Erro ao carregar jogo salvo. Iniciando novo jogo.', 'error');
+                    setTimeout(() => {
+                        UI.clearInteractionPanel();
+                        UI.showStartScreen(startGame);
+                    }, 2000);
+                }
+            },
+            () => {
+                // Começar novo jogo
+                gameState.clearLocalStorage();
+                UI.showStartScreen(startGame);
+            }
+        );
+    } else {
+        // Não há save, mostra tela inicial normal
+        UI.showStartScreen(startGame);
+    }
 });
+
+/**
+ * Retoma o jogo salvo sem sobrescrever estado/histórico
+ */
+function resumeSavedGame() {
+    // Apenas atualiza a UI e retoma o fluxo da fase salva
+    UI.updateAll();
+    // Mostra mensagem da fase
+    const phaseMessages = {
+        1: '🌅 <strong>Fase 1: Recuperar Dados e Comprar Cartas</strong><br>O bot irá recuperar seus dados de ação e comprar cartas de evento.',
+        2: '🗺️ <strong>Fase 2: Camaradagem e Declaração</strong><br>O bot irá mover a Sociedade e fazer declarações.',
+        3: '⚔️ <strong>Fase 3: Ações</strong><br>O bot usará seus dados de ação para realizar ações.',
+        4: '👁️ <strong>Fase 4: Olho de Sauron</strong><br>Verificação e ações relacionadas ao Olho.',
+        5: '🏆 <strong>Fase 5: Verificação de Vitória</strong><br>Verifica se há um vencedor.'
+    };
+    UI.showMessage(phaseMessages[gameState.currentPhase] || `Fase ${gameState.currentPhase}`, 'info');
+    // Retoma o fluxo da fase salva
+    setTimeout(() => {
+        // O mesmo fluxo de startPhase, mas sem sobrescrever estado
+        const interactionPanel = document.getElementById('interaction-panel');
+        if (interactionPanel) interactionPanel.style.display = 'block';
+        if (gameState.currentPhase === 1) {
+            if (gameState.availableDice.length === 0) {
+                requestDiceInput();
+            } else {
+                startDecisionProcess();
+            }
+        } else {
+            startDecisionProcess();
+        }
+    }, 500);
+}
 
 /**
  * Inicia um novo jogo
@@ -509,9 +609,8 @@ function handleGetAvailableDice(nodeInfo) {
         gameState.addToHistory(`Dados inseridos: ${Dice.format(diceArray)}`);
         UI.updateAll();
         
-        // Continua para próximo nó (GetAvailableDice tem nexts[0])
-        const nextNode = navigator.currentNode.nexts[0];
-        navigator.processUserResponse(nextNode);
+        // Continua para próximo nó (processUserResponse já processa GetAvailableDice e pega nexts[0] internamente)
+        navigator.processUserResponse(diceArray);
         processGraphNavigation();
     });
 }

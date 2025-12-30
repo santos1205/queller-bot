@@ -117,6 +117,7 @@ class GameState {
         this.gameStarted = true;
         this.currentPhase = 1;
         this.addToHistory(`🎮 Jogo iniciado! Estratégia: ${Strategy.format(strategy)}`);
+        this.saveToLocalStorage();
     }
 
     /**
@@ -125,6 +126,7 @@ class GameState {
      */
     setAvailableDice(dice) {
         this.availableDice = [...dice];
+        this.saveToLocalStorage();
     }
 
     /**
@@ -181,6 +183,7 @@ class GameState {
             this.currentGraph = null;
             this.addToHistory(`📍 Indo para Fase ${phaseNumber}`);
         }
+        this.saveToLocalStorage();
     }
 
     /**
@@ -189,6 +192,7 @@ class GameState {
     completePhase() {
         this.phaseComplete = true;
         this.addToHistory(`✅ Fase ${this.currentPhase} completa!`);
+        this.saveToLocalStorage();
     }
 
     /**
@@ -225,6 +229,9 @@ class GameState {
         if (this.history.length > 100) {
             this.history.shift();
         }
+        
+        // Auto-save após adicionar ao histórico
+        this.saveToLocalStorage();
     }
 
     /**
@@ -262,6 +269,84 @@ class GameState {
     restoreAbilities() {
         this.ringAvailable = true;
         this.modtAvailable = true;
+    }
+
+    /**
+     * Salva estado no localStorage
+     */
+    saveToLocalStorage() {
+        try {
+            const data = {
+                currentPhase: this.currentPhase,
+                strategy: this.strategy,
+                availableDice: this.availableDice,
+                history: this.history,
+                currentNode: this.currentNode,
+                currentGraph: this.currentGraph,
+                gameStarted: this.gameStarted,
+                phaseComplete: this.phaseComplete,
+                ringAvailable: this.ringAvailable,
+                modtAvailable: this.modtAvailable,
+                activeDie: this.activeDie,
+                timestamp: new Date().toISOString()
+            };
+            localStorage.setItem('quellerbot_gamestate', JSON.stringify(data));
+            return true;
+        } catch (error) {
+            console.error('Erro ao salvar no localStorage:', error);
+            return false;
+        }
+    }
+
+    /**
+     * Carrega estado do localStorage
+     * @returns {boolean} - true se carregou com sucesso
+     */
+    loadFromLocalStorage() {
+        try {
+            const saved = localStorage.getItem('quellerbot_gamestate');
+            if (!saved) return false;
+
+            const data = JSON.parse(saved);
+
+            this.currentPhase = data.currentPhase || 1;
+            this.strategy = data.strategy;
+            this.availableDice = data.availableDice || [];
+            this.history = data.history || [];
+            this.currentNode = data.currentNode;
+            this.currentGraph = data.currentGraph;
+            this.gameStarted = data.gameStarted || false;
+            this.phaseComplete = data.phaseComplete || false;
+            this.ringAvailable = data.ringAvailable !== undefined ? data.ringAvailable : true;
+            this.modtAvailable = data.modtAvailable !== undefined ? data.modtAvailable : true;
+            this.activeDie = data.activeDie;
+
+            return true;
+        } catch (error) {
+            console.error('Erro ao carregar do localStorage:', error);
+            return false;
+        }
+    }
+
+    /**
+     * Limpa estado salvo do localStorage
+     */
+    clearLocalStorage() {
+        try {
+            localStorage.removeItem('quellerbot_gamestate');
+            return true;
+        } catch (error) {
+            console.error('Erro ao limpar localStorage:', error);
+            return false;
+        }
+    }
+
+    /**
+     * Verifica se existe save no localStorage
+     * @returns {boolean}
+     */
+    hasSavedGame() {
+        return localStorage.getItem('quellerbot_gamestate') !== null;
     }
 
     /**

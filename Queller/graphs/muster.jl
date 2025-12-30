@@ -136,94 +136,94 @@
 	@node m_6 = BinaryCondition("Mobilização pode criar uma região *exposta*.") -> [n_true = m_6_die, n_false = m_7]
 	@node m_6_die = UseActiveDie() -> m_6_action
 	@node m_6_action = PerformAction("""
-									 *Focus* priority:
-									 1. Region which creates an *exposed* region
-									 2. Random
+									 Prioridade de *Foco*:
+									 1. Região que cria uma região *exposta*
+									 2. Aleatório
 
-									 Muster:
-									 *Primary*: Elite
-									 *Secondary*: Regular
+									 Recrutar:
+									 *Primário*: Elite
+									 *Secundário*: Regular
 
-									 If unit is unavailable, rotate as:
+									 Se unidade não estiver disponível, rotacione como:
 									 Elite -> Regular -> Nazgûl -> Elite
 									 """) -> m_6_end
 	@node m_6_end = End() -> []
 
 
 	@node m_7 = BinaryCondition("""
-								The Fellowship is adjacent to, or in, a region it is possible to muster in.
-								And, the progress put the Fellowship outside Mordor.
-								And, no army is adjacent to the Fellowship's current region.
+								A Sociedade está adjacente a, ou em, uma região onde é possível recrutar.
+								E, o progresso colocou a Sociedade fora de Mordor.
+								E, nenhum exército está adjacente à região atual da Sociedade.
 								""") -> [n_true = m_7_die, n_false = m_8]
 	@node m_7_die = UseActiveDie() -> m_7_action
 	@node m_7_action = PerformAction("""
-									 *Focus* priority:
-									 1. The Fellowship's current region
+									 Prioridade de *Foco*:
+									 1. Região atual da Sociedade
 
-									 Muster:
-									 *Primary*: Regular
-									 *Secondary*: Nazgûl
+									 Recrutar:
+									 *Primário*: Regular
+									 *Secundário*: Nazgûl
 
-									 If unit is unavailable, rotate as:
+									 Se unidade não estiver disponível, rotacione como:
 									 Elite -> Regular -> Nazgûl -> Elite
 									 """) -> m_7_end
 	@node m_7_end = End() -> []
 
 
-	@node m_8 = BinaryCondition("Muster is possible in a region containing a Shadow army.") -> [n_true = m_8_die, n_false = m_9]
+	@node m_8 = BinaryCondition("Recrutamento é possível em uma região contendo um exército da Sombra.") -> [n_true = m_8_die, n_false = m_9]
 	@node m_8_die = UseActiveDie() -> m_8_action
 	@node m_8_action = PerformAction("""
-									 *Focus* priority:
-									 1. Army is conducting a siege.
-									 2. Army is *mobile*
-									 3. Army becomes mobile if Mouth of Sauron is added
-									 4. Army contains Saruman
-									 5. Army with the highest *value*
-									 6. Random
+									 Prioridade de *Foco*:
+									 1. Exército está conduzindo um cerco.
+									 2. Exército é *móvel*
+									 3. Exército se torna móvel se o Boca de Sauron for adicionado
+									 4. Exército contém Saruman
+									 5. Exército com maior *valor*
+									 6. Aleatório
 
-									 Muster:
-									 *Primary*: Regular
-									 *Secondary*: Nazgûl
+									 Recrutar:
+									 *Primário*: Regular
+									 *Secundário*: Nazgûl
 
-									 If unit is unavailable, rotate as:
+									 Se unidade não estiver disponível, rotacione como:
 									 Elite -> Regular -> Nazgûl -> Elite
 									 """) -> m_8_end
 	@node m_8_end = End() -> []
 
 
-	@node m_9 = BinaryCondition("Less than 6 Nazgûl are in play.") -> [n_true = m_10_yes, n_false = m_10_no]
+	@node m_9 = BinaryCondition("Menos de 6 Nazgûl estão em jogo.") -> [n_true = m_10_yes, n_false = m_10_no]
 	@node m_10_yes = UseActiveDie() -> m_10_yes_action
 	@node m_10_yes_action = PerformAction("""
-										  *Focus* priority:
-										  1. Closest to army whose *target* is in a nation at war
-										  2. Closest to army whose *target* is in an active nation.
-										  3. Closest to a *mobile* army
-										  4. Closest to army whose *target* is in a passive nation.
-										  5. Random
+										  Prioridade de *Foco*:
+										  1. Mais próximo de exército cujo *alvo* está em uma nação em guerra
+										  2. Mais próximo de exército cujo *alvo* está em uma nação ativa.
+										  3. Mais próximo de um exército *móvel*
+										  4. Mais próximo de exército cujo *alvo* está em uma nação passiva.
+										  5. Aleatório
 
-										  Muster:
-										  *Primary*: Nazgûl
-										  *Secondary*: Nazgûl
+										  Recrutar:
+										  *Primário*: Nazgûl
+										  *Secundário*: Nazgûl
 
-										  If unit is unavailable, rotate as:
+										  Se unidade não estiver disponível, rotacione como:
 										  Elite -> Regular -> Nazgûl -> Elite
 										  """) -> m_10_end_yes
 	@node m_10_end_yes = End() -> []
 
 	@node m_10_no = UseActiveDie() -> m_10_no_action
 	@node m_10_no_action = PerformAction("""
-										 *Focus* priority:
-										 1. Closest to army whose *target* is in a nation at war
-										 2. Closest to army whose *target* is in an active nation.
-										 3. Closest to a *mobile* army
-										 4. Closest to army whose *target* is in a passive nation.
-										 5. Random
+										 Prioridade de *Foco*:
+										 1. Mais próximo de exército cujo *alvo* está em uma nação em guerra
+										 2. Mais próximo de exército cujo *alvo* está em uma nação ativa.
+										 3. Mais próximo de um exército *móvel*
+										 4. Mais próximo de exército cujo *alvo* está em uma nação passiva.
+										 5. Aleatório
 
-										 Muster:
-										 *Primary*: Elite
-										 *Secondary*: Nazgûl
+										 Recrutar:
+										 *Primário*: Elite
+										 *Secundário*: Nazgûl
 
-										 If unit is unavailable, rotate as:
+										 Se unidade não estiver disponível, rotacione como:
 										 Elite -> Regular -> Nazgûl -> Elite
 										 """) -> m_10_end_no
 	@node m_10_end_no = End() -> []
@@ -234,64 +234,64 @@
 	################################################################################
 
 	@node muster_card = Start() -> m_c_6
-	@node m_c_6 = BinaryCondition("Muster can create an *exposed* region.") -> [n_true = m_c_6_action, n_false = m_c_7]
+	@node m_c_6 = BinaryCondition("Recrutamento pode criar uma região *exposta*.") -> [n_true = m_c_6_action, n_false = m_c_7]
 	@node m_c_6_action = PerformAction("""
-									   *Focus* priority:
-									   1. Region which creates an *exposed* region
-									   2. Random
+									   Prioridade de *Foco*:
+									   1. Região que cria uma região *exposta*
+									   2. Aleatório
 
-									   Muster:
-									   *Primary*: Units according to card
-									   *Secondary*: Units according to card
+									   Recrutar:
+									   *Primário*: Unidades de acordo com a carta
+									   *Secundário*: Unidades de acordo com a carta
 									   """) -> m_c_6_end
 	@node m_c_6_end = End() -> []
 
 	@node m_c_7 = BinaryCondition("""
-								  The Fellowship is adjacent to, or in, a region it is possible to muster in.
-								  And, the progress put the Fellowship outside Mordor.
-								  And, no army is adjacent to the Fellowship's current region.
+								  A Sociedade está adjacente a, ou em, uma região onde é possível recrutar.
+								  E, o progresso colocou a Sociedade fora de Mordor.
+								  E, nenhum exército está adjacente à região atual da Sociedade.
 								  """) -> [n_true = m_c_7_action, n_false = m_c_8]
 	@node m_c_7_action = PerformAction("""
-									   *Focus* priority:
-									   1. The Fellowship's current region
+									   Prioridade de *Foco*:
+									   1. Região atual da Sociedade
 
-									   Muster:
-									   *Primary*: Units according to card
-									   *Secondary*: Units according to card
+									   Recrutar:
+									   *Primário*: Unidades de acordo com a carta
+									   *Secundário*: Unidades de acordo com a carta
 									   """) -> m_c_7_end
 	@node m_c_7_end = End() -> []
 
 
 	@node m_c_8 = BinaryCondition("""
-								  Muster is possible in a region containing a Shadow army.
+								  Recrutamento é possível em uma região contendo um exército da Sombra.
 								  """) -> [n_true = m_c_8_action, n_false = m_c_9]
 	@node m_c_8_action = PerformAction("""
-									   *Focus* priority:
-									   1. Army is *mobile*
-									   2. Army's *target* is a nation at war
-									   3. Army becomes mobile if the Witch King is added
-									   4. Free Peoples' army at *target* or on the route to *target* does not contain Gandalf the White
-									   5. Army with the highest *value*
-									   6. Random
+									   Prioridade de *Foco*:
+									   1. Exército é *móvel*
+									   2. *Alvo* do exército está em uma nação em guerra
+									   3. Exército se torna móvel se o Rei dos Bruxos for adicionado
+									   4. Exército dos Povos Livres no *alvo* ou na rota para o *alvo* não contém Gandalf, o Branco
+									   5. Exército com maior *valor*
+									   6. Aleatório
 
-									   Muster:
-									   *Primary*: Units according to card
-									   *Secondary*: Units according to card
+									   Recrutar:
+									   *Primário*: Unidades de acordo com a carta
+									   *Secundário*: Unidades de acordo com a carta
 									   """) -> m_c_8_end
 	@node m_c_8_end = End() -> []
 
 
 	@node m_c_9 = PerformAction("""
-								*Focus* priority:
-								1. Closest to army whose *target* is in a nation at war
-								2. Closest to army whose *target* is in an active nation.
-								3. Closest to a *mobile* army
-								4. Closest to army whose *target* is in a passive nation.
-								5. Random
+								Prioridade de *Foco*:
+								1. Mais próximo de exército cujo *alvo* está em uma nação em guerra
+								2. Mais próximo de exército cujo *alvo* está em uma nação ativa.
+								3. Mais próximo de um exército *móvel*
+								4. Mais próximo de exército cujo *alvo* está em uma nação passiva.
+								5. Aleatório
 
-								Muster:
-								*Primary*: Units according to card
-								*Secondary*: Units according to card
+								Recrutar:
+								*Primário*: Unidades de acordo com a carta
+								*Secundário*: Unidades de acordo com a carta
 								""") -> m_c_9_end
 	@node m_c_9_end = End() -> []
 

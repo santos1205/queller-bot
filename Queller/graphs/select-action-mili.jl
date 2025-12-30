@@ -8,7 +8,7 @@
 	@node a1 = Dummy() -> a1_1
 	@node a1_1 = SetActiveDie('C', may_use_ring = true) -> [next = a1_cond, no_die = a2]
 	@node a1_cond = BinaryCondition("""
-									The Which King is in play and not in a *mobile* army but is able to create or join one.
+									O Rei dos Bruxos está em jogo e não está em um exército *móvel*, mas é capaz de criar ou se juntar a um.
 									""") -> [n_true = a1_jump, n_false = a2]
 	@node a1_jump = JumpToGraph("character_which_king") -> a2
 
@@ -30,16 +30,16 @@
 	@node a4_1 = SetActiveDie('C', may_use_ring = true) -> [next = a4_2, no_die = a5]
 	@node a4_2 = SetActiveDie('P', may_use_ring = true) -> [next = a4_cond, no_die = a5]
 	@node a4_cond = BinaryCondition("""
-									The Fellowship is on the Mordor track or is revealed.
-									And, a "Fellowship revealed" character card is held.
+									A Sociedade está na trilha de Mordor ou está revelada.
+									E, uma carta de personagem "Sociedade revelada" está na mão.
 									""") -> [n_true = a4_die, n_false = a5]
 	@node a4_die = UseActiveDie() -> a4_action
 	@node a4_action = PerformAction("""
-									Play a "Fellowship revealed" character card.
+									Jogar uma carta de personagem "Sociedade revelada".
 
-									Priority:
-									1. Ascending order of initiative
-									2. Random
+									Prioridade:
+									1. Ordem crescente de iniciativa
+									2. Aleatório
 									""") -> a4_end
 	@node a4_end = End() -> []
 
@@ -49,12 +49,12 @@
 	@node a5_1 = SetActiveDie('C', may_use_ring = true) -> [next = a5_2, no_die = a6]
 	@node a5_2 = SetActiveDie('A', may_use_ring = true) -> [next = a5_cond, no_die = a6]
 	@node a5_cond = BinaryCondition("""
-									A *mobile* army is adjacent to its *target* or a Free Peoples' army on the shortest route to its *target*.
+									Um exército *móvel* está adjacente ao seu *alvo* ou a um exército dos Povos Livres na rota mais curta para o seu *alvo*.
 
-									And, any of the following conditions hold:
-									- The *mobile* army's *target* gives enough points to win.
-									- The *mobile* army's *target* is in a nation at war and is not under siege.
-									- The Fellowship is on the Mordor track.
+									E, qualquer uma das seguintes condições é verdadeira:
+									- O *alvo* do exército *móvel* fornece pontos suficientes para vencer.
+									- O *alvo* do exército *móvel* está em uma nação em guerra e não está sob cerco.
+									- A Sociedade está na trilha de Mordor.
 									""") -> [n_true = a5_action, n_false = a6]
 	@node a5_action = JumpToGraph("movement_attack_basic") -> a6
 
@@ -63,19 +63,19 @@
 	@node a6 = Dummy() -> a6_1
 	@node a6_1 = SetActiveDie('M') -> [next = a6_cond, no_die = a7]
 	@node a6_cond = BinaryCondition("""
-									A strategy card that musters is *playable*.
+									Uma carta de estratégia que recruta é *jogável*.
 									""") -> [n_true = a6_die, n_false = a6_2]
 	@node a6_2 = SetActiveDie('A') -> [next = a6_cond_2, no_die = a7]
 	@node a6_cond_2 = BinaryCondition("""
-									  A strategy card that musters is *playable*.
+									  Uma carta de estratégia que recruta é *jogável*.
 									  """) -> [n_true = a6_die, n_false = a7]
 	@node a6_die = UseActiveDie() -> a6_action
 	@node a6_action = PerformAction("""
-									Play a strategy card that musters.
+									Jogar uma carta de estratégia que recruta.
 
-									Priority:
-									3. Ascending order of initiative
-									4. Random
+									Prioridade:
+									1. Ordem crescente de iniciativa
+									2. Aleatório
 									""") -> a6_end
 	@node a6_end = End() -> []
 
@@ -99,7 +99,7 @@
 	@node a9_1 = SetActiveDie('C') -> [next = a9_2, no_die = a10]
 	@node a9_2 = SetActiveDie('A') -> [next = a9_cond, no_die = a10]
 	@node a9_cond = BinaryCondition("""
-									A *mobile* army is adjacent to its *target*.
+									Um exército *móvel* está adjacente ao seu *alvo*.
 									""") -> [n_true = a9_action, n_false = a10]
 	@node a9_action = JumpToGraph("movement_attack_basic") -> a10
 

@@ -1,55 +1,55 @@
 @graphs begin
 	attack_threat_cond = """
-	A *mobile* army can attack *threat*.
+	Um exército *móvel* pode atacar uma *ameaça*.
 	"""
 
 	move_adjacent_cond = """
-	Army/armies can move so that a *mobile* army is created adjacent to *threat*.
+	Exército(s) pode(m) se mover de forma que um exército *móvel* seja criado adjacente a uma *ameaça*.
 	"""
 
 	move_stronghold_cond = """
-	Army/armies can move such that the *value* at a stronghold under *threat* increases.
+	Exército(s) pode(m) se mover de forma que o *valor* em uma fortaleza sob *ameaça* aumente.
 	"""
 
 	move_toward_cond = """
-	*Mobile* army/armies can move towards their *target*/*targets* and reduce their distance to the *threat*.
+	Exército(s) *móvel(is)* pode(m) se mover em direção ao(s) seu(s) *alvo(s)* e reduzir sua distância à *ameaça*.
 	"""
 
 	move_exposed_cond = """
-	Army/armies can move towards an *exposed* region.
+	Exército(s) pode(m) se mover em direção a uma região *exposta*.
 	"""
 
 	muster_cond = """
-	Possible to muster at a stronghold under *threat*.
+	É possível recrutar em uma fortaleza sob *ameaça*.
 	"""
 
 	character_cond = """
-	A *threat* is besieging a Shadow stronghold whose army leadership is less than 5 and less than the number of army units.
+	Uma *ameaça* está sitiando uma fortaleza da Sombra cuja liderança do exército é menor que 5 e menor que o número de unidades do exército.
 	"""
 
 	move_remain_cond = """
-	The Army Die have one move remaining.
+	O Dado de Exército tem um movimento restante.
 	"""
 
 
 	attack_text = """
-	Attack according to the latest statement. Select army at random if several can perform such an attack.
+	Atacar de acordo com a última declaração. Selecione exército aleatoriamente se vários podem realizar tal ataque.
 	"""
 
 	move_text = """
-	Move according to the latest statement. Select army at random if several can perform such a move.
+	Mover de acordo com a última declaração. Selecione exército aleatoriamente se vários podem realizar tal movimento.
 	"""
 
 	muster_text = """
-	*Focus* priority:
-	1. Stronghold under *threat*
-	2. Random
+	Prioridade de *Foco*:
+	1. Fortaleza sob *ameaça*
+	2. Aleatório
 
-	Muster:
-	*Primary*: Elite
-	*Secondary*: Regular
+	Recrutar:
+	*Primário*: Elite
+	*Secundário*: Regular
 
-	If unit is unavailable, rotate as:
+	Se unidade não estiver disponível, rotacione como:
 	Elite -> Regular -> Nazgûl -> Elite
 	"""
 
@@ -57,8 +57,8 @@
 	################################################################################
 
 	@node threat_exposed = Start() -> tx_t
-	@node tx_t = BinaryCondition("A *threat* exists.") -> [n_true = tx_1, n_false = tx_exp]
-	@node tx_exp = BinaryCondition("An *exposed* region exists.") -> [n_true = tx_5, n_false=tx_skip_return]
+	@node tx_t = BinaryCondition("Uma *ameaça* existe.") -> [n_true = tx_1, n_false = tx_exp]
+	@node tx_exp = BinaryCondition("Uma região *exposta* existe.") -> [n_true = tx_5, n_false=tx_skip_return]
 	@node tx_skip_return = ReturnFromGraph() -> []
 
 	########################################
